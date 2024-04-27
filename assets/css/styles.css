@@ -18,7 +18,7 @@ body {
     /* 垂直和水平居中 */
     background-position: center center;
     /* 設置元素高度 */
-    height: 300px; /* 調整橫幅區域的高度 */
+    height: 25vh; /* 調整橫幅區域的高度 */
     /* 添加陰影以增強對比度 */
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
 }
