@@ -1,0 +1,24 @@
+/* 自訂 CSS 樣式 */
+body {
+    padding-top: 50px; /* 調整內容頂部距離，以適應橫幅高度 */
+}
+.teacher-photo {
+    float: left;
+    margin-right: 20px;
+    max-width: 200px;
+    border-radius: 10px;
+}
+.bg-image {
+    /* 設置背景圖片 */
+    background-image: url('../images/banner.jpg');
+    /* 背景圖片填滿整個元素 */
+    background-size: cover;
+    /* 使背景圖片固定，不隨滾動而移動 */
+    background-attachment: fixed;
+    /* 垂直和水平居中 */
+    background-position: center center;
+    /* 設置元素高度 */
+    height: 300px; /* 調整橫幅區域的高度 */
+    /* 添加陰影以增強對比度 */
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+}
