@@ -16,7 +16,7 @@ body {
     /* 使背景圖片固定，不隨滾動而移動 */
     background-attachment: fixed;
     /* 垂直和水平居中 */
-    background-position: center center;
+    background-position: center -250px;
     /* 設置元素高度 */
     height: 25vh; /* 調整橫幅區域的高度 */
     /* 添加陰影以增強對比度 */
