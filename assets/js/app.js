@@ -6,108 +6,116 @@ let favorites = JSON.parse(localStorage.getItem("ayurveda_favs") || "[]");
 // 預載備用草藥資料 (確保在 CORS 或離線環境下依然呈現高質感卡片網格)
 const FALLBACK_HERBS = [
     {
-        id: "herb_bhringraj",
-        name_zh: "旱蓮草",
-        sanskrit: "Bhringraj (Eclipta alba)",
+        id: "bhringraj",
+        name: "旱蓮草 (Bhringraj)",
+        sanskrit: "Eclipta prostrata / 墨旱蓮",
+        dosha: "Pitta ↓ / K ↓",
+        latin: "Eclipta prostrata (L.) L.",
         rasa: "苦 (Tikta), 辛 (Katu)",
-        virya: "冷 (Sheeta)",
+        virya: "涼 (Sheeta)",
         vipaka: "辛 (Katu)",
-        dosha_effect: "Pitta ↓, Vata ↓ (涼血、清熱排毒、烏髮)",
-        used_for: "頭皮養護、烏髮、肝臟排毒、視力保養、熱性皮膚疹",
-        summary: "朱婕老師筆記精選：阿育吠陀頭皮與肝臟養護聖藥，性冷味苦，能深度平息火型 (Pitta) 體質之過旺發炎。",
+        tcm: "墨旱蓮 (甘酸寒，歸肝腎經)",
+        desc: "朱婕老師筆記要點：頭皮養護第一聖藥，具平息火型體質 (Pitta) 炎熱、清肝明目、滋養髮根與鎮靜心靈之功效。",
         img_src: "./assets/images/scans/scan_single1.jpg",
         book_code: "SINGLE1-P0001"
     },
     {
-        id: "herb_haritaki",
-        name_zh: "訶子",
-        sanskrit: "Haritaki (Terminalia chebula)",
-        rasa: "澀 (Kashaya), 苦 (Tikta), 甘 (Madhura)",
-        virya: "熱 (Ushna)",
+        id: "triphala",
+        name: "三果實 (Triphala)",
+        sanskrit: "Haritaki + Bibhitaki + Amalaki",
+        dosha: "三體質平衡 (Tridoshic)",
+        latin: "Formula: Phyllanthus emblica + Terminalia chebula",
+        rasa: "五味兼具 (酸苦甘辛澀)",
+        virya: "溫/平 (Anushna)",
         vipaka: "甘 (Madhura)",
-        dosha_effect: "Tridoshashak (平衡風火水三體質，尤擅降 Vata)",
-        used_for: "腸道消化、潤腸通便、長壽滋補 (Rasayana)、記憶力提升",
-        summary: "朱婕老師稱其為『藥草之母』，為三果實 (Triphala) 最核心之成分，具強效潤腸與腸道保健功能。",
-        img_src: "./assets/images/scans/scan_single2.jpg",
-        book_code: "SINGLE2-P0015"
-    },
-    {
-        id: "herb_shatavari",
-        name_zh: "印度天門冬",
-        sanskrit: "Shatavari (Asparagus racemosus)",
-        rasa: "甘 (Madhura), 微苦 (Tikta)",
-        virya: "冷 (Sheeta)",
-        vipaka: "甘 (Madhura)",
-        dosha_effect: "Pitta ↓, Vata ↓ (滋陰、生津、婦科養護)",
-        used_for: "女性內分泌調理、產後催乳、女性生殖渠道 (Artavaha) 養護、安神",
-        summary: "朱婕老師手稿婦科聖藥，意為『擁有百個丈夫的女性』，能給予女性生殖與免疫層級 (Shukra Dhatu) 強大滋養。",
-        img_src: "./assets/images/scans/scan_disease.jpg",
-        book_code: "DISEASE-P0088"
-    },
-    {
-        id: "herb_ashwagandha",
-        name_zh: "睡茄 (南非醉茄)",
-        sanskrit: "Ashwagandha (Withania somnifera)",
-        rasa: "苦 (Tikta), 澀 (Kashaya), 甘 (Madhura)",
-        virya: "熱 (Ushna)",
-        vipaka: "甘 (Madhura)",
-        dosha_effect: "Vata ↓, Kapha ↓ (強壯神經、抗疲勞、助眠)",
-        used_for: "失眠調理、神經衰弱、免疫力低下、肌肉強健 (Mamsavaha)、抗壓",
-        summary: "阿育吠陀神經與體力強健核心草藥，具備馬之氣力象徵，能深度平息 Vata 風型焦慮與失眠。",
-        img_src: "./assets/images/scans/scan_home.jpg",
-        book_code: "HOME-P0105"
-    },
-    {
-        id: "herb_triphala",
-        name_zh: "三果實",
-        sanskrit: "Triphala (Haritaki + Bibhitaki + Amalaki)",
-        rasa: "具五味 (除鹹味外)",
-        virya: "溫 (Samasheeta)",
-        vipaka: "甘 (Madhura)",
-        dosha_effect: "Tridosha Balance (全體質平衡處方)",
-        used_for: "全消化道排毒 (Annavaha)、視力養護、結腸淨化、溫和溫補",
-        summary: "古印度千古經典複方，由訶子、毛訶子與餘甘子組成，朱婕老師強調其為每日排毒必備溫和調理劑。",
+        tcm: "三果實經典方 (歸肺、大腸、肝經)",
+        desc: "朱婕老師筆記要點：阿育吠陀千古第一經典複方！由訶子、毛訶子與餘甘子三果組成，溫和排毒、促進消化與滋補強身。",
         img_src: "./assets/images/scans/scan_formulas.jpg",
         book_code: "FORMULAS-P0042"
     },
     {
-        id: "herb_neem",
-        name_zh: "印楝 (苦楝)",
-        sanskrit: "Neem (Azadirachta indica)",
-        rasa: "極苦 (Tikta)",
-        virya: "極冷 (Sheeta)",
-        vipaka: "辛 (Katu)",
-        dosha_effect: "Pitta ↓, Kapha ↓ (強效解毒、涼血、抑菌)",
-        used_for: "皮膚濕疹、痘痘粉刺、血液排毒 (Raktavaha)、天然防蟲解毒",
-        summary: "印度天然村莊藥房，苦味極重，能迅速拔除血中熱毒，針對皮膚發炎與濕疹有立竿見影之效果。",
-        img_src: "./assets/images/scans/scan_single1.jpg",
-        book_code: "SINGLE1-P0089"
+        id: "ashwagandha",
+        name: "睡茄 / 印度人蔘 (Ashwagandha)",
+        sanskrit: "Withania somnifera / 催眠睡茄",
+        dosha: "Vata ↓ / K ↓",
+        latin: "Withania somnifera (L.) Dunal",
+        rasa: "苦 (Tikta), 澀 (Kashaya), 甘 (Madhura)",
+        virya: "熱 (Ushna)",
+        vipaka: "甘 (Madhura)",
+        tcm: "印度人蔘 (甘溫，歸腎心脾經)",
+        desc: "朱婕老師筆記要點：風型體質 (Vata) 神經緊張與失眠最佳滋補草藥，具強壯神經系統、對抗壓力與睡眠調理提升體能之效。",
+        img_src: "./assets/images/scans/scan_home.jpg",
+        book_code: "HOME-P0105"
     },
     {
-        id: "herb_guggulu",
-        name_zh: "沒藥 (印度沒藥)",
-        sanskrit: "Guggulu (Commiphora mukul)",
-        rasa: "辛 (Katu), 苦 (Tikta)",
-        virya: "熱 (Ushna)",
+        id: "ashoka",
+        name: "無憂樹 (Ashoka)",
+        sanskrit: "Saraca asoca / 無憂樹皮",
+        dosha: "Pitta ↓ / K ↓",
+        latin: "Saraca asoca (Roxb.) Willd.",
+        rasa: "澀 (Kashaya), 苦 (Tikta)",
+        virya: "涼 (Sheeta)",
         vipaka: "辛 (Katu)",
-        dosha_effect: "Vata ↓, Kapha ↓ (刮脂、刮痰、刮毒素 Ama)",
-        used_for: "降血脂脂肪 (Medovaha)、關節風濕痛風 (Asthivaha)、刮除深層毒素",
-        summary: "朱婕老師手稿強調其具『刮除 (Lekhana)』病理毒素之強大穿透力，能深層關節與血管保健。",
+        tcm: "無憂樹皮 (苦澀涼，歸肝沖任經)",
+        desc: "朱婕老師筆記要點 (留白圓夢)：婦科子宮渠道 (Srotas) 養護第一聖藥，清熱涼血、調經止痛。",
+        img_src: "./assets/images/scans/scan_disease.jpg",
+        book_code: "DISEASE-P0088"
+    },
+    {
+        id: "haritaki",
+        name: "訶子 (Haritaki)",
+        sanskrit: "Terminalia chebula / 訶黎勒",
+        dosha: "Vata ↓ (阿育藥王)",
+        latin: "Terminalia chebula Retz.",
+        rasa: "包含五味 (苦酸澀甘辛)",
+        virya: "熱 (Ushna)",
+        vipaka: "甘 (Madhura)",
+        tcm: "訶子 (苦酸澀平，歸肺大腸經)",
+        desc: "朱婕老師筆記要點：阿育吠陀藥王，強效調節腸道風氣 (Vata)，潤腸通便、斂肺澀腸、調理消化與便秘。",
+        img_src: "./assets/images/scans/scan_single2.jpg",
+        book_code: "SINGLE2-P0015"
+    },
+    {
+        id: "shatavari",
+        name: "印度天門冬 (Shatavari)",
+        sanskrit: "Asparagus racemosus",
+        dosha: "Vata ↓ / Pitta ↓",
+        latin: "Asparagus racemosus Willd.",
+        rasa: "甘 (Madhura), 苦 (Tikta)",
+        virya: "涼 (Sheeta)",
+        vipaka: "甘 (Madhura)",
+        tcm: "印度天門冬 (甘苦寒，歸肺腎經)",
+        desc: "朱婕老師筆記要點：女性滋陰生津、婦科子宮養護與乳汁分泌第一聖藥。",
+        img_src: "./assets/images/scans/scan_disease.jpg",
+        book_code: "DISEASE-P0088"
+    },
+    {
+        id: "guduchi",
+        name: "寬筋藤 (Guduchi / Amrita)",
+        sanskrit: "Tinospora cordifolia",
+        dosha: "完全平衡 Tridosha",
+        latin: "Tinospora cordifolia (Willd.) Miers",
+        rasa: "苦 (Tikta), 澀 (Kashaya)",
+        virya: "熱 (Ushna)",
+        vipaka: "甘 (Madhura)",
+        tcm: "寬筋藤 (苦寒，歸肝脾腎經)",
+        desc: "朱婕老師筆記要點：阿育吠陀長生仙草 (Amrita)，免疫調節、清血排毒與舒筋活絡關節風濕痛風。",
         img_src: "./assets/images/scans/scan_formulas.jpg",
         book_code: "FORMULAS-P0099"
     },
     {
-        id: "herb_gokshura",
-        name_zh: "刺蒺藜",
-        sanskrit: "Gokshura (Tribulus terrestris)",
-        rasa: "甘 (Madhura)",
-        virya: "冷 (Sheeta)",
-        vipaka: "甘 (Madhura)",
-        dosha_effect: "Vata ↓, Pitta ↓ (泌尿排石、生殖精氣強健)",
-        used_for: "尿液渠道 (Mutravaha) 養護、腎結石預防、男性精氣 (Shukravaha) 強健",
-        summary: "古印度利尿與泌尿系統養護首選草藥，兼具涼血清熱與補益腎氣之雙重滋養功效。",
-        img_src: "./assets/images/scans/scan_disease.jpg",
-        book_code: "DISEASE-P0120"
+        id: "tulsi",
+        name: "聖羅勒 (Tulsi)",
+        sanskrit: "Ocimum sanctum",
+        dosha: "Kapha ↓ / Vata ↓",
+        latin: "Ocimum sanctum L.",
+        rasa: "辛 (Katu), 苦 (Tikta)",
+        virya: "熱 (Ushna)",
+        vipaka: "辛 (Katu)",
+        tcm: "聖羅勒 (辛溫，歸肺脾心經)",
+        desc: "朱婕老師筆記要點：聖草 Tulsi，強效宣肺止咳、提升防禦力與帶來心靈平靜鎮靜安神。",
+        img_src: "./assets/images/scans/scan_single1.jpg",
+        book_code: "SINGLE1-P0089"
     }
 ];
 
@@ -208,91 +216,112 @@ function renderAllPortalItems() {
     renderMixedCards(herbList, pageList, `全量草藥與講義條目 (全冊 613 條手稿)`);
 }
 
-function renderMixedCards(herbsList, pagesList, titleTag) {
+function renderMixedCards(herbsList, pagesList, titleTag, queryStr = "") {
     const grid = document.getElementById("herbGrid");
     if (!grid) return;
-    grid.innerHTML = "";
+    grid.style.opacity = "0.4";
+    grid.style.transform = "translateY(6px)";
+    grid.style.transition = "opacity 0.2s ease, transform 0.2s ease";
 
-    if ((!herbsList || herbsList.length === 0) && (!pagesList || pagesList.length === 0)) {
-        grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 2rem; color: var(--text-muted);">🔍 未找到對應草藥或講義頁面。</div>`;
-        return;
-    }
+    setTimeout(() => {
+        grid.innerHTML = "";
 
-    // 1. 渲染草藥條目
-    herbsList.forEach(herb => {
-        const isFav = favorites.some(f => f.id === herb.id);
-        const card = document.createElement("div");
-        card.className = "herb-card scroll-reveal revealed";
-        card.innerHTML = `
-            <div>
-                <div class="herb-header">
-                    <div>
-                        <h3 class="herb-name">${herb.name_zh || herb.name}</h3>
-                        <span class="herb-sanskrit">${herb.sanskrit || ""}</span>
+        if ((!herbsList || herbsList.length === 0) && (!pagesList || pagesList.length === 0)) {
+            grid.innerHTML = `
+                <div style="grid-column: 1/-1; text-align: center; padding: 3rem 1.5rem; background: var(--bg-surface); border-radius: var(--radius-lg); border: 1.5px solid var(--border-subtle);">
+                    <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🔍</div>
+                    <h3 style="color: var(--gold-light); font-size: 1.3rem; margin-bottom: 0.5rem;">未找到與「${queryStr}」相關的草藥或講義頁面</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">請嘗試輸入其他關鍵字（例如：Pranavaha, 失眠, 便秘, 子宮, 發炎, 風濕, Triphala）</p>
+                </div>
+            `;
+            grid.style.opacity = "1";
+            grid.style.transform = "translateY(0)";
+            return;
+        }
+
+        // 1. 渲染草藥典籍條目
+        herbsList.forEach(herb => {
+            const isFav = favorites.some(f => f.id === herb.id);
+            const card = document.createElement("div");
+            card.className = "herb-card scroll-reveal revealed";
+            
+            const herbName = herb.name_zh || herb.name || "";
+            const descText = herb.desc || herb.description || herb.summary || herb.used_for || "";
+
+            card.innerHTML = `
+                <div>
+                    <div class="herb-header">
+                        <div>
+                            <h3 class="herb-name">${highlightQuery(herbName, queryStr)}</h3>
+                            <span class="herb-sanskrit">${herb.sanskrit || herb.latin || ""}</span>
+                        </div>
+                        <span class="badge-tag">草藥典籍</span>
                     </div>
-                    <span class="badge-tag">草藥典籍</span>
-                </div>
-                
-                <div style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.2rem; color: var(--text-primary);">
-                    <p style="margin-bottom: 4px;"><strong>🌿 性味歸經:</strong> ${herb.rasa || "未標註"} | ${herb.virya || ""} | ${herb.vipaka || ""}</p>
-                    <p style="margin-bottom: 4px;"><strong>🧘 Dosha 作用:</strong> ${herb.dosha_effect || "平衡"}</p>
-                    <p style="margin-bottom: 4px;"><strong>💊 臨床適應:</strong> ${herb.used_for || herb.summary || ""}</p>
-                </div>
-                
-                <p style="font-size: 0.9rem; color: var(--text-secondary); background: rgba(0,0,0,0.3); padding: 10px 12px; border-radius: 8px; margin-bottom: 1.2rem;">
-                    ${herb.summary || ""}
-                </p>
-            </div>
-
-            <div class="card-actions">
-                <button class="btn-icon" onclick="openHerbDetail('${herb.id}')">🔍 詳情對照</button>
-                <button class="btn-icon" onclick="toggleFavorite('${herb.id}', '${herb.name_zh || herb.name}')">${isFav ? "❤️ 已收錄" : "🤍 收錄手帳"}</button>
-            </div>
-        `;
-        grid.appendChild(card);
-    });
-
-    // 2. 渲染 613 頁手稿講義卡片 (動態圖圖片與識別碼配對)
-    pagesList.forEach(p => {
-        const isFav = favorites.some(f => f.id === p.id);
-        const card = document.createElement("div");
-        card.className = "herb-card scroll-reveal revealed";
-        card.style.borderColor = "var(--emerald-accent)";
-
-        let pageImg = "./assets/images/scans/scan_single1.jpg";
-        const docUpper = (p.doc || "").toUpperCase();
-        if (docUpper.includes("DISEASE")) pageImg = "./assets/images/scans/scan_disease.jpg";
-        else if (docUpper.includes("FORMULA")) pageImg = "./assets/images/scans/scan_formulas.jpg";
-        else if (docUpper.includes("HOME")) pageImg = "./assets/images/scans/scan_home.jpg";
-        else if (p.id && (p.id.includes("2") || p.id.includes("15"))) pageImg = "./assets/images/scans/scan_single2.jpg";
-
-        const bookCode = p.doc ? `${p.doc}-${p.id || 'P001'}` : (p.id || "P001");
-
-        card.innerHTML = `
-            <div>
-                <div class="herb-header">
-                    <div>
-                        <h3 class="herb-name" style="color: var(--emerald-accent); font-size: 1.15rem;">📜 ${p.title || "手稿講義"}</h3>
-                        <span class="herb-sanskrit">講義識別碼: ${bookCode}</span>
+                    
+                    <div style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.2rem; color: var(--text-primary);">
+                        <p style="margin-bottom: 4px;"><strong>🌿 性味歸經:</strong> ${herb.rasa || "未標註"} | ${herb.virya || ""} | ${herb.vipaka || ""}</p>
+                        <p style="margin-bottom: 4px;"><strong>🧘 Dosha 作用:</strong> ${herb.dosha || herb.dosha_effect || "平衡"}</p>
+                        ${herb.tcm ? `<p style="margin-bottom: 4px;"><strong>☯️ 中醫歸經:</strong> ${herb.tcm}</p>` : ""}
                     </div>
-                    <span class="badge-tag" style="background: rgba(167, 139, 250, 0.2); color: #C4B5FD; border-color: rgba(167, 139, 250, 0.4);">手稿講義</span>
+                    
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); background: rgba(0,0,0,0.3); padding: 10px 12px; border-radius: 8px; margin-bottom: 1.2rem;">
+                        ${highlightQuery(descText, queryStr)}
+                    </p>
                 </div>
-                <p style="font-size: 0.92rem; color: var(--text-primary); background: rgba(0,0,0,0.4); padding: 12px 14px; border-radius: 10px; margin-bottom: 1rem; line-height: 1.7; max-height: 140px; overflow-y: auto;">
-                    ${p.snippet || "朱婕老師阿育吠陀手抄筆記轉錄內文..."}
-                </p>
-            </div>
-            <div class="card-actions">
-                <button class="btn-icon" onclick="openReaderView('📜 ${escapeJsString(p.title || "")}', \`${escapeJsString(p.snippet || "")}\`, '', '', '', '', 'PAGE', '${bookCode}', '${pageImg}')">🖼️ 閱覽講義手稿</button>
-                <button class="btn-icon" onclick="toggleFavorite('${p.id}', '${escapeJsString(p.title || "")}')">${isFav ? "❤️ 已收錄" : "🤍 收錄手帳"}</button>
-            </div>
-        `;
-        grid.appendChild(card);
-    });
 
-    const countBadge = document.getElementById("herbCountBadge");
-    if (countBadge) {
-        countBadge.textContent = `${titleTag || '全量呈現'} (${herbsList.length} 個草藥條目 + ${pagesList.length} 頁手稿對照)`;
-    }
+                <div class="card-actions">
+                    <button class="btn-icon" onclick="openHerbDetail('${herb.id}')">🔍 詳情對照</button>
+                    <button class="btn-icon" onclick="toggleFavorite('${herb.id}', '${escapeJsString(herbName)}')">${isFav ? "❤️ 已收錄" : "🤍 收錄手帳"}</button>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+
+        // 2. 渲染 613 頁手稿講義卡片 (動態圖圖片與識別碼配對)
+        pagesList.forEach(p => {
+            const isFav = favorites.some(f => f.id === p.id);
+            const card = document.createElement("div");
+            card.className = "herb-card scroll-reveal revealed";
+            card.style.borderColor = "var(--emerald-accent)";
+
+            let pageImg = "./assets/images/scans/scan_single1.jpg";
+            const docUpper = (p.doc || "").toUpperCase();
+            if (docUpper.includes("DISEASE")) pageImg = "./assets/images/scans/scan_disease.jpg";
+            else if (docUpper.includes("FORMULA")) pageImg = "./assets/images/scans/scan_formulas.jpg";
+            else if (docUpper.includes("HOME")) pageImg = "./assets/images/scans/scan_home.jpg";
+            else if (p.id && (p.id.includes("2") || p.id.includes("15"))) pageImg = "./assets/images/scans/scan_single2.jpg";
+
+            const bookCode = p.doc ? `${p.doc}-${p.id || 'P001'}` : (p.id || "P001");
+
+            card.innerHTML = `
+                <div>
+                    <div class="herb-header">
+                        <div>
+                            <h3 class="herb-name" style="color: var(--emerald-accent); font-size: 1.15rem;">📜 ${highlightQuery(p.title || "手稿講義", queryStr)}</h3>
+                            <span class="herb-sanskrit">講義識別碼: ${bookCode}</span>
+                        </div>
+                        <span class="badge-tag" style="background: rgba(167, 139, 250, 0.2); color: #C4B5FD; border-color: rgba(167, 139, 250, 0.4);">手稿講義</span>
+                    </div>
+                    <p style="font-size: 0.92rem; color: var(--text-primary); background: rgba(0,0,0,0.4); padding: 12px 14px; border-radius: 10px; margin-bottom: 1rem; line-height: 1.7; max-height: 140px; overflow-y: auto;">
+                        ${highlightQuery(p.snippet || "朱婕老師阿育吠陀手抄筆記轉錄內文...", queryStr)}
+                    </p>
+                </div>
+                <div class="card-actions">
+                    <button class="btn-icon" onclick="openReaderView('📜 ${escapeJsString(p.title || "")}', \`${escapeJsString(p.snippet || "")}\`, '', '', '', '', 'PAGE', '${bookCode}', '${pageImg}')">🖼️ 閱覽講義手稿</button>
+                    <button class="btn-icon" onclick="toggleFavorite('${p.id}', '${escapeJsString(p.title || "")}')">${isFav ? "❤️ 已收錄" : "🤍 收錄手帳"}</button>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+
+        const countBadge = document.getElementById("herbCountBadge");
+        if (countBadge) {
+            countBadge.textContent = `${titleTag || '全量呈現'} (${herbsList.length} 個草藥條目 + ${pagesList.length} 頁手稿對照)`;
+        }
+
+        grid.style.opacity = "1";
+        grid.style.transform = "translateY(0)";
+    }, 120);
 }
 
 function searchAndRender(query) {
@@ -304,13 +333,12 @@ function searchAndRender(query) {
         return;
     }
 
-    grid.innerHTML = "";
     const cleanQuery = query.toLowerCase().trim();
 
-    // 1. 搜尋草藥數據庫
+    // 1. 搜尋草藥數據庫 (包含 name, sanskrit, latin, tcm, rasa, virya, vipaka, dosha, desc, summary, used_for 全欄位全量比對！)
     const herbList = (globalData.herbs && globalData.herbs.length > 0) ? globalData.herbs : FALLBACK_HERBS;
     const matchedHerbs = herbList.filter(h => {
-        const text = `${h.name_zh || ""} ${h.name || ""} ${h.sanskrit || ""} ${h.rasa || ""} ${h.dosha_effect || ""} ${h.used_for || ""} ${h.summary || ""}`.toLowerCase();
+        const text = `${h.name || ""} ${h.name_zh || ""} ${h.sanskrit || ""} ${h.latin || ""} ${h.tcm || ""} ${h.rasa || ""} ${h.virya || ""} ${h.vipaka || ""} ${h.dosha || ""} ${h.dosha_effect || ""} ${h.used_for || ""} ${h.summary || ""} ${h.desc || ""} ${h.description || ""}`.toLowerCase();
         return text.includes(cleanQuery);
     });
 
@@ -321,18 +349,7 @@ function searchAndRender(query) {
         return text.includes(cleanQuery);
     }).slice(0, 40);
 
-    if (matchedHerbs.length === 0 && matchedPages.length === 0) {
-        grid.innerHTML = `
-            <div style="grid-column: 1/-1; text-align: center; padding: 3rem 1.5rem; background: var(--bg-surface); border-radius: var(--radius-lg); border: 1.5px solid var(--border-subtle);">
-                <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🔍</div>
-                <h3 style="color: var(--gold-light); font-size: 1.3rem; margin-bottom: 0.5rem;">未找到與「${query}」相關的草藥或講義頁面</h3>
-                <p style="color: var(--text-secondary); font-size: 0.95rem;">請嘗試輸入其他關鍵字（例如：Pranavaha, Annavaha, Rasa, 便秘、失眠、子宮、發炎、風濕、Triphala）</p>
-            </div>
-        `;
-        return;
-    }
-
-    renderMixedCards(matchedHerbs, matchedPages, `搜尋「${query}」找到`);
+    renderMixedCards(matchedHerbs, matchedPages, `搜尋「${query}」：找到`, query);
 }
 
 function highlightQuery(text, query) {
@@ -357,7 +374,7 @@ function filterByGuna(guna) {
     const pageList = globalData.pages || [];
 
     const filteredHerbs = list.filter(h => {
-        const text = `${h.rasa || ""} ${h.virya || ""} ${h.vipaka || ""} ${h.dosha_effect || ""}`.toLowerCase();
+        const text = `${h.rasa || ""} ${h.virya || ""} ${h.vipaka || ""} ${h.dosha || ""} ${h.dosha_effect || ""} ${h.desc || ""}`.toLowerCase();
         return text.includes(guna.toLowerCase());
     });
 
@@ -366,7 +383,7 @@ function filterByGuna(guna) {
         return text.includes(guna.toLowerCase());
     }).slice(0, 30);
 
-    renderMixedCards(filteredHerbs, filteredPages, `Guna 屬性「${guna}」對照`);
+    renderMixedCards(filteredHerbs, filteredPages, `Guna 屬性「${guna}」對照`, guna);
 }
 
 function filterByChannel(channelKey, displayName) {
@@ -432,10 +449,12 @@ function openReaderView(title, content, rasa, virya, vipaka, dosha, type, bookCo
 function openHerbDetail(herbId) {
     const list = (globalData.herbs && globalData.herbs.length > 0) ? globalData.herbs : FALLBACK_HERBS;
     const herb = list.find(h => h.id === herbId) || list[0];
+    const descText = herb.desc || herb.description || herb.summary || herb.used_for || "";
+    const herbName = herb.name_zh || herb.name || "";
     openReaderView(
-        `🌿 ${herb.name_zh || herb.name} (${herb.sanskrit || ""})`,
-        herb.summary || herb.used_for || "",
-        herb.rasa, herb.virya, herb.vipaka, herb.dosha_effect,
+        `🌿 ${herbName} (${herb.sanskrit || ""})`,
+        descText,
+        herb.rasa, herb.virya, herb.vipaka, herb.dosha || herb.dosha_effect,
         "HERB", herb.book_code || "SINGLE1-P0001", herb.img_src || "./assets/images/scans/scan_single1.jpg"
     );
 }
