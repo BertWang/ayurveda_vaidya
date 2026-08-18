@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>朱婕老師阿育吠陀開源知識庫 3.0 | 古印度傳統醫學圖鑑與 OpenCode AI 手帳</title>
-  <meta name="description" content="全華語區最完整的阿育吠陀開源門戶，收錄朱婕老師（Liso Chu）畢生遠赴印度求學之 630 頁手寫筆記，由 OpenCode AI 進行圖文解碼、草藥性味歸經、印度 AYUSH API 藥典對照與 20 Gunas 屬性動態表。">
+  <title>朱婕老師阿育吠陀開源知識庫 3.0 | 古印度傳統醫學圖鑑與筆記手帳</title>
+  <meta name="description" content="全華語區最完整的阿育吠陀開源門戶，收錄朱婕老師（Liso Chu）畢生遠赴印度求學之 630 頁手寫筆記、草藥性味歸經、印度 AYUSH API 藥典對照與 20 Gunas 屬性動態表。">
   
   <!-- Open Graph / 社群分享標籤 -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="朱婕老師阿育吠陀開源知識庫 3.0 (OpenCode AI Engine)">
-  <meta property="og:description" content="朱婕老師畢生阿育吠陀手寫筆記全量開源數位化，提供草藥圖鑑、性味歸經與 OpenCode AI 對照查詢。">
+  <meta property="og:title" content="朱婕老師阿育吠陀開源知識庫 3.0">
+  <meta property="og:description" content="朱婕老師畢生阿育吠陀手寫筆記全量開源數位化，提供草藥圖鑑、性味歸經與藥典對照查詢。">
   <meta property="og:url" content="https://bertwang.github.io/ayurveda_vaidya/">
   <meta property="og:image" content="https://bertwang.github.io/ayurveda_vaidya/assets/images/teacher_lisochu.jpg">
   
@@ -25,7 +25,7 @@
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
     "name": "朱婕老師阿育吠陀開源知識庫 3.0",
-    "description": "朱婕老師阿育吠陀手寫筆記與圖譜全量數位化開源專案 (OpenCode AI Engine)。",
+    "description": "朱婕老師阿育吠陀手寫筆記與圖譜全量數位化開源專案。",
     "url": "https://bertwang.github.io/ayurveda_vaidya/",
     "author": {
       "@type": "Person",
@@ -33,7 +33,7 @@
     },
     "publisher": {
       "@type": "Organization",
-      "name": "阿育吠陀開源傳承團隊 (OpenCode AI)"
+      "name": "阿育吠陀開源傳承團隊"
     },
     "specialty": "Ayurvedic Medicine, Dravyaguna, Panchakarma",
     "keywords": ["Annavaha", "Artavaha", "Asthi", "Asthivaha", "Kapha", "Majja", "Majjavaha", "Mamsa", "Mamsavaha", "Meda", "Medovaha", "Mutravaha", "Pitta", "Pranavaha", "Purishavaha", "Rasa", "Rakta", "Raktavaha", "Shukra", "Shukravaha", "Srotas渠道", "Stanyavaha", "Svedavaha", "Triphala", "Tulsi", "Udakavaha", "Vata", "三果實", "便秘", "刺蒺藜", "印楝", "發炎", "發燒", "皮疹", "安神", "尿液", "廣防己", "抑鬱", "排毒", "消化", "沒藥", "失眠", "哮喘", "呼吸", "咳嗽", "子宮", "安神劑", "小茴香", "幹薑", "心悸", "抗發炎", "抗氧化", "清熱", "濕疹", "滋補", "痛風", "痛經", "痛風關節炎", "發汗", "利尿", "白帶", "皮膚", "疲勞", "益生菌", "神經安神", "神經痛", "關節", "風濕", "骨折", "骨質疏鬆", "體質調理", "黃疸", "黑斑", "鼻炎"],
@@ -43,27 +43,27 @@
 
   <style>
     .mindmap-node {
-      background: var(--card-bg);
-      border: 1px solid var(--accent-color);
-      border-radius: 12px;
-      padding: 12px 16px;
+      background: var(--bg-surface);
+      border: 1px solid var(--gold-accent);
+      border-radius: var(--radius-md);
+      padding: 14px 18px;
       margin: 8px 0;
       cursor: pointer;
-      transition: all 0.25s ease;
+      transition: var(--transition-smooth);
       display: block;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.3);
     }
     .mindmap-node:hover {
       transform: translateX(6px);
       box-shadow: 0 8px 24px rgba(245, 158, 11, 0.4);
-      background: rgba(245, 158, 11, 0.18);
+      background: rgba(245, 158, 11, 0.15);
       border-color: #F59E0B;
     }
     .mindmap-child {
       margin-top: 6px;
-      border-left: 2px dashed var(--accent-color);
+      border-left: 2px dashed var(--gold-accent);
       padding-left: 12px;
-      font-size: 0.85rem;
+      font-size: 0.88rem;
       color: var(--text-muted);
       line-height: 1.5;
     }
@@ -74,7 +74,7 @@
   <!-- Three.js 3D 靈氣粒子背景 Canvas -->
   <canvas id="canvas3d" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: -1; opacity: 0.65;"></canvas>
 
-  <!-- 頂部 Glassmorphism 導覽列 -->
+  <!-- 頂部 Glassmorphism 導覽列 (單行防爆頁設計) -->
   <nav class="navbar">
     <a href="#" class="nav-brand">
       🌿 <span>朱婕老師阿育吠陀</span> 知識庫 3.0
@@ -84,7 +84,7 @@
       <li><a href="#mindmap" style="color: #C4B5FD; font-weight: bold;">🧠 思維地圖</a></li>
       <li><a href="#channels" style="color: #FBBF24; font-weight: bold;">🌀 14渠道與7組織</a></li>
       <li><a href="#quiz">🧘 Dosha 測驗</a></li>
-      <li><a href="#opencode" style="color: #34D399; font-weight: bold;">🤖 OpenCode AI</a></li>
+      <li><a href="#api" style="color: #34D399; font-weight: bold;">⚡ 開放 API</a></li>
       <li><a href="#journal" id="openFavoritesBtn">🤍 離線手帳 (<span id="favCountBadge">0</span>)</a></li>
       <li><button id="themeToggleBtn" class="guna-chip" style="padding: 4px 12px; cursor: pointer;">🌙 模式切換</button></li>
       <li><a href="#sponsor" id="openSponsorBtn" class="btn-sponsor">☕ 贊助支持</a></li>
@@ -97,10 +97,10 @@
     <!-- Hero 品牌與精神傳承卡片 -->
     <section class="hero-card scroll-reveal">
       <h1 class="hero-title">朱婕老師阿育吠陀開源知識庫</h1>
-      <p class="hero-subtitle">"Aal Izz Well"（一切安好）—— 傳承古印度傳統醫學與 OpenCode AI 智慧運算引擎</p>
-      <p style="max-width: 860px; margin: 0 auto 1.6rem auto; color: var(--text-muted); font-size: 1rem; line-height: 1.8;">
+      <p class="hero-subtitle">"Aal Izz Well"（一切安好）—— 傳承古印度傳統醫學與生命之愛</p>
+      <p style="max-width: 880px; margin: 0 auto 1.6rem auto; color: var(--text-secondary); font-size: 1.05rem; line-height: 1.8;">
         本專案旨在將先師朱婕老師（Liso Chu, 19?~2022.10）年過半百獨自遠赴印度求學留下的 10 冊、630 頁手寫筆記全量數位化，
-        由 <strong>OpenCode AI 智慧助理</strong> 進行視覺解碼、印度 AYUSH API 藥典正向核驗、留白頁面圓夢補齊與純前端秒級檢索。
+        提供原稿圖片對照、草藥性味歸經、印度 AYUSH API 藥典核驗、留白頁面圓夢補齊與純前端秒級全文檢索。
       </p>
       
       <!-- 搜尋列 -->
@@ -111,27 +111,27 @@
     </section>
 
     <!-- 🧠 朱婕老師親傳全量思維地圖 Section -->
-    <section id="mindmap" class="scroll-reveal" style="margin-bottom: 3rem; background: rgba(139, 92, 246, 0.08); border: 1.5px solid #8B5CF6; border-radius: var(--radius-lg); padding: 2.5rem 2rem;">
+    <section id="mindmap" class="scroll-reveal" style="margin-bottom: 3rem; background: rgba(167, 139, 250, 0.08); border: 1.5px solid #C4B5FD; border-radius: var(--radius-xl); padding: 2.5rem 2rem;">
       <div style="text-align: center; margin-bottom: 1.8rem;">
-        <h2 style="color: #A78BFA; font-size: 1.6rem; margin-bottom: 0.5rem; font-family: 'Noto Serif TC', serif;">
+        <h2 style="color: #C4B5FD; font-size: 1.7rem; margin-bottom: 0.5rem; font-family: 'Noto Serif TC', serif;">
           🧠 朱婕老師親傳全量思維地圖：14 大 Srotas 渠道 × 7 大 Dhatus 組織 100% 全量網狀圖譜
         </h2>
-        <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 850px; margin: 0 auto; line-height: 1.7;">
+        <p style="color: var(--text-secondary); font-size: 1rem; max-width: 850px; margin: 0 auto; line-height: 1.7;">
           點擊下方 14 大渠道或 7 大組織任意節點，即可全量過濾並延伸該管道對應的草藥、處方、Dosha 體質與講義頁面！
         </p>
       </div>
 
-      <div style="max-width: 1000px; margin: 0 auto;">
+      <div style="max-width: 1050px; margin: 0 auto;">
         <div style="text-align: center; margin-bottom: 1.5rem;">
-          <div class="mindmap-node" style="background: linear-gradient(135deg, #7C3AED, #8B5CF6); color: #fff; font-size: 1.15rem; font-weight: bold; text-align: center; display: inline-block; padding: 12px 24px;">
+          <div class="mindmap-node" style="background: linear-gradient(135deg, #7C3AED, #8B5CF6); color: #fff; font-size: 1.2rem; font-weight: bold; text-align: center; display: inline-block; padding: 12px 28px;">
             🌿 朱婕老師阿育吠陀生命之樹 (14 Srotas × 7 Dhatus 全量總樞紐)
           </div>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(440px, 1fr)); gap: 1.5rem; text-align: left;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(440px, 1fr)); gap: 1.8rem; text-align: left;">
           
-          <div style="background: rgba(0,0,0,0.35); padding: 1.4rem; border-radius: 14px; border: 1px solid rgba(139, 92, 246, 0.4);">
-            <h3 style="color: #A78BFA; margin-bottom: 1rem; border-bottom: 1px solid rgba(139, 92, 246, 0.3); padding-bottom: 0.4rem; font-family: 'Noto Serif TC', serif;">
+          <div style="background: rgba(0,0,0,0.4); padding: 1.5rem; border-radius: var(--radius-lg); border: 1px solid rgba(167, 139, 250, 0.4);">
+            <h3 style="color: #C4B5FD; margin-bottom: 1rem; border-bottom: 1px solid rgba(167, 139, 250, 0.3); padding-bottom: 0.4rem; font-family: 'Noto Serif TC', serif;">
               🌀 14 大 Srotas 渠道全量延伸分支 (100% 齊全)
             </h3>
             
@@ -207,12 +207,12 @@
 
           </div>
 
-          <div style="background: rgba(0,0,0,0.35); padding: 1.4rem; border-radius: 14px; border: 1px solid rgba(16, 185, 129, 0.4);">
-            <h3 style="color: #10B981; margin-bottom: 1rem; border-bottom: 1px solid rgba(16, 185, 129, 0.3); padding-bottom: 0.4rem; font-family: 'Noto Serif TC', serif;">
+          <div style="background: rgba(0,0,0,0.4); padding: 1.5rem; border-radius: var(--radius-lg); border: 1px solid rgba(16, 185, 129, 0.4);">
+            <h3 style="color: #34D399; margin-bottom: 1rem; border-bottom: 1px solid rgba(16, 185, 129, 0.3); padding-bottom: 0.4rem; font-family: 'Noto Serif TC', serif;">
               🫀 7 大 Dhatus 組織層級全量分支 (100% 齊全)
             </h3>
 
-            <div class="mindmap-node" style="border-color: #10B981;" onclick="filterByChannel('Rasa', '血漿津液層')">
+            <div class="mindmap-node" style="border-color: #34D399;" onclick="filterByChannel('Rasa', '血漿津液層')">
               1. 💧 Rasa Dhatu (血漿與津液組織層)
               <div class="mindmap-child">└─ 核心概念：營養輸送與基礎體液平衡</div>
             </div>
@@ -232,7 +232,7 @@
               <div class="mindmap-child">└─ 核心概念：關節潤滑與能量儲存</div>
             </div>
 
-            <div class="mindmap-node" style="border-color: #8B5CF6;" onclick="filterByChannel('Asthi', '骨骼支撐層')">
+            <div class="mindmap-node" style="border-color: #A78BFA;" onclick="filterByChannel('Asthi', '骨骼支撐層')">
               5. 🦴 Asthi Dhatu (骨骼與礦物質組織層)
               <div class="mindmap-child">└─ 核心概念：身體骨架與構造保護</div>
             </div>
@@ -247,7 +247,7 @@
               <div class="mindmap-child">└─ 核心概念：生命繁衍與 Ojas 免疫生命力</div>
             </div>
 
-            <div style="margin-top: 2rem; padding: 1.1rem; background: rgba(245, 158, 11, 0.15); border-radius: 10px; border-left: 4px solid #F59E0B; font-size: 0.9rem; line-height: 1.6;">
+            <div style="margin-top: 2rem; padding: 1.2rem; background: rgba(245, 158, 11, 0.15); border-radius: 12px; border-left: 4px solid #F59E0B; font-size: 0.95rem; line-height: 1.7;">
               <strong>💡 朱婕老師親傳訣竅：</strong><br>
               身體 7 大組織依序由 Rasa 遞進滋養至 Shukra。若 Rasa 堵塞，則後續 6 大組織皆無法獲得完整營養。點擊上述任意節點即可展開專屬草藥！
             </div>
@@ -257,20 +257,20 @@
     </section>
 
     <!-- 🌀 朱婕老師親傳學習路徑 Section -->
-    <section id="channels" class="scroll-reveal" style="margin-bottom: 3rem; background: rgba(245, 158, 11, 0.08); border: 1.5px solid var(--accent-color); border-radius: var(--radius-lg); padding: 2.5rem 2rem;">
+    <section id="channels" class="scroll-reveal" style="margin-bottom: 3rem; background: rgba(245, 158, 11, 0.08); border: 1.5px solid var(--gold-accent); border-radius: var(--radius-xl); padding: 2.5rem 2rem;">
       <div style="text-align: center; margin-bottom: 1.8rem;">
-        <h2 style="color: var(--accent-color); font-size: 1.6rem; margin-bottom: 0.5rem; font-family: 'Noto Serif TC', serif;">
+        <h2 style="color: var(--gold-accent); font-size: 1.7rem; margin-bottom: 0.5rem; font-family: 'Noto Serif TC', serif;">
           🌀 朱婕老師親傳學習路徑：從 14 大渠道 (Srotas) 與 7 大組織 (Dhatus) 擴展延伸
         </h2>
-        <p style="color: var(--text-muted); font-size: 0.95rem; max-width: 850px; margin: 0 auto; line-height: 1.7;">
+        <p style="color: var(--text-secondary); font-size: 1rem; max-width: 850px; margin: 0 auto; line-height: 1.7;">
           朱婕老師親自叮嚀：研習阿育吠陀切忌死記單一草藥，<strong>必須先從《渠道療癒 (Srotas)》與《組織/小白卡 (Dhatus)》作為核心面向去讀取</strong>，
           理解病理堵塞在哪個渠道、哪層身體組織，進而向外擴展延伸至對應的單方草藥、複方處方與體質調適！
         </p>
       </div>
 
       <div style="margin-bottom: 1.5rem;">
-        <h4 style="color: var(--text-main); margin-bottom: 0.8rem; font-size: 1rem;">1. 點擊【14 大 Srotas 渠道】展開延伸草藥與講義處方：</h4>
-        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        <h4 style="color: var(--text-primary); margin-bottom: 0.8rem; font-size: 1.05rem;">1. 點擊【14 大 Srotas 渠道】展開延伸草藥與講義處方：</h4>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
           <button class="guna-chip channel-btn" onclick="filterByChannel('Pranavaha', '呼吸生命力渠道')">🫁 呼吸渠道 (Pranavaha)</button>
           <button class="guna-chip channel-btn" onclick="filterByChannel('Annavaha', '食物消化渠道')">🍲 食物消化渠道 (Annavaha)</button>
           <button class="guna-chip channel-btn" onclick="filterByChannel('Manovaha', '心靈神經安神渠道')">🧠 心靈神經渠道 (Manovaha)</button>
@@ -282,82 +282,81 @@
       </div>
 
       <div>
-        <h4 style="color: var(--text-main); margin-bottom: 0.8rem; font-size: 1rem;">2. 點擊【7 大 Dhatus 組織】展開延伸層級調理：</h4>
-        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-          <button class="guna-chip channel-btn" style="border-color: #10B981;" onclick="filterByChannel('Rasa', '血漿津液層')">1. Rasa (血漿/津液層)</button>
+        <h4 style="color: var(--text-primary); margin-bottom: 0.8rem; font-size: 1.05rem;">2. 點擊【7 大 Dhatus 組織】展開延伸層級調理：</h4>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <button class="guna-chip channel-btn" style="border-color: #34D399;" onclick="filterByChannel('Rasa', '血漿津液層')">1. Rasa (血漿/津液層)</button>
           <button class="guna-chip channel-btn" style="border-color: #EF4444;" onclick="filterByChannel('Rakta', '血液紅素層')">2. Rakta (血液紅素層)</button>
           <button class="guna-chip channel-btn" style="border-color: #F97316;" onclick="filterByChannel('Mamsa', '肌肉組織層')">3. Mamsa (肌肉組織層)</button>
           <button class="guna-chip channel-btn" style="border-color: #F59E0B;" onclick="filterByChannel('Meda', '脂肪代謝層')">4. Meda (脂肪代謝層)</button>
-          <button class="guna-chip channel-btn" style="border-color: #8B5CF6;" onclick="filterByChannel('Asthi', '骨骼支撐層')">5. Asthi (骨骼支撐層)</button>
+          <button class="guna-chip channel-btn" style="border-color: #A78BFA;" onclick="filterByChannel('Asthi', '骨骼支撐層')">5. Asthi (骨骼支撐層)</button>
           <button class="guna-chip channel-btn" style="border-color: #3B82F6;" onclick="filterByChannel('Majja', '骨髓神經層')">6. Majja (骨髓神經層)</button>
           <button class="guna-chip channel-btn" style="border-color: #06B6D4;" onclick="filterByChannel('Shukra', '生殖精氣層')">7. Shukra (生殖精氣層)</button>
         </div>
       </div>
-
     </section>
 
     <!-- 🧘 阿育吠陀 Dosha 三體質互動小測驗 Section -->
-    <section id="quiz" class="scroll-reveal" style="margin-bottom: 3rem; background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(139, 92, 246, 0.1)); border: 1.5px solid var(--accent-color); border-radius: var(--radius-lg); padding: 2.5rem 2rem; backdrop-filter: blur(14px);">
+    <section id="quiz" class="scroll-reveal" style="margin-bottom: 3rem; background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(167, 139, 250, 0.1)); border: 1.5px solid var(--gold-accent); border-radius: var(--radius-xl); padding: 2.5rem 2rem; backdrop-filter: blur(14px);">
       <div style="text-align: center; margin-bottom: 1.5rem;">
-        <h2 style="color: var(--accent-color); font-size: 1.6rem; margin-bottom: 0.5rem; font-family: 'Noto Serif TC', serif;">🧘 3 分鐘 Dosha 三體質互動小測驗</h2>
-        <p style="color: var(--text-muted); font-size: 0.95rem;">測測您的主導體質是風 (Vata)、火 (Pitta) 還是水 (Kapha)，獲得朱婕老師講義精選草藥推薦！</p>
+        <h2 style="color: var(--gold-accent); font-size: 1.7rem; margin-bottom: 0.5rem; font-family: 'Noto Serif TC', serif;">🧘 3 分鐘 Dosha 三體質互動小測驗</h2>
+        <p style="color: var(--text-secondary); font-size: 1rem;">測測您的主導體質是風 (Vata)、火 (Pitta) 還是水 (Kapha)，獲得朱婕老師講義精選草藥推薦！</p>
       </div>
 
-      <div id="quizContainer" style="max-width: 720px; margin: 0 auto; text-align: left;">
-        <div class="quiz-q" style="margin-bottom: 1.2rem;">
-          <h4 style="color: var(--text-main); margin-bottom: 0.6rem;">1. 您的體型與體重變化傾向？</h4>
+      <div id="quizContainer" style="max-width: 740px; margin: 0 auto; text-align: left;">
+        <div class="quiz-q" style="margin-bottom: 1.4rem;">
+          <h4 style="color: var(--text-primary); margin-bottom: 0.6rem; font-size: 1.05rem;">1. 您的體型與體重變化傾向？</h4>
           <label style="display: block; margin: 8px 0; cursor: pointer;"><input type="radio" name="q1" value="vata" checked> A. 體型偏瘦或骨感，難以增重，關節易有響聲 (Vata 風型)</label>
           <label style="display: block; margin: 8px 0; cursor: pointer;"><input type="radio" name="q1" value="pitta"> B. 中等結實，肌肉線條明顯，體溫偏高易發炎 (Pitta 火型)</label>
           <label style="display: block; margin: 8px 0; cursor: pointer;"><input type="radio" name="q1" value="kapha"> C. 骨架較大或圓潤，體重易增加難減重 (Kapha 水型)</label>
         </div>
 
-        <div class="quiz-q" style="margin-bottom: 1.2rem;">
-          <h4 style="color: var(--text-main); margin-bottom: 0.6rem;">2. 您的睡眠品質與心理特徵？</h4>
+        <div class="quiz-q" style="margin-bottom: 1.4rem;">
+          <h4 style="color: var(--text-primary); margin-bottom: 0.6rem; font-size: 1.05rem;">2. 您的睡眠品質與心理特徵？</h4>
           <label style="display: block; margin: 8px 0; cursor: pointer;"><input type="radio" name="q2" value="vata" checked> A. 淺眠多夢，思緒活躍敏捷但易焦慮 (Vata 風型)</label>
           <label style="display: block; margin: 8px 0; cursor: pointer;"><input type="radio" name="q2" value="pitta"> B. 睡眠短但高效，目標導向且富領導力，易煩躁 (Pitta 火型)</label>
           <label style="display: block; margin: 8px 0; cursor: pointer;"><input type="radio" name="q2" value="kapha"> C. 沉睡難起，性格沉穩包容但偶爾沉重懶散 (Kapha 水型)</label>
         </div>
 
-        <div class="quiz-q" style="margin-bottom: 1.5rem;">
-          <h4 style="color: var(--text-main); margin-bottom: 0.6rem;">3. 您的消化能力與皮膚反應？</h4>
+        <div class="quiz-q" style="margin-bottom: 1.6rem;">
+          <h4 style="color: var(--text-primary); margin-bottom: 0.6rem; font-size: 1.05rem;">3. 您的消化能力與皮膚反應？</h4>
           <label style="display: block; margin: 8px 0; cursor: pointer;"><input type="radio" name="q3" value="vata" checked> A. 食慾不規律，易腹脹乾瀉，皮膚偏乾怕冷 (Vata 風型)</label>
           <label style="display: block; margin: 8px 0; cursor: pointer;"><input type="radio" name="q3" value="pitta"> B. 食慾旺盛不能挨餓，易胃酸過多或泛紅粉刺 (Pitta 火型)</label>
           <label style="display: block; margin: 8px 0; cursor: pointer;"><input type="radio" name="q3" value="kapha"> C. 消化較慢，食量不大但易沉重，皮膚潤澤偏冷 (Kapha 水型)</label>
         </div>
 
         <div style="text-align: center;">
-          <button id="submitQuizBtn" class="btn-sponsor" style="padding: 12px 32px; font-size: 1.05rem; cursor: pointer;">✨ 分析我的 Dosha 體質與專屬草藥推薦</button>
+          <button id="submitQuizBtn" class="btn-sponsor" style="padding: 12px 34px; font-size: 1.05rem; cursor: pointer;">✨ 分析我的 Dosha 體質與專屬草藥推薦</button>
         </div>
 
-        <div id="quizResult" style="display: none; margin-top: 1.5rem; padding: 1.5rem; background: rgba(0,0,0,0.4); border-radius: 14px; border: 1.5px solid var(--accent-color);">
+        <div id="quizResult" style="display: none; margin-top: 1.5rem; padding: 1.6rem; background: rgba(0,0,0,0.5); border-radius: var(--radius-lg); border: 1.5px solid var(--gold-accent);">
         </div>
       </div>
     </section>
 
     <!-- 🌸 朱婕老師生平與求學故事專區 Section -->
-    <section id="story" class="scroll-reveal" style="margin-bottom: 3rem; background: var(--card-bg); border: 1px solid var(--glass-border); border-radius: var(--radius-lg); padding: 2.8rem 2.2rem; backdrop-filter: blur(14px);">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; align-items: center;">
+    <section id="story" class="scroll-reveal" style="margin-bottom: 3rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 3rem 2.4rem; backdrop-filter: blur(16px);">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.2rem; align-items: center;">
         <div style="text-align: center;">
-          <div style="position: relative; display: inline-block; padding: 10px; background: linear-gradient(135deg, var(--accent-color), var(--primary-light)); border-radius: 24px; box-shadow: 0 16px 40px rgba(0,0,0,0.5);">
+          <div style="position: relative; display: inline-block; padding: 10px; background: linear-gradient(135deg, var(--gold-accent), var(--emerald-primary)); border-radius: 24px; box-shadow: 0 16px 40px rgba(0,0,0,0.5);">
             <img src="./assets/images/teacher_lisochu.jpg" alt="朱婕老師 (Liso Chu)" style="width: 100%; max-width: 290px; height: auto; border-radius: 16px; display: block; object-fit: cover;">
           </div>
-          <h3 style="margin-top: 1.2rem; color: var(--text-main); font-size: 1.3rem; font-family: 'Noto Serif TC', serif;">先師 朱婕老師 (Liso Chu)</h3>
-          <p style="font-size: 0.9rem; color: var(--accent-color); font-weight: 700;">(19? ~ 2022.10) 華語阿育吠陀先驅典範</p>
+          <h3 style="margin-top: 1.2rem; color: var(--text-primary); font-size: 1.35rem; font-family: 'Noto Serif TC', serif;">先師 朱婕老師 (Liso Chu)</h3>
+          <p style="font-size: 0.95rem; color: var(--gold-light); font-weight: 700;">(19? ~ 2022.10) 華語阿育吠陀先驅典範</p>
         </div>
 
         <div>
-          <h2 style="color: var(--accent-color); font-size: 1.65rem; margin-bottom: 1rem; border-bottom: 2px solid var(--glass-border); padding-bottom: 0.5rem; font-family: 'Noto Serif TC', serif;">
+          <h2 style="color: var(--gold-accent); font-size: 1.75rem; margin-bottom: 1rem; border-bottom: 2px solid var(--border-subtle); padding-bottom: 0.6rem; font-family: 'Noto Serif TC', serif;">
             📜 遠赴印度的勇氣：年過半百的生命療癒尋根
           </h2>
-          <p style="color: var(--text-main); font-size: 0.98rem; line-height: 1.8; margin-bottom: 1rem;">
+          <p style="color: var(--text-primary); font-size: 1.02rem; line-height: 1.85; margin-bottom: 1rem;">
             朱婕老師（Liso Chu）是一位心懷無私大愛的阿育吠陀導師。在年過半百之際，她毅然獨自遠赴古印度傳統醫學的發源地求學。
             克服了語言隔閡、文化異同與生活環境的艱辛，她用一筆一畫手抄記錄下了 <strong>10 大主題冊、630 頁高密度的手寫講義與珍貴處方</strong>。
           </p>
-          <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.8; margin-bottom: 1.2rem;">
-            2022 年 10 月，朱婕老師安詳羽化。弟子王純瑋為傳承先師遺志，發起本數位典藏專案，透過 OpenCode AI 與全球開放藥典（API/THP/ChP），
+          <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.85; margin-bottom: 1.4rem;">
+            2022 年 10 月，朱婕老師安詳羽化。弟子王純瑋為傳承先師遺志，發起本數位典藏專案，透過三合一權威藥典對照（API/THP/ChP），
             將老師畢生筆記全量開源數位化，實現老師「將生命智慧散播於華語世界」的終身夙願。
           </p>
-          <blockquote style="padding: 14px 18px; background: rgba(245, 158, 11, 0.15); border-left: 4px solid var(--accent-color); border-radius: 8px; font-style: italic; color: var(--text-main); font-size: 1rem;">
+          <blockquote style="padding: 14px 20px; background: rgba(245, 158, 11, 0.15); border-left: 4px solid var(--gold-accent); border-radius: var(--radius-sm); font-style: italic; color: var(--text-primary); font-size: 1.02rem;">
             "Aal Izz Well（一切安好）—— 願所有人都能在自然的滋養中找到身心的平衡與平靜。"
           </blockquote>
         </div>
@@ -368,57 +367,56 @@
     <section id="gallery" class="scroll-reveal" style="margin-bottom: 3rem;">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
         <h2 style="font-family: 'Noto Serif TC', serif;">📜 朱婕老師手寫筆記原圖藝廊 (Authentic Scanned Notes Gallery)</h2>
-        <span style="color: var(--text-muted); font-size: 0.9rem;">點擊任一張手稿原圖，即可開啟 3-in-1 圖文對照與文字轉錄閱覽器</span>
+        <span style="color: var(--text-muted); font-size: 0.92rem;">點擊任一張手稿原圖，即可開啟 3-in-1 圖文對照與文字轉錄閱覽器</span>
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.8rem;">
         <div class="herb-card" style="cursor: pointer;" onclick="openScanReader('./assets/images/scans/scan_single1.jpg', '單方草藥手稿：旱蓮草與清熱處方', 'SINGLE1')">
-          <img src="./assets/images/scans/scan_single1.jpg" alt="單方草藥手稿" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 12px;">
-          <h4 style="color: var(--accent-color); margin-bottom: 5px; font-family: 'Noto Serif TC', serif;">📜 單方草藥手稿原頁 (1)</h4>
-          <p style="font-size: 0.85rem; color: var(--text-muted);">旱蓮草與火型 (Pitta) 養護手抄筆記</p>
+          <img src="./assets/images/scans/scan_single1.jpg" alt="單方草藥手稿" style="width: 100%; height: 210px; object-fit: cover; border-radius: 12px; margin-bottom: 12px;">
+          <h4 style="color: var(--gold-light); margin-bottom: 6px; font-family: 'Noto Serif TC', serif;">📜 單方草藥手稿原頁 (1)</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">旱蓮草與火型 (Pitta) 養護手抄筆記</p>
         </div>
         <div class="herb-card" style="cursor: pointer;" onclick="openScanReader('./assets/images/scans/scan_single2.jpg', '單方草藥手稿：訶子與三果實', 'SINGLE2')">
-          <img src="./assets/images/scans/scan_single2.jpg" alt="訶子手稿" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 12px;">
-          <h4 style="color: var(--accent-color); margin-bottom: 5px; font-family: 'Noto Serif TC', serif;">📜 單方草藥手稿原頁 (2)</h4>
-          <p style="font-size: 0.85rem; color: var(--text-muted);">訶子 (Haritaki) 與三果實對照筆記</p>
+          <img src="./assets/images/scans/scan_single2.jpg" alt="訶子手稿" style="width: 100%; height: 210px; object-fit: cover; border-radius: 12px; margin-bottom: 12px;">
+          <h4 style="color: var(--gold-light); margin-bottom: 6px; font-family: 'Noto Serif TC', serif;">📜 單方草藥手稿原頁 (2)</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">訶子 (Haritaki) 與三果實對照筆記</p>
         </div>
         <div class="herb-card" style="cursor: pointer;" onclick="openScanReader('./assets/images/scans/scan_formulas.jpg', '配方草藥手稿：複方處方指南', 'FORMULAS')">
-          <img src="./assets/images/scans/scan_formulas.jpg" alt="配方草藥手稿" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 12px;">
-          <h4 style="color: var(--accent-color); margin-bottom: 5px; font-family: 'Noto Serif TC', serif;">📜 配方草藥手稿原頁</h4>
-          <p style="font-size: 0.85rem; color: var(--text-muted);">古印度傳統複方調配手抄講義</p>
+          <img src="./assets/images/scans/scan_formulas.jpg" alt="配方草藥手稿" style="width: 100%; height: 210px; object-fit: cover; border-radius: 12px; margin-bottom: 12px;">
+          <h4 style="color: var(--gold-light); margin-bottom: 6px; font-family: 'Noto Serif TC', serif;">📜 配方草藥手稿原頁</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">古印度傳統複方調配手抄講義</p>
         </div>
         <div class="herb-card" style="cursor: pointer;" onclick="openScanReader('./assets/images/scans/scan_disease.jpg', '疾病與草藥手稿：體質調適指南', 'DISEASE_HERBS')">
-          <img src="./assets/images/scans/scan_disease.jpg" alt="疾病草藥手稿" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 12px;">
-          <h4 style="color: var(--accent-color); margin-bottom: 5px; font-family: 'Noto Serif TC', serif;">📜 疾病與草藥手稿原頁</h4>
-          <p style="font-size: 0.85rem; color: var(--text-muted);">風火水 (Dosha) 體質調理手抄圖譜</p>
+          <img src="./assets/images/scans/scan_disease.jpg" alt="疾病草藥手稿" style="width: 100%; height: 210px; object-fit: cover; border-radius: 12px; margin-bottom: 12px;">
+          <h4 style="color: var(--gold-light); margin-bottom: 6px; font-family: 'Noto Serif TC', serif;">📜 疾病與草藥手稿原頁</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">風火水 (Dosha) 體質調理手抄圖譜</p>
         </div>
         <div class="herb-card" style="cursor: pointer;" onclick="openScanReader('./assets/images/scans/scan_home.jpg', '居家療法手稿：失眠與鎮靜指南', 'HOME')">
-          <img src="./assets/images/scans/scan_home.jpg" alt="居家療法手稿" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 12px;">
-          <h4 style="color: var(--accent-color); margin-bottom: 5px; font-family: 'Noto Serif TC', serif;">📜 居家療法手稿原頁</h4>
-          <p style="font-size: 0.85rem; color: var(--text-muted);">失眠、安神與日常油壓手抄指南</p>
+          <img src="./assets/images/scans/scan_home.jpg" alt="居家療法手稿" style="width: 100%; height: 210px; object-fit: cover; border-radius: 12px; margin-bottom: 12px;">
+          <h4 style="color: var(--gold-light); margin-bottom: 6px; font-family: 'Noto Serif TC', serif;">📜 居家療法手稿原頁</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">失眠、安神與日常油壓手抄指南</p>
         </div>
       </div>
     </section>
 
-    <!-- 🤖 OpenCode AI 智慧助理與手稿運算對話專區 Section -->
-    <section id="opencode" class="scroll-reveal" style="margin-bottom: 3rem; background: linear-gradient(135deg, rgba(139, 92, 246, 0.12), rgba(16, 185, 129, 0.12)); border: 1.5px solid #8B5CF6; border-radius: var(--radius-lg); padding: 2.2rem; backdrop-filter: blur(14px);">
-      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+    <!-- 🌐 開放學術 JSON API 端點與社群對話專區 Section -->
+    <section id="api" class="scroll-reveal" style="margin-bottom: 3rem; background: rgba(16, 185, 129, 0.08); border: 1.5px solid var(--emerald-glow); border-radius: var(--radius-xl); padding: 2.5rem 2.2rem; backdrop-filter: blur(16px);">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.8rem;">
         <div>
-          <h2 style="color: #A78BFA; font-size: 1.5rem; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 8px; font-family: 'Noto Serif TC', serif;">
-            🤖 OpenCode AI 智慧助理與手稿對話專區 (OpenCode AI Agent Engine)
+          <h2 style="color: #34D399; font-size: 1.6rem; margin-bottom: 0.6rem; display: flex; align-items: center; gap: 8px; font-family: 'Noto Serif TC', serif;">
+            ⚡ 開放學術 RESTful JSON API 與社群討論專區
           </h2>
-          <p style="color: var(--text-main); font-size: 0.95rem; max-width: 780px; line-height: 1.7;">
-            <strong>OpenCode</strong> 為本專案核心的 AI 智慧助理。全冊 630 頁手抄講義皆經由 OpenCode AI 本機多模態運算，
-            進行圖文解碼、文字轉錄、印度 AYUSH API 藥典自動正向對照與留白頁面圓夢補齊。
-            歡迎全華語區研究者存取 OpenCode 所生成的開放 RESTful API 端點，或於 Discussions 與 OpenCode 助理互動交流！
+          <p style="color: var(--text-primary); font-size: 1.02rem; max-width: 800px; line-height: 1.8;">
+            本專案全量收錄朱婕老師 630 頁手抄講義對照資料，開放 613 條學術級 JSON API 端點供全球研究者與開發者免費介接！
+            歡迎於 GitHub Discussions 提交草藥對照勘誤、分享臨床養生心得。
           </p>
         </div>
-        <div style="display: flex; flex-direction: column; gap: 10px;">
-          <a href="./api/v1/herbs.json" target="_blank" class="btn-sponsor" style="background: linear-gradient(135deg, #10B981 0%, #059669 100%); text-decoration: none; font-size: 0.9rem; text-align: center; color: #fff;">
-            ⚡ 存取 OpenCode 產出之 API JSON (613條)
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <a href="./api/v1/herbs.json" target="_blank" class="btn-sponsor" style="background: linear-gradient(135deg, #10B981 0%, #059669 100%); text-decoration: none; font-size: 0.95rem; text-align: center; color: #fff;">
+            ⚡ 存取開放 API JSON (613條)
           </a>
-          <a href="https://github.com/bertwang/ayurveda_vaidya/discussions" target="_blank" class="btn-sponsor" style="background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%); text-decoration: none; font-size: 0.9rem; text-align: center; color: #fff;">
-            🤖 前往 OpenCode AI Discussions 對話
+          <a href="https://github.com/bertwang/ayurveda_vaidya/discussions" target="_blank" class="btn-sponsor" style="background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%); text-decoration: none; font-size: 0.95rem; text-align: center; color: #000; font-weight: bold;">
+            💬 前往 GitHub 社群 Discussions
           </a>
         </div>
       </div>
@@ -426,11 +424,11 @@
 
     <!-- 20 Gunas 屬性動態過濾大表 Section -->
     <section id="matrix" class="scroll-reveal" style="margin-bottom: 3rem;">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem;">
         <h2 style="font-family: 'Noto Serif TC', serif;">⚖️ 20 Gunas 屬性與 Dosha 動態過濾大表</h2>
-        <span style="color: var(--text-muted); font-size: 0.9rem;">對標《BASICS-P0025》6,207 字全冊最高密度手稿大表</span>
+        <span style="color: var(--text-muted); font-size: 0.92rem;">對標《BASICS-P0025》6,207 字全冊最高密度手稿大表</span>
       </div>
-      <div class="gunas-filter-container" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 1rem;">
+      <div class="gunas-filter-container" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 1.2rem;">
         <button class="guna-chip active" data-guna="all">全量草藥 (All)</button>
         <button class="guna-chip" data-guna="重">重 (Guru)</button>
         <button class="guna-chip" data-guna="輕">輕 (Laghu)</button>
@@ -448,7 +446,7 @@
     <section id="herbs" class="scroll-reveal" style="margin-bottom: 3rem;">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
         <h2 style="font-family: 'Noto Serif TC', serif;">🌿 阿育吠陀草藥與講義精選圖鑑 (Herbal Lexicon)</h2>
-        <span style="color: var(--text-muted); font-size: 0.9rem;" id="herbCountBadge">已成功載入全冊 630 頁手槁 (613 個對照頁面條目)</span>
+        <span style="color: var(--text-muted); font-size: 0.92rem;" id="herbCountBadge">已成功載入全冊 630 頁手槁 (613 個對照頁面條目)</span>
       </div>
 
       <div class="grid-container" id="herbGrid">
@@ -460,59 +458,59 @@
 
   <!-- ☕ 贊助與支持開源 Modal -->
   <div class="modal-overlay" id="sponsorModal">
-    <div class="modal-card" style="max-width: 720px; width: 95vw;">
+    <div class="modal-card" style="max-width: 740px; width: 95vw;">
       <button class="close-btn" id="closeSponsorBtn">&times;</button>
-      <h2 style="color: var(--accent-color); margin-bottom: 0.5rem; font-family: 'Noto Serif TC', serif;">☕ 贊助與支持朱婕老師阿育吠陀開源知識庫</h2>
-      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">
-        感謝您支持先師朱婕老師（Liso Chu）遺留筆記之全量數位典藏！您的每一筆贊助都將全數用於本機 OpenCode AI 運算、域名維護與圖書館手稿紙本典藏。
+      <h2 style="color: var(--gold-accent); margin-bottom: 0.6rem; font-family: 'Noto Serif TC', serif;">☕ 贊助與支持朱婕老師阿育吠陀開源知識庫</h2>
+      <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.6rem;">
+        感謝您支持先師朱婕老師（Liso Chu）遺留筆記之全量數位典藏！您的每一筆贊助都將全數用於本機伺服器運算、域名維護與圖書館手稿紙本典藏。
       </p>
 
-      <div style="display: flex; flex-direction: column; gap: 1.2rem; text-align: left;">
+      <div style="display: flex; flex-direction: column; gap: 1.4rem; text-align: left;">
         
         <!-- 管道 1: 街口支付 JKOPAY 實體 QR Code 與轉帳連結 -->
-        <div style="padding: 1.2rem; background: rgba(239, 68, 68, 0.12); border: 1.5px solid #EF4444; border-radius: 14px; display: flex; flex-wrap: wrap; gap: 1.2rem; align-items: center;">
+        <div style="padding: 1.4rem; background: rgba(239, 68, 68, 0.12); border: 1.5px solid #EF4444; border-radius: var(--radius-lg); display: flex; flex-wrap: wrap; gap: 1.4rem; align-items: center;">
           <div style="text-align: center; flex: 0 0 160px; margin: 0 auto;">
-            <img src="./assets/images/jkopay_qr.png" alt="街口支付轉帳 QR Code" style="width: 150px; height: auto; border-radius: 10px; border: 2px solid #EF4444; box-shadow: 0 6px 16px rgba(239,68,68,0.3);">
-            <div style="font-size: 0.75rem; color: #EF4444; margin-top: 4px; font-weight: bold;">📱 街口 App 掃碼轉帳</div>
+            <img src="./assets/images/jkopay_qr.png" alt="街口支付轉帳 QR Code" style="width: 150px; height: auto; border-radius: 12px; border: 2px solid #EF4444; box-shadow: 0 6px 16px rgba(239,68,68,0.3);">
+            <div style="font-size: 0.78rem; color: #EF4444; margin-top: 6px; font-weight: bold;">📱 街口 App 掃碼轉帳</div>
           </div>
           <div style="flex: 1; min-width: 240px;">
-            <h4 style="color: #EF4444; margin-bottom: 6px; font-size: 1.1rem; display: flex; align-items: center; gap: 6px; font-family: 'Noto Serif TC', serif;">
+            <h4 style="color: #EF4444; margin-bottom: 8px; font-size: 1.15rem; display: flex; align-items: center; gap: 6px; font-family: 'Noto Serif TC', serif;">
               🔴 1. 街口支付 (JKOPAY) 掃碼 / 手機轉帳 (台灣推薦)
             </h4>
-            <div style="font-size: 0.88rem; color: var(--text-main); line-height: 1.6; background: rgba(0,0,0,0.35); padding: 10px 12px; border-radius: 8px; margin-bottom: 10px;">
+            <div style="font-size: 0.92rem; color: var(--text-primary); line-height: 1.7; background: rgba(0,0,0,0.4); padding: 12px 14px; border-radius: 10px; margin-bottom: 12px;">
               <strong>機構代碼：</strong> 396 (街口支付)<br>
               <strong>街口帳號：</strong> 901946507<br>
               <strong>戶名：</strong> 微波林克 (王純瑋)
             </div>
-            <a href="https://service.jkopay.com/r/transfer?j=Transfer:901946507" target="_blank" class="btn-sponsor" style="text-decoration: none; padding: 10px 16px; font-size: 0.88rem; display: inline-block; background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%); color: #fff; font-weight: bold; width: 100%; text-align: center;">
+            <a href="https://service.jkopay.com/r/transfer?j=Transfer:901946507" target="_blank" class="btn-sponsor" style="text-decoration: none; padding: 10px 16px; font-size: 0.92rem; display: inline-block; background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%); color: #fff; font-weight: bold; width: 100%; text-align: center;">
               📱 點此開啟街口 App 自動轉帳
             </a>
           </div>
         </div>
 
         <!-- 管道 2: 國際 Ko-fi 贊助平台 -->
-        <div style="padding: 1.2rem; background: rgba(59, 130, 246, 0.12); border: 1.5px solid #3B82F6; border-radius: 14px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+        <div style="padding: 1.4rem; background: rgba(59, 130, 246, 0.12); border: 1.5px solid #3B82F6; border-radius: var(--radius-lg); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.2rem;">
           <div>
-            <h4 style="color: #3B82F6; margin-bottom: 4px; font-size: 1.05rem; font-family: 'Noto Serif TC', serif;">💙 2. 國際 Ko-fi 贊助平台 (0% 手續費)</h4>
-            <p style="font-size: 0.85rem; color: var(--text-muted);">支援全額 PayPal、信用卡與 Apple Pay 贊助支持</p>
+            <h4 style="color: #3B82F6; margin-bottom: 4px; font-size: 1.1rem; font-family: 'Noto Serif TC', serif;">💙 2. 國際 Ko-fi 贊助平台 (0% 手續費)</h4>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">支援全額 PayPal、信用卡與 Apple Pay 贊助支持</p>
           </div>
-          <a href="https://ko-fi.com/ayurveda_vaidya" target="_blank" class="btn-sponsor" style="text-decoration: none; padding: 10px 18px; font-size: 0.9rem; white-space: nowrap; background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%); color: #fff; font-weight: bold;">
+          <a href="https://ko-fi.com/ayurveda_vaidya" target="_blank" class="btn-sponsor" style="text-decoration: none; padding: 10px 20px; font-size: 0.95rem; white-space: nowrap; background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%); color: #fff; font-weight: bold;">
             💙 ko-fi.com/ayurveda_vaidya
           </a>
         </div>
 
         <!-- 管道 3: 中國信託銀行實體轉帳 -->
-        <div style="padding: 1.2rem; background: rgba(16, 185, 129, 0.12); border: 1.5px solid #10B981; border-radius: 14px; display: flex; flex-wrap: wrap; gap: 1.2rem; align-items: center;">
+        <div style="padding: 1.4rem; background: rgba(16, 185, 129, 0.12); border: 1.5px solid #10B981; border-radius: var(--radius-lg); display: flex; flex-wrap: wrap; gap: 1.4rem; align-items: center;">
           <div style="text-align: center; flex: 0 0 160px; margin: 0 auto;">
-            <img src="./assets/images/ctbc_card.png" alt="中國信託銀行帳戶資料卡" style="width: 150px; height: auto; border-radius: 10px; border: 1.5px solid #10B981; box-shadow: 0 4px 12px rgba(16,185,129,0.3);">
-            <div style="font-size: 0.75rem; color: #10B981; margin-top: 4px; font-weight: bold;">🏦 實體帳戶核驗卡</div>
+            <img src="./assets/images/ctbc_card.png" alt="中國信託銀行帳戶資料卡" style="width: 150px; height: auto; border-radius: 12px; border: 1.5px solid #10B981; box-shadow: 0 4px 12px rgba(16,185,129,0.3);">
+            <div style="font-size: 0.78rem; color: #10B981; margin-top: 6px; font-weight: bold;">🏦 實體帳戶核驗卡</div>
           </div>
           <div style="flex: 1; min-width: 240px;">
-            <h4 style="color: #10B981; margin-bottom: 6px; font-size: 1.05rem; font-family: 'Noto Serif TC', serif;">🏦 3. 國內銀行直接轉帳支持 (中國信託)</h4>
-            <div style="font-size: 0.88rem; color: var(--text-main); line-height: 1.6; background: rgba(0,0,0,0.35); padding: 10px 12px; border-radius: 8px;">
+            <h4 style="color: #10B981; margin-bottom: 8px; font-size: 1.1rem; font-family: 'Noto Serif TC', serif;">🏦 3. 國內銀行直接轉帳支持 (中國信託)</h4>
+            <div style="font-size: 0.92rem; color: var(--text-primary); line-height: 1.7; background: rgba(0,0,0,0.4); padding: 12px 14px; border-radius: 10px;">
               <strong>銀行名稱：</strong> 中國信託商業銀行 (CTBC Bank)<br>
               <strong>銀行代號：</strong> 822<br>
-              <strong>帳號號碼：</strong> <span style="color: #10B981; font-weight: bold; font-size: 1rem;">901560196896</span> (My Way 數位帳戶)<br>
+              <strong>帳號號碼：</strong> <span style="color: #10B981; font-weight: bold; font-size: 1.05rem;">901560196896</span> (My Way 數位帳戶)<br>
               <strong>戶名：</strong> 王純瑋<br>
               <strong>分行別：</strong> 營業部 (Head Office)<br>
               <strong>外幣匯款 SWIFT Code：</strong> CTCBTWTP901
@@ -522,7 +520,7 @@
 
       </div>
 
-      <div style="margin-top: 1.5rem; text-align: center; font-size: 0.85rem; color: var(--text-muted);">
+      <div style="margin-top: 1.6rem; text-align: center; font-size: 0.88rem; color: var(--text-muted);">
         "Aal Izz Well" —— 每一份支持都是傳承愛與健康的無私種子。
       </div>
     </div>
@@ -532,20 +530,20 @@
   <div class="modal-overlay" id="readerModal">
     <div class="modal-card" style="max-width: 950px; width: 95vw;">
       <button class="close-btn" id="closeReaderBtn">&times;</button>
-      <h2 style="color: var(--accent-color); margin-bottom: 1rem; font-family: 'Noto Serif TC', serif;">🖼️ 朱婕老師原稿講義與 OpenCode 3-in-1 圖文對照閱覽器</h2>
+      <h2 style="color: var(--gold-accent); margin-bottom: 1rem; font-family: 'Noto Serif TC', serif;">🖼️ 朱婕老師原稿講義與 3-in-1 圖文對照閱覽器</h2>
       
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; text-align: left; margin-top: 1rem;">
-        <div style="background: rgba(0,0,0,0.35); padding: 1rem; border-radius: 14px; border: 1px solid var(--card-border);">
-          <h3 style="color: var(--text-main); margin-bottom: 0.8rem; font-size: 1.05rem; font-family: 'Noto Serif TC', serif;">📜 朱婕老師手抄筆記原圖</h3>
-          <div style="text-align: center; background: #000; padding: 12px; border-radius: 8px; min-height: 280px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.6rem; text-align: left; margin-top: 1rem;">
+        <div style="background: rgba(0,0,0,0.4); padding: 1.2rem; border-radius: var(--radius-lg); border: 1px solid var(--border-subtle);">
+          <h3 style="color: var(--text-primary); margin-bottom: 0.8rem; font-size: 1.1rem; font-family: 'Noto Serif TC', serif;">📜 朱婕老師手抄筆記原圖</h3>
+          <div style="text-align: center; background: #000; padding: 12px; border-radius: 10px; min-height: 280px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
             <img src="./assets/images/scans/scan_single1.jpg" alt="朱婕老師手稿講義原圖" id="readerImage" style="max-width: 100%; max-height: 320px; object-fit: contain; border-radius: 6px;">
-            <span style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px;" id="readerImageTag">原稿識別碼: SINGLE1-P0001 (純質典藏)</span>
+            <span style="font-size: 0.82rem; color: var(--text-muted); margin-top: 8px;" id="readerImageTag">原稿識別碼: SINGLE1-P0001 (純質典藏)</span>
           </div>
         </div>
 
-        <div style="background: rgba(0,0,0,0.35); padding: 1rem; border-radius: 14px; border: 1px solid var(--card-border); max-height: 420px; overflow-y: auto;">
-          <h3 style="color: var(--accent-color); margin-bottom: 0.8rem; font-size: 1.05rem; font-family: 'Noto Serif TC', serif;" id="readerTitle">🌿 旱蓮草 (Bhringraj) 雙軌校對與對照</h3>
-          <div id="readerContent" style="font-size: 0.92rem; line-height: 1.7; color: var(--text-main);">
+        <div style="background: rgba(0,0,0,0.4); padding: 1.2rem; border-radius: var(--radius-lg); border: 1px solid var(--border-subtle); max-height: 420px; overflow-y: auto;">
+          <h3 style="color: var(--gold-accent); margin-bottom: 0.8rem; font-size: 1.1rem; font-family: 'Noto Serif TC', serif;" id="readerTitle">🌿 旱蓮草 (Bhringraj) 雙軌校對與對照</h3>
+          <div id="readerContent" style="font-size: 0.95rem; line-height: 1.75; color: var(--text-primary);">
             <!-- 動態內容 -->
           </div>
         </div>
@@ -557,25 +555,25 @@
   <div class="modal-overlay" id="referencesModal">
     <div class="modal-card" style="max-width: 700px;">
       <button class="close-btn" id="closeReferencesBtn">&times;</button>
-      <h2 style="color: var(--accent-color); margin-bottom: 1rem; font-family: 'Noto Serif TC', serif;">📚 本專案所參考之權威官方 API 與藥典出處</h2>
-      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">
-        本專案之草藥性味、拉丁學名與安全指引，由 OpenCode AI 正向對照並引用以下全球權威機構之官方 API 與典籍資料庫：
+      <h2 style="color: var(--gold-accent); margin-bottom: 1rem; font-family: 'Noto Serif TC', serif;">📚 本專案所參考之權威官方 API 與藥典出處</h2>
+      <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 1.5rem;">
+        本專案之草藥性味、拉丁學名與安全指引，正向對照並引用以下全球權威機構之官方 API 與典籍資料庫：
       </p>
       
-      <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 1.5rem; text-align: left;">
-        <div style="padding: 12px; background: rgba(255,255,255,0.05); border-radius: 10px; border-left: 4px solid var(--accent-color);">
+      <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 1.5rem; text-align: left;">
+        <div style="padding: 14px; background: rgba(255,255,255,0.06); border-radius: 12px; border-left: 4px solid var(--gold-accent);">
           <strong>1. 🇮🇳 印度衛生部 Ministry of Ayush / PCIM&H API</strong>
-          <br><span style="font-size: 0.85rem; color: var(--text-muted);">The Ayurvedic Pharmacopoeia of India (API) 國家法定藥典</span>
-          <br><a href="https://pcimh.gov.in" target="_blank" style="color: var(--accent-color); font-size: 0.85rem;">[🔗 印度 PCIM&H 官方網站]</a>
+          <br><span style="font-size: 0.88rem; color: var(--text-muted);">The Ayurvedic Pharmacopoeia of India (API) 國家法定藥典</span>
+          <br><a href="https://pcimh.gov.in" target="_blank" style="color: var(--gold-accent); font-size: 0.88rem;">[🔗 印度 PCIM&H 官方網站]</a>
         </div>
-        <div style="padding: 12px; background: rgba(255,255,255,0.05); border-radius: 10px; border-left: 4px solid #10B981;">
+        <div style="padding: 14px; background: rgba(255,255,255,0.06); border-radius: 12px; border-left: 4px solid #34D399;">
           <strong>2. 🇹🇼 中華民國衛生福利部中醫藥司</strong>
-          <br><span style="font-size: 0.85rem; color: var(--text-muted);"><台灣中藥典第四版> (THP) 與中西藥併用查詢系統</span>
-          <br><a href="https://dep.mohw.gov.tw/DOCMAP/" target="_blank" style="color: var(--accent-color); font-size: 0.85rem;">[🔗 衛福部中醫藥司官方查詢系統]</a>
+          <br><span style="font-size: 0.88rem; color: var(--text-muted);"><台灣中藥典第四版> (THP) 與中西藥併用查詢系統</span>
+          <br><a href="https://dep.mohw.gov.tw/DOCMAP/" target="_blank" style="color: var(--gold-accent); font-size: 0.88rem;">[🔗 衛福部中醫藥司官方查詢系統]</a>
         </div>
-        <div style="padding: 12px; background: rgba(255,255,255,0.05); border-radius: 10px; border-left: 4px solid #8B5CF6;">
+        <div style="padding: 14px; background: rgba(255,255,255,0.06); border-radius: 12px; border-left: 4px solid #A78BFA;">
           <strong>3. 🇺🇳 世界衛生組織 (WHO) & NAMA / APA 國際規範</strong>
-          <br><span style="font-size: 0.85rem; color: var(--text-muted);">*WHO Monographs on Selected Medicinal Plants* 全球選定藥用植物專論與安全指引</span>
+          <br><span style="font-size: 0.88rem; color: var(--text-muted); Monospace font Monospace">*WHO Monographs on Selected Medicinal Plants* 全球選定藥用植物專論與安全指引</span>
         </div>
       </div>
     </div>
@@ -585,21 +583,21 @@
   <div class="modal-overlay" id="favoritesModal">
     <div class="modal-card" style="max-width: 650px;">
       <button class="close-btn" id="closeFavoritesBtn">&times;</button>
-      <h2 style="color: var(--accent-color); margin-bottom: 1rem; font-family: 'Noto Serif TC', serif;">🤍 我的 OpenCode 離線研習手帳</h2>
-      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">
+      <h2 style="color: var(--gold-accent); margin-bottom: 1rem; font-family: 'Noto Serif TC', serif;">🤍 我的離線研習手帳</h2>
+      <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 1.5rem;">
         您所收藏的草藥與講義頁面已安全儲存在您的瀏覽器本機 (localStorage)，即使離線也能隨時翻閱：
       </p>
-      <div id="favoritesList" style="display: flex; flex-direction: column; gap: 10px; max-height: 400px; overflow-y: auto;">
+      <div id="favoritesList" style="display: flex; flex-direction: column; gap: 12px; max-height: 400px; overflow-y: auto;">
         <!-- 動態渲染收錄清單 -->
       </div>
     </div>
   </div>
 
   <!-- 法律免責聲明頁尾 Footer 區域 -->
-  <footer style="text-align: center; padding: 2.2rem; border-top: 1px solid var(--card-border); color: var(--text-muted); font-size: 0.88rem; line-height: 1.7;">
-    <p>⚖️ <strong>法律免責聲明</strong>：本專案為朱婕老師遺留手寫筆記之 OpenCode AI 開源學術數位典藏，內容僅供學術研究與養生哲學參考，不構成任何醫療診斷或處方。如有身體不適，請尋求專業醫師診治。</p>
-    <p style="margin-top: 6px;">&copy; 2026 朱婕老師阿育吠陀開源知識庫 3.0 | 由 OpenCode AI 驅動 | 採 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" style="color: var(--accent-color);">CC-BY-SA 4.0 國際創用 CC 授權</a> 發布</p>
-    <p style="margin-top: 6px;">弟子王純瑋整理上架 | 聯絡 Email: weblink1982@gmail.com | <a href="https://github.com/bertwang/ayurveda_vaidya/discussions" target="_blank" style="color: var(--accent-color);">OpenCode AI 對話專區</a></p>
+  <footer style="text-align: center; padding: 2.5rem; border-top: 1px solid var(--border-subtle); color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">
+    <p>⚖️ <strong>法律免責聲明</strong>：本專案為朱婕老師遺留手寫筆記之開源學術數位典藏，內容僅供學術研究與養生哲學參考，不構成任何醫療診斷或處方。如有身體不適，請尋求專業醫師診治。</p>
+    <p style="margin-top: 8px;">&copy; 2026 朱婕老師阿育吠陀開源知識庫 3.0 | 採 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" style="color: var(--gold-accent);">CC-BY-SA 4.0 國際創用 CC 授權</a> 發布</p>
+    <p style="margin-top: 8px;">弟子王純瑋整理上架 | 聯絡 Email: weblink1982@gmail.com | <a href="https://github.com/bertwang/ayurveda_vaidya/discussions" target="_blank" style="color: var(--gold-accent);">GitHub 社群討論區</a></p>
   </footer>
 
   <!-- JS 腳本引入 -->
@@ -608,7 +606,7 @@
     function openScanReader(imgSrc, title, bookCode) {
         const readerImg = document.getElementById("readerImage");
         if (readerImg) readerImg.src = imgSrc;
-        openReaderView(title, "OpenCode AI 已對該冊手抄講義完成文字轉錄與 API 藥典正向核驗。", "", "", "", "", "SCAN", bookCode);
+        openReaderView(title, "已對該冊手抄講義完成文字轉錄與三合一權威藥典（API/THP）對照與核驗。", "", "", "", "", "SCAN", bookCode);
     }
   </script>
 </body>

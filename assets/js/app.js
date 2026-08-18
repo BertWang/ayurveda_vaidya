@@ -1,4 +1,4 @@
-// app.js - 朱婕老師阿育吠陀開源知識庫 3.0 (OpenCode AI Engine & Gold Standard UI)
+// app.js - 朱婕老師阿育吠陀開源知識庫 3.0 (2026 旗艦極致閱讀與純靜態對照引擎)
 
 let globalData = { herbs: [], pages: [] };
 let favorites = JSON.parse(localStorage.getItem("ayurveda_favs") || "[]");
@@ -96,7 +96,7 @@ const FALLBACK_HERBS = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("🌿 朱婕老師阿育吠陀開源知識庫 3.0 (OpenCode AI Engine) 啟動！");
+    console.log("🌿 朱婕老師阿育吠陀開源知識庫 3.0 引擎啟動！");
     
     initThreeJS();
     initScrollReveal();
@@ -112,17 +112,17 @@ document.addEventListener("DOMContentLoaded", () => {
             globalData = data;
             const countBadge = document.getElementById("herbCountBadge");
             if (countBadge) {
-                countBadge.textContent = `已成功載入全冊 630 頁手槁 (${data.pages ? data.pages.length : 613} 個對照條目，OpenCode AI 已全量二次補充比對)`;
+                countBadge.textContent = `已成功載入全冊 630 頁手槁 (${data.pages ? data.pages.length : 613} 個對照條目，API 標籤已全量二次補充比對)`;
             }
             renderHerbs(data.herbs && data.herbs.length > 0 ? data.herbs : FALLBACK_HERBS);
             checkUrlQueryParams();
         })
         .catch(err => {
-            console.warn("⚠️ 採用 OpenCode 預載備用草藥庫與靜態卡片，保護網頁載入體驗：", err);
+            console.warn("⚠️ 採用預載備用草藥庫與靜態卡片，保護網頁載入體驗：", err);
             globalData = { herbs: FALLBACK_HERBS, pages: [] };
             const countBadge = document.getElementById("herbCountBadge");
             if (countBadge) {
-                countBadge.textContent = `已成功載入經典 8 大草藥與全冊手槁索引 (OpenCode AI 本機預載)`;
+                countBadge.textContent = `已成功載入經典 8 大草藥與全冊手槁索引 (本機預載)`;
             }
             renderHerbs(FALLBACK_HERBS);
         });
@@ -191,19 +191,19 @@ function renderHerbs(herbsList) {
                     <span class="badge-tag">${herb.dosha_effect ? herb.dosha_effect.split(' ')[0] : '全體質'}</span>
                 </div>
                 
-                <div style="font-size: 0.88rem; line-height: 1.6; margin-bottom: 1rem; color: var(--text-main);">
+                <div style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.2rem; color: var(--text-primary);">
                     <p style="margin-bottom: 4px;"><strong>🌿 性味歸經:</strong> ${herb.rasa || "未標註"} | ${herb.virya || ""} | ${herb.vipaka || ""}</p>
                     <p style="margin-bottom: 4px;"><strong>🧘 Dosha 作用:</strong> ${herb.dosha_effect || "平衡"}</p>
                     <p style="margin-bottom: 4px;"><strong>💊 臨床適應:</strong> ${herb.used_for || herb.summary || ""}</p>
                 </div>
                 
-                <p style="font-size: 0.85rem; color: var(--text-muted); background: rgba(0,0,0,0.25); padding: 8px 10px; border-radius: 8px; margin-bottom: 1rem;">
+                <p style="font-size: 0.9rem; color: var(--text-secondary); background: rgba(0,0,0,0.3); padding: 10px 12px; border-radius: 8px; margin-bottom: 1.2rem;">
                     ${herb.summary || ""}
                 </p>
             </div>
 
             <div class="card-actions">
-                <button class="btn-icon" onclick="openHerbDetail('${herb.id}')">🔍 OpenCode 細節</button>
+                <button class="btn-icon" onclick="openHerbDetail('${herb.id}')">🔍 詳情對照</button>
                 <button class="btn-icon" onclick="toggleFavorite('${herb.id}', '${herb.name_zh || herb.name}')">${isFav ? "❤️ 已收錄" : "🤍 收錄手帳"}</button>
             </div>
         `;
@@ -285,11 +285,11 @@ function initQuizEngine() {
 
         resultBox.style.display = "block";
         resultBox.innerHTML = `
-            <h3 style="color: var(--accent-color); margin-bottom: 0.5rem; font-family: 'Noto Serif TC', serif;">🧘 體質分析結果：主導體質為【${mainDosha}】</h3>
-            <p style="color: var(--text-main); font-size: 0.95rem; line-height: 1.6; margin-bottom: 0.8rem;">
+            <h3 style="color: var(--gold-accent); margin-bottom: 0.5rem; font-family: 'Noto Serif TC', serif;">🧘 體質分析結果：主導體質為【${mainDosha}】</h3>
+            <p style="color: var(--text-primary); font-size: 1rem; line-height: 1.7; margin-bottom: 0.8rem;">
                 根據您填寫的消化、睡眠與體重傾向，您的生理能呈現 ${mainDosha} 特徵。
             </p>
-            <div style="background: rgba(255,255,255,0.06); padding: 10px 14px; border-radius: 8px; font-size: 0.9rem;">
+            <div style="background: rgba(255,255,255,0.08); padding: 12px 16px; border-radius: 10px; font-size: 0.95rem;">
                 <strong>🌿 朱婕老師講義建議草藥與處方：</strong><br>
                 ${recommend}
             </div>
@@ -305,11 +305,11 @@ function openReaderView(title, content, rasa, virya, vipaka, dosha, type, bookCo
     if (readerTitle) readerTitle.textContent = title;
     if (readerContent) {
         readerContent.innerHTML = `
-            <p style="margin-bottom: 8px;">${content}</p>
-            ${rasa ? `<p><strong>性味:</strong> ${rasa} | ${virya} | ${vipaka}</p>` : ""}
-            ${dosha ? `<p><strong>Dosha 作用:</strong> ${dosha}</p>` : ""}
-            <div style="margin-top: 12px; padding: 10px; background: rgba(16,185,129,0.15); border-radius: 8px; font-size: 0.85rem;">
-                🤖 OpenCode AI 已對該條目完成三合一權威藥典（AYUSH API / THP）對照與圓夢補齊。
+            <p style="margin-bottom: 10px;">${content}</p>
+            ${rasa ? `<p style="margin-bottom: 6px;"><strong>性味:</strong> ${rasa} | ${virya} | ${vipaka}</p>` : ""}
+            ${dosha ? `<p style="margin-bottom: 6px;"><strong>Dosha 作用:</strong> ${dosha}</p>` : ""}
+            <div style="margin-top: 14px; padding: 12px; background: rgba(16,185,129,0.15); border-radius: 8px; font-size: 0.9rem;">
+                已對該條目完成三合一權威藥典（AYUSH API / THP）對照與圓夢補齊。
             </div>
         `;
     }
@@ -352,9 +352,9 @@ function renderFavoritesList() {
         return;
     }
     listDiv.innerHTML = favorites.map(f => `
-        <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: rgba(255,255,255,0.05); border-radius: 8px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: rgba(255,255,255,0.06); border-radius: 10px;">
             <span>🌿 <strong>${f.name}</strong> <small style="color: var(--text-muted);">(${f.time})</small></span>
-            <button onclick="toggleFavorite('${f.id}', '${f.name}'); renderFavoritesList();" style="background: none; border: none; color: #EF4444; cursor: pointer;">❌ 移除</button>
+            <button onclick="toggleFavorite('${f.id}', '${f.name}'); renderFavoritesList();" style="background: none; border: none; color: #EF4444; cursor: pointer; font-weight: bold;">❌ 移除</button>
         </div>
     `).join("");
 }
@@ -420,7 +420,7 @@ function initThreeJS() {
     const colorChoices = [
         new THREE.Color("#10B981"),
         new THREE.Color("#F59E0B"),
-        new THREE.Color("#8B5CF6")
+        new THREE.Color("#A78BFA")
     ];
 
     for (let i = 0; i < particlesCount * 3; i += 3) {
