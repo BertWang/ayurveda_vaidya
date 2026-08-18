@@ -1,50 +1,55 @@
 /* ==========================================================================
    朱婕老師阿育吠陀開源知識庫 3.0 (Ayurveda Open Knowledge Hub 3.0)
-   2026 現代極致閱讀與高質感設計系統 (Modern Clean & Accessible Design System)
+   2026 全球頂級 Web3/AI 典藏美學設計系統 (2026 Next-Gen Web Aesthetics)
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@600;700;900&display=swap');
 
 :root {
-  /* 🎨 現代高易讀性綠寶石與琥珀金黑曜暗色主題 (High-Contrast Clean Palette) */
-  --bg-dark: #0B120E;
-  --bg-card: #131E18;
-  --bg-card-hover: #1A2920;
+  /* 🎨 2026 未來黑曜翡翠與極致琥珀流金 (2026 High-End Dark Palette) */
+  --bg-primary: #090D0A;
+  --bg-surface: #121A15;
+  --bg-surface-hover: #18241D;
+  --bg-glass: rgba(14, 22, 17, 0.88);
   
-  --emerald-primary: #10B981;
-  --emerald-light: #34D399;
+  --emerald-glow: #10B981;
+  --emerald-accent: #34D399;
   --gold-accent: #F59E0B;
   --gold-light: #FBBF24;
-  --purple-accent: #A78BFA;
+  --purple-glow: #A78BFA;
   
   --vata-color: #C4B5FD;
   --pitta-color: #FB923C;
   --kapha-color: #34D399;
   
-  /* 📖 極致閱讀高對比文字色彩 */
-  --text-main: #FFFFFF;             /* 100% 高亮度純白，確保文字讀取毫不費力 */
-  --text-sub: #F3F4F6;              /* 明亮灰白 */
-  --text-muted: #D1D5DB;            /* 顯眼明亮次要文字，拒絕暗沉難讀 */
+  /* 📖 2026 視網膜極致閱讀對比度 (Retina Ultra-Contrast Typography) */
+  --text-primary: #FFFFFF;          /* 100% 亮白標題與主字 */
+  --text-secondary: #E2E8F0;        /* 92% 高清晰次要文字 */
+  --text-muted: #94A3B8;            /* 輔助標籤文字 */
   
-  --card-border: rgba(255, 255, 255, 0.16);
-  --border-gold: rgba(245, 158, 11, 0.4);
-  --border-emerald: rgba(16, 185, 129, 0.4);
+  --border-subtle: rgba(255, 255, 255, 0.12);
+  --border-glow-gold: rgba(245, 158, 11, 0.45);
+  --border-glow-emerald: rgba(16, 185, 129, 0.45);
   
+  --radius-xl: 24px;
   --radius-lg: 16px;
   --radius-md: 12px;
   --radius-sm: 8px;
   
-  --transition-fast: all 0.2s ease;
+  --shadow-card: 0 12px 36px -8px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 30px rgba(16, 185, 129, 0.2);
+  --transition-smooth: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 [data-theme="light"] {
-  --bg-dark: #F8FAF8;
-  --bg-card: #FFFFFF;
-  --bg-card-hover: #F0F7F2;
-  --text-main: #0F172A;
-  --text-sub: #1E293B;
-  --text-muted: #334155;
-  --card-border: rgba(16, 185, 129, 0.25);
+  --bg-primary: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --bg-surface-hover: #F1F5F9;
+  --bg-glass: rgba(255, 255, 255, 0.9);
+  --text-primary: #0F172A;
+  --text-secondary: #1E293B;
+  --text-muted: #475569;
+  --border-subtle: rgba(16, 185, 129, 0.2);
 }
 
 * {
@@ -54,48 +59,74 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-  background-color: var(--bg-dark);
-  color: var(--text-main);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   line-height: 1.8;
   font-size: 16px;
   min-height: 100vh;
   overflow-x: hidden;
+  position: relative;
 }
 
-/* 導覽列 Glass Navbar - 精簡排版不爆版 */
+/* 🌿 2026 動態流光背景 (Organic Glow Mesh) */
+body::before {
+  content: '';
+  position: fixed;
+  top: -25%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  background: 
+    radial-gradient(circle at 15% 20%, rgba(16, 185, 129, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 85% 30%, rgba(245, 158, 11, 0.1) 0%, transparent 45%),
+    radial-gradient(circle at 50% 80%, rgba(167, 139, 250, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+  animation: glowAnimation 16s ease-in-out infinite alternate;
+}
+
+@keyframes glowAnimation {
+  0% { transform: scale(1) rotate(0deg); }
+  100% { transform: scale(1.05) rotate(3deg); }
+}
+
+/* 導覽列 Glass Navbar - 2026 極簡單行與白金襯邊 */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 70px;
-  background: rgba(11, 18, 14, 0.95);
+  height: 72px;
+  background: var(--bg-glass);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--border-emerald);
+  border-bottom: 1px solid var(--border-subtle);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
   z-index: 1000;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
 }
 
 .nav-brand {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 800;
-  color: var(--text-main);
+  color: var(--text-primary);
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   text-decoration: none;
   font-family: 'Noto Serif TC', serif;
+  letter-spacing: 0.5px;
   white-space: nowrap;
 }
 
 .nav-brand span {
-  color: var(--gold-light);
+  background: linear-gradient(135deg, var(--gold-light), var(--gold-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nav-links {
@@ -104,89 +135,105 @@ body {
   list-style: none;
   align-items: center;
   flex-wrap: nowrap;
-  overflow-x: auto;
 }
 
 .nav-links a {
-  color: var(--text-sub);
+  color: var(--text-secondary);
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
-  transition: var(--transition-fast);
-  padding: 8px 14px;
-  border-radius: 8px;
+  transition: var(--transition-smooth);
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
   white-space: nowrap;
 }
 
 .nav-links a:hover, .nav-links a.active {
-  color: var(--text-main);
-  background: rgba(255, 255, 255, 0.12);
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* 主容器 Layout */
 .main-container {
-  max-width: 1240px;
-  margin: 100px auto 40px auto;
-  padding: 0 1.5rem;
+  max-width: 1280px;
+  margin: 104px auto 50px auto;
+  padding: 0 1.8rem;
 }
 
-/* Hero 卡片 */
+/* Hero 2026 旗艦卡片 */
 .hero-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-gold);
-  border-radius: var(--radius-lg);
-  padding: 3rem 2rem;
+  background: linear-gradient(135deg, rgba(18, 26, 21, 0.9) 0%, rgba(12, 18, 14, 0.95) 100%);
+  backdrop-filter: blur(24px);
+  border: 1px solid var(--border-glow-gold);
+  border-radius: var(--radius-xl);
+  padding: 3.5rem 2.5rem;
   text-align: center;
-  margin-bottom: 2.5rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  margin-bottom: 3rem;
+  box-shadow: var(--shadow-card), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--emerald-glow), var(--gold-accent), var(--purple-glow));
 }
 
 .hero-title {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   font-weight: 900;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
   font-family: 'Noto Serif TC', serif;
-  color: #FFFFFF;
+  background: linear-gradient(135deg, #FFFFFF 0%, #FBBF24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   letter-spacing: 1px;
 }
 
 .hero-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: var(--gold-light);
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   font-weight: 700;
 }
 
-/* 搜尋框 Search Box */
+/* 2026 搜尋框 Search Box */
 .search-box {
   position: relative;
-  max-width: 760px;
-  margin: 1.8rem auto 0 auto;
+  max-width: 780px;
+  margin: 2rem auto 0 auto;
 }
 
 .search-input {
   width: 100%;
-  padding: 1.1rem 1.5rem 1.1rem 3.4rem;
-  font-size: 1.05rem;
+  padding: 1.2rem 1.8rem 1.2rem 3.6rem;
+  font-size: 1.08rem;
   border-radius: 50px;
-  border: 2px solid var(--border-gold);
-  background: rgba(0, 0, 0, 0.6);
-  color: var(--text-main);
+  border: 2px solid var(--border-glow-gold);
+  background: rgba(5, 9, 7, 0.7);
+  color: var(--text-primary);
   outline: none;
-  transition: var(--transition-fast);
+  transition: var(--transition-smooth);
+  box-shadow: inset 0 2px 8px rgba(0,0,0,0.5);
 }
 
 .search-input:focus {
-  border-color: var(--gold-light);
-  box-shadow: 0 0 24px rgba(245, 158, 11, 0.4);
+  border-color: var(--gold-accent);
+  box-shadow: 0 0 30px rgba(245, 158, 11, 0.45);
+  background: rgba(5, 9, 7, 0.9);
 }
 
 .search-icon {
   position: absolute;
-  left: 1.3rem;
+  left: 1.4rem;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: var(--gold-light);
 }
 
@@ -198,15 +245,15 @@ body {
 }
 
 .guna-chip {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid var(--card-border);
-  color: var(--text-main);
-  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  padding: 9px 18px;
   border-radius: 50px;
   font-size: 0.92rem;
   font-weight: 600;
   cursor: pointer;
-  transition: var(--transition-fast);
+  transition: var(--transition-smooth);
 }
 
 .guna-chip:hover, .guna-chip.active {
@@ -214,39 +261,41 @@ body {
   color: #000;
   border-color: var(--gold-light);
   font-weight: 800;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.35);
 }
 
 /* 網格系統 Grid */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 1.8rem;
+  gap: 2rem;
 }
 
 .herb-card {
-  background: var(--bg-card);
-  border: 1px solid var(--card-border);
-  border-radius: var(--radius-md);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
   padding: 1.8rem;
-  transition: var(--transition-fast);
+  transition: var(--transition-smooth);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-card);
 }
 
 .herb-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
   border-color: var(--gold-accent);
-  background: var(--bg-card-hover);
-  box-shadow: 0 12px 32px rgba(245, 158, 11, 0.25);
+  background: var(--bg-surface-hover);
+  box-shadow: 0 16px 40px rgba(245, 158, 11, 0.25);
 }
 
 .herb-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 .herb-name {
@@ -258,7 +307,7 @@ body {
 
 .herb-sanskrit {
   font-size: 0.9rem;
-  color: var(--emerald-light);
+  color: var(--emerald-accent);
   font-style: italic;
 }
 
@@ -268,8 +317,8 @@ body {
   border-radius: 50px;
   font-size: 0.8rem;
   font-weight: 800;
-  background: rgba(16, 185, 129, 0.25);
-  color: var(--emerald-light);
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--emerald-accent);
   border: 1px solid rgba(16, 185, 129, 0.4);
 }
 
@@ -285,12 +334,12 @@ body {
   padding: 10px;
   font-size: 0.88rem;
   font-weight: 700;
-  border-radius: 8px;
-  border: 1px solid var(--card-border);
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--text-main);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-primary);
   cursor: pointer;
-  transition: var(--transition-fast);
+  transition: var(--transition-smooth);
   text-align: center;
 }
 
@@ -304,16 +353,16 @@ body {
   background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
   color: #000;
   font-weight: 800;
-  padding: 9px 20px;
+  padding: 9px 22px;
   border-radius: 50px;
   text-decoration: none;
-  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.35);
-  transition: var(--transition-fast);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+  transition: var(--transition-smooth);
   white-space: nowrap;
 }
 
 .btn-sponsor:hover {
-  transform: scale(1.04);
+  transform: scale(1.05);
 }
 
 /* Modal 彈窗系統 */
@@ -324,32 +373,32 @@ body {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(16px);
   display: none;
   align-items: center;
   justify-content: center;
   z-index: 2000;
-  padding: 1rem;
+  padding: 1.2rem;
 }
 
 .modal-card {
-  background: #0E1712;
+  background: #0B120E;
   border: 1.5px solid var(--gold-accent);
-  border-radius: var(--radius-lg);
-  padding: 2.2rem;
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
   width: 100%;
-  max-height: 90vh;
+  max-height: 92vh;
   overflow-y: auto;
   position: relative;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
-  color: var(--text-main);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.8);
+  color: var(--text-primary);
   text-align: center;
 }
 
 .close-btn {
   position: absolute;
-  top: 1rem;
-  right: 1.2rem;
+  top: 1.2rem;
+  right: 1.4rem;
   background: none;
   border: none;
   font-size: 2rem;
