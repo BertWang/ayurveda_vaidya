@@ -3,6 +3,32 @@
 let globalData = { herbs: [], pages: [] };
 let favorites = JSON.parse(localStorage.getItem("ayurveda_favs") || "[]");
 
+// 21 大 Srotas 渠道與 Dhatus 組織的多詞彙強效搜尋對照表 (對標 613 頁手稿轉錄關鍵字)
+const SROTAS_SEARCH_MAP = {
+    'Pranavaha': 'Pranavaha 呼吸 肺 氣喘 咳嗽 生命氣',
+    'Annavaha': 'Annavaha 消化 食物 腸道 胃 食慾',
+    'Udakavaha': 'Udakavaha 水份 體液 津液 飲水',
+    'Raktavaha': 'Raktavaha 血液 肝 脾 涼血 排毒',
+    'Mamsavaha': 'Mamsavaha 肌肉 蛋白質 體力',
+    'Medovaha': 'Medovaha 脂肪 代謝 降脂 減重',
+    'Asthivaha': 'Asthivaha 骨骼 關節 風濕 骨質',
+    'Majjavaha': 'Majjavaha 神經 骨髓 鎮靜 失眠 睡茄',
+    'Shukravaha': 'Shukravaha 生殖 精氣 補益 刺蒺藜',
+    'Artavaha': 'Artavaha 子宮 月經 婦科 天門冬 無憂樹',
+    'Stanyavaha': 'Stanyavaha 乳汁 哺育 催乳 小茴香',
+    'Purishavaha': 'Purishavaha 糞便 便秘 排泄 潤腸 訶子',
+    'Mutravaha': 'Mutravaha 尿液 利尿 泌尿 車前子',
+    'Svedavaha': 'Svedavaha 汗液 發汗 皮膚 薄荷',
+    'Manovaha': 'Manovaha 心靈 神經 安神 焦慮',
+    'Rasa': 'Rasa 血漿 津液 營養',
+    'Rakta': 'Rakta 血液 紅素 肝',
+    'Mamsa': 'Mamsa 肌肉 體力',
+    'Meda': 'Meda 脂肪 代謝',
+    'Asthi': 'Asthi 骨骼 關節',
+    'Majja': 'Majja 神經 骨髓',
+    'Shukra': 'Shukra 生殖 精氣'
+};
+
 // 預載備用草藥資料 (確保在 CORS 或離線環境下依然呈現高質感卡片網格)
 const FALLBACK_HERBS = [
     {
@@ -334,19 +360,20 @@ function searchAndRender(query) {
     }
 
     const cleanQuery = query.toLowerCase().trim();
+    const tokens = cleanQuery.split(/\s+/);
 
-    // 1. 搜尋草藥數據庫 (包含 name, sanskrit, latin, tcm, rasa, virya, vipaka, dosha, desc, summary, used_for 全欄位全量比對！)
+    // 1. 搜尋草藥數據庫 (多詞彙智慧匹配 OR 邏輯)
     const herbList = (globalData.herbs && globalData.herbs.length > 0) ? globalData.herbs : FALLBACK_HERBS;
     const matchedHerbs = herbList.filter(h => {
         const text = `${h.name || ""} ${h.name_zh || ""} ${h.sanskrit || ""} ${h.latin || ""} ${h.tcm || ""} ${h.rasa || ""} ${h.virya || ""} ${h.vipaka || ""} ${h.dosha || ""} ${h.dosha_effect || ""} ${h.used_for || ""} ${h.summary || ""} ${h.desc || ""} ${h.description || ""}`.toLowerCase();
-        return text.includes(cleanQuery);
+        return tokens.some(token => text.includes(token));
     });
 
-    // 2. 搜尋 613 頁全冊手稿講義
+    // 2. 搜尋 613 頁全冊手稿講義 (多詞彙智慧匹配 OR 邏輯)
     const pageList = globalData.pages || [];
     const matchedPages = pageList.filter(p => {
         const text = `${p.title || ""} ${p.snippet || ""} ${(p.keywords || []).join(' ')} ${p.doc || ""}`.toLowerCase();
-        return text.includes(cleanQuery);
+        return tokens.some(token => text.includes(token));
     }).slice(0, 40);
 
     renderMixedCards(matchedHerbs, matchedPages, `搜尋「${query}」：找到`, query);
@@ -354,9 +381,15 @@ function searchAndRender(query) {
 
 function highlightQuery(text, query) {
     if (!text || !query) return text;
-    const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const regex = new RegExp(`(${escaped})`, 'gi');
-    return text.replace(regex, '<mark style="background: #F59E0B; color: #000; font-weight: bold; padding: 1px 4px; border-radius: 4px;">$1</mark>');
+    const tokens = query.toLowerCase().trim().split(/\s+/);
+    let result = text;
+    tokens.forEach(token => {
+        if (!token) return;
+        const escaped = token.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const regex = new RegExp(`(${escaped})`, 'gi');
+        result = result.replace(regex, '<mark style="background: #F59E0B; color: #000; font-weight: bold; padding: 1px 4px; border-radius: 4px;">$1</mark>');
+    });
+    return result;
 }
 
 function escapeJsString(str) {
@@ -387,9 +420,11 @@ function filterByGuna(guna) {
 }
 
 function filterByChannel(channelKey, displayName) {
+    const searchTerms = SROTAS_SEARCH_MAP[channelKey] || channelKey;
+
     const searchInput = document.getElementById("searchInput");
     if (searchInput) {
-        searchInput.value = channelKey;
+        searchInput.value = displayName || channelKey;
     }
     
     const herbsSec = document.getElementById("herbs");
@@ -397,8 +432,8 @@ function filterByChannel(channelKey, displayName) {
         herbsSec.scrollIntoView({ behavior: 'smooth' });
     }
 
-    // 發起精準跨頁關鍵字搜尋
-    searchAndRender(channelKey.toLowerCase().trim());
+    // 發起精準跨頁多詞彙搜尋
+    searchAndRender(searchTerms);
     injectDynamicSEO(`《朱婕老師阿育吠陀學習路徑：${displayName}》- 知識庫 3.0`, `從朱婕老師手稿《${displayName}》出發擴展延伸之對應單方草藥與講義處方`, window.location.href);
 }
 
