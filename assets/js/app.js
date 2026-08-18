@@ -1,4 +1,4 @@
-// app.js - 朱婕老師阿育吠陀開源知識庫 3.0 (2026 旗艦極致閱讀與動態原圖對照引擎)
+// app.js - 朱婕老師阿育吠陀開源知識庫 3.0 (2026 旗艦極致閱讀與 613 頁動態對照全量引擎)
 
 let globalData = { herbs: [], pages: [] };
 let favorites = JSON.parse(localStorage.getItem("ayurveda_favs") || "[]");
@@ -112,7 +112,7 @@ const FALLBACK_HERBS = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("🌿 朱婕老師阿育吠陀開源知識庫 3.0 全冊全文檢索引擎啟動！");
+    console.log("🌿 朱婕老師阿育吠陀開源知識庫 3.0 全冊 613 頁全文檢索暨多模態圖文對照引擎啟動！");
     
     initScrollReveal();
     updateFavBadge();
@@ -126,19 +126,15 @@ document.addEventListener("DOMContentLoaded", () => {
             globalData = data;
             const countBadge = document.getElementById("herbCountBadge");
             if (countBadge) {
-                countBadge.textContent = `已成功載入全冊 630 頁手槁 (${data.pages ? data.pages.length : 613} 個對照頁面條目，支援即時全文檢索)`;
+                countBadge.textContent = `全冊 630 頁手稿 (已整合全量 ${data.pages ? data.pages.length : 613} 個講義條目 & 精選草藥)`;
             }
-            renderHerbs(data.herbs && data.herbs.length > 0 ? data.herbs : FALLBACK_HERBS);
+            renderAllPortalItems();
             checkUrlQueryParams();
         })
         .catch(err => {
             console.warn("⚠️ 採用預載備用草藥庫與靜態卡片，保護網頁載入體驗：", err);
             globalData = { herbs: FALLBACK_HERBS, pages: [] };
-            const countBadge = document.getElementById("herbCountBadge");
-            if (countBadge) {
-                countBadge.textContent = `已成功載入經典 8 大草藥與全冊手槁索引 (本機預載)`;
-            }
-            renderHerbs(FALLBACK_HERBS);
+            renderAllPortalItems();
         });
 
     const searchInput = document.getElementById("searchInput");
@@ -181,16 +177,23 @@ document.addEventListener("DOMContentLoaded", () => {
     setupModal("openSponsorBtn", "sponsorModal", "closeSponsorBtn");
 });
 
-function renderHerbs(herbsList) {
+function renderAllPortalItems() {
+    const herbList = (globalData.herbs && globalData.herbs.length > 0) ? globalData.herbs : FALLBACK_HERBS;
+    const pageList = (globalData.pages && globalData.pages.length > 0) ? globalData.pages.slice(0, 36) : [];
+    renderMixedCards(herbList, pageList, `全量草藥與講義條目 (全冊 613 條手稿)`);
+}
+
+function renderMixedCards(herbsList, pagesList, titleTag) {
     const grid = document.getElementById("herbGrid");
     if (!grid) return;
     grid.innerHTML = "";
 
-    if (!herbsList || herbsList.length === 0) {
-        grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 2rem; color: var(--text-muted);">🔍 未找到對應草藥，請重新輸入關鍵字或選擇體質標籤。</div>`;
+    if ((!herbsList || herbsList.length === 0) && (!pagesList || pagesList.length === 0)) {
+        grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 2rem; color: var(--text-muted);">🔍 未找到對應草藥或講義頁面。</div>`;
         return;
     }
 
+    // 1. 渲染草藥條目
     herbsList.forEach(herb => {
         const isFav = favorites.some(f => f.id === herb.id);
         const card = document.createElement("div");
@@ -202,7 +205,7 @@ function renderHerbs(herbsList) {
                         <h3 class="herb-name">${herb.name_zh || herb.name}</h3>
                         <span class="herb-sanskrit">${herb.sanskrit || ""}</span>
                     </div>
-                    <span class="badge-tag">${herb.dosha_effect ? herb.dosha_effect.split(' ')[0] : '全體質'}</span>
+                    <span class="badge-tag">草藥典籍</span>
                 </div>
                 
                 <div style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.2rem; color: var(--text-primary);">
@@ -223,6 +226,48 @@ function renderHerbs(herbsList) {
         `;
         grid.appendChild(card);
     });
+
+    // 2. 渲染 613 頁手稿講義卡片 (動態圖圖片與識別碼配對)
+    pagesList.forEach(p => {
+        const isFav = favorites.some(f => f.id === p.id);
+        const card = document.createElement("div");
+        card.className = "herb-card scroll-reveal revealed";
+        card.style.borderColor = "var(--emerald-accent)";
+
+        let pageImg = "./assets/images/scans/scan_single1.jpg";
+        const docUpper = (p.doc || "").toUpperCase();
+        if (docUpper.includes("DISEASE")) pageImg = "./assets/images/scans/scan_disease.jpg";
+        else if (docUpper.includes("FORMULA")) pageImg = "./assets/images/scans/scan_formulas.jpg";
+        else if (docUpper.includes("HOME")) pageImg = "./assets/images/scans/scan_home.jpg";
+        else if (p.id && (p.id.includes("2") || p.id.includes("15"))) pageImg = "./assets/images/scans/scan_single2.jpg";
+
+        const bookCode = p.doc ? `${p.doc}-${p.id || 'P001'}` : (p.id || "P001");
+
+        card.innerHTML = `
+            <div>
+                <div class="herb-header">
+                    <div>
+                        <h3 class="herb-name" style="color: var(--emerald-accent); font-size: 1.15rem;">📜 ${p.title || "手稿講義"}</h3>
+                        <span class="herb-sanskrit">講義識別碼: ${bookCode}</span>
+                    </div>
+                    <span class="badge-tag" style="background: rgba(167, 139, 250, 0.2); color: #C4B5FD; border-color: rgba(167, 139, 250, 0.4);">手稿講義</span>
+                </div>
+                <p style="font-size: 0.92rem; color: var(--text-primary); background: rgba(0,0,0,0.4); padding: 12px 14px; border-radius: 10px; margin-bottom: 1rem; line-height: 1.7; max-height: 140px; overflow-y: auto;">
+                    ${p.snippet || "朱婕老師阿育吠陀手抄筆記轉錄內文..."}
+                </p>
+            </div>
+            <div class="card-actions">
+                <button class="btn-icon" onclick="openReaderView('📜 ${escapeJsString(p.title || "")}', \`${escapeJsString(p.snippet || "")}\`, '', '', '', '', 'PAGE', '${bookCode}', '${pageImg}')">🖼️ 閱覽講義手稿</button>
+                <button class="btn-icon" onclick="toggleFavorite('${p.id}', '${escapeJsString(p.title || "")}')">${isFav ? "❤️ 已收錄" : "🤍 收錄手帳"}</button>
+            </div>
+        `;
+        grid.appendChild(card);
+    });
+
+    const countBadge = document.getElementById("herbCountBadge");
+    if (countBadge) {
+        countBadge.textContent = `${titleTag || '全量呈現'} (${herbsList.length} 個草藥條目 + ${pagesList.length} 頁手稿對照)`;
+    }
 }
 
 function searchAndRender(query) {
@@ -230,7 +275,7 @@ function searchAndRender(query) {
     if (!grid) return;
 
     if (!query) {
-        renderHerbs(globalData.herbs && globalData.herbs.length > 0 ? globalData.herbs : FALLBACK_HERBS);
+        renderAllPortalItems();
         return;
     }
 
@@ -262,82 +307,7 @@ function searchAndRender(query) {
         return;
     }
 
-    // 渲染符合的草藥
-    matchedHerbs.forEach(herb => {
-        const isFav = favorites.some(f => f.id === herb.id);
-        const card = document.createElement("div");
-        card.className = "herb-card scroll-reveal revealed";
-        card.innerHTML = `
-            <div>
-                <div class="herb-header">
-                    <div>
-                        <h3 class="herb-name">${herb.name_zh || herb.name}</h3>
-                        <span class="herb-sanskrit">${herb.sanskrit || ""}</span>
-                    </div>
-                    <span class="badge-tag">草藥條目</span>
-                </div>
-                
-                <div style="font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem; color: var(--text-primary);">
-                    <p style="margin-bottom: 4px;"><strong>🌿 性味歸經:</strong> ${herb.rasa || "未標註"} | ${herb.virya || ""} | ${herb.vipaka || ""}</p>
-                    <p style="margin-bottom: 4px;"><strong>🧘 Dosha 作用:</strong> ${herb.dosha_effect || "平衡"}</p>
-                    <p style="margin-bottom: 4px;"><strong>💊 臨床適應:</strong> ${herb.used_for || herb.summary || ""}</p>
-                </div>
-                
-                <p style="font-size: 0.9rem; color: var(--text-secondary); background: rgba(0,0,0,0.3); padding: 10px 12px; border-radius: 8px; margin-bottom: 1rem;">
-                    ${herb.summary || ""}
-                </p>
-            </div>
-
-            <div class="card-actions">
-                <button class="btn-icon" onclick="openHerbDetail('${herb.id}')">🔍 詳情對照</button>
-                <button class="btn-icon" onclick="toggleFavorite('${herb.id}', '${herb.name_zh || herb.name}')">${isFav ? "❤️ 已收錄" : "🤍 收錄手帳"}</button>
-            </div>
-        `;
-        grid.appendChild(card);
-    });
-
-    // 渲染符合的手稿講義頁面 (動態圖圖片與識別碼配對)
-    matchedPages.forEach(p => {
-        const isFav = favorites.some(f => f.id === p.id);
-        const card = document.createElement("div");
-        card.className = "herb-card scroll-reveal revealed";
-        card.style.borderColor = "var(--emerald-accent)";
-
-        // 動態計算此手稿頁面的原圖圖片與標籤
-        let pageImg = "./assets/images/scans/scan_single1.jpg";
-        const docUpper = (p.doc || "").toUpperCase();
-        if (docUpper.includes("DISEASE")) pageImg = "./assets/images/scans/scan_disease.jpg";
-        else if (docUpper.includes("FORMULA")) pageImg = "./assets/images/scans/scan_formulas.jpg";
-        else if (docUpper.includes("HOME")) pageImg = "./assets/images/scans/scan_home.jpg";
-        else if (p.id && (p.id.includes("2") || p.id.includes("15"))) pageImg = "./assets/images/scans/scan_single2.jpg";
-
-        const bookCode = p.doc ? `${p.doc}-${p.id || 'P001'}` : (p.id || "P001");
-
-        card.innerHTML = `
-            <div>
-                <div class="herb-header">
-                    <div>
-                        <h3 class="herb-name" style="color: var(--emerald-accent); font-size: 1.15rem;">📜 ${p.title || "手稿講義"}</h3>
-                        <span class="herb-sanskrit">講義識別碼: ${bookCode}</span>
-                    </div>
-                    <span class="badge-tag" style="background: rgba(167, 139, 250, 0.2); color: #C4B5FD; border-color: rgba(167, 139, 250, 0.4);">手稿講義</span>
-                </div>
-                <p style="font-size: 0.92rem; color: var(--text-primary); background: rgba(0,0,0,0.4); padding: 12px 14px; border-radius: 10px; margin-bottom: 1rem; line-height: 1.7; max-height: 140px; overflow-y: auto;">
-                    ${highlightQuery(p.snippet || "", cleanQuery)}
-                </p>
-            </div>
-            <div class="card-actions">
-                <button class="btn-icon" onclick="openReaderView('📜 ${escapeJsString(p.title || "")}', \`${escapeJsString(p.snippet || "")}\`, '', '', '', '', 'PAGE', '${bookCode}', '${pageImg}')">🖼️ 閱覽講義手稿</button>
-                <button class="btn-icon" onclick="toggleFavorite('${p.id}', '${escapeJsString(p.title || "")}')">${isFav ? "❤️ 已收錄" : "🤍 收錄手帳"}</button>
-            </div>
-        `;
-        grid.appendChild(card);
-    });
-
-    const countBadge = document.getElementById("herbCountBadge");
-    if (countBadge) {
-        countBadge.textContent = `搜尋「${query}」成功找到 ${matchedHerbs.length} 個草藥條目與 ${matchedPages.length} 頁講義內容`;
-    }
+    renderMixedCards(matchedHerbs, matchedPages, `搜尋「${query}」找到`);
 }
 
 function highlightQuery(text, query) {
@@ -354,17 +324,24 @@ function escapeJsString(str) {
 
 function filterByGuna(guna) {
     if (guna === "all") {
-        renderHerbs(globalData.herbs && globalData.herbs.length > 0 ? globalData.herbs : FALLBACK_HERBS);
+        renderAllPortalItems();
         return;
     }
 
     const list = (globalData.herbs && globalData.herbs.length > 0) ? globalData.herbs : FALLBACK_HERBS;
-    const filtered = list.filter(h => {
+    const pageList = globalData.pages || [];
+
+    const filteredHerbs = list.filter(h => {
         const text = `${h.rasa || ""} ${h.virya || ""} ${h.vipaka || ""} ${h.dosha_effect || ""}`.toLowerCase();
         return text.includes(guna.toLowerCase());
     });
 
-    renderHerbs(filtered);
+    const filteredPages = pageList.filter(p => {
+        const text = `${p.title || ""} ${p.snippet || ""} ${(p.keywords || []).join(' ')}`.toLowerCase();
+        return text.includes(guna.toLowerCase());
+    }).slice(0, 30);
+
+    renderMixedCards(filteredHerbs, filteredPages, `Guna 屬性「${guna}」對照`);
 }
 
 function filterByChannel(channelKey, displayName) {
