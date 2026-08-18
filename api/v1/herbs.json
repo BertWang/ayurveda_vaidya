@@ -109,7 +109,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "BASICS-P0001",
@@ -120,7 +122,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "BASICS-P0002",
@@ -156,7 +160,15 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0010"
+      ]
     },
     {
       "id": "BASICS-P0003",
@@ -179,7 +191,15 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "DISEASE_HERBS-P0020",
+        "DISEASE_HERBS-P0024"
+      ]
     },
     {
       "id": "BASICS-P0004",
@@ -201,12 +221,26 @@
       ],
       "rel_dhatus": [
         "Mamsa",
-        "Asthi"
+        "Asthi",
+        "Majja"
       ],
       "rel_doshas": [
         "Vata"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "失眠",
+        "便秘",
+        "痛風",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0014"
+      ]
     },
     {
       "id": "BASICS-P0005",
@@ -233,7 +267,19 @@
       "rel_doshas": [
         "Pitta"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "消化",
+        "皮膚",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
+      ]
     },
     {
       "id": "BASICS-P0006",
@@ -262,7 +308,19 @@
       "rel_doshas": [
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "痛風",
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0009"
+      ]
     },
     {
       "id": "BASICS-P0007",
@@ -273,7 +331,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "BASICS-P0008",
@@ -290,7 +350,9 @@
         "Vata",
         "Pitta"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "BASICS-P0009",
@@ -303,7 +365,17 @@
       ],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0010",
+        "BASICS-P0011",
+        "BASICS-P0012"
+      ]
     },
     {
       "id": "BASICS-P0010",
@@ -318,7 +390,17 @@
         "Rasa"
       ],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0011"
+      ]
     },
     {
       "id": "BASICS-P0011",
@@ -339,7 +421,18 @@
         "Vata",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010",
+        "BASICS-P0012"
+      ]
     },
     {
       "id": "BASICS-P0012",
@@ -352,7 +445,17 @@
       ],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010",
+        "BASICS-P0011"
+      ]
     },
     {
       "id": "BASICS-P0013",
@@ -373,7 +476,17 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010",
+        "BASICS-P0011"
+      ]
     },
     {
       "id": "BASICS-P0014",
@@ -393,6 +506,7 @@
         "Medovaha"
       ],
       "rel_dhatus": [
+        "Rasa",
         "Rakta",
         "Mamsa"
       ],
@@ -401,7 +515,18 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "便秘",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
+      ]
     },
     {
       "id": "BASICS-P0015",
@@ -428,7 +553,18 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "便秘",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
+      ]
     },
     {
       "id": "BASICS-P0016",
@@ -462,7 +598,18 @@
       "rel_doshas": [
         "Vata"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "便秘",
+        "呼吸"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0011"
+      ]
     },
     {
       "id": "BASICS-P0017",
@@ -490,7 +637,19 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "呼吸",
+        "消化",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
+      ]
     },
     {
       "id": "BASICS-P0018",
@@ -519,7 +678,19 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "便秘",
+        "呼吸",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0011",
+        "BASICS-P0014"
+      ]
     },
     {
       "id": "BASICS-P0019",
@@ -542,6 +713,7 @@
       ],
       "rel_dhatus": [
         "Rasa",
+        "Rakta",
         "Meda"
       ],
       "rel_doshas": [
@@ -549,7 +721,19 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "便秘",
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
+      ]
     },
     {
       "id": "BASICS-P0020",
@@ -562,7 +746,9 @@
         "Rasa"
       ],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "BASICS-P0021",
@@ -585,7 +771,17 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
+      ]
     },
     {
       "id": "BASICS-P0022",
@@ -622,7 +818,20 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "失眠",
+        "子宮",
+        "痛風",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0014"
+      ]
     },
     {
       "id": "BASICS-P0023",
@@ -651,7 +860,20 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "便秘",
+        "呼吸",
+        "消化",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
+      ]
     },
     {
       "id": "BASICS-P0024",
@@ -662,7 +884,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "BASICS-P0025",
@@ -685,7 +909,19 @@
       "rel_doshas": [
         "Vata"
       ],
-      "rel_herbs": []
+      "rel_herbs": [
+        "薄荷"
+      ],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
+      ]
     },
     {
       "id": "BASICS-P0026",
@@ -705,6 +941,14 @@
       "rel_doshas": [],
       "rel_herbs": [
         "薑黃"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0014"
       ]
     },
     {
@@ -723,13 +967,25 @@
         "Raktavaha",
         "Manovaha"
       ],
-      "rel_dhatus": [],
+      "rel_dhatus": [
+        "Rakta"
+      ],
       "rel_doshas": [
         "Vata",
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
+      ]
     },
     {
       "id": "BASICS-P0028",
@@ -747,10 +1003,19 @@
       ],
       "rel_dhatus": [
         "Rakta",
-        "Mamsa"
+        "Mamsa",
+        "Majja"
       ],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0014"
+      ]
     },
     {
       "id": "BASICS-P0029",
@@ -782,7 +1047,20 @@
         "Kapha"
       ],
       "rel_herbs": [
-        "印度天門冬"
+        "印度天門冬",
+        "薄荷"
+      ],
+      "rel_symptoms": [
+        "便秘",
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -805,15 +1083,27 @@
         "Majjavaha"
       ],
       "rel_dhatus": [
+        "Rakta",
         "Mamsa",
-        "Meda"
+        "Meda",
+        "Majja"
       ],
       "rel_doshas": [
         "Vata",
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0014"
+      ]
     },
     {
       "id": "UNKNOWN",
@@ -824,7 +1114,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0001",
@@ -835,7 +1127,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0002",
@@ -846,7 +1140,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0003",
@@ -857,7 +1153,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0004",
@@ -868,7 +1166,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0005",
@@ -879,7 +1179,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0006",
@@ -890,7 +1192,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0007",
@@ -901,7 +1205,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0008",
@@ -912,7 +1218,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0009",
@@ -923,7 +1231,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0010",
@@ -934,7 +1244,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0011",
@@ -945,7 +1257,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0012",
@@ -956,7 +1270,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0013",
@@ -967,7 +1283,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0014",
@@ -978,7 +1296,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0015",
@@ -989,7 +1309,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0016",
@@ -1000,7 +1322,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0017",
@@ -1011,7 +1335,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0018",
@@ -1022,7 +1348,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0019",
@@ -1033,7 +1361,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0020",
@@ -1044,7 +1374,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0021",
@@ -1055,7 +1387,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0022",
@@ -1066,7 +1400,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0023",
@@ -1077,7 +1413,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0024",
@@ -1088,7 +1426,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0025",
@@ -1099,7 +1439,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0026",
@@ -1110,7 +1452,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0027",
@@ -1121,7 +1465,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0028",
@@ -1132,7 +1478,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0029",
@@ -1143,7 +1491,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0030",
@@ -1154,7 +1504,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0031",
@@ -1165,7 +1517,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0032",
@@ -1176,7 +1530,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0033",
@@ -1187,7 +1543,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0034",
@@ -1198,7 +1556,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0035",
@@ -1209,7 +1569,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0036",
@@ -1220,7 +1582,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0037",
@@ -1231,7 +1595,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0038",
@@ -1242,7 +1608,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0039",
@@ -1253,7 +1621,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0040",
@@ -1264,7 +1634,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0041",
@@ -1275,7 +1647,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0042",
@@ -1286,7 +1660,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0043",
@@ -1297,7 +1673,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0044",
@@ -1308,7 +1686,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0045",
@@ -1319,7 +1699,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_CARDS-P0046",
@@ -1330,7 +1712,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "UNKNOWN",
@@ -1341,7 +1725,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0001",
@@ -1352,7 +1738,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0002",
@@ -1363,7 +1751,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0003",
@@ -1374,7 +1764,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0004",
@@ -1385,7 +1777,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0005",
@@ -1396,7 +1790,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0006",
@@ -1407,7 +1803,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0007",
@@ -1418,7 +1816,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0008",
@@ -1429,7 +1829,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0009",
@@ -1440,7 +1842,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0010",
@@ -1451,7 +1855,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0011",
@@ -1462,7 +1868,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0012",
@@ -1473,7 +1881,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0013",
@@ -1484,7 +1894,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0014",
@@ -1495,7 +1907,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0015",
@@ -1506,7 +1920,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0016",
@@ -1517,7 +1933,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0017",
@@ -1528,7 +1946,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0018",
@@ -1539,7 +1959,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0019",
@@ -1550,7 +1972,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0020",
@@ -1561,7 +1985,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0021",
@@ -1572,7 +1998,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0022",
@@ -1583,7 +2011,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0023",
@@ -1594,7 +2024,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0024",
@@ -1605,7 +2037,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0025",
@@ -1616,7 +2050,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0026",
@@ -1627,7 +2063,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0027",
@@ -1638,7 +2076,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0028",
@@ -1649,7 +2089,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0029",
@@ -1660,7 +2102,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0030",
@@ -1671,7 +2115,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0031",
@@ -1682,7 +2128,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0032",
@@ -1693,7 +2141,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0033",
@@ -1704,7 +2154,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0034",
@@ -1715,7 +2167,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0035",
@@ -1726,7 +2180,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0036",
@@ -1737,7 +2193,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0037",
@@ -1748,7 +2206,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0038",
@@ -1759,7 +2219,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0039",
@@ -1770,7 +2232,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0040",
@@ -1781,7 +2245,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0041",
@@ -1792,7 +2258,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0042",
@@ -1803,7 +2271,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0043",
@@ -1814,7 +2284,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0044",
@@ -1825,7 +2297,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0045",
@@ -1836,7 +2310,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0046",
@@ -1847,7 +2323,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0047",
@@ -1858,7 +2336,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0048",
@@ -1869,7 +2349,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0049",
@@ -1880,7 +2362,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0050",
@@ -1891,7 +2375,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0051",
@@ -1902,7 +2388,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0052",
@@ -1913,7 +2401,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0053",
@@ -1924,7 +2414,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0054",
@@ -1935,7 +2427,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0055",
@@ -1946,7 +2440,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0056",
@@ -1957,7 +2453,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0057",
@@ -1968,7 +2466,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0058",
@@ -1979,7 +2479,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0059",
@@ -1990,7 +2492,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0060",
@@ -2001,7 +2505,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0061",
@@ -2012,7 +2518,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0062",
@@ -2023,7 +2531,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0063",
@@ -2034,7 +2544,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0064",
@@ -2045,7 +2557,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0065",
@@ -2056,7 +2570,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0066",
@@ -2067,7 +2583,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0067",
@@ -2078,7 +2596,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0068",
@@ -2089,7 +2609,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0069",
@@ -2100,7 +2622,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0070",
@@ -2111,7 +2635,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0071",
@@ -2122,7 +2648,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0072",
@@ -2133,7 +2661,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0073",
@@ -2144,7 +2674,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0074",
@@ -2155,7 +2687,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0075",
@@ -2166,7 +2700,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0076",
@@ -2177,7 +2713,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0077",
@@ -2188,7 +2726,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0078",
@@ -2199,7 +2739,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0079",
@@ -2210,7 +2752,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0080",
@@ -2221,7 +2765,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0081",
@@ -2232,7 +2778,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0082",
@@ -2243,7 +2791,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0083",
@@ -2254,7 +2804,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0084",
@@ -2265,7 +2817,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0085",
@@ -2276,7 +2830,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0086",
@@ -2287,7 +2843,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0087",
@@ -2298,7 +2856,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0088",
@@ -2309,7 +2869,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0089",
@@ -2320,7 +2882,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0090",
@@ -2331,7 +2895,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0091",
@@ -2342,7 +2908,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0092",
@@ -2353,7 +2921,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0093",
@@ -2364,7 +2934,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0094",
@@ -2375,7 +2947,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0095",
@@ -2386,7 +2960,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0096",
@@ -2397,7 +2973,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0097",
@@ -2408,7 +2986,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0098",
@@ -2419,7 +2999,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0099",
@@ -2430,7 +3012,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0100",
@@ -2441,7 +3025,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0101",
@@ -2452,7 +3038,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0102",
@@ -2463,7 +3051,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0103",
@@ -2474,7 +3064,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0104",
@@ -2485,7 +3077,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0105",
@@ -2496,7 +3090,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0106",
@@ -2507,7 +3103,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0107",
@@ -2518,7 +3116,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0108",
@@ -2529,7 +3129,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0109",
@@ -2540,7 +3142,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0110",
@@ -2551,7 +3155,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0111",
@@ -2562,7 +3168,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0112",
@@ -2573,7 +3181,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0113",
@@ -2584,7 +3194,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0114",
@@ -2595,7 +3207,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0115",
@@ -2606,7 +3220,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0116",
@@ -2617,7 +3233,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0117",
@@ -2628,7 +3246,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0118",
@@ -2639,7 +3259,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0119",
@@ -2650,7 +3272,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0120",
@@ -2661,7 +3285,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0121",
@@ -2672,7 +3298,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0122",
@@ -2683,7 +3311,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0123",
@@ -2694,7 +3324,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0124",
@@ -2705,7 +3337,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0125",
@@ -2716,7 +3350,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0126",
@@ -2727,7 +3363,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0127",
@@ -2738,7 +3376,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0128",
@@ -2749,7 +3389,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0129",
@@ -2760,7 +3402,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0130",
@@ -2771,7 +3415,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0131",
@@ -2782,7 +3428,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0132",
@@ -2793,7 +3441,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0133",
@@ -2804,7 +3454,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0134",
@@ -2815,7 +3467,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0135",
@@ -2826,7 +3480,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0136",
@@ -2837,7 +3493,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0137",
@@ -2848,7 +3506,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0138",
@@ -2859,7 +3519,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0139",
@@ -2870,7 +3532,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0140",
@@ -2881,7 +3545,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0141",
@@ -2892,7 +3558,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0142",
@@ -2903,7 +3571,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0143",
@@ -2914,7 +3584,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0144",
@@ -2925,7 +3597,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0145",
@@ -2936,7 +3610,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0146",
@@ -2947,7 +3623,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0147",
@@ -2958,7 +3636,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0148",
@@ -2969,7 +3649,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0149",
@@ -2980,7 +3662,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0150",
@@ -2991,7 +3675,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0151",
@@ -3002,7 +3688,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0152",
@@ -3013,7 +3701,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0153",
@@ -3024,7 +3714,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0154",
@@ -3035,7 +3727,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0155",
@@ -3046,7 +3740,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0156",
@@ -3057,7 +3753,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0157",
@@ -3068,7 +3766,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0158",
@@ -3079,7 +3779,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0159",
@@ -3090,7 +3792,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0160",
@@ -3101,7 +3805,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0161",
@@ -3112,7 +3818,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0162",
@@ -3123,7 +3831,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0163",
@@ -3134,7 +3844,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0164",
@@ -3145,7 +3857,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0165",
@@ -3156,7 +3870,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0166",
@@ -3167,7 +3883,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0167",
@@ -3178,7 +3896,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0168",
@@ -3189,7 +3909,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0169",
@@ -3200,7 +3922,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0170",
@@ -3211,7 +3935,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0171",
@@ -3222,7 +3948,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0172",
@@ -3233,7 +3961,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0173",
@@ -3244,7 +3974,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0174",
@@ -3255,7 +3987,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0175",
@@ -3266,7 +4000,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0176",
@@ -3277,7 +4013,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0177",
@@ -3288,7 +4026,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0178",
@@ -3299,7 +4039,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0179",
@@ -3310,7 +4052,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0180",
@@ -3321,7 +4065,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0181",
@@ -3332,7 +4078,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0182",
@@ -3343,7 +4091,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0183",
@@ -3354,7 +4104,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0184",
@@ -3365,7 +4117,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0185",
@@ -3376,7 +4130,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0186",
@@ -3387,7 +4143,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0187",
@@ -3398,7 +4156,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0188",
@@ -3409,7 +4169,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0189",
@@ -3420,7 +4182,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0190",
@@ -3431,7 +4195,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0191",
@@ -3442,7 +4208,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "CHANNEL_HEALING-P0192",
@@ -3453,7 +4221,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "UNKNOWN",
@@ -3464,7 +4234,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DISEASE_HERBS-P0001",
@@ -3475,7 +4247,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DISEASE_HERBS-P0002",
@@ -3502,6 +4276,16 @@
         "甘草",
         "薑黃",
         "乾薑"
+      ],
+      "rel_symptoms": [
+        "呼吸"
+      ],
+      "rel_pages": [
+        "BASICS-P0006",
+        "BASICS-P0011",
+        "BASICS-P0016",
+        "BASICS-P0017",
+        "BASICS-P0018"
       ]
     },
     {
@@ -3529,6 +4313,14 @@
         "寬筋藤",
         "甘草",
         "薑黃"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0014",
+        "BASICS-P0015",
+        "BASICS-P0017",
+        "BASICS-P0019"
       ]
     },
     {
@@ -3555,6 +4347,16 @@
       ],
       "rel_herbs": [
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0014",
+        "BASICS-P0015",
+        "BASICS-P0017"
       ]
     },
     {
@@ -3566,7 +4368,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DISEASE_HERBS-P0006",
@@ -3579,7 +4383,9 @@
       "rel_doshas": [],
       "rel_herbs": [
         "沒藥"
-      ]
+      ],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DISEASE_HERBS-P0007",
@@ -3598,13 +4404,28 @@
         "Artavaha"
       ],
       "rel_dhatus": [
+        "Rakta",
+        "Asthi",
         "Majja"
       ],
       "rel_doshas": [
+        "Vata",
         "Pitta"
       ],
       "rel_herbs": [
         "印楝"
+      ],
+      "rel_symptoms": [
+        "子宮",
+        "皮膚",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0014",
+        "BASICS-P0015"
       ]
     },
     {
@@ -3634,6 +4455,17 @@
         "沒藥",
         "寬筋藤",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "消化",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
       ]
     },
     {
@@ -3653,6 +4485,14 @@
         "印度天門冬",
         "刺蒺藜",
         "寬筋藤"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0016",
+        "DISEASE_HERBS-P0010",
+        "DISEASE_HERBS-P0013",
+        "DISEASE_HERBS-P0021"
       ]
     },
     {
@@ -3676,6 +4516,14 @@
         "印度天門冬",
         "刺蒺藜",
         "甘草"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0029",
+        "DISEASE_HERBS-P0003",
+        "DISEASE_HERBS-P0009",
+        "DISEASE_HERBS-P0018",
+        "DISEASE_HERBS-P0021"
       ]
     },
     {
@@ -3699,7 +4547,17 @@
       "rel_doshas": [
         "Pitta"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "子宮"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0014"
+      ]
     },
     {
       "id": "DISEASE_HERBS-P0012",
@@ -3713,8 +4571,18 @@
       "rel_dhatus": [
         "Majja"
       ],
-      "rel_doshas": [],
-      "rel_herbs": []
+      "rel_doshas": [
+        "Vata"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0016",
+        "BASICS-P0028",
+        "BASICS-P0029"
+      ]
     },
     {
       "id": "DISEASE_HERBS-P0013",
@@ -3744,6 +4612,17 @@
         "印楝",
         "寬筋藤",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "子宮",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0016",
+        "BASICS-P0022"
       ]
     },
     {
@@ -3755,7 +4634,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DISEASE_HERBS-P0015",
@@ -3769,6 +4650,14 @@
       "rel_herbs": [
         "睡茄",
         "沒藥"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "DISEASE_HERBS-P0020",
+        "DX2-P0011",
+        "FORMULAS-P0013",
+        "FORMULAS-P0024",
+        "FORMULAS-P0027"
       ]
     },
     {
@@ -3788,6 +4677,16 @@
         "印度天門冬",
         "薑黃",
         "乾薑"
+      ],
+      "rel_symptoms": [
+        "子宮"
+      ],
+      "rel_pages": [
+        "BASICS-P0022",
+        "DISEASE_HERBS-P0002",
+        "DISEASE_HERBS-P0007",
+        "DISEASE_HERBS-P0011",
+        "DISEASE_HERBS-P0013"
       ]
     },
     {
@@ -3809,7 +4708,8 @@
         "Asthivaha"
       ],
       "rel_dhatus": [
-        "Rasa"
+        "Rasa",
+        "Rakta"
       ],
       "rel_doshas": [
         "Pitta",
@@ -3819,6 +4719,17 @@
         "印楝",
         "寬筋藤",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "發炎",
+        "痛風"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "BASICS-P0014",
+        "BASICS-P0015"
       ]
     },
     {
@@ -3837,6 +4748,16 @@
       "rel_herbs": [
         "刺蒺藜",
         "甘草"
+      ],
+      "rel_symptoms": [
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0005",
+        "BASICS-P0017",
+        "BASICS-P0018",
+        "DISEASE_HERBS-P0010",
+        "DISEASE_HERBS-P0037"
       ]
     },
     {
@@ -3866,6 +4787,16 @@
       ],
       "rel_herbs": [
         "乾薑"
+      ],
+      "rel_symptoms": [
+        "子宮"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0006",
+        "BASICS-P0014",
+        "BASICS-P0015",
+        "BASICS-P0016"
       ]
     },
     {
@@ -3897,6 +4828,14 @@
         "睡茄",
         "沒藥",
         "乾薑"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "BASICS-P0014"
       ]
     },
     {
@@ -3916,6 +4855,14 @@
         "睡茄",
         "印度天門冬",
         "甘草"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0016",
+        "DISEASE_HERBS-P0009",
+        "DISEASE_HERBS-P0010",
+        "DISEASE_HERBS-P0013"
       ]
     },
     {
@@ -3938,6 +4885,16 @@
       ],
       "rel_herbs": [
         "寬筋藤"
+      ],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
       ]
     },
     {
@@ -3949,7 +4906,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DISEASE_HERBS-P0024",
@@ -3965,7 +4924,8 @@
         "Majjavaha"
       ],
       "rel_dhatus": [
-        "Asthi"
+        "Asthi",
+        "Majja"
       ],
       "rel_doshas": [
         "Vata",
@@ -3974,6 +4934,14 @@
       "rel_herbs": [
         "三果實",
         "積雪草"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "BASICS-P0016"
       ]
     },
     {
@@ -3985,7 +4953,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DISEASE_HERBS-P0026",
@@ -4008,7 +4978,15 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0014",
+        "BASICS-P0015",
+        "BASICS-P0017",
+        "BASICS-P0019"
+      ]
     },
     {
       "id": "DISEASE_HERBS-P0027",
@@ -4032,6 +5010,16 @@
       ],
       "rel_herbs": [
         "訶子"
+      ],
+      "rel_symptoms": [
+        "呼吸"
+      ],
+      "rel_pages": [
+        "BASICS-P0006",
+        "BASICS-P0011",
+        "BASICS-P0016",
+        "BASICS-P0017",
+        "BASICS-P0018"
       ]
     },
     {
@@ -4047,9 +5035,21 @@
       "rel_dhatus": [
         "Majja"
       ],
-      "rel_doshas": [],
+      "rel_doshas": [
+        "Vata"
+      ],
       "rel_herbs": [
         "睡茄"
+      ],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -4079,6 +5079,16 @@
         "寬筋藤",
         "薑黃",
         "乾薑"
+      ],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
       ]
     },
     {
@@ -4098,8 +5108,20 @@
         "Rakta",
         "Majja"
       ],
-      "rel_doshas": [],
-      "rel_herbs": []
+      "rel_doshas": [
+        "Vata"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
+      ]
     },
     {
       "id": "DISEASE_HERBS-P0031",
@@ -4114,7 +5136,15 @@
         "Rakta"
       ],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0014",
+        "BASICS-P0015",
+        "BASICS-P0017",
+        "BASICS-P0019"
+      ]
     },
     {
       "id": "DISEASE_HERBS-P0032",
@@ -4125,7 +5155,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DISEASE_HERBS-P0033",
@@ -4153,6 +5185,14 @@
       "rel_herbs": [
         "睡茄",
         "積雪草"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0014"
       ]
     },
     {
@@ -4183,6 +5223,17 @@
       "rel_herbs": [
         "睡茄",
         "積雪草"
+      ],
+      "rel_symptoms": [
+        "失眠",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0016",
+        "BASICS-P0017"
       ]
     },
     {
@@ -4202,12 +5253,24 @@
       ],
       "rel_dhatus": [
         "Rakta",
-        "Asthi"
+        "Asthi",
+        "Majja"
       ],
       "rel_doshas": [],
       "rel_herbs": [
         "睡茄",
         "寬筋藤"
+      ],
+      "rel_symptoms": [
+        "發炎",
+        "痛風"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "BASICS-P0014"
       ]
     },
     {
@@ -4219,7 +5282,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DISEASE_HERBS-P0037",
@@ -4243,7 +5308,19 @@
         "Vata",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "呼吸",
+        "消化",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
+      ]
     },
     {
       "id": "DISEASE_HERBS-P0038",
@@ -4254,7 +5331,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DISEASE_HERBS-P0039",
@@ -4265,7 +5344,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DISEASE_HERBS-P0040",
@@ -4276,7 +5357,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DISEASE_HERBS-P0041",
@@ -4287,7 +5370,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DISEASE_HERBS-P0042",
@@ -4298,7 +5383,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DISEASE_HERBS-P0043",
@@ -4309,7 +5396,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DISEASE_HERBS-P0044",
@@ -4320,7 +5409,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DISEASE_HERBS-P0045",
@@ -4331,7 +5422,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DISEASE_HERBS-P0046",
@@ -4365,6 +5458,17 @@
       "rel_herbs": [
         "印度天門冬",
         "甘草"
+      ],
+      "rel_symptoms": [
+        "子宮",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
       ]
     },
     {
@@ -4385,7 +5489,18 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "便秘",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
+      ]
     },
     {
       "id": "DISEASE_HERBS-P0048",
@@ -4396,7 +5511,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DISEASE_HERBS-P0049",
@@ -4420,7 +5537,17 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "子宮"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0014",
+        "BASICS-P0015",
+        "BASICS-P0017"
+      ]
     },
     {
       "id": "DISEASE_HERBS-P0050",
@@ -4437,7 +5564,17 @@
         "Mamsa"
       ],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "呼吸"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0011"
+      ]
     },
     {
       "id": "DISEASE_HERBS-P0051",
@@ -4448,7 +5585,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DISEASE_HERBS-P0052",
@@ -4465,7 +5604,17 @@
         "Mamsa"
       ],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "子宮"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0014"
+      ]
     },
     {
       "id": "DISEASE_HERBS-P0053",
@@ -4497,6 +5646,16 @@
         "沒藥",
         "無憂樹",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "子宮"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0014",
+        "BASICS-P0015",
+        "BASICS-P0016",
+        "BASICS-P0017"
       ]
     },
     {
@@ -4508,7 +5667,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DISEASE_HERBS-P0055",
@@ -4527,11 +5688,23 @@
         "Asthivaha"
       ],
       "rel_dhatus": [
-        "Rasa"
+        "Rasa",
+        "Rakta"
       ],
       "rel_doshas": [],
       "rel_herbs": [
         "寬筋藤"
+      ],
+      "rel_symptoms": [
+        "發炎",
+        "痛風"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "BASICS-P0014",
+        "BASICS-P0015"
       ]
     },
     {
@@ -4549,7 +5722,9 @@
       ],
       "rel_herbs": [
         "薑黃"
-      ]
+      ],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DISEASE_HERBS-P0057",
@@ -4574,6 +5749,17 @@
       ],
       "rel_herbs": [
         "訶子"
+      ],
+      "rel_symptoms": [
+        "便秘",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -4598,10 +5784,22 @@
         "Asthi",
         "Majja"
       ],
-      "rel_doshas": [],
+      "rel_doshas": [
+        "Vata"
+      ],
       "rel_herbs": [
         "睡茄",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "痛風"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -4620,6 +5818,17 @@
       "rel_herbs": [
         "訶子",
         "沒藥"
+      ],
+      "rel_symptoms": [
+        "便秘",
+        "發炎"
+      ],
+      "rel_pages": [
+        "BASICS-P0014",
+        "BASICS-P0015",
+        "BASICS-P0019",
+        "BASICS-P0023",
+        "BASICS-P0029"
       ]
     },
     {
@@ -4645,6 +5854,16 @@
       "rel_doshas": [],
       "rel_herbs": [
         "睡茄"
+      ],
+      "rel_symptoms": [
+        "子宮"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -4656,7 +5875,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "UNKNOWN",
@@ -4667,7 +5888,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DX2-P0001",
@@ -4678,7 +5901,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "DX2-P0002",
@@ -4705,7 +5930,17 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "子宮"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0016",
+        "BASICS-P0022",
+        "DISEASE_HERBS-P0007",
+        "DISEASE_HERBS-P0009"
+      ]
     },
     {
       "id": "DX2-P0003",
@@ -4735,7 +5970,17 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "子宮"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
+      ]
     },
     {
       "id": "DX2-P0004",
@@ -4771,6 +6016,18 @@
       ],
       "rel_herbs": [
         "寬筋藤"
+      ],
+      "rel_symptoms": [
+        "子宮",
+        "消化",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -4801,6 +6058,17 @@
       "rel_herbs": [
         "印度天門冬",
         "積雪草"
+      ],
+      "rel_symptoms": [
+        "發炎",
+        "子宮"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0014",
+        "BASICS-P0015",
+        "BASICS-P0016"
       ]
     },
     {
@@ -4837,6 +6105,18 @@
         "印度天門冬",
         "積雪草",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "便秘",
+        "子宮",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -4871,6 +6151,17 @@
         "甘草",
         "薑黃",
         "乾薑"
+      ],
+      "rel_symptoms": [
+        "子宮",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
       ]
     },
     {
@@ -4903,6 +6194,16 @@
         "沒藥",
         "無憂樹",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "子宮"
+      ],
+      "rel_pages": [
+        "BASICS-P0022",
+        "DISEASE_HERBS-P0007",
+        "DISEASE_HERBS-P0008",
+        "DISEASE_HERBS-P0011",
+        "DISEASE_HERBS-P0013"
       ]
     },
     {
@@ -4935,6 +6236,14 @@
         "旱蓮草",
         "睡茄",
         "印度天門冬"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0006",
+        "BASICS-P0010",
+        "BASICS-P0011",
+        "BASICS-P0014"
       ]
     },
     {
@@ -4953,7 +6262,9 @@
         "Shukravaha",
         "Manovaha"
       ],
-      "rel_dhatus": [],
+      "rel_dhatus": [
+        "Shukra"
+      ],
       "rel_doshas": [
         "Vata",
         "Pitta",
@@ -4964,6 +6275,14 @@
         "睡茄",
         "印度天門冬",
         "積雪草"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0016",
+        "BASICS-P0026",
+        "BASICS-P0027",
+        "BASICS-P0028"
       ]
     },
     {
@@ -4988,7 +6307,9 @@
         "Manovaha"
       ],
       "rel_dhatus": [
-        "Rasa"
+        "Rasa",
+        "Majja",
+        "Shukra"
       ],
       "rel_doshas": [
         "Vata",
@@ -4999,6 +6320,17 @@
         "睡茄",
         "沒藥",
         "刺蒺藜"
+      ],
+      "rel_symptoms": [
+        "便秘",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0010"
       ]
     },
     {
@@ -5041,6 +6373,19 @@
         "睡茄",
         "印度天門冬",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "失眠",
+        "便秘",
+        "皮膚",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0011"
       ]
     },
     {
@@ -5056,10 +6401,20 @@
         "Manovaha"
       ],
       "rel_dhatus": [
-        "Rasa"
+        "Rasa",
+        "Majja",
+        "Shukra"
       ],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0014",
+        "BASICS-P0016",
+        "BASICS-P0022"
+      ]
     },
     {
       "id": "DX2-P0014",
@@ -5087,7 +6442,20 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "失眠",
+        "呼吸",
+        "消化",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
+      ]
     },
     {
       "id": "DX2-P0015",
@@ -5106,7 +6474,9 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "UNKNOWN",
@@ -5117,7 +6487,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "FORMULAS-P0001",
@@ -5128,7 +6500,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "FORMULAS-P0002",
@@ -5144,7 +6518,18 @@
       ],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010",
+        "BASICS-P0011"
+      ]
     },
     {
       "id": "FORMULAS-P0003",
@@ -5176,7 +6561,19 @@
         "刺蒺藜",
         "積雪草",
         "薑黃",
-        "乾薑"
+        "乾薑",
+        "小茴香"
+      ],
+      "rel_symptoms": [
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -5192,7 +6589,9 @@
         "Pranavaha",
         "Raktavaha"
       ],
-      "rel_dhatus": [],
+      "rel_dhatus": [
+        "Rakta"
+      ],
       "rel_doshas": [
         "Vata"
       ],
@@ -5204,6 +6603,16 @@
         "積雪草",
         "甘草",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "呼吸"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0006",
+        "BASICS-P0011",
+        "BASICS-P0014",
+        "BASICS-P0015"
       ]
     },
     {
@@ -5231,7 +6640,19 @@
         "Vata",
         "Pitta"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "痛風",
+        "呼吸",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "BASICS-P0011"
+      ]
     },
     {
       "id": "FORMULAS-P0006",
@@ -5251,6 +6672,7 @@
         "Majjavaha"
       ],
       "rel_dhatus": [
+        "Rakta",
         "Asthi",
         "Majja"
       ],
@@ -5265,6 +6687,17 @@
         "寬筋藤",
         "積雪草",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "痛風",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -5292,7 +6725,19 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "失眠",
+        "呼吸",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0011"
+      ]
     },
     {
       "id": "FORMULAS-P0008",
@@ -5312,6 +6757,7 @@
         "Majja"
       ],
       "rel_doshas": [
+        "Vata",
         "Kapha"
       ],
       "rel_herbs": [
@@ -5319,7 +6765,18 @@
         "印楝",
         "積雪草",
         "薑黃",
-        "乾薑"
+        "乾薑",
+        "小茴香"
+      ],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -5341,6 +6798,7 @@
         "Asthivaha"
       ],
       "rel_dhatus": [
+        "Rakta",
         "Asthi"
       ],
       "rel_doshas": [
@@ -5354,7 +6812,21 @@
         "聖羅勒",
         "積雪草",
         "甘草",
-        "乾薑"
+        "乾薑",
+        "小茴香",
+        "薄荷"
+      ],
+      "rel_symptoms": [
+        "痛風",
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -5375,7 +6847,21 @@
       "rel_herbs": [
         "沒藥",
         "刺蒺藜",
-        "甘草"
+        "甘草",
+        "小茴香"
+      ],
+      "rel_symptoms": [
+        "呼吸",
+        "消化",
+        "皮膚",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010",
+        "BASICS-P0011"
       ]
     },
     {
@@ -5393,6 +6879,7 @@
         "Asthivaha"
       ],
       "rel_dhatus": [
+        "Rakta",
         "Asthi"
       ],
       "rel_doshas": [
@@ -5404,6 +6891,16 @@
         "印楝",
         "寬筋藤",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "痛風"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "BASICS-P0014"
       ]
     },
     {
@@ -5434,7 +6931,21 @@
         "沒藥",
         "刺蒺藜",
         "甘草",
-        "乾薑"
+        "乾薑",
+        "小茴香",
+        "薄荷"
+      ],
+      "rel_symptoms": [
+        "便秘",
+        "痛風",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -5467,6 +6978,18 @@
         "沒藥",
         "刺蒺藜",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "子宮",
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
       ]
     },
     {
@@ -5489,6 +7012,14 @@
         "積雪草",
         "薑黃",
         "乾薑"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "DISEASE_HERBS-P0002",
+        "DISEASE_HERBS-P0003",
+        "DISEASE_HERBS-P0008",
+        "DISEASE_HERBS-P0013",
+        "DISEASE_HERBS-P0016"
       ]
     },
     {
@@ -5522,6 +7053,17 @@
         "寬筋藤",
         "薑黃",
         "乾薑"
+      ],
+      "rel_symptoms": [
+        "子宮",
+        "痛風"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "BASICS-P0022"
       ]
     },
     {
@@ -5546,9 +7088,11 @@
         "Manovaha"
       ],
       "rel_dhatus": [
+        "Rakta",
         "Majja"
       ],
       "rel_doshas": [
+        "Vata",
         "Pitta"
       ],
       "rel_herbs": [
@@ -5558,7 +7102,21 @@
         "無憂樹",
         "積雪草",
         "薑黃",
-        "乾薑"
+        "乾薑",
+        "小茴香"
+      ],
+      "rel_symptoms": [
+        "發炎",
+        "子宮",
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -5591,6 +7149,18 @@
         "積雪草",
         "薑黃",
         "乾薑"
+      ],
+      "rel_symptoms": [
+        "呼吸",
+        "消化",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
       ]
     },
     {
@@ -5610,14 +7180,28 @@
         "Majja",
         "Shukra"
       ],
-      "rel_doshas": [],
+      "rel_doshas": [
+        "Vata"
+      ],
       "rel_herbs": [
         "睡茄",
         "印度天門冬",
         "印楝",
         "積雪草",
         "薑黃",
-        "乾薑"
+        "乾薑",
+        "小茴香"
+      ],
+      "rel_symptoms": [
+        "消化",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -5642,6 +7226,14 @@
         "三果實",
         "寬筋藤",
         "薑黃"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "DISEASE_HERBS-P0003",
+        "DISEASE_HERBS-P0008",
+        "DISEASE_HERBS-P0009",
+        "DISEASE_HERBS-P0013",
+        "DISEASE_HERBS-P0016"
       ]
     },
     {
@@ -5669,7 +7261,20 @@
         "聖羅勒",
         "甘草",
         "薑黃",
-        "乾薑"
+        "乾薑",
+        "小茴香"
+      ],
+      "rel_symptoms": [
+        "子宮",
+        "消化",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010",
+        "BASICS-P0011"
       ]
     },
     {
@@ -5694,6 +7299,7 @@
         "Shukra"
       ],
       "rel_doshas": [
+        "Vata",
         "Pitta"
       ],
       "rel_herbs": [
@@ -5703,6 +7309,17 @@
         "印楝",
         "積雪草",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "消化",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -5721,7 +7338,9 @@
         "Raktavaha",
         "Artavaha"
       ],
-      "rel_dhatus": [],
+      "rel_dhatus": [
+        "Rakta"
+      ],
       "rel_doshas": [
         "Vata",
         "Pitta"
@@ -5733,6 +7352,17 @@
         "聖羅勒",
         "薑黃",
         "乾薑"
+      ],
+      "rel_symptoms": [
+        "子宮",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
       ]
     },
     {
@@ -5762,6 +7392,18 @@
         "聖羅勒",
         "積雪草",
         "乾薑"
+      ],
+      "rel_symptoms": [
+        "失眠",
+        "子宮",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -5790,7 +7432,20 @@
         "印度天門冬",
         "印楝",
         "沒藥",
-        "薑黃"
+        "薑黃",
+        "車前子"
+      ],
+      "rel_symptoms": [
+        "便秘",
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -5821,6 +7476,16 @@
         "無憂樹",
         "寬筋藤",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "子宮"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0014",
+        "BASICS-P0015",
+        "BASICS-P0017",
+        "BASICS-P0019"
       ]
     },
     {
@@ -5852,6 +7517,17 @@
         "積雪草",
         "甘草",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "子宮",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
       ]
     },
     {
@@ -5883,6 +7559,16 @@
         "甘草",
         "薑黃",
         "乾薑"
+      ],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -5899,7 +7585,9 @@
         "Raktavaha",
         "Manovaha"
       ],
-      "rel_dhatus": [],
+      "rel_dhatus": [
+        "Rakta"
+      ],
       "rel_doshas": [
         "Pitta"
       ],
@@ -5911,7 +7599,19 @@
         "寬筋藤",
         "積雪草",
         "甘草",
-        "薑黃"
+        "薑黃",
+        "小茴香"
+      ],
+      "rel_symptoms": [
+        "發炎",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
       ]
     },
     {
@@ -5934,13 +7634,27 @@
         "Rakta",
         "Majja"
       ],
-      "rel_doshas": [],
+      "rel_doshas": [
+        "Vata"
+      ],
       "rel_herbs": [
         "睡茄",
         "印度天門冬",
         "印楝",
         "刺蒺藜",
-        "積雪草"
+        "積雪草",
+        "小茴香"
+      ],
+      "rel_symptoms": [
+        "消化",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -5962,6 +7676,7 @@
         "Shukra"
       ],
       "rel_doshas": [
+        "Vata",
         "Pitta"
       ],
       "rel_herbs": [
@@ -5973,7 +7688,18 @@
         "積雪草",
         "甘草",
         "薑黃",
-        "乾薑"
+        "乾薑",
+        "小茴香"
+      ],
+      "rel_symptoms": [
+        "呼吸"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "BASICS-P0011",
+        "BASICS-P0016"
       ]
     },
     {
@@ -6001,6 +7727,14 @@
         "聖羅勒",
         "薑黃",
         "乾薑"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0014",
+        "BASICS-P0016",
+        "BASICS-P0019",
+        "BASICS-P0022"
       ]
     },
     {
@@ -6018,7 +7752,9 @@
         "Raktavaha",
         "Artavaha"
       ],
-      "rel_dhatus": [],
+      "rel_dhatus": [
+        "Rakta"
+      ],
       "rel_doshas": [
         "Pitta",
         "Kapha"
@@ -6030,6 +7766,16 @@
         "甘草",
         "薑黃",
         "乾薑"
+      ],
+      "rel_symptoms": [
+        "子宮"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0014",
+        "BASICS-P0015",
+        "BASICS-P0017",
+        "BASICS-P0019"
       ]
     },
     {
@@ -6054,7 +7800,17 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0011",
+        "BASICS-P0014"
+      ]
     },
     {
       "id": "FORMULAS-P0034",
@@ -6075,7 +7831,16 @@
         "睡茄",
         "印度天門冬",
         "刺蒺藜",
-        "甘草"
+        "甘草",
+        "小茴香"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "DISEASE_HERBS-P0009",
+        "DISEASE_HERBS-P0010",
+        "DISEASE_HERBS-P0016",
+        "DISEASE_HERBS-P0018",
+        "DISEASE_HERBS-P0021"
       ]
     },
     {
@@ -6099,7 +7864,17 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "便秘"
+      ],
+      "rel_pages": [
+        "BASICS-P0004",
+        "BASICS-P0014",
+        "BASICS-P0015",
+        "BASICS-P0016",
+        "BASICS-P0018"
+      ]
     },
     {
       "id": "FORMULAS-P0036",
@@ -6133,6 +7908,19 @@
       ],
       "rel_herbs": [
         "乾薑"
+      ],
+      "rel_symptoms": [
+        "失眠",
+        "子宮",
+        "痛風",
+        "呼吸"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -6156,7 +7944,18 @@
         "Vata",
         "Pitta"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "消化",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
+      ]
     },
     {
       "id": "FORMULAS-P0038",
@@ -6189,6 +7988,18 @@
       "rel_herbs": [
         "訶子",
         "寬筋藤"
+      ],
+      "rel_symptoms": [
+        "痛風",
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -6209,7 +8020,17 @@
         "Vata",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "呼吸"
+      ],
+      "rel_pages": [
+        "BASICS-P0006",
+        "BASICS-P0011",
+        "BASICS-P0016",
+        "BASICS-P0017",
+        "BASICS-P0018"
+      ]
     },
     {
       "id": "FORMULAS-P0040",
@@ -6229,7 +8050,18 @@
       "rel_doshas": [
         "Pitta"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
+      ]
     },
     {
       "id": "FORMULAS-P0041",
@@ -6256,6 +8088,17 @@
       ],
       "rel_herbs": [
         "刺蒺藜"
+      ],
+      "rel_symptoms": [
+        "呼吸",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0011",
+        "BASICS-P0016",
+        "BASICS-P0017"
       ]
     },
     {
@@ -6273,7 +8116,18 @@
       ],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010",
+        "BASICS-P0011"
+      ]
     },
     {
       "id": "FORMULAS-P0043",
@@ -6297,7 +8151,18 @@
       "rel_doshas": [
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "子宮",
+        "痛風"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "BASICS-P0022"
+      ]
     },
     {
       "id": "FORMULAS-P0044",
@@ -6314,12 +8179,23 @@
         "Asthivaha"
       ],
       "rel_dhatus": [
+        "Rakta",
         "Asthi"
       ],
       "rel_doshas": [],
       "rel_herbs": [
         "刺蒺藜",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "痛風"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "BASICS-P0014"
       ]
     },
     {
@@ -6341,7 +8217,18 @@
         "Rakta"
       ],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
+      ]
     },
     {
       "id": "FORMULAS-P0046",
@@ -6367,7 +8254,22 @@
         "Rasa"
       ],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "便秘",
+        "子宮",
+        "呼吸",
+        "消化",
+        "皮膚",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
+      ]
     },
     {
       "id": "FORMULAS-P0047",
@@ -6378,7 +8280,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "FORMULAS-P0048",
@@ -6408,6 +8312,19 @@
         "訶子",
         "寬筋藤",
         "乾薑"
+      ],
+      "rel_symptoms": [
+        "便秘",
+        "發炎",
+        "痛風",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -6421,7 +8338,17 @@
       ],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "痛風"
+      ],
+      "rel_pages": [
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "BASICS-P0022",
+        "DISEASE_HERBS-P0017",
+        "DISEASE_HERBS-P0035"
+      ]
     },
     {
       "id": "FORMULAS-P0050",
@@ -6440,11 +8367,23 @@
         "Asthivaha"
       ],
       "rel_dhatus": [
-        "Rasa"
+        "Rasa",
+        "Rakta"
       ],
       "rel_doshas": [],
       "rel_herbs": [
         "寬筋藤"
+      ],
+      "rel_symptoms": [
+        "發炎",
+        "痛風"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "BASICS-P0014",
+        "BASICS-P0015"
       ]
     },
     {
@@ -6461,14 +8400,28 @@
         "Medovaha"
       ],
       "rel_dhatus": [
+        "Rakta",
         "Mamsa",
         "Meda"
       ],
-      "rel_doshas": [],
+      "rel_doshas": [
+        "Kapha"
+      ],
       "rel_herbs": [
         "訶子",
         "沒藥",
         "乾薑"
+      ],
+      "rel_symptoms": [
+        "發炎",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0014"
       ]
     },
     {
@@ -6480,7 +8433,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "FORMULAS-P0053",
@@ -6507,6 +8462,14 @@
         "三果實",
         "沒藥",
         "無憂樹"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0006",
+        "BASICS-P0016",
+        "BASICS-P0019",
+        "BASICS-P0025"
       ]
     },
     {
@@ -6520,7 +8483,9 @@
       ],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "FORMULAS-P0055",
@@ -6545,6 +8510,18 @@
       "rel_doshas": [],
       "rel_herbs": [
         "沒藥"
+      ],
+      "rel_symptoms": [
+        "子宮",
+        "痛風",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -6556,7 +8533,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "HOME-P0001",
@@ -6567,7 +8546,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "HOME-P0002",
@@ -6593,6 +8574,17 @@
       "rel_herbs": [
         "甘草",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "子宮",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0014"
       ]
     },
     {
@@ -6616,6 +8608,16 @@
         "印度天門冬",
         "寬筋藤",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "呼吸"
+      ],
+      "rel_pages": [
+        "BASICS-P0006",
+        "BASICS-P0011",
+        "BASICS-P0016",
+        "BASICS-P0017",
+        "BASICS-P0018"
       ]
     },
     {
@@ -6633,7 +8635,17 @@
       "rel_doshas": [
         "Vata"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010",
+        "BASICS-P0011"
+      ]
     },
     {
       "id": "HOME-P0005",
@@ -6650,6 +8662,7 @@
         "Majjavaha"
       ],
       "rel_dhatus": [
+        "Rasa",
         "Majja"
       ],
       "rel_doshas": [
@@ -6657,6 +8670,16 @@
       ],
       "rel_herbs": [
         "甘草"
+      ],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -6682,7 +8705,18 @@
         "Kapha"
       ],
       "rel_herbs": [
-        "薑黃"
+        "薑黃",
+        "小茴香"
+      ],
+      "rel_symptoms": [
+        "呼吸"
+      ],
+      "rel_pages": [
+        "BASICS-P0006",
+        "BASICS-P0011",
+        "BASICS-P0016",
+        "BASICS-P0017",
+        "BASICS-P0018"
       ]
     },
     {
@@ -6711,6 +8745,14 @@
       "rel_herbs": [
         "旱蓮草",
         "積雪草"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "BASICS-P0011",
+        "BASICS-P0016"
       ]
     },
     {
@@ -6724,11 +8766,23 @@
         "Majjavaha",
         "Manovaha"
       ],
-      "rel_dhatus": [],
+      "rel_dhatus": [
+        "Majja"
+      ],
       "rel_doshas": [],
       "rel_herbs": [
         "沒藥",
         "積雪草"
+      ],
+      "rel_symptoms": [
+        "呼吸"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "BASICS-P0011",
+        "BASICS-P0016"
       ]
     },
     {
@@ -6752,7 +8806,18 @@
       "rel_doshas": [
         "Vata"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "失眠",
+        "呼吸"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "BASICS-P0011",
+        "BASICS-P0016"
+      ]
     },
     {
       "id": "UNKNOWN",
@@ -6763,7 +8828,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0001",
@@ -6774,7 +8841,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0002",
@@ -6798,6 +8867,17 @@
       ],
       "rel_herbs": [
         "乾薑"
+      ],
+      "rel_symptoms": [
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
       ]
     },
     {
@@ -6827,6 +8907,18 @@
       "rel_herbs": [
         "三果實",
         "沒藥"
+      ],
+      "rel_symptoms": [
+        "發炎",
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
       ]
     },
     {
@@ -6869,6 +8961,20 @@
         "睡茄",
         "無憂樹",
         "乾薑"
+      ],
+      "rel_symptoms": [
+        "便秘",
+        "子宮",
+        "痛風",
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -6885,7 +8991,21 @@
       ],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [
+        "小茴香"
+      ],
+      "rel_symptoms": [
+        "便秘",
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010",
+        "BASICS-P0011"
+      ]
     },
     {
       "id": "SINGLE1-P0006",
@@ -6909,6 +9029,14 @@
       "rel_herbs": [
         "睡茄",
         "無憂樹"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "DISEASE_HERBS-P0020",
+        "DISEASE_HERBS-P0053",
+        "DISEASE_HERBS-P0058",
+        "DISEASE_HERBS-P0060",
+        "DX2-P0008"
       ]
     },
     {
@@ -6928,7 +9056,9 @@
         "Raktavaha",
         "Asthivaha"
       ],
-      "rel_dhatus": [],
+      "rel_dhatus": [
+        "Rakta"
+      ],
       "rel_doshas": [
         "Pitta",
         "Kapha"
@@ -6939,7 +9069,18 @@
         "印楝",
         "沒藥",
         "甘草",
-        "薑黃"
+        "薑黃",
+        "車前子"
+      ],
+      "rel_symptoms": [
+        "痛風"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0014"
       ]
     },
     {
@@ -6966,7 +9107,19 @@
       "rel_doshas": [
         "Pitta"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "便秘",
+        "發炎",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
+      ]
     },
     {
       "id": "SINGLE1-P0009",
@@ -6991,7 +9144,17 @@
         "Vata",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
+      ]
     },
     {
       "id": "SINGLE1-P0010",
@@ -7020,7 +9183,19 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "便秘",
+        "發炎",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
+      ]
     },
     {
       "id": "SINGLE1-P0011",
@@ -7041,7 +9216,9 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0012",
@@ -7053,11 +9230,23 @@
         "Raktavaha",
         "Mutravaha"
       ],
-      "rel_dhatus": [],
+      "rel_dhatus": [
+        "Rakta"
+      ],
       "rel_doshas": [],
       "rel_herbs": [
         "睡茄",
         "無憂樹"
+      ],
+      "rel_symptoms": [
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0014",
+        "BASICS-P0015",
+        "BASICS-P0017"
       ]
     },
     {
@@ -7085,7 +9274,17 @@
       "rel_doshas": [
         "Vata"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
+      ]
     },
     {
       "id": "SINGLE1-P0014",
@@ -7109,13 +9308,28 @@
         "Mutravaha"
       ],
       "rel_dhatus": [
+        "Rakta",
         "Shukra"
       ],
       "rel_doshas": [
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "便秘",
+        "子宮",
+        "呼吸",
+        "皮膚",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0011"
+      ]
     },
     {
       "id": "SINGLE1-P0015",
@@ -7130,7 +9344,15 @@
         "Rakta"
       ],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0014",
+        "BASICS-P0015",
+        "BASICS-P0017",
+        "BASICS-P0019"
+      ]
     },
     {
       "id": "SINGLE1-P0016",
@@ -7153,7 +9375,15 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0010",
+        "BASICS-P0014",
+        "BASICS-P0015",
+        "BASICS-P0017"
+      ]
     },
     {
       "id": "SINGLE1-P0017",
@@ -7175,6 +9405,18 @@
       ],
       "rel_herbs": [
         "訶子"
+      ],
+      "rel_symptoms": [
+        "便秘",
+        "消化",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
       ]
     },
     {
@@ -7198,7 +9440,8 @@
         "Artavaha"
       ],
       "rel_dhatus": [
-        "Rasa"
+        "Rasa",
+        "Rakta"
       ],
       "rel_doshas": [
         "Pitta",
@@ -7206,6 +9449,17 @@
       ],
       "rel_herbs": [
         "無憂樹"
+      ],
+      "rel_symptoms": [
+        "發炎",
+        "子宮"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0014",
+        "BASICS-P0015",
+        "BASICS-P0016",
+        "BASICS-P0017"
       ]
     },
     {
@@ -7238,6 +9492,18 @@
         "無憂樹",
         "甘草",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "子宮",
+        "消化",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -7261,6 +9527,14 @@
       ],
       "rel_herbs": [
         "睡茄"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "DISEASE_HERBS-P0020",
+        "DISEASE_HERBS-P0058",
+        "DISEASE_HERBS-P0060",
+        "DX2-P0009",
+        "DX2-P0011"
       ]
     },
     {
@@ -7284,6 +9558,16 @@
       "rel_doshas": [],
       "rel_herbs": [
         "睡茄"
+      ],
+      "rel_symptoms": [
+        "發炎"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -7315,6 +9599,17 @@
       ],
       "rel_herbs": [
         "睡茄"
+      ],
+      "rel_symptoms": [
+        "發炎",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -7326,7 +9621,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0024",
@@ -7339,7 +9636,9 @@
         "Rasa"
       ],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0025",
@@ -7376,6 +9675,18 @@
       "rel_herbs": [
         "刺蒺藜",
         "甘草"
+      ],
+      "rel_symptoms": [
+        "痛風",
+        "呼吸",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -7387,7 +9698,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0027",
@@ -7408,8 +9721,21 @@
         "Majja",
         "Shukra"
       ],
-      "rel_doshas": [],
-      "rel_herbs": []
+      "rel_doshas": [
+        "Vata"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
+      ]
     },
     {
       "id": "SINGLE1-P0028",
@@ -7435,7 +9761,19 @@
         "Vata",
         "Pitta"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "呼吸",
+        "消化",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
+      ]
     },
     {
       "id": "SINGLE1-P0029",
@@ -7462,10 +9800,22 @@
         "Shukra"
       ],
       "rel_doshas": [
+        "Vata",
         "Pitta"
       ],
       "rel_herbs": [
         "旱蓮草"
+      ],
+      "rel_symptoms": [
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -7482,7 +9832,17 @@
       ],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "子宮"
+      ],
+      "rel_pages": [
+        "BASICS-P0022",
+        "DISEASE_HERBS-P0007",
+        "DISEASE_HERBS-P0011",
+        "DISEASE_HERBS-P0013",
+        "DISEASE_HERBS-P0016"
+      ]
     },
     {
       "id": "SINGLE1-P0031",
@@ -7493,7 +9853,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0032",
@@ -7515,7 +9877,17 @@
         "Shukra"
       ],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
+      ]
     },
     {
       "id": "SINGLE1-P0033",
@@ -7532,11 +9904,24 @@
         "Artavaha",
         "Mutravaha"
       ],
-      "rel_dhatus": [],
+      "rel_dhatus": [
+        "Rakta"
+      ],
       "rel_doshas": [
         "Pitta"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "子宮",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0014",
+        "BASICS-P0015",
+        "BASICS-P0017"
+      ]
     },
     {
       "id": "SINGLE1-P0034",
@@ -7560,7 +9945,17 @@
       "rel_doshas": [
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "呼吸"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0011"
+      ]
     },
     {
       "id": "SINGLE1-P0035",
@@ -7589,6 +9984,17 @@
         "寬筋藤",
         "薑黃",
         "乾薑"
+      ],
+      "rel_symptoms": [
+        "消化",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -7605,7 +10011,15 @@
         "Shukra"
       ],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0016",
+        "DISEASE_HERBS-P0009",
+        "DISEASE_HERBS-P0013",
+        "DISEASE_HERBS-P0021"
+      ]
     },
     {
       "id": "SINGLE1-P0037",
@@ -7625,7 +10039,15 @@
       "rel_doshas": [
         "Vata"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0006",
+        "BASICS-P0015",
+        "BASICS-P0016",
+        "BASICS-P0017",
+        "BASICS-P0018"
+      ]
     },
     {
       "id": "SINGLE1-P0038",
@@ -7655,6 +10077,18 @@
         "刺蒺藜",
         "積雪草",
         "乾薑"
+      ],
+      "rel_symptoms": [
+        "失眠",
+        "呼吸",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0011"
       ]
     },
     {
@@ -7675,8 +10109,20 @@
         "Meda",
         "Majja"
       ],
-      "rel_doshas": [],
-      "rel_herbs": []
+      "rel_doshas": [
+        "Vata"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0010"
+      ]
     },
     {
       "id": "SINGLE1-P0040",
@@ -7696,6 +10142,14 @@
       ],
       "rel_herbs": [
         "沒藥"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "DISEASE_HERBS-P0020",
+        "DISEASE_HERBS-P0053",
+        "DX2-P0008",
+        "DX2-P0011",
+        "FORMULAS-P0031"
       ]
     },
     {
@@ -7724,11 +10178,24 @@
         "Majja"
       ],
       "rel_doshas": [
+        "Vata",
         "Pitta",
         "Kapha"
       ],
       "rel_herbs": [
         "沒藥"
+      ],
+      "rel_symptoms": [
+        "便秘",
+        "子宮",
+        "痛風"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -7748,9 +10215,21 @@
         "Rakta",
         "Majja"
       ],
-      "rel_doshas": [],
+      "rel_doshas": [
+        "Vata"
+      ],
       "rel_herbs": [
         "積雪草"
+      ],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -7789,6 +10268,22 @@
       ],
       "rel_herbs": [
         "積雪草"
+      ],
+      "rel_symptoms": [
+        "失眠",
+        "便秘",
+        "子宮",
+        "痛風",
+        "消化",
+        "皮膚",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -7812,7 +10307,19 @@
       "rel_doshas": [
         "Vata"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "呼吸",
+        "消化",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
+      ]
     },
     {
       "id": "SINGLE1-P0045",
@@ -7843,7 +10350,19 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "子宮",
+        "消化",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
+      ]
     },
     {
       "id": "SINGLE1-P0046",
@@ -7865,7 +10384,17 @@
       "rel_doshas": [
         "Vata"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
+      ]
     },
     {
       "id": "SINGLE1-P0047",
@@ -7895,7 +10424,20 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "便秘",
+        "子宮",
+        "消化",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
+      ]
     },
     {
       "id": "SINGLE1-P0048",
@@ -7921,8 +10463,23 @@
         "Meda",
         "Majja"
       ],
-      "rel_doshas": [],
-      "rel_herbs": []
+      "rel_doshas": [
+        "Vata"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "呼吸",
+        "消化",
+        "皮膚",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
+      ]
     },
     {
       "id": "SINGLE1-P0049",
@@ -7948,7 +10505,19 @@
       "rel_doshas": [
         "Vata"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "便秘",
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
+      ]
     },
     {
       "id": "SINGLE1-P0050",
@@ -7975,6 +10544,18 @@
       "rel_herbs": [
         "睡茄",
         "甘草"
+      ],
+      "rel_symptoms": [
+        "痛風",
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -8001,7 +10582,18 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "消化",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
+      ]
     },
     {
       "id": "SINGLE1-P0052",
@@ -8029,7 +10621,20 @@
         "Vata",
         "Pitta"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "便秘",
+        "發炎",
+        "消化",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
+      ]
     },
     {
       "id": "SINGLE1-P0053",
@@ -8049,8 +10654,20 @@
         "Meda",
         "Majja"
       ],
-      "rel_doshas": [],
-      "rel_herbs": []
+      "rel_doshas": [
+        "Vata"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
+      ]
     },
     {
       "id": "SINGLE1-P0054",
@@ -8061,7 +10678,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0055",
@@ -8072,7 +10691,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0056",
@@ -8083,7 +10704,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0057",
@@ -8108,9 +10731,21 @@
         "Shukra"
       ],
       "rel_doshas": [
+        "Vata",
         "Pitta"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "便秘",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
+      ]
     },
     {
       "id": "SINGLE1-P0058",
@@ -8130,6 +10765,7 @@
         "Majjavaha"
       ],
       "rel_dhatus": [
+        "Rasa",
         "Asthi",
         "Majja"
       ],
@@ -8140,7 +10776,20 @@
       "rel_herbs": [
         "沒藥",
         "甘草",
-        "乾薑"
+        "乾薑",
+        "小茴香"
+      ],
+      "rel_symptoms": [
+        "痛風",
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -8152,7 +10801,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0060",
@@ -8163,7 +10814,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0061",
@@ -8174,7 +10827,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0062",
@@ -8185,7 +10840,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0063",
@@ -8196,7 +10853,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0064",
@@ -8207,7 +10866,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0065",
@@ -8226,6 +10887,14 @@
       ],
       "rel_herbs": [
         "薑黃"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "DISEASE_HERBS-P0017",
+        "DISEASE_HERBS-P0053",
+        "DISEASE_HERBS-P0058",
+        "DX2-P0008",
+        "FORMULAS-P0008"
       ]
     },
     {
@@ -8252,7 +10921,18 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "便秘",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0014"
+      ]
     },
     {
       "id": "SINGLE1-P0067",
@@ -8267,8 +10947,18 @@
         "Rasa",
         "Majja"
       ],
-      "rel_doshas": [],
-      "rel_herbs": []
+      "rel_doshas": [
+        "Vata"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0016",
+        "BASICS-P0022",
+        "BASICS-P0028"
+      ]
     },
     {
       "id": "SINGLE1-P0068",
@@ -8285,7 +10975,19 @@
       "rel_doshas": [
         "Vata"
       ],
-      "rel_herbs": []
+      "rel_herbs": [
+        "曼陀羅"
+      ],
+      "rel_symptoms": [
+        "呼吸"
+      ],
+      "rel_pages": [
+        "BASICS-P0006",
+        "BASICS-P0011",
+        "BASICS-P0016",
+        "BASICS-P0017",
+        "BASICS-P0018"
+      ]
     },
     {
       "id": "SINGLE1-P0069",
@@ -8296,7 +10998,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0070",
@@ -8307,7 +11011,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0071",
@@ -8318,7 +11024,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0072",
@@ -8329,7 +11037,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0073",
@@ -8340,7 +11050,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0074",
@@ -8351,7 +11063,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0075",
@@ -8362,7 +11076,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0076",
@@ -8373,7 +11089,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0077",
@@ -8384,7 +11102,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0078",
@@ -8395,7 +11115,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0079",
@@ -8406,7 +11128,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0080",
@@ -8417,7 +11141,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0081",
@@ -8428,7 +11154,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0082",
@@ -8439,7 +11167,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0083",
@@ -8452,7 +11182,9 @@
       "rel_doshas": [],
       "rel_herbs": [
         "刺蒺藜"
-      ]
+      ],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0084",
@@ -8463,7 +11195,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0085",
@@ -8474,7 +11208,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0086",
@@ -8485,7 +11221,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0087",
@@ -8504,6 +11242,16 @@
       "rel_doshas": [],
       "rel_herbs": [
         "寬筋藤"
+      ],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
       ]
     },
     {
@@ -8543,6 +11291,19 @@
       ],
       "rel_herbs": [
         "寬筋藤"
+      ],
+      "rel_symptoms": [
+        "便秘",
+        "痛風",
+        "消化",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -8567,6 +11328,17 @@
       ],
       "rel_herbs": [
         "沒藥"
+      ],
+      "rel_symptoms": [
+        "子宮",
+        "痛風"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "BASICS-P0022"
       ]
     },
     {
@@ -8600,6 +11372,19 @@
       ],
       "rel_herbs": [
         "沒藥"
+      ],
+      "rel_symptoms": [
+        "發炎",
+        "子宮",
+        "痛風",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -8628,6 +11413,16 @@
         "三果實",
         "沒藥",
         "刺蒺藜"
+      ],
+      "rel_symptoms": [
+        "痛風"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "BASICS-P0022"
       ]
     },
     {
@@ -8649,7 +11444,17 @@
         "Shukra"
       ],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
+      ]
     },
     {
       "id": "SINGLE1-P0093",
@@ -8674,6 +11479,17 @@
       ],
       "rel_herbs": [
         "訶子"
+      ],
+      "rel_symptoms": [
+        "便秘",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -8698,7 +11514,8 @@
         "Purishavaha"
       ],
       "rel_dhatus": [
-        "Rakta"
+        "Rakta",
+        "Meda"
       ],
       "rel_doshas": [
         "Vata",
@@ -8706,7 +11523,21 @@
         "Kapha"
       ],
       "rel_herbs": [
-        "訶子"
+        "訶子",
+        "車前子"
+      ],
+      "rel_symptoms": [
+        "便秘",
+        "發炎",
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -8732,6 +11563,17 @@
       ],
       "rel_herbs": [
         "訶子"
+      ],
+      "rel_symptoms": [
+        "便秘",
+        "呼吸"
+      ],
+      "rel_pages": [
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "BASICS-P0011",
+        "BASICS-P0015",
+        "BASICS-P0016"
       ]
     },
     {
@@ -8743,7 +11585,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0097",
@@ -8754,7 +11598,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0098",
@@ -8772,7 +11618,18 @@
         "Rasa"
       ],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "子宮",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
+      ]
     },
     {
       "id": "SINGLE1-P0099",
@@ -8783,7 +11640,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0100",
@@ -8794,7 +11653,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0101",
@@ -8805,7 +11666,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0102",
@@ -8816,7 +11679,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0103",
@@ -8827,7 +11692,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0104",
@@ -8838,7 +11705,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0105",
@@ -8849,7 +11718,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0106",
@@ -8870,7 +11741,19 @@
         "Rakta"
       ],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "呼吸",
+        "消化",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
+      ]
     },
     {
       "id": "SINGLE1-P0107",
@@ -8898,6 +11781,19 @@
       ],
       "rel_herbs": [
         "寬筋藤"
+      ],
+      "rel_symptoms": [
+        "便秘",
+        "呼吸",
+        "消化",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -8909,7 +11805,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0109",
@@ -8920,7 +11818,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0110",
@@ -8937,7 +11837,17 @@
         "Rasa"
       ],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "子宮"
+      ],
+      "rel_pages": [
+        "BASICS-P0022",
+        "DISEASE_HERBS-P0007",
+        "DISEASE_HERBS-P0011",
+        "DISEASE_HERBS-P0013",
+        "DISEASE_HERBS-P0016"
+      ]
     },
     {
       "id": "SINGLE1-P0111",
@@ -8972,6 +11882,17 @@
         "沒藥",
         "無憂樹",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "消化",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -8983,7 +11904,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0113",
@@ -9003,8 +11926,20 @@
         "Majja",
         "Shukra"
       ],
-      "rel_doshas": [],
-      "rel_herbs": []
+      "rel_doshas": [
+        "Vata"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
+      ]
     },
     {
       "id": "SINGLE1-P0114",
@@ -9027,12 +11962,25 @@
         "Majja",
         "Shukra"
       ],
-      "rel_doshas": [],
+      "rel_doshas": [
+        "Vata"
+      ],
       "rel_herbs": [
         "睡茄",
         "印度天門冬",
         "積雪草",
         "乾薑"
+      ],
+      "rel_symptoms": [
+        "便秘",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -9044,7 +11992,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0116",
@@ -9055,7 +12005,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0117",
@@ -9066,7 +12018,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0118",
@@ -9077,7 +12031,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0119",
@@ -9088,7 +12044,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0120",
@@ -9099,7 +12057,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0121",
@@ -9120,7 +12080,18 @@
         "Shukra"
       ],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "消化",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
+      ]
     },
     {
       "id": "SINGLE1-P0122",
@@ -9151,6 +12122,16 @@
         "睡茄",
         "印度天門冬",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0014",
+        "BASICS-P0015"
       ]
     },
     {
@@ -9162,7 +12143,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0124",
@@ -9173,7 +12156,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0125",
@@ -9184,7 +12169,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0126",
@@ -9195,7 +12182,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0127",
@@ -9219,7 +12208,17 @@
       "rel_doshas": [
         "Pitta"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
+      ]
     },
     {
       "id": "SINGLE1-P0128",
@@ -9245,7 +12244,20 @@
         "Kapha"
       ],
       "rel_herbs": [
-        "乾薑"
+        "乾薑",
+        "小茴香"
+      ],
+      "rel_symptoms": [
+        "便秘",
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009",
+        "BASICS-P0010"
       ]
     },
     {
@@ -9257,7 +12269,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0130",
@@ -9268,7 +12282,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0131",
@@ -9279,7 +12295,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0132",
@@ -9290,7 +12308,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0133",
@@ -9306,7 +12326,15 @@
         "Rakta"
       ],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0014",
+        "BASICS-P0015",
+        "BASICS-P0016",
+        "BASICS-P0017"
+      ]
     },
     {
       "id": "SINGLE1-P0134",
@@ -9333,7 +12361,20 @@
       "rel_doshas": [
         "Pitta"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "發炎",
+        "子宮",
+        "皮膚",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0014",
+        "BASICS-P0015"
+      ]
     },
     {
       "id": "SINGLE1-P0135",
@@ -9367,6 +12408,18 @@
         "沒藥",
         "積雪草",
         "薑黃"
+      ],
+      "rel_symptoms": [
+        "子宮",
+        "痛風",
+        "皮膚"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0003",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006"
       ]
     },
     {
@@ -9378,7 +12431,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0137",
@@ -9389,7 +12444,11 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [
+        "薄荷"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0138",
@@ -9400,7 +12459,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0139",
@@ -9411,7 +12472,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0140",
@@ -9431,7 +12494,17 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0005",
+        "BASICS-P0017",
+        "BASICS-P0018",
+        "DISEASE_HERBS-P0018",
+        "DISEASE_HERBS-P0037"
+      ]
     },
     {
       "id": "SINGLE1-P0141",
@@ -9442,7 +12515,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0142",
@@ -9464,7 +12539,15 @@
         "Vata",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0014",
+        "BASICS-P0015",
+        "BASICS-P0016",
+        "BASICS-P0017"
+      ]
     },
     {
       "id": "SINGLE1-P0143",
@@ -9481,6 +12564,14 @@
       ],
       "rel_herbs": [
         "乾薑"
+      ],
+      "rel_symptoms": [
+        "發炎"
+      ],
+      "rel_pages": [
+        "FORMULAS-P0016",
+        "FORMULAS-P0048",
+        "FORMULAS-P0051"
       ]
     },
     {
@@ -9492,7 +12583,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0145",
@@ -9503,7 +12596,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0146",
@@ -9514,7 +12609,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0147",
@@ -9525,7 +12622,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0148",
@@ -9536,7 +12635,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0149",
@@ -9547,7 +12648,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0150",
@@ -9568,7 +12671,9 @@
         "Pitta",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0151",
@@ -9579,7 +12684,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0152",
@@ -9590,7 +12697,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0153",
@@ -9601,7 +12710,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0154",
@@ -9612,7 +12723,11 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [
+        "車前子"
+      ],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0155",
@@ -9623,7 +12738,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0156",
@@ -9644,7 +12761,17 @@
         "Vata",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0005",
+        "BASICS-P0017",
+        "BASICS-P0018",
+        "BASICS-P0023",
+        "DISEASE_HERBS-P0018"
+      ]
     },
     {
       "id": "SINGLE1-P0157",
@@ -9655,7 +12782,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0158",
@@ -9666,7 +12795,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0159",
@@ -9677,7 +12808,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0160",
@@ -9688,7 +12821,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0161",
@@ -9699,7 +12834,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0162",
@@ -9710,7 +12847,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0163",
@@ -9721,7 +12860,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0164",
@@ -9732,7 +12873,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE1-P0165",
@@ -9753,7 +12896,15 @@
         "Vata",
         "Kapha"
       ],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0014",
+        "BASICS-P0015",
+        "BASICS-P0017",
+        "BASICS-P0019"
+      ]
     },
     {
       "id": "UNKNOWN",
@@ -9764,7 +12915,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0001",
@@ -9775,7 +12928,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0002",
@@ -9786,7 +12941,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0003",
@@ -9797,7 +12954,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0004",
@@ -9808,7 +12967,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0005",
@@ -9819,7 +12980,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0006",
@@ -9830,7 +12993,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0007",
@@ -9841,7 +13006,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0008",
@@ -9852,7 +13019,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0009",
@@ -9863,7 +13032,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0010",
@@ -9874,7 +13045,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0011",
@@ -9885,7 +13058,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0012",
@@ -9896,7 +13071,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0013",
@@ -9927,6 +13104,16 @@
       ],
       "rel_herbs": [
         "聖羅勒"
+      ],
+      "rel_symptoms": [
+        "呼吸"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0006",
+        "BASICS-P0011",
+        "BASICS-P0014"
       ]
     },
     {
@@ -9958,6 +13145,17 @@
       ],
       "rel_herbs": [
         "聖羅勒"
+      ],
+      "rel_symptoms": [
+        "呼吸",
+        "消化"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0004",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0009"
       ]
     },
     {
@@ -9969,7 +13167,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0016",
@@ -9980,7 +13180,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0017",
@@ -9993,7 +13195,9 @@
         "Rasa"
       ],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0018",
@@ -10022,6 +13226,17 @@
       ],
       "rel_herbs": [
         "刺蒺藜"
+      ],
+      "rel_symptoms": [
+        "呼吸",
+        "利尿"
+      ],
+      "rel_pages": [
+        "BASICS-P0002",
+        "BASICS-P0005",
+        "BASICS-P0006",
+        "BASICS-P0011",
+        "BASICS-P0014"
       ]
     },
     {
@@ -10033,7 +13248,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0020",
@@ -10044,7 +13261,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0021",
@@ -10055,7 +13274,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0022",
@@ -10066,7 +13287,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0023",
@@ -10077,7 +13300,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0024",
@@ -10088,7 +13313,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0025",
@@ -10103,7 +13330,9 @@
       "rel_doshas": [],
       "rel_herbs": [
         "甘草"
-      ]
+      ],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0026",
@@ -10116,7 +13345,9 @@
       ],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0027",
@@ -10127,7 +13358,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0028",
@@ -10138,7 +13371,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0029",
@@ -10149,7 +13384,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0030",
@@ -10160,7 +13397,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     },
     {
       "id": "SINGLE2-P0031",
@@ -10171,7 +13410,9 @@
       "rel_srotas": [],
       "rel_dhatus": [],
       "rel_doshas": [],
-      "rel_herbs": []
+      "rel_herbs": [],
+      "rel_symptoms": [],
+      "rel_pages": []
     }
   ]
 }
