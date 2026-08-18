@@ -1,24 +1,350 @@
-/* 自訂 CSS 樣式 */
+/* ==========================================================================
+   朱婕老師阿育吠陀開源知識庫 3.0 (Ayurveda Open Portal 3.0) 頂級美學與設計系統
+   ========================================================================== */
+
+:root {
+  --primary-color: #2D5A27;         /* 自然植物深綠 */
+  --primary-light: #4A7C43;
+  --accent-color: #C87D32;          /* 暖金琥珀色 */
+  --accent-hover: #E0903E;
+  
+  --vata-color: #8E44AD;            /* Vata 風型 薰衣草紫/靛青 */
+  --pitta-color: #E67E22;           /* Pitta 火型 暖赤金 */
+  --kapha-color: #27AE60;           /* Kapha 水土型 翡翠綠 */
+  
+  --bg-gradient: linear-gradient(135deg, #0A120B 0%, #142215 50%, #080D09 100%);
+  --card-bg: rgba(255, 255, 255, 0.04);
+  --card-border: rgba(255, 255, 255, 0.12);
+  --glass-bg: rgba(18, 30, 19, 0.82);
+  --glass-border: rgba(200, 125, 50, 0.3);
+  --text-main: #F0F4F0;
+  --text-muted: #A0B5A0;
+  --text-inverse: #0F1710;
+  --shadow-glow: 0 8px 32px 0 rgba(45, 90, 39, 0.4);
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --transition-fast: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="light"] {
+  --bg-gradient: linear-gradient(135deg, #F4F7F4 0%, #E6EFE6 50%, #EEF4EE 100%);
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --card-border: rgba(45, 90, 39, 0.18);
+  --glass-bg: rgba(255, 255, 255, 0.88);
+  --glass-border: rgba(45, 90, 39, 0.25);
+  --text-main: #142215;
+  --text-muted: #4A5C4B;
+  --text-inverse: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    padding-top: 50px; /* 調整內容頂部距離，以適應橫幅高度 */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
 }
-.teacher-photo {
-    float: left;
-    margin-right: 20px;
-    max-width: 200px;
-    border-radius: 10px;
+
+/* 🌿 靈動極光動態背景 Mesh Glow */
+body::before {
+  content: '';
+  position: fixed;
+  top: -20%;
+  left: -20%;
+  width: 140%;
+  height: 140%;
+  background: radial-gradient(circle at 30% 30%, rgba(45, 90, 39, 0.18), transparent 50%),
+              radial-gradient(circle at 70% 70%, rgba(200, 125, 50, 0.12), transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+  animation: pulseGlow 12s ease-in-out infinite alternate;
 }
-.bg-image {
-    /* 設置背景圖片 */
-    background-image: url('../images/banner.jpg');
-    /* 背景圖片填滿整個元素 */
-    background-size: cover;
-    /* 使背景圖片固定，不隨滾動而移動 */
-    background-attachment: fixed;
-    /* 垂直和水平居中 */
-    background-position: center -250px;
-    /* 設置元素高度 */
-    height: 25vh; /* 調整橫幅區域的高度 */
-    /* 添加陰影以增強對比度 */
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+
+@keyframes pulseGlow {
+  0% { transform: scale(1) rotate(0deg); }
+  100% { transform: scale(1.08) rotate(3deg); }
+}
+
+/* 導覽列 Glass Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  z-index: 1000;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+.nav-brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.nav-brand span {
+  color: var(--accent-color);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: var(--transition-fast);
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.nav-links a:hover, .nav-links a.active {
+  color: var(--text-main);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* 主容器 Layout */
+.main-container {
+  max-width: 1240px;
+  margin: 100px auto 40px auto;
+  padding: 0 1.5rem;
+}
+
+/* Hero 卡片 */
+.hero-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  box-shadow: var(--shadow-glow);
+}
+
+.hero-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+  background: linear-gradient(135deg, var(--text-main) 0%, var(--accent-color) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* 搜尋框 Search Box */
+.search-box {
+  position: relative;
+  max-width: 720px;
+  margin: 1.5rem auto 0 auto;
+}
+
+.search-input {
+  width: 100%;
+  padding: 1.1rem 1.5rem 1.1rem 3.2rem;
+  font-size: 1.05rem;
+  border-radius: 50px;
+  border: 2px solid var(--glass-border);
+  background: rgba(0, 0, 0, 0.25);
+  color: var(--text-main);
+  outline: none;
+  transition: var(--transition-fast);
+  backdrop-filter: blur(8px);
+}
+
+.search-input:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 24px rgba(200, 125, 50, 0.4);
+}
+
+.search-icon {
+  position: absolute;
+  left: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: var(--text-muted);
+}
+
+/* Gunas 按鈕選單 */
+.guna-chip {
+  padding: 8px 16px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--card-border);
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.guna-chip:hover, .guna-chip.active {
+  background: var(--accent-color);
+  color: #FFF;
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 12px rgba(200, 125, 50, 0.35);
+}
+
+/* 草藥網格 Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+/* 草藥卡片 Herb Card */
+.herb-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  transition: var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.herb-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-color);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+}
+
+.herb-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.8rem;
+}
+
+.herb-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.herb-sanskrit {
+  font-size: 0.85rem;
+  color: var(--accent-color);
+  font-style: italic;
+}
+
+.badge-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 0.8rem;
+}
+
+.btn-icon {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-main);
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition: var(--transition-fast);
+}
+
+.btn-icon:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--accent-color);
+}
+
+.btn-sponsor {
+  background: linear-gradient(135deg, #C87D32 0%, #E0903E 100%);
+  color: #FFF !important;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 8px 18px !important;
+  box-shadow: 0 4px 14px rgba(200, 125, 50, 0.4);
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(12px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 1rem;
+}
+
+.modal-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  cursor: pointer;
 }

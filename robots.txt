@@ -1,1 +1,24 @@
+<<<<<<< HEAD
+# GEO (Generative Engine Optimization) & SEO Robots Config
 User-agent: *
+Allow: /
+Allow: /api/v1/herbs.json
+Allow: /assets/js/herbs_db.json
+
+# GEO AI Search Engine Crawlers (Explicitly Allow AI Citation)
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://bertwang.github.io/ayurveda_vaidya/sitemap.xml
+=======
+User-agent: *
+>>>>>>> 456be324b70a012759ffadaf1a372f76ff965871
