@@ -95,10 +95,6 @@ const FALLBACK_HERBS = [
     }
 ];
 
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("🌿 朱婕老師阿育吠陀開源知識庫 3.0 引擎啟動！");
-    
-    initThreeJS();
     initScrollReveal();
     updateFavBadge();
     initQuizEngine();
@@ -401,66 +397,4 @@ function checkUrlQueryParams() {
     }
 }
 
-function initThreeJS() {
-    const canvas = document.getElementById("canvas3d");
-    if (!canvas || typeof THREE === "undefined") return;
 
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
-
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-
-    const particlesCount = 350;
-    const geometry = new THREE.BufferGeometry();
-    const positions = new Float32Array(particlesCount * 3);
-    const colors = new Float32Array(particlesCount * 3);
-
-    const colorChoices = [
-        new THREE.Color("#10B981"),
-        new THREE.Color("#F59E0B"),
-        new THREE.Color("#A78BFA")
-    ];
-
-    for (let i = 0; i < particlesCount * 3; i += 3) {
-        positions[i] = (Math.random() - 0.5) * 15;
-        positions[i + 1] = (Math.random() - 0.5) * 15;
-        positions[i + 2] = (Math.random() - 0.5) * 15;
-
-        const c = colorChoices[Math.floor(Math.random() * colorChoices.length)];
-        colors[i] = c.r;
-        colors[i + 1] = c.g;
-        colors[i + 2] = c.b;
-    }
-
-    geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
-    geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
-
-    const material = new THREE.PointsMaterial({
-        size: 0.08,
-        vertexColors: true,
-        transparent: true,
-        opacity: 0.75
-    });
-
-    const particlesMesh = new THREE.Points(geometry, material);
-    scene.add(particlesMesh);
-
-    camera.position.z = 5;
-
-    function animate() {
-        requestAnimationFrame(animate);
-        particlesMesh.rotation.y += 0.0008;
-        particlesMesh.rotation.x += 0.0004;
-        renderer.render(scene, camera);
-    }
-
-    animate();
-
-    window.addEventListener('resize', () => {
-        camera.aspect = window.innerWidth / window.innerHeight;
-        camera.updateProjectionMatrix();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-    });
-}
