@@ -15865,6 +15865,942 @@
       "source_file": "docs/SINGLE2.md",
       "original_text": "*[裝飾封面：預期無文字]*",
       "digest_content": "*[裝飾封面：預期無文字]*"
+    },
+    {
+      "id": "DX1-P0001",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 1 頁",
+      "snippet": "```markdown\n## Layout & Region Analysis\nThe handwritten document is structured with a clear left-to-right reading flow, organized into distinct sections with numbered headings. The layout features:\n- **Header Section**: The topmost section begins with a numbered item (①) introducing the topic of \"製作糊 (kalka)\" (preparation of paste), followed by a list of herbs and a downward arrow symbol (↓) indicating a decrease in kapha.\n- **Multi-Column Structure**: The document uses a left-to-right column structure. The left column contains main headings and lists, while the right column contains supplementary explanations, translations, and detailed treatment protocols.\n- **Tables**: There are no formal tables, but there are structured lists with numbered items (e.g., 1., 2., 3.) that function similarly to tabular data.\n- **Side Notes**: Side notes are integrated into the main text, often indented or written in smaller handwriting. These include explanations of terms, treatment protocols, and herbal formulas.\n- **Symbol Preservation**: Arrow symbols (↑, ↓) are used to indicate increases or decreases in dosages or effects. The downward arrow (↓) appears in the first section to indicate a decrease in kapha.\n- **Verbatim Transcription**: The document contains Traditional Chinese, English, and Sanskrit terms, all of which are transcribed verbatim with 100% precision.\n---\n## Verbatim Multi-Lingual Decoding\n### Section ①: Preparation of Paste (kalka)\n- **Traditional Chinese**: 製作糊 (kalka). 放置在陰道如. ↓ kapha.\n- **English**: Preparation of paste (kalka). Place in vagina. ↓ kapha.\n- **Sanskrit**: kalka, kustha, pippali, arka, rock salt.\n### Section ②: Paste (kalka)\n- **Traditional Chinese**: 糊 (kalka)\n- **English**: Paste (kalka)\n- **Sanskrit**: Vaca, nilakamal, kustha, marica, Asvagandha, Haridra.\n### Section ③: Cleansing (沖洗)\n- **Traditional Chinese**: 沖洗\n- **English**: Cleansing\n- **Sanskrit**: Vetaśa root.\n### Vataja Type Treatment\n- **Traditional Chinese**: Vataja type 治療, 適合灌腸 (Uttara basti), oil 按摩 (Abhyanga), parisēka, picu.\n- **English**: Vataja type treatment, suitable for uttarabasti (retention enema), oil massage (abhyanga), parisēka, picu.\n- **Traditional Chinese**: 1. 可使用剉頁配合↓Vataja. yoni,\n- **English**: 1. Can use crushed leaves combined with ↓ Vataja. yoni,\n- **Traditional Chinese**: 2. 沖洗 - Guduci, Triphala, 陰道如.\n- **English**: 2. Cleansing - Guduci, Triphala, vagina.\n- **Traditional Chinese**: 3. 配方 Natadi Taila, Kanta kari, kustha, saindhava, devadaru. 有利於 yoni Śūla. picu (棉鐵). 浸入油. 貼在陰道如.\n- **English**: 3. Formula: Natadi Taila, Kanta kari, kustha, saindhava, devadaru. Beneficial for yoni Śūla. picu (cotton wool). Soak in oil. Apply to vagina.\n### Pittaja Yoni Vyapad: Treatment\n- **Traditional Chinese**: pittaja yoni Vyapad: Treatment\n- **English**: Pittaja yoni Vyapad: Treatment\n- **Traditional Chinese**: pittaja type 治療: 可同時利用 picu. oil 或 ghee.\n- **English**: Pittaja type treatment: Can simultaneously use picu, oil, or ghee.\n- **Traditional Chinese**: For pittaja yoni, 可用 śita (糖, 沖洗陰道), 再置入 picu.\n- **English**: For pittaja yoni, can use śita (sugar, cleanse vagina), then place in picu.\n### Kaphaja Yoni Treatment\n- **Traditional Chinese**: kaphaja yoni 治療: 配方 pippali, marica, māsa, satahva, kustha, saindhava 入放入陰道中, 可清潔陰道 (用食指)\n- **English**: Kaphaja yoni treatment: Formula: pippali, marica, māsa, satahva, kustha, saindhava. Insert into vagina, can cleanse vagina (using thumb).\n### Terminology Explanation\n- **Traditional Chinese**: 字詞解釋:\n- **English**: Terminology Explanation:\n- **Traditional Chinese**: Rakta - Blood: 紅色的血液在動脈與靜脈中循環.\n- **English**: Rakta - Blood: Red blood circulates in arteries and veins.\n- **Traditional Chinese**: Udavarta Yoni - Dysmenorrhea 經痛. 臨床上有用的草藥.\n- **English**: Udavarta Yoni - Dysmenorrhea (painful menstruation). Useful herbs in clinical practice.\n- **Traditional Chinese**: · kashtartavahara (KH).\n- **English**: · kashtartavahara (KH).\n- **Traditional Chinese**: · Dashmoola → Trivritta Taila → Uttarabasti (灌腸).\n- **English**: · Dashmoola → Trivritta Taila → Uttarabasti (retention enema).\n```\n---\n## Symbol & Table Preservation\n### Arrow Symbols\n- **↓ kapha**: Indicates a decrease in kapha.\n- **↓ Vataja**: Indicates a decrease in vata.\n- **↑**: Not present in this document.\n### GitHub Flavored Markdown Tables\nNo formal tables are present in the document. The structured lists are preserved as numbered items within the verbatim transcription.\n```",
+      "original_text": "```markdown\n## Layout & Region Analysis\nThe handwritten document is structured with a clear left-to-right reading flow, organized into distinct sections with numbered headings. The layout features:\n- **Header Section**: The topmost section begins with a numbered item (①) introducing the topic of \"製作糊 (kalka)\" (preparation of paste), followed by a list of herbs and a downward arrow symbol (↓) indicating a decrease in kapha.\n- **Multi-Column Structure**: The document uses a left-to-right column structure. The left column contains main headings and lists, while the right column contains supplementary explanations, translations, and detailed treatment protocols.\n- **Tables**: There are no formal tables, but there are structured lists with numbered items (e.g., 1., 2., 3.) that function similarly to tabular data.\n- **Side Notes**: Side notes are integrated into the main text, often indented or written in smaller handwriting. These include explanations of terms, treatment protocols, and herbal formulas.\n- **Symbol Preservation**: Arrow symbols (↑, ↓) are used to indicate increases or decreases in dosages or effects. The downward arrow (↓) appears in the first section to indicate a decrease in kapha.\n- **Verbatim Transcription**: The document contains Traditional Chinese, English, and Sanskrit terms, all of which are transcribed verbatim with 100% precision.\n---\n## Verbatim Multi-Lingual Decoding\n### Section ①: Preparation of Paste (kalka)\n- **Traditional Chinese**: 製作糊 (kalka). 放置在陰道如. ↓ kapha.\n- **English**: Preparation of paste (kalka). Place in vagina. ↓ kapha.\n- **Sanskrit**: kalka, kustha, pippali, arka, rock salt.\n### Section ②: Paste (kalka)\n- **Traditional Chinese**: 糊 (kalka)\n- **English**: Paste (kalka)\n- **Sanskrit**: Vaca, nilakamal, kustha, marica, Asvagandha, Haridra.\n### Section ③: Cleansing (沖洗)\n- **Traditional Chinese**: 沖洗\n- **English**: Cleansing\n- **Sanskrit**: Vetaśa root.\n### Vataja Type Treatment\n- **Traditional Chinese**: Vataja type 治療, 適合灌腸 (Uttara basti), oil 按摩 (Abhyanga), parisēka, picu.\n- **English**: Vataja type treatment, suitable for uttarabasti (retention enema), oil massage (abhyanga), parisēka, picu.\n- **Traditional Chinese**: 1. 可使用剉頁配合↓Vataja. yoni,\n- **English**: 1. Can use crushed leaves combined with ↓ Vataja. yoni,\n- **Traditional Chinese**: 2. 沖洗 - Guduci, Triphala, 陰道如.\n- **English**: 2. Cleansing - Guduci, Triphala, vagina.\n- **Traditional Chinese**: 3. 配方 Natadi Taila, Kanta kari, kustha, saindhava, devadaru. 有利於 yoni Śūla. picu (棉鐵). 浸入油. 貼在陰道如.\n- **English**: 3. Formula: Natadi Taila, Kanta kari, kustha, saindhava, devadaru. Beneficial for yoni Śūla. picu (cotton wool). Soak in oil. Apply to vagina.\n### Pittaja Yoni Vyapad: Treatment\n- **Traditional Chinese**: pittaja yoni Vyapad: Treatment\n- **English**: Pittaja yoni Vyapad: Treatment\n- **Traditional Chinese**: pittaja type 治療: 可同時利用 picu. oil 或 ghee.\n- **English**: Pittaja type treatment: Can simultaneously use picu, oil, or ghee.\n- **Traditional Chinese**: For pittaja yoni, 可用 śita (糖, 沖洗陰道), 再置入 picu.\n- **English**: For pittaja yoni, can use śita (sugar, cleanse vagina), then place in picu.\n### Kaphaja Yoni Treatment\n- **Traditional Chinese**: kaphaja yoni 治療: 配方 pippali, marica, māsa, satahva, kustha, saindhava 入放入陰道中, 可清潔陰道 (用食指)\n- **English**: Kaphaja yoni treatment: Formula: pippali, marica, māsa, satahva, kustha, saindhava. Insert into vagina, can cleanse vagina (using thumb).\n### Terminology Explanation\n- **Traditional Chinese**: 字詞解釋:\n- **English**: Terminology Explanation:\n- **Traditional Chinese**: Rakta - Blood: 紅色的血液在動脈與靜脈中循環.\n- **English**: Rakta - Blood: Red blood circulates in arteries and veins.\n- **Traditional Chinese**: Udavarta Yoni - Dysmenorrhea 經痛. 臨床上有用的草藥.\n- **English**: Udavarta Yoni - Dysmenorrhea (painful menstruation). Useful herbs in clinical practice.\n- **Traditional Chinese**: · kashtartavahara (KH).\n- **English**: · kashtartavahara (KH).\n- **Traditional Chinese**: · Dashmoola → Trivritta Taila → Uttarabasti (灌腸).\n- **English**: · Dashmoola → Trivritta Taila → Uttarabasti (retention enema).\n```\n---\n## Symbol & Table Preservation\n### Arrow Symbols\n- **↓ kapha**: Indicates a decrease in kapha.\n- **↓ Vataja**: Indicates a decrease in vata.\n- **↑**: Not present in this document.\n### GitHub Flavored Markdown Tables\nNo formal tables are present in the document. The structured lists are preserved as numbered items within the verbatim transcription.\n```",
+      "digest_content": "```markdown\n## Layout & Region Analysis\nThe handwritten document is structured with a clear left-to-right reading flow, organized into distinct sections with numbered headings. The layout features:\n- **Header Section**: The topmost section begins with a numbered item (①) introducing the topic of \"製作糊 (kalka)\" (preparation of paste), followed by a list of herbs and a downward arrow symbol (↓) indicating a decrease in kapha.\n- **Multi-Column Structure**: The document uses a left-to-right column structure. The left column contains main headings and lists, while the right column contains supplementary explanations, translations, and detailed treatment protocols.\n- **Tables**: There are no formal tables, but there are structured lists with numbered items (e.g., 1., 2., 3.) that function similarly to tabular data.\n- **Side Notes**: Side notes are integrated into the main text, often indented or written in smaller handwriting. These include explanations of terms, treatment protocols, and herbal formulas.\n- **Symbol Preservation**: Arrow symbols (↑, ↓) are used to indicate increases or decreases in dosages or effects. The downward arrow (↓) appears in the first section to indicate a decrease in kapha.\n- **Verbatim Transcription**: The document contains Traditional Chinese, English, and Sanskrit terms, all of which are transcribed verbatim with 100% precision.\n---\n## Verbatim Multi-Lingual Decoding\n### Section ①: Preparation of Paste (kalka)\n- **Traditional Chinese**: 製作糊 (kalka). 放置在陰道如. ↓ kapha.\n- **English**: Preparation of paste (kalka). Place in vagina. ↓ kapha.\n- **Sanskrit**: kalka, kustha, pippali, arka, rock salt.\n### Section ②: Paste (kalka)\n- **Traditional Chinese**: 糊 (kalka)\n- **English**: Paste (kalka)\n- **Sanskrit**: Vaca, nilakamal, kustha, marica, Asvagandha, Haridra.\n### Section ③: Cleansing (沖洗)\n- **Traditional Chinese**: 沖洗\n- **English**: Cleansing\n- **Sanskrit**: Vetaśa root.\n### Vataja Type Treatment\n- **Traditional Chinese**: Vataja type 治療, 適合灌腸 (Uttara basti), oil 按摩 (Abhyanga), parisēka, picu.\n- **English**: Vataja type treatment, suitable for uttarabasti (retention enema), oil massage (abhyanga), parisēka, picu.\n- **Traditional Chinese**: 1. 可使用剉頁配合↓Vataja. yoni,\n- **English**: 1. Can use crushed leaves combined with ↓ Vataja. yoni,\n- **Traditional Chinese**: 2. 沖洗 - Guduci, Triphala, 陰道如.\n- **English**: 2. Cleansing - Guduci, Triphala, vagina.\n- **Traditional Chinese**: 3. 配方 Natadi Taila, Kanta kari, kustha, saindhava, devadaru. 有利於 yoni Śūla. picu (棉鐵). 浸入油. 貼在陰道如.\n- **English**: 3. Formula: Natadi Taila, Kanta kari, kustha, saindhava, devadaru. Beneficial for yoni Śūla. picu (cotton wool). Soak in oil. Apply to vagina.\n### Pittaja Yoni Vyapad: Treatment\n- **Traditional Chinese**: pittaja yoni Vyapad: Treatment\n- **English**: Pittaja yoni Vyapad: Treatment\n- **Traditional Chinese**: pittaja type 治療: 可同時利用 picu. oil 或 ghee.\n- **English**: Pittaja type treatment: Can simultaneously use picu, oil, or ghee.\n- **Traditional Chinese**: For pittaja yoni, 可用 śita (糖, 沖洗陰道), 再置入 picu.\n- **English**: For pittaja yoni, can use śita (sugar, cleanse vagina), then place in picu.\n### Kaphaja Yoni Treatment\n- **Traditional Chinese**: kaphaja yoni 治療: 配方 pippali, marica, māsa, satahva, kustha, saindhava 入放入陰道中, 可清潔陰道 (用食指)\n- **English**: Kaphaja yoni treatment: Formula: pippali, marica, māsa, satahva, kustha, saindhava. Insert into vagina, can cleanse vagina (using thumb).\n### Terminology Explanation\n- **Traditional Chinese**: 字詞解釋:\n- **English**: Terminology Explanation:\n- **Traditional Chinese**: Rakta - Blood: 紅色的血液在動脈與靜脈中循環.\n- **English**: Rakta - Blood: Red blood circulates in arteries and veins.\n- **Traditional Chinese**: Udavarta Yoni - Dysmenorrhea 經痛. 臨床上有用的草藥.\n- **English**: Udavarta Yoni - Dysmenorrhea (painful menstruation). Useful herbs in clinical practice.\n- **Traditional Chinese**: · kashtartavahara (KH).\n- **English**: · kashtartavahara (KH).\n- **Traditional Chinese**: · Dashmoola → Trivritta Taila → Uttarabasti (灌腸).\n- **English**: · Dashmoola → Trivritta Taila → Uttarabasti (retention enema).\n```\n---\n## Symbol & Table Preservation\n### Arrow Symbols\n- **↓ kapha**: Indicates a decrease in kapha.\n- **↓ Vataja**: Indicates a decrease in vata.\n- **↑**: Not present in this document.\n### GitHub Flavored Markdown Tables\nNo formal tables are present in the document. The structured lists are preserved as numbered items within the verbatim transcription.\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0002",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 2 頁",
+      "snippet": "```markdown\n## Layout & Region Analysis\nThe handwritten document is structured in a vertical, left-to-right reading flow, with distinct sections separated by line breaks and thematic groupings. The content is organized into a series of definitions and treatment protocols, each introduced by a Sanskrit or English term followed by a descriptive phrase in Traditional Chinese. There are no formal tables, but several sections contain lists of conditions and corresponding treatments, which are presented in a semi-structured, paragraph-like format. Side notes are minimal, with only a few annotations (e.g., “↑” for “increase”) embedded within the text. The document appears to be a clinical or Ayurvedic reference guide, with a focus on vaginal conditions and their management.\n---\n## Verbatim Multi-Lingual Decoding\n**Tridoshaja: Sandha yoni / Sandi yoni** – 女人沒有月經，乳房未發育，性交過程，產生性冷感。\n**Aphalini yoni / Andali yoni** – 與非常粗壯的男人交配，造成陰道脫垂。\n**Maha yoni / Vivrta yoni / Sūcimukhi** – 陰道很寬。\n※具開口，如嚴重的火山噴發—燒灼感。\n**Sucivaktra yoni** – 陰道很窄（收縮）。\n**In Tridoshaja yoni** – 是因為所有的Dosha如瀕。三Dosha的組合所產生的五種病狀，是不治之症。\n**對於：每個Dosha單獨所引起的疾病，是可以治療的。如：Pāñcakārmās是特別可行的，陰道灌腸也可以的。**\n**如果：陰道較粗糙，冷，交配時疼痛（無法交配），不敏感，使用kumbhi sveda用溫軟的土，和動物肉（心中）一起煮，用蒸氣蒸陰道。Vesāvara，用肉湯與甜味藥物後，沖洗陰道。她—衫頸穿浸過油的尿布，和藥糊貼。**\n**如果：有灼熱和嘔吐的感覺，先做“冷”的治療（如：出血性疾病）。如果：陰道有滲出膿液，利用藥湯清洗，可添加Gomutra，和lavanā（Saindhava）。如果：陰道癢癢，可用Bṛhāei的糊，和二單位的Hanidra，採用薰蒸。**\n**For karnini yoni，將精製的藥物↑，放入陰道。**\n**For prasramsini yoni，陰道應該抹Ghee，利用縫帶將牛奶和肉湯內推入陰道。**\n---\n## Symbol & Table Preservation\nNo formal tables are present in the document. However, the following symbols are preserved as per the instruction:\n- **↑** (increase) – appears in the line: “For karnini yoni，將精製的藥物↑，放入陰道。”\nAll other symbols (e.g., “※”) are transcribed as-is, and no tables are converted since none are structured in a tabular format.\n```",
+      "original_text": "```markdown\n## Layout & Region Analysis\nThe handwritten document is structured in a vertical, left-to-right reading flow, with distinct sections separated by line breaks and thematic groupings. The content is organized into a series of definitions and treatment protocols, each introduced by a Sanskrit or English term followed by a descriptive phrase in Traditional Chinese. There are no formal tables, but several sections contain lists of conditions and corresponding treatments, which are presented in a semi-structured, paragraph-like format. Side notes are minimal, with only a few annotations (e.g., “↑” for “increase”) embedded within the text. The document appears to be a clinical or Ayurvedic reference guide, with a focus on vaginal conditions and their management.\n---\n## Verbatim Multi-Lingual Decoding\n**Tridoshaja: Sandha yoni / Sandi yoni** – 女人沒有月經，乳房未發育，性交過程，產生性冷感。\n**Aphalini yoni / Andali yoni** – 與非常粗壯的男人交配，造成陰道脫垂。\n**Maha yoni / Vivrta yoni / Sūcimukhi** – 陰道很寬。\n※具開口，如嚴重的火山噴發—燒灼感。\n**Sucivaktra yoni** – 陰道很窄（收縮）。\n**In Tridoshaja yoni** – 是因為所有的Dosha如瀕。三Dosha的組合所產生的五種病狀，是不治之症。\n**對於：每個Dosha單獨所引起的疾病，是可以治療的。如：Pāñcakārmās是特別可行的，陰道灌腸也可以的。**\n**如果：陰道較粗糙，冷，交配時疼痛（無法交配），不敏感，使用kumbhi sveda用溫軟的土，和動物肉（心中）一起煮，用蒸氣蒸陰道。Vesāvara，用肉湯與甜味藥物後，沖洗陰道。她—衫頸穿浸過油的尿布，和藥糊貼。**\n**如果：有灼熱和嘔吐的感覺，先做“冷”的治療（如：出血性疾病）。如果：陰道有滲出膿液，利用藥湯清洗，可添加Gomutra，和lavanā（Saindhava）。如果：陰道癢癢，可用Bṛhāei的糊，和二單位的Hanidra，採用薰蒸。**\n**For karnini yoni，將精製的藥物↑，放入陰道。**\n**For prasramsini yoni，陰道應該抹Ghee，利用縫帶將牛奶和肉湯內推入陰道。**\n---\n## Symbol & Table Preservation\nNo formal tables are present in the document. However, the following symbols are preserved as per the instruction:\n- **↑** (increase) – appears in the line: “For karnini yoni，將精製的藥物↑，放入陰道。”\nAll other symbols (e.g., “※”) are transcribed as-is, and no tables are converted since none are structured in a tabular format.\n```",
+      "digest_content": "```markdown\n## Layout & Region Analysis\nThe handwritten document is structured in a vertical, left-to-right reading flow, with distinct sections separated by line breaks and thematic groupings. The content is organized into a series of definitions and treatment protocols, each introduced by a Sanskrit or English term followed by a descriptive phrase in Traditional Chinese. There are no formal tables, but several sections contain lists of conditions and corresponding treatments, which are presented in a semi-structured, paragraph-like format. Side notes are minimal, with only a few annotations (e.g., “↑” for “increase”) embedded within the text. The document appears to be a clinical or Ayurvedic reference guide, with a focus on vaginal conditions and their management.\n---\n## Verbatim Multi-Lingual Decoding\n**Tridoshaja: Sandha yoni / Sandi yoni** – 女人沒有月經，乳房未發育，性交過程，產生性冷感。\n**Aphalini yoni / Andali yoni** – 與非常粗壯的男人交配，造成陰道脫垂。\n**Maha yoni / Vivrta yoni / Sūcimukhi** – 陰道很寬。\n※具開口，如嚴重的火山噴發—燒灼感。\n**Sucivaktra yoni** – 陰道很窄（收縮）。\n**In Tridoshaja yoni** – 是因為所有的Dosha如瀕。三Dosha的組合所產生的五種病狀，是不治之症。\n**對於：每個Dosha單獨所引起的疾病，是可以治療的。如：Pāñcakārmās是特別可行的，陰道灌腸也可以的。**\n**如果：陰道較粗糙，冷，交配時疼痛（無法交配），不敏感，使用kumbhi sveda用溫軟的土，和動物肉（心中）一起煮，用蒸氣蒸陰道。Vesāvara，用肉湯與甜味藥物後，沖洗陰道。她—衫頸穿浸過油的尿布，和藥糊貼。**\n**如果：有灼熱和嘔吐的感覺，先做“冷”的治療（如：出血性疾病）。如果：陰道有滲出膿液，利用藥湯清洗，可添加Gomutra，和lavanā（Saindhava）。如果：陰道癢癢，可用Bṛhāei的糊，和二單位的Hanidra，採用薰蒸。**\n**For karnini yoni，將精製的藥物↑，放入陰道。**\n**For prasramsini yoni，陰道應該抹Ghee，利用縫帶將牛奶和肉湯內推入陰道。**\n---\n## Symbol & Table Preservation\nNo formal tables are present in the document. However, the following symbols are preserved as per the instruction:\n- **↑** (increase) – appears in the line: “For karnini yoni，將精製的藥物↑，放入陰道。”\nAll other symbols (e.g., “※”) are transcribed as-is, and no tables are converted since none are structured in a tabular format.\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0003",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 3 頁",
+      "snippet": "```markdown\n# Mūtrāghāta pratisedha - Treatment of Retention of urine\n## Header & Definitions\n**Mūtrāghāta** = Suppression 抑制\nMūtrāghāta = retention of urine. 有十種疾病.\n1. Vatakundalika\n2. Vatāsthila\n3. Vatabasti\n4. mutratita\n5. mūtrajathara\n6. mūtrotsānga\n7. mūtrakṣaya\n8. mūtragrañthi\n9. mūtraśakra\n10. usnavāta\n11. mūtrasada ×2\n---\n## 1. Vāta kundalika\n由於內部乾燥，或抑制排尿，Vāta得到加重。以循環的方式，連同尿在膀胱內移動。病人每次尿量少伴有疼痛。這種疾病被稱為“Vāta kundalika”，是嚴重的疾病。\n引起「前列腺腺體」腫大。\n---\n## 2. Vāta sthila\n由於 Vāta 加重，阻塞了便的通道（直腸），在直腸或膀胱內產生一個硬的腫瘤，是不可移動而向上鼓出，從而產生阻礙糞便、尿液和屁的排出。脹氣和膀胱劇烈疼痛。這種疾病稱為“Vāta sthila”。Asthila (prostate gland) 前列腺。\n---\n## 3. Vāta basti\n由於抑制小便，使得居住在膀胱的 Vāta 被加重，可能形成塊，而阻塞在膀胱口，造成尿液滯留在膀胱內，造成膀胱和腹部疼痛。這種疾病稱為“Vāta basti”。\n---\n## 4. mutratita\n由於長時間的憋尿，當要排解時，卻尿不出來，經過一些努力才排出少的量，腹部有輕度的疼痛。這種疾病稱為“mutratita”，是因為憋尿。\n---\n## 5. mūtrajathara\n由於憋尿，使得 Apana Vāta 越來越加劇，朝著向上的方向，大量的堆積在腹部內，脹下產生腹脹、劇烈疼痛，並阻塞往下的通道（尿道和直腸）。這種現象稱為“mūtrajathara”。\n---\n## References\n* Caraka (=1, p423, Mūtrākṛcchra (dysuria) 尿痛. Susruta, P379.\n```",
+      "original_text": "```markdown\n# Mūtrāghāta pratisedha - Treatment of Retention of urine\n## Header & Definitions\n**Mūtrāghāta** = Suppression 抑制\nMūtrāghāta = retention of urine. 有十種疾病.\n1. Vatakundalika\n2. Vatāsthila\n3. Vatabasti\n4. mutratita\n5. mūtrajathara\n6. mūtrotsānga\n7. mūtrakṣaya\n8. mūtragrañthi\n9. mūtraśakra\n10. usnavāta\n11. mūtrasada ×2\n---\n## 1. Vāta kundalika\n由於內部乾燥，或抑制排尿，Vāta得到加重。以循環的方式，連同尿在膀胱內移動。病人每次尿量少伴有疼痛。這種疾病被稱為“Vāta kundalika”，是嚴重的疾病。\n引起「前列腺腺體」腫大。\n---\n## 2. Vāta sthila\n由於 Vāta 加重，阻塞了便的通道（直腸），在直腸或膀胱內產生一個硬的腫瘤，是不可移動而向上鼓出，從而產生阻礙糞便、尿液和屁的排出。脹氣和膀胱劇烈疼痛。這種疾病稱為“Vāta sthila”。Asthila (prostate gland) 前列腺。\n---\n## 3. Vāta basti\n由於抑制小便，使得居住在膀胱的 Vāta 被加重，可能形成塊，而阻塞在膀胱口，造成尿液滯留在膀胱內，造成膀胱和腹部疼痛。這種疾病稱為“Vāta basti”。\n---\n## 4. mutratita\n由於長時間的憋尿，當要排解時，卻尿不出來，經過一些努力才排出少的量，腹部有輕度的疼痛。這種疾病稱為“mutratita”，是因為憋尿。\n---\n## 5. mūtrajathara\n由於憋尿，使得 Apana Vāta 越來越加劇，朝著向上的方向，大量的堆積在腹部內，脹下產生腹脹、劇烈疼痛，並阻塞往下的通道（尿道和直腸）。這種現象稱為“mūtrajathara”。\n---\n## References\n* Caraka (=1, p423, Mūtrākṛcchra (dysuria) 尿痛. Susruta, P379.\n```",
+      "digest_content": "```markdown\n# Mūtrāghāta pratisedha - Treatment of Retention of urine\n## Header & Definitions\n**Mūtrāghāta** = Suppression 抑制\nMūtrāghāta = retention of urine. 有十種疾病.\n1. Vatakundalika\n2. Vatāsthila\n3. Vatabasti\n4. mutratita\n5. mūtrajathara\n6. mūtrotsānga\n7. mūtrakṣaya\n8. mūtragrañthi\n9. mūtraśakra\n10. usnavāta\n11. mūtrasada ×2\n---\n## 1. Vāta kundalika\n由於內部乾燥，或抑制排尿，Vāta得到加重。以循環的方式，連同尿在膀胱內移動。病人每次尿量少伴有疼痛。這種疾病被稱為“Vāta kundalika”，是嚴重的疾病。\n引起「前列腺腺體」腫大。\n---\n## 2. Vāta sthila\n由於 Vāta 加重，阻塞了便的通道（直腸），在直腸或膀胱內產生一個硬的腫瘤，是不可移動而向上鼓出，從而產生阻礙糞便、尿液和屁的排出。脹氣和膀胱劇烈疼痛。這種疾病稱為“Vāta sthila”。Asthila (prostate gland) 前列腺。\n---\n## 3. Vāta basti\n由於抑制小便，使得居住在膀胱的 Vāta 被加重，可能形成塊，而阻塞在膀胱口，造成尿液滯留在膀胱內，造成膀胱和腹部疼痛。這種疾病稱為“Vāta basti”。\n---\n## 4. mutratita\n由於長時間的憋尿，當要排解時，卻尿不出來，經過一些努力才排出少的量，腹部有輕度的疼痛。這種疾病稱為“mutratita”，是因為憋尿。\n---\n## 5. mūtrajathara\n由於憋尿，使得 Apana Vāta 越來越加劇，朝著向上的方向，大量的堆積在腹部內，脹下產生腹脹、劇烈疼痛，並阻塞往下的通道（尿道和直腸）。這種現象稱為“mūtrajathara”。\n---\n## References\n* Caraka (=1, p423, Mūtrākṛcchra (dysuria) 尿痛. Susruta, P379.\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0004",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 4 頁",
+      "snippet": "```markdown\n## Layout & Region Analysis\n- **Header**: The topmost section contains a handwritten title: \"Granthi cikitsa - treatment of benign tumors 治療良性腫瘤\", with a reference \"Ast(I)P305\" in the upper right corner.\n- **Main Body**: The content is organized into two primary vertical columns, reading left-to-right, top-to-bottom.\n- **Left Column**: Contains numbered points (①, ②, ③, etc.) detailing treatments and symptoms of benign tumors, with a sub-section \"Madhava p132 ~ p133\" introducing a new set of points.\n- **Right Column**: Contains supplementary information, including Sanskrit terms, English translations, and specific treatment details.\n- **Tables**: No formal tables are present, but there are structured lists of herbs and symptoms presented in a list-like format.\n- **Side Notes**: There are no side notes or marginalia; all content is integrated into the main text flow.\n---\n## Verbatim Multi-Lingual Decoding\n### Section 1: Treatment of Benign Tumors\n① 從各個Dosha所引起的腫瘤，固化了血液 (asra) 和脂肪 (medas)，在血重要的位置形成「粗」、「大」、「可移動式」的腫瘤。喉嚨和腰部則沒有固化。\nGranthi cikitsa - treatment of benign tumors 治療良性腫瘤\n② 在所有良性腫瘤的類型，患者都須要透過嘔吐，用老酥油 (old ghee) 煮焦加上 byhati, pippali，在內部油之後，也應該做粉末藥，待完成之後再給液體的食物。如果患者腫瘤是在頸和頭部，淨化劑使用：laksa一份，及二份的 rajani, vidanga, sunthi, putidaru，作為煙霧淨化，也作為口腔含漱液淨化。\n③ 也可用糊貼劑用在腫瘤處。草藥：ankola, madhuka, mātulunga, himsra, putidaru，根可用 - bilva, sarala, kustha, Vaca。也可用 - Varuna, Kala, ativisa, ajagāndha，或是 'syama, suradaru, samaṅga, kosataki, punamava, sarsapa，作成糊，貼在患處。\n④ 如果腫瘤是腫漲、痛、剛性，可使用溫暖的藥膏：yava, maduka, kustha, satapuspā, devadaru，加入麵粉和ghee，塗在患處。\n⑤ 當腫瘤被鬆動之後，可採取按摩，不論是用手指或竹籐草，慢慢地一次又一次，腫脹（水腫）則採取適量及適當的方式。\n---\n### Section 2: Madhava p132 ~ p133\n① Vata 和其它二個Doshas，如劇，在血池、肌肉、脂肪、靜脈中產生圓形、大的群體，稱為：Granthi (tumors).\n② 症狀如 Vataja granthi 會有不同的疼痛，擴大（延伸）、撕裂、刺、拉、翻騰和切割。質量是黑色、軟，類似水袋，當被刺破時，流清血。\n③ Pitta granthi 的症狀，會有嚴重的燒灼感，感覺好像觸動火災或強鹼，皮膚呈現黃色或紅色，且快速散播，當刺破時會有大規模溫熱的血。\n④ Kapha granthi 的症狀，冷的觸感，沒有任何變色，輕度疼痛，但有嚴重的腫瘤。圓桌硬如石，緩慢的生長速度，如果刺破則散發出濃濃的白色液體。\n⑤ Medaja granthi，根據身體有大、有小的尺寸，腫瘤光滑、癢癢、痛，如果刺破則散發出厚厚的脂肪物質，類似芝麻糊或酥油。\n⑥ 當人體虛弱時，卻做劇烈的活動，因而引起 Vata 增高，進入靜脈的網路，使它們收縮、乾燥，並捲成圓的質量，稱為一 Siraja granthi（血管靜脈腫瘤）。當它成為疼痛且移動，如果出現在重要器官上，被視為不治之症。即使是疼痛，也不移動，也應該拒絕治療。\n```\n---\n## Symbol & Table Preservation\n- **Arrow Symbols**: The handwritten text includes an upward arrow (↑) above the word \"擴大\" (expand) in the description of Vataja granthi symptoms, indicating an increase or expansion. This is preserved as-is in the transcription.\n- **Tables**: No formal tables are present in the handwritten document. The structured lists of herbs and symptoms are presented as bulleted lists within the transcription, without conversion to GitHub Flavored Markdown tables, as no tabular structure was explicitly defined in the original.\n```",
+      "original_text": "```markdown\n## Layout & Region Analysis\n- **Header**: The topmost section contains a handwritten title: \"Granthi cikitsa - treatment of benign tumors 治療良性腫瘤\", with a reference \"Ast(I)P305\" in the upper right corner.\n- **Main Body**: The content is organized into two primary vertical columns, reading left-to-right, top-to-bottom.\n- **Left Column**: Contains numbered points (①, ②, ③, etc.) detailing treatments and symptoms of benign tumors, with a sub-section \"Madhava p132 ~ p133\" introducing a new set of points.\n- **Right Column**: Contains supplementary information, including Sanskrit terms, English translations, and specific treatment details.\n- **Tables**: No formal tables are present, but there are structured lists of herbs and symptoms presented in a list-like format.\n- **Side Notes**: There are no side notes or marginalia; all content is integrated into the main text flow.\n---\n## Verbatim Multi-Lingual Decoding\n### Section 1: Treatment of Benign Tumors\n① 從各個Dosha所引起的腫瘤，固化了血液 (asra) 和脂肪 (medas)，在血重要的位置形成「粗」、「大」、「可移動式」的腫瘤。喉嚨和腰部則沒有固化。\nGranthi cikitsa - treatment of benign tumors 治療良性腫瘤\n② 在所有良性腫瘤的類型，患者都須要透過嘔吐，用老酥油 (old ghee) 煮焦加上 byhati, pippali，在內部油之後，也應該做粉末藥，待完成之後再給液體的食物。如果患者腫瘤是在頸和頭部，淨化劑使用：laksa一份，及二份的 rajani, vidanga, sunthi, putidaru，作為煙霧淨化，也作為口腔含漱液淨化。\n③ 也可用糊貼劑用在腫瘤處。草藥：ankola, madhuka, mātulunga, himsra, putidaru，根可用 - bilva, sarala, kustha, Vaca。也可用 - Varuna, Kala, ativisa, ajagāndha，或是 'syama, suradaru, samaṅga, kosataki, punamava, sarsapa，作成糊，貼在患處。\n④ 如果腫瘤是腫漲、痛、剛性，可使用溫暖的藥膏：yava, maduka, kustha, satapuspā, devadaru，加入麵粉和ghee，塗在患處。\n⑤ 當腫瘤被鬆動之後，可採取按摩，不論是用手指或竹籐草，慢慢地一次又一次，腫脹（水腫）則採取適量及適當的方式。\n---\n### Section 2: Madhava p132 ~ p133\n① Vata 和其它二個Doshas，如劇，在血池、肌肉、脂肪、靜脈中產生圓形、大的群體，稱為：Granthi (tumors).\n② 症狀如 Vataja granthi 會有不同的疼痛，擴大（延伸）、撕裂、刺、拉、翻騰和切割。質量是黑色、軟，類似水袋，當被刺破時，流清血。\n③ Pitta granthi 的症狀，會有嚴重的燒灼感，感覺好像觸動火災或強鹼，皮膚呈現黃色或紅色，且快速散播，當刺破時會有大規模溫熱的血。\n④ Kapha granthi 的症狀，冷的觸感，沒有任何變色，輕度疼痛，但有嚴重的腫瘤。圓桌硬如石，緩慢的生長速度，如果刺破則散發出濃濃的白色液體。\n⑤ Medaja granthi，根據身體有大、有小的尺寸，腫瘤光滑、癢癢、痛，如果刺破則散發出厚厚的脂肪物質，類似芝麻糊或酥油。\n⑥ 當人體虛弱時，卻做劇烈的活動，因而引起 Vata 增高，進入靜脈的網路，使它們收縮、乾燥，並捲成圓的質量，稱為一 Siraja granthi（血管靜脈腫瘤）。當它成為疼痛且移動，如果出現在重要器官上，被視為不治之症。即使是疼痛，也不移動，也應該拒絕治療。\n```\n---\n## Symbol & Table Preservation\n- **Arrow Symbols**: The handwritten text includes an upward arrow (↑) above the word \"擴大\" (expand) in the description of Vataja granthi symptoms, indicating an increase or expansion. This is preserved as-is in the transcription.\n- **Tables**: No formal tables are present in the handwritten document. The structured lists of herbs and symptoms are presented as bulleted lists within the transcription, without conversion to GitHub Flavored Markdown tables, as no tabular structure was explicitly defined in the original.\n```",
+      "digest_content": "```markdown\n## Layout & Region Analysis\n- **Header**: The topmost section contains a handwritten title: \"Granthi cikitsa - treatment of benign tumors 治療良性腫瘤\", with a reference \"Ast(I)P305\" in the upper right corner.\n- **Main Body**: The content is organized into two primary vertical columns, reading left-to-right, top-to-bottom.\n- **Left Column**: Contains numbered points (①, ②, ③, etc.) detailing treatments and symptoms of benign tumors, with a sub-section \"Madhava p132 ~ p133\" introducing a new set of points.\n- **Right Column**: Contains supplementary information, including Sanskrit terms, English translations, and specific treatment details.\n- **Tables**: No formal tables are present, but there are structured lists of herbs and symptoms presented in a list-like format.\n- **Side Notes**: There are no side notes or marginalia; all content is integrated into the main text flow.\n---\n## Verbatim Multi-Lingual Decoding\n### Section 1: Treatment of Benign Tumors\n① 從各個Dosha所引起的腫瘤，固化了血液 (asra) 和脂肪 (medas)，在血重要的位置形成「粗」、「大」、「可移動式」的腫瘤。喉嚨和腰部則沒有固化。\nGranthi cikitsa - treatment of benign tumors 治療良性腫瘤\n② 在所有良性腫瘤的類型，患者都須要透過嘔吐，用老酥油 (old ghee) 煮焦加上 byhati, pippali，在內部油之後，也應該做粉末藥，待完成之後再給液體的食物。如果患者腫瘤是在頸和頭部，淨化劑使用：laksa一份，及二份的 rajani, vidanga, sunthi, putidaru，作為煙霧淨化，也作為口腔含漱液淨化。\n③ 也可用糊貼劑用在腫瘤處。草藥：ankola, madhuka, mātulunga, himsra, putidaru，根可用 - bilva, sarala, kustha, Vaca。也可用 - Varuna, Kala, ativisa, ajagāndha，或是 'syama, suradaru, samaṅga, kosataki, punamava, sarsapa，作成糊，貼在患處。\n④ 如果腫瘤是腫漲、痛、剛性，可使用溫暖的藥膏：yava, maduka, kustha, satapuspā, devadaru，加入麵粉和ghee，塗在患處。\n⑤ 當腫瘤被鬆動之後，可採取按摩，不論是用手指或竹籐草，慢慢地一次又一次，腫脹（水腫）則採取適量及適當的方式。\n---\n### Section 2: Madhava p132 ~ p133\n① Vata 和其它二個Doshas，如劇，在血池、肌肉、脂肪、靜脈中產生圓形、大的群體，稱為：Granthi (tumors).\n② 症狀如 Vataja granthi 會有不同的疼痛，擴大（延伸）、撕裂、刺、拉、翻騰和切割。質量是黑色、軟，類似水袋，當被刺破時，流清血。\n③ Pitta granthi 的症狀，會有嚴重的燒灼感，感覺好像觸動火災或強鹼，皮膚呈現黃色或紅色，且快速散播，當刺破時會有大規模溫熱的血。\n④ Kapha granthi 的症狀，冷的觸感，沒有任何變色，輕度疼痛，但有嚴重的腫瘤。圓桌硬如石，緩慢的生長速度，如果刺破則散發出濃濃的白色液體。\n⑤ Medaja granthi，根據身體有大、有小的尺寸，腫瘤光滑、癢癢、痛，如果刺破則散發出厚厚的脂肪物質，類似芝麻糊或酥油。\n⑥ 當人體虛弱時，卻做劇烈的活動，因而引起 Vata 增高，進入靜脈的網路，使它們收縮、乾燥，並捲成圓的質量，稱為一 Siraja granthi（血管靜脈腫瘤）。當它成為疼痛且移動，如果出現在重要器官上，被視為不治之症。即使是疼痛，也不移動，也應該拒絕治療。\n```\n---\n## Symbol & Table Preservation\n- **Arrow Symbols**: The handwritten text includes an upward arrow (↑) above the word \"擴大\" (expand) in the description of Vataja granthi symptoms, indicating an increase or expansion. This is preserved as-is in the transcription.\n- **Tables**: No formal tables are present in the handwritten document. The structured lists of herbs and symptoms are presented as bulleted lists within the transcription, without conversion to GitHub Flavored Markdown tables, as no tabular structure was explicitly defined in the original.\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0005",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 5 頁",
+      "snippet": "```markdown\n## 1. Layout & Region Analysis\n- **Header**: The document begins with a numbered section (①) titled “治療、預防經痛” (Treatment and Prevention of Menstrual Pain), indicating the primary topic.\n- **Multi-column Reading Flow**: The document uses a left-to-right, top-to-bottom reading flow. The left column contains main headings and lists, while the right column contains supplementary details, explanations, and translations.\n- **Tables**: There are no formal tables, but there is a list of herbal formulas presented in a numbered format (① 草药配方: 1. ..., 2. ..., etc.), which functions as a structured list.\n- **Side Notes**: Side notes are present in the form of parenthetical translations (e.g., “(Decoction)”, “(fermented liquid)”) and additional explanations (e.g., “避免: ‘重型的食物...’”).\n## 2. Verbatim Multi-Lingual Decoding\n### Section ①: Treatment and Prevention of Menstrual Pain\n- 治療、預防經痛 - 按摩, 淋汗 (sudation), enema/Basti 薄腸, 或瀉藥 Virechana, 內部油 (對子宮好), 主要在 Apana Vata 區域.\n- Translation: Treatment and prevention of menstrual pain — massage, sudation, enema/Basti (thin intestines), or purgative Virechana, internal oil (good for uterus), mainly in the Apana Vata region.\n### Section ②: Herbal Formulas\n- 草药配方:\n1. Saptha Saram Kashayam (Decoction)\n2. Ashokarishtam (fermented liquid) 醱酵液\n3. Sukumaram Kashayam (Decoction)\n4. Raja pravartini Vati (tablet) 藥片\n5. Dhanwantaram gulika (tablet) 藥丸 ↓gas.\n### Section ③: Dietary Guidelines During Menstruation\n- 月經期間的飲食:\n1. 一天採取二餐進食\n2. 可喝椰子水\n3. 只進食 3/4 的食量\n4. 不喝冷水、冷青菜、冷水果或果汁\n5. 喝溫水\n- 避免:\n1. 重型的食物\n2. 咸、辣、酸、味道的食物\n3. 茶和咖啡\n### Section ④: Suitable Herbal Plants\n- 適合的草藥植物: 有利於子宮的草藥.\n- Listed herbs:\n- Sathavari\n- Ashoka\n- Kuvari\n- Sonth\n- Jatmansi\n- Dasmoor\n- Haritaki\n- Hing\n### Section ⑤: Yoga for the Uterus\n- 對於子宮好的 Yoga:\n- Caraka of UdaVata --- p420.\n- 在結腸區的 Apana Vayu 被攝入過多的辣、苦、澀、粗糙的食物，抑制排尿、空腹排便、定加重的強度會往下發展、阻塞較低的通道（尿、結腸），造成滯留糞便、肛門排氣和尿液（Vayu 的反向運動），最後造成嚴重的“UdaVata”在腹部、背部和胸的兩側。\n- 此外，由於阻梗的 Apana Vayu，有中耳炎、噁心、切割痛、撕心裂肺的痛、消化不良和膀胱炎、大便滯留、腸系膜腫大的腺體，和 Vayu 向上移動。排便困難、乾燥和延遲，身體也變得粗大、粗糙、冰冷。\n- 因此，疾病如：發燒、排便困難、痢疾、心臟病、Grahani 障礙症、口渴、內部出血、gulma、咳嗽、呼吸困難、鼻炎、面癱和胸痛產生。\n- 腹部腫塊\n## 3. Symbol & Table Preservation\n### Arrow Symbols\n- The document contains no explicit arrow symbols ('↑' or '↓') in the transcription.\n### GitHub Flavored Markdown Tables\n- No formal tables are present in the document. The list of herbal formulas is presented as a numbered list, not a table.\n```",
+      "original_text": "```markdown\n## 1. Layout & Region Analysis\n- **Header**: The document begins with a numbered section (①) titled “治療、預防經痛” (Treatment and Prevention of Menstrual Pain), indicating the primary topic.\n- **Multi-column Reading Flow**: The document uses a left-to-right, top-to-bottom reading flow. The left column contains main headings and lists, while the right column contains supplementary details, explanations, and translations.\n- **Tables**: There are no formal tables, but there is a list of herbal formulas presented in a numbered format (① 草药配方: 1. ..., 2. ..., etc.), which functions as a structured list.\n- **Side Notes**: Side notes are present in the form of parenthetical translations (e.g., “(Decoction)”, “(fermented liquid)”) and additional explanations (e.g., “避免: ‘重型的食物...’”).\n## 2. Verbatim Multi-Lingual Decoding\n### Section ①: Treatment and Prevention of Menstrual Pain\n- 治療、預防經痛 - 按摩, 淋汗 (sudation), enema/Basti 薄腸, 或瀉藥 Virechana, 內部油 (對子宮好), 主要在 Apana Vata 區域.\n- Translation: Treatment and prevention of menstrual pain — massage, sudation, enema/Basti (thin intestines), or purgative Virechana, internal oil (good for uterus), mainly in the Apana Vata region.\n### Section ②: Herbal Formulas\n- 草药配方:\n1. Saptha Saram Kashayam (Decoction)\n2. Ashokarishtam (fermented liquid) 醱酵液\n3. Sukumaram Kashayam (Decoction)\n4. Raja pravartini Vati (tablet) 藥片\n5. Dhanwantaram gulika (tablet) 藥丸 ↓gas.\n### Section ③: Dietary Guidelines During Menstruation\n- 月經期間的飲食:\n1. 一天採取二餐進食\n2. 可喝椰子水\n3. 只進食 3/4 的食量\n4. 不喝冷水、冷青菜、冷水果或果汁\n5. 喝溫水\n- 避免:\n1. 重型的食物\n2. 咸、辣、酸、味道的食物\n3. 茶和咖啡\n### Section ④: Suitable Herbal Plants\n- 適合的草藥植物: 有利於子宮的草藥.\n- Listed herbs:\n- Sathavari\n- Ashoka\n- Kuvari\n- Sonth\n- Jatmansi\n- Dasmoor\n- Haritaki\n- Hing\n### Section ⑤: Yoga for the Uterus\n- 對於子宮好的 Yoga:\n- Caraka of UdaVata --- p420.\n- 在結腸區的 Apana Vayu 被攝入過多的辣、苦、澀、粗糙的食物，抑制排尿、空腹排便、定加重的強度會往下發展、阻塞較低的通道（尿、結腸），造成滯留糞便、肛門排氣和尿液（Vayu 的反向運動），最後造成嚴重的“UdaVata”在腹部、背部和胸的兩側。\n- 此外，由於阻梗的 Apana Vayu，有中耳炎、噁心、切割痛、撕心裂肺的痛、消化不良和膀胱炎、大便滯留、腸系膜腫大的腺體，和 Vayu 向上移動。排便困難、乾燥和延遲，身體也變得粗大、粗糙、冰冷。\n- 因此，疾病如：發燒、排便困難、痢疾、心臟病、Grahani 障礙症、口渴、內部出血、gulma、咳嗽、呼吸困難、鼻炎、面癱和胸痛產生。\n- 腹部腫塊\n## 3. Symbol & Table Preservation\n### Arrow Symbols\n- The document contains no explicit arrow symbols ('↑' or '↓') in the transcription.\n### GitHub Flavored Markdown Tables\n- No formal tables are present in the document. The list of herbal formulas is presented as a numbered list, not a table.\n```",
+      "digest_content": "```markdown\n## 1. Layout & Region Analysis\n- **Header**: The document begins with a numbered section (①) titled “治療、預防經痛” (Treatment and Prevention of Menstrual Pain), indicating the primary topic.\n- **Multi-column Reading Flow**: The document uses a left-to-right, top-to-bottom reading flow. The left column contains main headings and lists, while the right column contains supplementary details, explanations, and translations.\n- **Tables**: There are no formal tables, but there is a list of herbal formulas presented in a numbered format (① 草药配方: 1. ..., 2. ..., etc.), which functions as a structured list.\n- **Side Notes**: Side notes are present in the form of parenthetical translations (e.g., “(Decoction)”, “(fermented liquid)”) and additional explanations (e.g., “避免: ‘重型的食物...’”).\n## 2. Verbatim Multi-Lingual Decoding\n### Section ①: Treatment and Prevention of Menstrual Pain\n- 治療、預防經痛 - 按摩, 淋汗 (sudation), enema/Basti 薄腸, 或瀉藥 Virechana, 內部油 (對子宮好), 主要在 Apana Vata 區域.\n- Translation: Treatment and prevention of menstrual pain — massage, sudation, enema/Basti (thin intestines), or purgative Virechana, internal oil (good for uterus), mainly in the Apana Vata region.\n### Section ②: Herbal Formulas\n- 草药配方:\n1. Saptha Saram Kashayam (Decoction)\n2. Ashokarishtam (fermented liquid) 醱酵液\n3. Sukumaram Kashayam (Decoction)\n4. Raja pravartini Vati (tablet) 藥片\n5. Dhanwantaram gulika (tablet) 藥丸 ↓gas.\n### Section ③: Dietary Guidelines During Menstruation\n- 月經期間的飲食:\n1. 一天採取二餐進食\n2. 可喝椰子水\n3. 只進食 3/4 的食量\n4. 不喝冷水、冷青菜、冷水果或果汁\n5. 喝溫水\n- 避免:\n1. 重型的食物\n2. 咸、辣、酸、味道的食物\n3. 茶和咖啡\n### Section ④: Suitable Herbal Plants\n- 適合的草藥植物: 有利於子宮的草藥.\n- Listed herbs:\n- Sathavari\n- Ashoka\n- Kuvari\n- Sonth\n- Jatmansi\n- Dasmoor\n- Haritaki\n- Hing\n### Section ⑤: Yoga for the Uterus\n- 對於子宮好的 Yoga:\n- Caraka of UdaVata --- p420.\n- 在結腸區的 Apana Vayu 被攝入過多的辣、苦、澀、粗糙的食物，抑制排尿、空腹排便、定加重的強度會往下發展、阻塞較低的通道（尿、結腸），造成滯留糞便、肛門排氣和尿液（Vayu 的反向運動），最後造成嚴重的“UdaVata”在腹部、背部和胸的兩側。\n- 此外，由於阻梗的 Apana Vayu，有中耳炎、噁心、切割痛、撕心裂肺的痛、消化不良和膀胱炎、大便滯留、腸系膜腫大的腺體，和 Vayu 向上移動。排便困難、乾燥和延遲，身體也變得粗大、粗糙、冰冷。\n- 因此，疾病如：發燒、排便困難、痢疾、心臟病、Grahani 障礙症、口渴、內部出血、gulma、咳嗽、呼吸困難、鼻炎、面癱和胸痛產生。\n- 腹部腫塊\n## 3. Symbol & Table Preservation\n### Arrow Symbols\n- The document contains no explicit arrow symbols ('↑' or '↓') in the transcription.\n### GitHub Flavored Markdown Tables\n- No formal tables are present in the document. The list of herbal formulas is presented as a numbered list, not a table.\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0006",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 6 頁",
+      "snippet": "```markdown\n# Abdominal Tumors\nGulma 腹部腫塊 Vidanam and treatment Mad-pro4.\n因当 Vata 的过份放电，沉溺於不健康的食物，过度累积或抑制向下的推动，外部受伤，压力大，粗糙食物，悲伤和不良的生活习惯，致於 Vata 坏於病態中，因而压缩了 pitta 和 kapha，产生五种类型的肿瘤在腹部。\n污濁的 Vata 阻礙通道，加重 pitta 和 kapha，在心臟地區疼痛，肚臍兩側，腹部和骨盆，由於 Vata 不向下移動，阻礙通往結腸區的通道，照成下腹部（Basti 腹胱）的疼痛。\n五個地區的腫瘤：腹部（hrdaya 区域），肚臍（nabhi 区域），下腹部（Basti 腹胱），兩邊的肋骨側邊，心臟附近。\nGulma，腹部腫瘤—被定義在心臟和肚臍之間，無論是移動的（從一邊移動到另一邊）或固定，呈圓形，進行中增加或減少物量，在大相之間（2）。\n這可能由一個 Dosha，或三個 Doshas 混合，在婦女中增多了一項，那是由於血液（Rakta）的增長（3）。\n前駛症狀：過度噯氣，便祕，缺乏耐力，濕潤聲音的腸子，腹部脹脹，消化能力差，損失口感，難以排出糞便或尿液（5）。\nVata gulma nidanam：粗糙的食物和飲料（缺乏脂肪），不相容的食物，過度的活動，抑制自然放鬆，焦慮，傷害，悲傷，精神創傷，過度的糞便，缺乏食物，是 Vata 的主要原因。\nVata gulma 症狀：乾燥的喉嚨和嘴，皮膚顏色呈黑、紅色，發熱伴隨著零顫，症狀疼痛導致硬便和便血。疼痛地區在心臟，腹部，兩側腹，肩膀和頭部，加劇型的胃。此時：粗糙、苦、澀、辣的食物都不適合，宜溫暖的食物，稍重型的食物，消化後，不斷增加疼痛。（6-8）。Caraka [8-11]\nPitta gulma nidanam：攝入過多辛辣、酸、刺激性（像鹼滲透）「熱」引起燒灼感粗糙的物質，這會缺乏脂肪。憤怒、酒精、太陽和火、Ama（未消化的食物），這些原因損害，造成不潔的血液，這是 Pitta gulma 致病的因素。\nPitta 症狀：發熱，口渴，發紅的臉和身體，飲後消化後產生更劇烈的疼痛，排汗、燒灼感，膿腫，在腹部有潰瘍和壓痛的感覺。\nKapha gulma nidanam：吃大量的食物，吃寒冷、厚重、油膩的食物，缺乏運動，白天睡覺，這些難以消化和消耗脂肪，是 Kapha gulma 的致病因素。\n```",
+      "original_text": "```markdown\n# Abdominal Tumors\nGulma 腹部腫塊 Vidanam and treatment Mad-pro4.\n因当 Vata 的过份放电，沉溺於不健康的食物，过度累积或抑制向下的推动，外部受伤，压力大，粗糙食物，悲伤和不良的生活习惯，致於 Vata 坏於病態中，因而压缩了 pitta 和 kapha，产生五种类型的肿瘤在腹部。\n污濁的 Vata 阻礙通道，加重 pitta 和 kapha，在心臟地區疼痛，肚臍兩側，腹部和骨盆，由於 Vata 不向下移動，阻礙通往結腸區的通道，照成下腹部（Basti 腹胱）的疼痛。\n五個地區的腫瘤：腹部（hrdaya 区域），肚臍（nabhi 区域），下腹部（Basti 腹胱），兩邊的肋骨側邊，心臟附近。\nGulma，腹部腫瘤—被定義在心臟和肚臍之間，無論是移動的（從一邊移動到另一邊）或固定，呈圓形，進行中增加或減少物量，在大相之間（2）。\n這可能由一個 Dosha，或三個 Doshas 混合，在婦女中增多了一項，那是由於血液（Rakta）的增長（3）。\n前駛症狀：過度噯氣，便祕，缺乏耐力，濕潤聲音的腸子，腹部脹脹，消化能力差，損失口感，難以排出糞便或尿液（5）。\nVata gulma nidanam：粗糙的食物和飲料（缺乏脂肪），不相容的食物，過度的活動，抑制自然放鬆，焦慮，傷害，悲傷，精神創傷，過度的糞便，缺乏食物，是 Vata 的主要原因。\nVata gulma 症狀：乾燥的喉嚨和嘴，皮膚顏色呈黑、紅色，發熱伴隨著零顫，症狀疼痛導致硬便和便血。疼痛地區在心臟，腹部，兩側腹，肩膀和頭部，加劇型的胃。此時：粗糙、苦、澀、辣的食物都不適合，宜溫暖的食物，稍重型的食物，消化後，不斷增加疼痛。（6-8）。Caraka [8-11]\nPitta gulma nidanam：攝入過多辛辣、酸、刺激性（像鹼滲透）「熱」引起燒灼感粗糙的物質，這會缺乏脂肪。憤怒、酒精、太陽和火、Ama（未消化的食物），這些原因損害，造成不潔的血液，這是 Pitta gulma 致病的因素。\nPitta 症狀：發熱，口渴，發紅的臉和身體，飲後消化後產生更劇烈的疼痛，排汗、燒灼感，膿腫，在腹部有潰瘍和壓痛的感覺。\nKapha gulma nidanam：吃大量的食物，吃寒冷、厚重、油膩的食物，缺乏運動，白天睡覺，這些難以消化和消耗脂肪，是 Kapha gulma 的致病因素。\n```",
+      "digest_content": "```markdown\n# Abdominal Tumors\nGulma 腹部腫塊 Vidanam and treatment Mad-pro4.\n因当 Vata 的过份放电，沉溺於不健康的食物，过度累积或抑制向下的推动，外部受伤，压力大，粗糙食物，悲伤和不良的生活习惯，致於 Vata 坏於病態中，因而压缩了 pitta 和 kapha，产生五种类型的肿瘤在腹部。\n污濁的 Vata 阻礙通道，加重 pitta 和 kapha，在心臟地區疼痛，肚臍兩側，腹部和骨盆，由於 Vata 不向下移動，阻礙通往結腸區的通道，照成下腹部（Basti 腹胱）的疼痛。\n五個地區的腫瘤：腹部（hrdaya 区域），肚臍（nabhi 区域），下腹部（Basti 腹胱），兩邊的肋骨側邊，心臟附近。\nGulma，腹部腫瘤—被定義在心臟和肚臍之間，無論是移動的（從一邊移動到另一邊）或固定，呈圓形，進行中增加或減少物量，在大相之間（2）。\n這可能由一個 Dosha，或三個 Doshas 混合，在婦女中增多了一項，那是由於血液（Rakta）的增長（3）。\n前駛症狀：過度噯氣，便祕，缺乏耐力，濕潤聲音的腸子，腹部脹脹，消化能力差，損失口感，難以排出糞便或尿液（5）。\nVata gulma nidanam：粗糙的食物和飲料（缺乏脂肪），不相容的食物，過度的活動，抑制自然放鬆，焦慮，傷害，悲傷，精神創傷，過度的糞便，缺乏食物，是 Vata 的主要原因。\nVata gulma 症狀：乾燥的喉嚨和嘴，皮膚顏色呈黑、紅色，發熱伴隨著零顫，症狀疼痛導致硬便和便血。疼痛地區在心臟，腹部，兩側腹，肩膀和頭部，加劇型的胃。此時：粗糙、苦、澀、辣的食物都不適合，宜溫暖的食物，稍重型的食物，消化後，不斷增加疼痛。（6-8）。Caraka [8-11]\nPitta gulma nidanam：攝入過多辛辣、酸、刺激性（像鹼滲透）「熱」引起燒灼感粗糙的物質，這會缺乏脂肪。憤怒、酒精、太陽和火、Ama（未消化的食物），這些原因損害，造成不潔的血液，這是 Pitta gulma 致病的因素。\nPitta 症狀：發熱，口渴，發紅的臉和身體，飲後消化後產生更劇烈的疼痛，排汗、燒灼感，膿腫，在腹部有潰瘍和壓痛的感覺。\nKapha gulma nidanam：吃大量的食物，吃寒冷、厚重、油膩的食物，缺乏運動，白天睡覺，這些難以消化和消耗脂肪，是 Kapha gulma 的致病因素。\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0007",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 7 頁",
+      "snippet": "```markdown\n# Cikitsā - Treatment\n治療病人可使用湯劑糊，薑酥油，Snaks，荊草牛奶，鹹，葡萄酒，降\n酵液，灌腸，治療膀胱，破壞尿路結石。\n◎ 病人如乳痛，可以喝啤酒 + Sauvarcala，或肉 + 蜂蜜，或 jaggery +\n葡萄酒。\n◎ kumkuma (Saffron) 蕃紅花 10gm mix 蜂蜜水，放置到隔天早上，賜幸福！\n◎ Dadima 汁 + Ela, jiraka, nāgara, or surā (beer 啤酒)，可消除乳痛。\n◎ 尿障礙症：Musta, abhayā, devadāru, mūrva, madhuka，成糊狀。\n159. punarnava, one akṣa (10gm). 每次 10gm.\nGokṣhura, Guggulu, Coriander 香菜，Manjishtha - 尿滯留，尿痛，尿結石，排尿困難，滋養腎臟，加強腰部。\n接順下段。〈dysuria 排尿困難〉。\n由於；切斷或損傷或減少精液、血漿由膀胱內排出，尿液與精液相結合\n之後，演變為結石。當累積的太多了形成沉重的膀胱，山後解除結石。\n在 Vatika dysuria，利用按摩，採取油和不油的灌腸，油敷貼，沖洗尿道，採取\n多水和肉的飲食，如 śehirādi (laghu pañcamūla)，和其緩解 Vāta 的藥物。\n◎ 可用油，豬脂肪，Ghee 和下列植物，punarnava, eranda, Śatāvari, pattura, vṛṣita.\nBala, paṣānabhedā, both pañcamulas (daśamūla), kulattha, kola and yava\nand 塩，混合製成糊狀，隨時採取適當的劑量，以緩解 Vatika dysuria.\n(Caraka II Paṭṭa [38-41])\n在 paittika dysuria，利用夏天治療方案，給予冷淋浴，和冷收縮金工，利用灌\n腸，牛奶，瀉藥，喝葡萄汁。Vidāri 和甘蔗，酥油給排尿困難的 pitta。\n◎ 給 pitta 相當於冷的藥湯，植物有：Śatāvari, Kaśa, Gokṣura, vidāri, Sali,\nikṣu, kaśeruka，加入蜂蜜和糖。\n◎ 冷的藥湯，蓮花和腰蓮，śrngātaka or vidāri or dandairaka root，混合蜂\n蜜和糖。[42-44]\n```",
+      "original_text": "```markdown\n# Cikitsā - Treatment\n治療病人可使用湯劑糊，薑酥油，Snaks，荊草牛奶，鹹，葡萄酒，降\n酵液，灌腸，治療膀胱，破壞尿路結石。\n◎ 病人如乳痛，可以喝啤酒 + Sauvarcala，或肉 + 蜂蜜，或 jaggery +\n葡萄酒。\n◎ kumkuma (Saffron) 蕃紅花 10gm mix 蜂蜜水，放置到隔天早上，賜幸福！\n◎ Dadima 汁 + Ela, jiraka, nāgara, or surā (beer 啤酒)，可消除乳痛。\n◎ 尿障礙症：Musta, abhayā, devadāru, mūrva, madhuka，成糊狀。\n159. punarnava, one akṣa (10gm). 每次 10gm.\nGokṣhura, Guggulu, Coriander 香菜，Manjishtha - 尿滯留，尿痛，尿結石，排尿困難，滋養腎臟，加強腰部。\n接順下段。〈dysuria 排尿困難〉。\n由於；切斷或損傷或減少精液、血漿由膀胱內排出，尿液與精液相結合\n之後，演變為結石。當累積的太多了形成沉重的膀胱，山後解除結石。\n在 Vatika dysuria，利用按摩，採取油和不油的灌腸，油敷貼，沖洗尿道，採取\n多水和肉的飲食，如 śehirādi (laghu pañcamūla)，和其緩解 Vāta 的藥物。\n◎ 可用油，豬脂肪，Ghee 和下列植物，punarnava, eranda, Śatāvari, pattura, vṛṣita.\nBala, paṣānabhedā, both pañcamulas (daśamūla), kulattha, kola and yava\nand 塩，混合製成糊狀，隨時採取適當的劑量，以緩解 Vatika dysuria.\n(Caraka II Paṭṭa [38-41])\n在 paittika dysuria，利用夏天治療方案，給予冷淋浴，和冷收縮金工，利用灌\n腸，牛奶，瀉藥，喝葡萄汁。Vidāri 和甘蔗，酥油給排尿困難的 pitta。\n◎ 給 pitta 相當於冷的藥湯，植物有：Śatāvari, Kaśa, Gokṣura, vidāri, Sali,\nikṣu, kaśeruka，加入蜂蜜和糖。\n◎ 冷的藥湯，蓮花和腰蓮，śrngātaka or vidāri or dandairaka root，混合蜂\n蜜和糖。[42-44]\n```",
+      "digest_content": "```markdown\n# Cikitsā - Treatment\n治療病人可使用湯劑糊，薑酥油，Snaks，荊草牛奶，鹹，葡萄酒，降\n酵液，灌腸，治療膀胱，破壞尿路結石。\n◎ 病人如乳痛，可以喝啤酒 + Sauvarcala，或肉 + 蜂蜜，或 jaggery +\n葡萄酒。\n◎ kumkuma (Saffron) 蕃紅花 10gm mix 蜂蜜水，放置到隔天早上，賜幸福！\n◎ Dadima 汁 + Ela, jiraka, nāgara, or surā (beer 啤酒)，可消除乳痛。\n◎ 尿障礙症：Musta, abhayā, devadāru, mūrva, madhuka，成糊狀。\n159. punarnava, one akṣa (10gm). 每次 10gm.\nGokṣhura, Guggulu, Coriander 香菜，Manjishtha - 尿滯留，尿痛，尿結石，排尿困難，滋養腎臟，加強腰部。\n接順下段。〈dysuria 排尿困難〉。\n由於；切斷或損傷或減少精液、血漿由膀胱內排出，尿液與精液相結合\n之後，演變為結石。當累積的太多了形成沉重的膀胱，山後解除結石。\n在 Vatika dysuria，利用按摩，採取油和不油的灌腸，油敷貼，沖洗尿道，採取\n多水和肉的飲食，如 śehirādi (laghu pañcamūla)，和其緩解 Vāta 的藥物。\n◎ 可用油，豬脂肪，Ghee 和下列植物，punarnava, eranda, Śatāvari, pattura, vṛṣita.\nBala, paṣānabhedā, both pañcamulas (daśamūla), kulattha, kola and yava\nand 塩，混合製成糊狀，隨時採取適當的劑量，以緩解 Vatika dysuria.\n(Caraka II Paṭṭa [38-41])\n在 paittika dysuria，利用夏天治療方案，給予冷淋浴，和冷收縮金工，利用灌\n腸，牛奶，瀉藥，喝葡萄汁。Vidāri 和甘蔗，酥油給排尿困難的 pitta。\n◎ 給 pitta 相當於冷的藥湯，植物有：Śatāvari, Kaśa, Gokṣura, vidāri, Sali,\nikṣu, kaśeruka，加入蜂蜜和糖。\n◎ 冷的藥湯，蓮花和腰蓮，śrngātaka or vidāri or dandairaka root，混合蜂\n蜜和糖。[42-44]\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0008",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 8 頁",
+      "snippet": "```markdown\n6. Mūtrotsānga - 當尿量被阻礙時，無論是在膀胱、尿道，或陰莖龜頭流出，也許混有血液，排尿連連又少量，無論有無不痛，這種疾病的病因，都是由於 Vata 的加重，稱為“Mūtrotsānga”。\n7. Mūtrakṣaya - 身體內部乾燥、疲勞，位於膀胱的 Vata、Pitta 得到加重，引起膀胱有燒灼感，和排尿困難。\n8. Mūtragraṇthi - 一個小的、圓形腫瘤迅速的長大，伴隨著疼痛，阻塞尿道通道，如泌尿系統結石等症狀，稱為“Mūtragraṇthi”。\n(A’smari)\n射精劑。\n9. Mūtraśukra - 在交配的過程中，有排尿的衝動，在精液混合尿液，在射精後，尿液混合精液，尿液呈現灰的液體。\n10. Uṣṇavāta - 過多的身體活動，如走了很長的一段路，或暴露在陽光下，Pitta 越來越重，阻礙了 Vata，引起流動的尿意，尿液中伴有燒灼感，膀胱、直腸、陰莖都有燒灼感，尿液是黃色的，混有血液，或血液自身有問題，而散發出來，稱為“Uṣṇavāta”。\n11. pittaja mūtraukasāda - 尿液變成非粘糊糊的，粗厚而乾燥，流出類似黃色粉狀態的尿液，這是由於 Pitta 過重所引起的，伴有燒灼感，稱為“pittaja mūtraukasāda”。\n12. kaphaja mūtraukasāda - 尿呈現乾燥、厚、白色，像是海螺或像粉末，難以排出，是因為 Kapha 加重，稱為“kaphaja mūtraukasāda”。\n```",
+      "original_text": "```markdown\n6. Mūtrotsānga - 當尿量被阻礙時，無論是在膀胱、尿道，或陰莖龜頭流出，也許混有血液，排尿連連又少量，無論有無不痛，這種疾病的病因，都是由於 Vata 的加重，稱為“Mūtrotsānga”。\n7. Mūtrakṣaya - 身體內部乾燥、疲勞，位於膀胱的 Vata、Pitta 得到加重，引起膀胱有燒灼感，和排尿困難。\n8. Mūtragraṇthi - 一個小的、圓形腫瘤迅速的長大，伴隨著疼痛，阻塞尿道通道，如泌尿系統結石等症狀，稱為“Mūtragraṇthi”。\n(A’smari)\n射精劑。\n9. Mūtraśukra - 在交配的過程中，有排尿的衝動，在精液混合尿液，在射精後，尿液混合精液，尿液呈現灰的液體。\n10. Uṣṇavāta - 過多的身體活動，如走了很長的一段路，或暴露在陽光下，Pitta 越來越重，阻礙了 Vata，引起流動的尿意，尿液中伴有燒灼感，膀胱、直腸、陰莖都有燒灼感，尿液是黃色的，混有血液，或血液自身有問題，而散發出來，稱為“Uṣṇavāta”。\n11. pittaja mūtraukasāda - 尿液變成非粘糊糊的，粗厚而乾燥，流出類似黃色粉狀態的尿液，這是由於 Pitta 過重所引起的，伴有燒灼感，稱為“pittaja mūtraukasāda”。\n12. kaphaja mūtraukasāda - 尿呈現乾燥、厚、白色，像是海螺或像粉末，難以排出，是因為 Kapha 加重，稱為“kaphaja mūtraukasāda”。\n```",
+      "digest_content": "```markdown\n6. Mūtrotsānga - 當尿量被阻礙時，無論是在膀胱、尿道，或陰莖龜頭流出，也許混有血液，排尿連連又少量，無論有無不痛，這種疾病的病因，都是由於 Vata 的加重，稱為“Mūtrotsānga”。\n7. Mūtrakṣaya - 身體內部乾燥、疲勞，位於膀胱的 Vata、Pitta 得到加重，引起膀胱有燒灼感，和排尿困難。\n8. Mūtragraṇthi - 一個小的、圓形腫瘤迅速的長大，伴隨著疼痛，阻塞尿道通道，如泌尿系統結石等症狀，稱為“Mūtragraṇthi”。\n(A’smari)\n射精劑。\n9. Mūtraśukra - 在交配的過程中，有排尿的衝動，在精液混合尿液，在射精後，尿液混合精液，尿液呈現灰的液體。\n10. Uṣṇavāta - 過多的身體活動，如走了很長的一段路，或暴露在陽光下，Pitta 越來越重，阻礙了 Vata，引起流動的尿意，尿液中伴有燒灼感，膀胱、直腸、陰莖都有燒灼感，尿液是黃色的，混有血液，或血液自身有問題，而散發出來，稱為“Uṣṇavāta”。\n11. pittaja mūtraukasāda - 尿液變成非粘糊糊的，粗厚而乾燥，流出類似黃色粉狀態的尿液，這是由於 Pitta 過重所引起的，伴有燒灼感，稱為“pittaja mūtraukasāda”。\n12. kaphaja mūtraukasāda - 尿呈現乾燥、厚、白色，像是海螺或像粉末，難以排出，是因為 Kapha 加重，稱為“kaphaja mūtraukasāda”。\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0009",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 9 頁",
+      "snippet": "```markdown\n① 黃瓜籽, trapuṣa, Vasa, saffron 和 葡萄汁. 這有利於所有的尿結石。\n② For paittika dysuria ② 必須使用 黃瓜籽 (Ervaru), madhuka and daruharidra 与 米水相结合。\n② Daruharidra mixed 蜂蜜, 加上 Āmalaka juice - good for paittika dysuria. [45-46].\n在 kaphaja dysuria - 不应摄取鹼性, 熱, 和尖銳的藥物或飲食, 要發汗. 大麥食品, 呕吐, 非油的灌腸, 喝伏格, 苦的藥油按摩.\n① Trikatu, Gokṣura, 小豆蔻. 取 5gm 加上蜂蜜和尿\n① 小豆蔻 + 蜂蜜 + 香蕉汁 或 kaidarya.\n① 'Sitavara, 伏格, 珊瑚虫粉 + 米水. - For kaphaja dysuria.\n① 米水 + Sapṭaparnā, āragvadha, kevuka, ela, dhava, karanja, kutaja and Guduci - 形成 decoction, 药湯 + 蜂蜜. [47-50].\n如患者有尿結石或尿痛一排尿困難時. 不應避免过度的身体運動. 須減少乾·粗糙的食物. 曝晒在陽光、微風、和性事。植物: kharjūra, lotus root, kapittha, jambū, 蓮花莖, 澀味。[69]. 有益的\n[51-58. P427～P429. 講述尿困難的治療] (Capaka II\n(Dysuria 尿痛),\n在三個 Doshas 同時引起的尿痛. 共同在 Vata 的所在地發生. 三种不同的方式: 呕吐, 泻药, 灌腸. 依照 Dosha 的主導. 而分別處理. [51].\n結石. Calculus.\n. 若要打破結石, 可將 - Gokṣura root, jksuraka root, Eranda root, Bhrati root and kantakari root. 溶解在甜豆露. (Sweet curd). [54].\n. 在結石和 碩石. 應取 punarnava, Aguru, Haridra, Gokṣura 根, 和 phalgu 葉.\ndarbha flower 播爛加牛奶, 水, 牛尿, 和甘蔗汁. [55].\n```",
+      "original_text": "```markdown\n① 黃瓜籽, trapuṣa, Vasa, saffron 和 葡萄汁. 這有利於所有的尿結石。\n② For paittika dysuria ② 必須使用 黃瓜籽 (Ervaru), madhuka and daruharidra 与 米水相结合。\n② Daruharidra mixed 蜂蜜, 加上 Āmalaka juice - good for paittika dysuria. [45-46].\n在 kaphaja dysuria - 不应摄取鹼性, 熱, 和尖銳的藥物或飲食, 要發汗. 大麥食品, 呕吐, 非油的灌腸, 喝伏格, 苦的藥油按摩.\n① Trikatu, Gokṣura, 小豆蔻. 取 5gm 加上蜂蜜和尿\n① 小豆蔻 + 蜂蜜 + 香蕉汁 或 kaidarya.\n① 'Sitavara, 伏格, 珊瑚虫粉 + 米水. - For kaphaja dysuria.\n① 米水 + Sapṭaparnā, āragvadha, kevuka, ela, dhava, karanja, kutaja and Guduci - 形成 decoction, 药湯 + 蜂蜜. [47-50].\n如患者有尿結石或尿痛一排尿困難時. 不應避免过度的身体運動. 須減少乾·粗糙的食物. 曝晒在陽光、微風、和性事。植物: kharjūra, lotus root, kapittha, jambū, 蓮花莖, 澀味。[69]. 有益的\n[51-58. P427～P429. 講述尿困難的治療] (Capaka II\n(Dysuria 尿痛),\n在三個 Doshas 同時引起的尿痛. 共同在 Vata 的所在地發生. 三种不同的方式: 呕吐, 泻药, 灌腸. 依照 Dosha 的主導. 而分別處理. [51].\n結石. Calculus.\n. 若要打破結石, 可將 - Gokṣura root, jksuraka root, Eranda root, Bhrati root and kantakari root. 溶解在甜豆露. (Sweet curd). [54].\n. 在結石和 碩石. 應取 punarnava, Aguru, Haridra, Gokṣura 根, 和 phalgu 葉.\ndarbha flower 播爛加牛奶, 水, 牛尿, 和甘蔗汁. [55].\n```",
+      "digest_content": "```markdown\n① 黃瓜籽, trapuṣa, Vasa, saffron 和 葡萄汁. 這有利於所有的尿結石。\n② For paittika dysuria ② 必須使用 黃瓜籽 (Ervaru), madhuka and daruharidra 与 米水相结合。\n② Daruharidra mixed 蜂蜜, 加上 Āmalaka juice - good for paittika dysuria. [45-46].\n在 kaphaja dysuria - 不应摄取鹼性, 熱, 和尖銳的藥物或飲食, 要發汗. 大麥食品, 呕吐, 非油的灌腸, 喝伏格, 苦的藥油按摩.\n① Trikatu, Gokṣura, 小豆蔻. 取 5gm 加上蜂蜜和尿\n① 小豆蔻 + 蜂蜜 + 香蕉汁 或 kaidarya.\n① 'Sitavara, 伏格, 珊瑚虫粉 + 米水. - For kaphaja dysuria.\n① 米水 + Sapṭaparnā, āragvadha, kevuka, ela, dhava, karanja, kutaja and Guduci - 形成 decoction, 药湯 + 蜂蜜. [47-50].\n如患者有尿結石或尿痛一排尿困難時. 不應避免过度的身体運動. 須減少乾·粗糙的食物. 曝晒在陽光、微風、和性事。植物: kharjūra, lotus root, kapittha, jambū, 蓮花莖, 澀味。[69]. 有益的\n[51-58. P427～P429. 講述尿困難的治療] (Capaka II\n(Dysuria 尿痛),\n在三個 Doshas 同時引起的尿痛. 共同在 Vata 的所在地發生. 三种不同的方式: 呕吐, 泻药, 灌腸. 依照 Dosha 的主導. 而分別處理. [51].\n結石. Calculus.\n. 若要打破結石, 可將 - Gokṣura root, jksuraka root, Eranda root, Bhrati root and kantakari root. 溶解在甜豆露. (Sweet curd). [54].\n. 在結石和 碩石. 應取 punarnava, Aguru, Haridra, Gokṣura 根, 和 phalgu 葉.\ndarbha flower 播爛加牛奶, 水, 牛尿, 和甘蔗汁. [55].\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0010",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 10 頁",
+      "snippet": "```markdown\n# Yoni Vyāpat pratisedha - Treatment of diseases of vagina\n生殖器. Vyapad→疾病.\n依据 Dhanvantari 的闡述：阴道的疾病，有二十種，\n由於：不健康的食品和生活放縱，沈醉於不良的習慣，如与过大陰茎的男⼈交配或与多數男人有性行为，如果；她是乾燥、虛弱或非常斗輕，將加劇 Vata dosha，致使陰道產生疾病。\n月經紊亂，異常的卵子，異常的行為，或者是天意！\n---\n## Vata:\nUdāvarta yoni, Vāṇḍhyā yoni, Viplutā yoni, Pariplutā yoni, Vatāla yoni. 的疾病來自於 Vata.\n---\n## Pitta:\nRudhira (rakta) kṣāra yoni, Vāmini yoni, Śramsini yoni, Putraghni yoni, Pittala yoni, 的疾病來自於 pitta.\n---\n## Kapha:\nAteyanāndā yoni, Karnini yoni, the two carana (acarāṇā and aticarāṇā), Slesmala yoni, 的疾病來自於 kapha.\n---\n## Tridoshas:\nSandha yoni, phalini yoni, mahati yoni, śūci vakrta yoni Sarvaja (Sannipātaja yoni). 的疾病來自於 Tridoshas.\n---\n## Vataja:\nUdāvāta yoni - 在經血中夾雜著粘液和疼痛 - 經痛。\n---\n## Vāṇḍhyā yoni:\n根本（從來沒有）沒有月經。\n---\n## Viplutā yoni:\n陰道總是疼痛。\n---\n## Pariplutā yoni:\n在性交的過程中，感覺疼痛。\n---\n## Vatāla yoni:\n陰道粗且造，僵硬，引起疼痛。\n---\n※ Caraka (2). 506-515. Treatment of Yoni vyapat.\n※ MADHAVA - P222.223. Yoni Vrapat at Vidānam 陰道疾病\n```",
+      "original_text": "```markdown\n# Yoni Vyāpat pratisedha - Treatment of diseases of vagina\n生殖器. Vyapad→疾病.\n依据 Dhanvantari 的闡述：阴道的疾病，有二十種，\n由於：不健康的食品和生活放縱，沈醉於不良的習慣，如与过大陰茎的男⼈交配或与多數男人有性行为，如果；她是乾燥、虛弱或非常斗輕，將加劇 Vata dosha，致使陰道產生疾病。\n月經紊亂，異常的卵子，異常的行為，或者是天意！\n---\n## Vata:\nUdāvarta yoni, Vāṇḍhyā yoni, Viplutā yoni, Pariplutā yoni, Vatāla yoni. 的疾病來自於 Vata.\n---\n## Pitta:\nRudhira (rakta) kṣāra yoni, Vāmini yoni, Śramsini yoni, Putraghni yoni, Pittala yoni, 的疾病來自於 pitta.\n---\n## Kapha:\nAteyanāndā yoni, Karnini yoni, the two carana (acarāṇā and aticarāṇā), Slesmala yoni, 的疾病來自於 kapha.\n---\n## Tridoshas:\nSandha yoni, phalini yoni, mahati yoni, śūci vakrta yoni Sarvaja (Sannipātaja yoni). 的疾病來自於 Tridoshas.\n---\n## Vataja:\nUdāvāta yoni - 在經血中夾雜著粘液和疼痛 - 經痛。\n---\n## Vāṇḍhyā yoni:\n根本（從來沒有）沒有月經。\n---\n## Viplutā yoni:\n陰道總是疼痛。\n---\n## Pariplutā yoni:\n在性交的過程中，感覺疼痛。\n---\n## Vatāla yoni:\n陰道粗且造，僵硬，引起疼痛。\n---\n※ Caraka (2). 506-515. Treatment of Yoni vyapat.\n※ MADHAVA - P222.223. Yoni Vrapat at Vidānam 陰道疾病\n```",
+      "digest_content": "```markdown\n# Yoni Vyāpat pratisedha - Treatment of diseases of vagina\n生殖器. Vyapad→疾病.\n依据 Dhanvantari 的闡述：阴道的疾病，有二十種，\n由於：不健康的食品和生活放縱，沈醉於不良的習慣，如与过大陰茎的男⼈交配或与多數男人有性行为，如果；她是乾燥、虛弱或非常斗輕，將加劇 Vata dosha，致使陰道產生疾病。\n月經紊亂，異常的卵子，異常的行為，或者是天意！\n---\n## Vata:\nUdāvarta yoni, Vāṇḍhyā yoni, Viplutā yoni, Pariplutā yoni, Vatāla yoni. 的疾病來自於 Vata.\n---\n## Pitta:\nRudhira (rakta) kṣāra yoni, Vāmini yoni, Śramsini yoni, Putraghni yoni, Pittala yoni, 的疾病來自於 pitta.\n---\n## Kapha:\nAteyanāndā yoni, Karnini yoni, the two carana (acarāṇā and aticarāṇā), Slesmala yoni, 的疾病來自於 kapha.\n---\n## Tridoshas:\nSandha yoni, phalini yoni, mahati yoni, śūci vakrta yoni Sarvaja (Sannipātaja yoni). 的疾病來自於 Tridoshas.\n---\n## Vataja:\nUdāvāta yoni - 在經血中夾雜著粘液和疼痛 - 經痛。\n---\n## Vāṇḍhyā yoni:\n根本（從來沒有）沒有月經。\n---\n## Viplutā yoni:\n陰道總是疼痛。\n---\n## Pariplutā yoni:\n在性交的過程中，感覺疼痛。\n---\n## Vatāla yoni:\n陰道粗且造，僵硬，引起疼痛。\n---\n※ Caraka (2). 506-515. Treatment of Yoni vyapat.\n※ MADHAVA - P222.223. Yoni Vrapat at Vidānam 陰道疾病\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0011",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 11 頁",
+      "snippet": "```markdown\n## Layout & Region Analysis\n- **Header**: The topmost section contains the heading \"kapha gulma 症狀\" (Symptoms of Kapha Gulma), followed by a list of symptoms in Traditional Chinese and English.\n- **Multi-column Reading Flow**: The document is structured with a left-to-right reading flow. The main body is divided into two primary columns: the left column contains general descriptions and treatment principles, while the right column contains detailed treatment protocols and herbal formulas.\n- **Tables**: There are no formal tables in the document, but there are structured lists with bullet points that serve a tabular function.\n- **Side Notes**: There are no side notes or marginalia. The entire content is presented in the main body.\n## Verbatim Multi-Lingual Decoding\n### Symptoms of Kapha Gulma\nkapha gulma 症狀: 氣力. 缺乏活動力, 淋熱冷, 噁心. 咳嗽. 厭食, 沉重感, 淋冷. 噁先味覺.\n腫瘤是冷和硬, 鼓脹出極大. 輕微的疼痛.\n### General Treatment Principles\n任何二個Doshas的組合,「腫瘤」可以被治癒, 若三種Doshas有混合的狀態, 依嚴重程度進行處理, 若是 tridoshas gulma, 腫瘤疼痛, 灼熱, 質量堅硬如石頭, 鼓的很大, 淫病很快, 嚴重到喪失意識, 這是不治之症。\nGulma 腫瘤起源於血液, 唯有女性, 這是月經的累積, 在月經期間發燒, 粗糙, 異行為, 抑制約促, 流產, 快速分娩. Vata增高混合血液, 形成腫瘤 (類似 Pitta Gulma), 這是血液 (Rakta gulma) 腫瘤, 必在懷胎十月後處理.\n### Treatment (Gulma Cikitsa)\n**Treatment:**\n- 治療 Vata gulma, 不使用消膏. 不用油按摩結腸如. 及熱敷. 軟化渠道, 克服加重的 Vata, 增加排氣氣排便.\n- 治療 Vata 混合 Kapha, 加重的 Kapha 抑制消化火, 從而產生厭食, 噁心, 沉重和嗜睡. 吧土的方式, 可以被利用. 硬度的大便可用栓劑, 丸劑, 減輕 Kapha 和 Vata.\n- 治療 Pitta gulma, 可以用灌腸的方式, 如果血和 Pitta 都加劇, 可以考慮放血.\n- 如果 Pitta gulma 是由於脂肪和熱的物質所造成, 可用涼藥. 如是疼痛位結腸如, 可停止苦味藥物, 包括灌腸的苦味草藥.\n- 如果是血 gulma, 可採用放血, 去掉有雜質的血液, 之後, 可喝肉湯和 Ghee.\n- 重和硬的外觀, 深層次的皮膚沒有黑色, 穩定的 gulma 被視為一生的.\n- 當 gulma 有殘疾的狀態, 不斷向外突出, 開高, 边距為紅或黑色, 觸壓腫脹時, 壓力不斷升高, 兩側麻木, 局部疼痛, 被稱為 - 成熟期。此時: 利用外科手術去除。之後; 10-12天內在飲食作調整, 此後可攝入酥油, 以免有併發症.\n- Kapha gulma, 可用吧吐的方式來淨化, 或用十根湯來灌腸, 如果是深根病因, 只能用燒灼, 或手術, 或藥物治療.\n### Herbal Formulas (食療配方)\n**食療配方:**\n- 用 Ghee 煮, dhanyaka, Vidanga, Cavya 三種水果和 Citraka, 牛奶, - Vatagulma.\n- 用上列草藥 + 十根草藥, 熬成藥湯 - For gulma.\nCaraka 其它配方在 II, p106.\n## Symbol & Table Preservation\nNo arrow symbols ('↑' increase, '↓' decrease) are present in the document.\nNo tables are present in the document, but the treatment section is structured as a bulleted list, which can be represented in Markdown format as follows:\n```markdown\n### Treatment (Gulma Cikitsa)\n**Treatment:**\n- 治療 Vata gulma, 不使用消膏. 不用油按摩結腸如. 及熱敷. 軟化渠道, 克服加重的 Vata, 增加排氣氣排便.\n- 治療 Vata 混合 Kapha, 加重的 Kapha 抑制消化火, 從而產生厭食, 噁心, 沉重和嗜睡. 吧土的方式, 可以被利用. 硬度的大便可用栓劑, 丸劑, 減輕 Kapha 和 Vata.\n- 治療 Pitta gulma, 可以用灌腸的方式, 如果血和 Pitta 都加劇, 可以考慮放血.\n- 如果 Pitta gulma 是由於脂肪和熱的物質所造成, 可用涼藥. 如是疼痛位結腸如, 可停止苦味藥物, 包括灌腸的苦味草藥.\n- 如果是血 gulma, 可採用放血, 去掉有雜質的血液, 之後, 可喝肉湯和 Ghee.\n- 重和硬的外觀, 深層次的皮膚沒有黑色, 穩定的 gulma 被視為一生的.\n- 當 gulma 有殘疾的狀態, 不斷向外突出, 開高, 边距為紅或黑色, 觸壓腫脹時, 壓力不斷升高, 兩側麻木, 局部疼痛, 被稱為 - 成熟期。此時: 利用外科手術去除。之後; 10-12天內在飲食作調整, 此後可攝入酥油, 以免有併發症.\n- Kapha gulma, 可用吧吐的方式來淨化, 或用十根湯來灌腸, 如果是深根病因, 只能用燒灼, 或手術, 或藥物治療.\n```\n```",
+      "original_text": "```markdown\n## Layout & Region Analysis\n- **Header**: The topmost section contains the heading \"kapha gulma 症狀\" (Symptoms of Kapha Gulma), followed by a list of symptoms in Traditional Chinese and English.\n- **Multi-column Reading Flow**: The document is structured with a left-to-right reading flow. The main body is divided into two primary columns: the left column contains general descriptions and treatment principles, while the right column contains detailed treatment protocols and herbal formulas.\n- **Tables**: There are no formal tables in the document, but there are structured lists with bullet points that serve a tabular function.\n- **Side Notes**: There are no side notes or marginalia. The entire content is presented in the main body.\n## Verbatim Multi-Lingual Decoding\n### Symptoms of Kapha Gulma\nkapha gulma 症狀: 氣力. 缺乏活動力, 淋熱冷, 噁心. 咳嗽. 厭食, 沉重感, 淋冷. 噁先味覺.\n腫瘤是冷和硬, 鼓脹出極大. 輕微的疼痛.\n### General Treatment Principles\n任何二個Doshas的組合,「腫瘤」可以被治癒, 若三種Doshas有混合的狀態, 依嚴重程度進行處理, 若是 tridoshas gulma, 腫瘤疼痛, 灼熱, 質量堅硬如石頭, 鼓的很大, 淫病很快, 嚴重到喪失意識, 這是不治之症。\nGulma 腫瘤起源於血液, 唯有女性, 這是月經的累積, 在月經期間發燒, 粗糙, 異行為, 抑制約促, 流產, 快速分娩. Vata增高混合血液, 形成腫瘤 (類似 Pitta Gulma), 這是血液 (Rakta gulma) 腫瘤, 必在懷胎十月後處理.\n### Treatment (Gulma Cikitsa)\n**Treatment:**\n- 治療 Vata gulma, 不使用消膏. 不用油按摩結腸如. 及熱敷. 軟化渠道, 克服加重的 Vata, 增加排氣氣排便.\n- 治療 Vata 混合 Kapha, 加重的 Kapha 抑制消化火, 從而產生厭食, 噁心, 沉重和嗜睡. 吧土的方式, 可以被利用. 硬度的大便可用栓劑, 丸劑, 減輕 Kapha 和 Vata.\n- 治療 Pitta gulma, 可以用灌腸的方式, 如果血和 Pitta 都加劇, 可以考慮放血.\n- 如果 Pitta gulma 是由於脂肪和熱的物質所造成, 可用涼藥. 如是疼痛位結腸如, 可停止苦味藥物, 包括灌腸的苦味草藥.\n- 如果是血 gulma, 可採用放血, 去掉有雜質的血液, 之後, 可喝肉湯和 Ghee.\n- 重和硬的外觀, 深層次的皮膚沒有黑色, 穩定的 gulma 被視為一生的.\n- 當 gulma 有殘疾的狀態, 不斷向外突出, 開高, 边距為紅或黑色, 觸壓腫脹時, 壓力不斷升高, 兩側麻木, 局部疼痛, 被稱為 - 成熟期。此時: 利用外科手術去除。之後; 10-12天內在飲食作調整, 此後可攝入酥油, 以免有併發症.\n- Kapha gulma, 可用吧吐的方式來淨化, 或用十根湯來灌腸, 如果是深根病因, 只能用燒灼, 或手術, 或藥物治療.\n### Herbal Formulas (食療配方)\n**食療配方:**\n- 用 Ghee 煮, dhanyaka, Vidanga, Cavya 三種水果和 Citraka, 牛奶, - Vatagulma.\n- 用上列草藥 + 十根草藥, 熬成藥湯 - For gulma.\nCaraka 其它配方在 II, p106.\n## Symbol & Table Preservation\nNo arrow symbols ('↑' increase, '↓' decrease) are present in the document.\nNo tables are present in the document, but the treatment section is structured as a bulleted list, which can be represented in Markdown format as follows:\n```markdown\n### Treatment (Gulma Cikitsa)\n**Treatment:**\n- 治療 Vata gulma, 不使用消膏. 不用油按摩結腸如. 及熱敷. 軟化渠道, 克服加重的 Vata, 增加排氣氣排便.\n- 治療 Vata 混合 Kapha, 加重的 Kapha 抑制消化火, 從而產生厭食, 噁心, 沉重和嗜睡. 吧土的方式, 可以被利用. 硬度的大便可用栓劑, 丸劑, 減輕 Kapha 和 Vata.\n- 治療 Pitta gulma, 可以用灌腸的方式, 如果血和 Pitta 都加劇, 可以考慮放血.\n- 如果 Pitta gulma 是由於脂肪和熱的物質所造成, 可用涼藥. 如是疼痛位結腸如, 可停止苦味藥物, 包括灌腸的苦味草藥.\n- 如果是血 gulma, 可採用放血, 去掉有雜質的血液, 之後, 可喝肉湯和 Ghee.\n- 重和硬的外觀, 深層次的皮膚沒有黑色, 穩定的 gulma 被視為一生的.\n- 當 gulma 有殘疾的狀態, 不斷向外突出, 開高, 边距為紅或黑色, 觸壓腫脹時, 壓力不斷升高, 兩側麻木, 局部疼痛, 被稱為 - 成熟期。此時: 利用外科手術去除。之後; 10-12天內在飲食作調整, 此後可攝入酥油, 以免有併發症.\n- Kapha gulma, 可用吧吐的方式來淨化, 或用十根湯來灌腸, 如果是深根病因, 只能用燒灼, 或手術, 或藥物治療.\n```\n```",
+      "digest_content": "```markdown\n## Layout & Region Analysis\n- **Header**: The topmost section contains the heading \"kapha gulma 症狀\" (Symptoms of Kapha Gulma), followed by a list of symptoms in Traditional Chinese and English.\n- **Multi-column Reading Flow**: The document is structured with a left-to-right reading flow. The main body is divided into two primary columns: the left column contains general descriptions and treatment principles, while the right column contains detailed treatment protocols and herbal formulas.\n- **Tables**: There are no formal tables in the document, but there are structured lists with bullet points that serve a tabular function.\n- **Side Notes**: There are no side notes or marginalia. The entire content is presented in the main body.\n## Verbatim Multi-Lingual Decoding\n### Symptoms of Kapha Gulma\nkapha gulma 症狀: 氣力. 缺乏活動力, 淋熱冷, 噁心. 咳嗽. 厭食, 沉重感, 淋冷. 噁先味覺.\n腫瘤是冷和硬, 鼓脹出極大. 輕微的疼痛.\n### General Treatment Principles\n任何二個Doshas的組合,「腫瘤」可以被治癒, 若三種Doshas有混合的狀態, 依嚴重程度進行處理, 若是 tridoshas gulma, 腫瘤疼痛, 灼熱, 質量堅硬如石頭, 鼓的很大, 淫病很快, 嚴重到喪失意識, 這是不治之症。\nGulma 腫瘤起源於血液, 唯有女性, 這是月經的累積, 在月經期間發燒, 粗糙, 異行為, 抑制約促, 流產, 快速分娩. Vata增高混合血液, 形成腫瘤 (類似 Pitta Gulma), 這是血液 (Rakta gulma) 腫瘤, 必在懷胎十月後處理.\n### Treatment (Gulma Cikitsa)\n**Treatment:**\n- 治療 Vata gulma, 不使用消膏. 不用油按摩結腸如. 及熱敷. 軟化渠道, 克服加重的 Vata, 增加排氣氣排便.\n- 治療 Vata 混合 Kapha, 加重的 Kapha 抑制消化火, 從而產生厭食, 噁心, 沉重和嗜睡. 吧土的方式, 可以被利用. 硬度的大便可用栓劑, 丸劑, 減輕 Kapha 和 Vata.\n- 治療 Pitta gulma, 可以用灌腸的方式, 如果血和 Pitta 都加劇, 可以考慮放血.\n- 如果 Pitta gulma 是由於脂肪和熱的物質所造成, 可用涼藥. 如是疼痛位結腸如, 可停止苦味藥物, 包括灌腸的苦味草藥.\n- 如果是血 gulma, 可採用放血, 去掉有雜質的血液, 之後, 可喝肉湯和 Ghee.\n- 重和硬的外觀, 深層次的皮膚沒有黑色, 穩定的 gulma 被視為一生的.\n- 當 gulma 有殘疾的狀態, 不斷向外突出, 開高, 边距為紅或黑色, 觸壓腫脹時, 壓力不斷升高, 兩側麻木, 局部疼痛, 被稱為 - 成熟期。此時: 利用外科手術去除。之後; 10-12天內在飲食作調整, 此後可攝入酥油, 以免有併發症.\n- Kapha gulma, 可用吧吐的方式來淨化, 或用十根湯來灌腸, 如果是深根病因, 只能用燒灼, 或手術, 或藥物治療.\n### Herbal Formulas (食療配方)\n**食療配方:**\n- 用 Ghee 煮, dhanyaka, Vidanga, Cavya 三種水果和 Citraka, 牛奶, - Vatagulma.\n- 用上列草藥 + 十根草藥, 熬成藥湯 - For gulma.\nCaraka 其它配方在 II, p106.\n## Symbol & Table Preservation\nNo arrow symbols ('↑' increase, '↓' decrease) are present in the document.\nNo tables are present in the document, but the treatment section is structured as a bulleted list, which can be represented in Markdown format as follows:\n```markdown\n### Treatment (Gulma Cikitsa)\n**Treatment:**\n- 治療 Vata gulma, 不使用消膏. 不用油按摩結腸如. 及熱敷. 軟化渠道, 克服加重的 Vata, 增加排氣氣排便.\n- 治療 Vata 混合 Kapha, 加重的 Kapha 抑制消化火, 從而產生厭食, 噁心, 沉重和嗜睡. 吧土的方式, 可以被利用. 硬度的大便可用栓劑, 丸劑, 減輕 Kapha 和 Vata.\n- 治療 Pitta gulma, 可以用灌腸的方式, 如果血和 Pitta 都加劇, 可以考慮放血.\n- 如果 Pitta gulma 是由於脂肪和熱的物質所造成, 可用涼藥. 如是疼痛位結腸如, 可停止苦味藥物, 包括灌腸的苦味草藥.\n- 如果是血 gulma, 可採用放血, 去掉有雜質的血液, 之後, 可喝肉湯和 Ghee.\n- 重和硬的外觀, 深層次的皮膚沒有黑色, 穩定的 gulma 被視為一生的.\n- 當 gulma 有殘疾的狀態, 不斷向外突出, 開高, 边距為紅或黑色, 觸壓腫脹時, 壓力不斷升高, 兩側麻木, 局部疼痛, 被稱為 - 成熟期。此時: 利用外科手術去除。之後; 10-12天內在飲食作調整, 此後可攝入酥油, 以免有併發症.\n- Kapha gulma, 可用吧吐的方式來淨化, 或用十根湯來灌腸, 如果是深根病因, 只能用燒灼, 或手術, 或藥物治療.\n```\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0012",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 12 頁",
+      "snippet": "```markdown\n4. 煮些草药当水喝：草药 Gokshura, ² Varuna - Crateva nurvala. ³ punarnava.\n4. chandana. ⁵ Karpoora - cinnamon camphora. ⁶ Ela. ⁷ Yavakshara - AFI\n居家療法 - For 所有類型.\n1. 椰子 - For 屈灼熱 和 尿少. 多喝椰子水, 石頭可透過尿液排出來.\n2. 薏米水.\n3. 西瓜 - 提供充沛的水量, 可利尿和消除結石.\n4. 洋蔥 - 洋蔥煮湯, 加入糖. 定期食用.\n5. Dal or millet - 簡單的湯. 定期\n6. 蘇打水每日三次. 飯後.\n外部治療 - For all\n1. Abhyanga 按摩. 2. 澡汗.\nVata - Ghee. 草藥: Gokshura, Rock salt, Bala, Syonaka, Usheera, Yava, Horse gram. Varuna. 熬成藥Ghee. 每晚一拳匙.\npaste 糊. 草藥: Eranda root, Brihati, Gokshura, consumed with butter milk. 於早晚各10g. (與前項一起使用).\nPitta - Ghee. 草藥: Saliparni, Syonaka, Paatali, Punarnava - For 1拳匙. 於晚上.\npaste 糊: Yashtimadhu, Pashanabheda - 10g 混合溫水.\nKapha - Ghee: Ela, Guggulu, Maricha, Kushtha, Chithraka - 1拳匙. 晚上.\npaste: Usheera, Chandana, Ela, Karpoora - 10g 混合溫水.\nSukra精液: - 用 Ankola, Kathaka 粉10g. 混合水和粗糖.\n- Ajamoda, Sunti 粉10g. 混合啤酒或溫水.\n- Sigru root, drum stick root (鼓根) 30ml. For 药湯. 早. 晚.\n```",
+      "original_text": "```markdown\n4. 煮些草药当水喝：草药 Gokshura, ² Varuna - Crateva nurvala. ³ punarnava.\n4. chandana. ⁵ Karpoora - cinnamon camphora. ⁶ Ela. ⁷ Yavakshara - AFI\n居家療法 - For 所有類型.\n1. 椰子 - For 屈灼熱 和 尿少. 多喝椰子水, 石頭可透過尿液排出來.\n2. 薏米水.\n3. 西瓜 - 提供充沛的水量, 可利尿和消除結石.\n4. 洋蔥 - 洋蔥煮湯, 加入糖. 定期食用.\n5. Dal or millet - 簡單的湯. 定期\n6. 蘇打水每日三次. 飯後.\n外部治療 - For all\n1. Abhyanga 按摩. 2. 澡汗.\nVata - Ghee. 草藥: Gokshura, Rock salt, Bala, Syonaka, Usheera, Yava, Horse gram. Varuna. 熬成藥Ghee. 每晚一拳匙.\npaste 糊. 草藥: Eranda root, Brihati, Gokshura, consumed with butter milk. 於早晚各10g. (與前項一起使用).\nPitta - Ghee. 草藥: Saliparni, Syonaka, Paatali, Punarnava - For 1拳匙. 於晚上.\npaste 糊: Yashtimadhu, Pashanabheda - 10g 混合溫水.\nKapha - Ghee: Ela, Guggulu, Maricha, Kushtha, Chithraka - 1拳匙. 晚上.\npaste: Usheera, Chandana, Ela, Karpoora - 10g 混合溫水.\nSukra精液: - 用 Ankola, Kathaka 粉10g. 混合水和粗糖.\n- Ajamoda, Sunti 粉10g. 混合啤酒或溫水.\n- Sigru root, drum stick root (鼓根) 30ml. For 药湯. 早. 晚.\n```",
+      "digest_content": "```markdown\n4. 煮些草药当水喝：草药 Gokshura, ² Varuna - Crateva nurvala. ³ punarnava.\n4. chandana. ⁵ Karpoora - cinnamon camphora. ⁶ Ela. ⁷ Yavakshara - AFI\n居家療法 - For 所有類型.\n1. 椰子 - For 屈灼熱 和 尿少. 多喝椰子水, 石頭可透過尿液排出來.\n2. 薏米水.\n3. 西瓜 - 提供充沛的水量, 可利尿和消除結石.\n4. 洋蔥 - 洋蔥煮湯, 加入糖. 定期食用.\n5. Dal or millet - 簡單的湯. 定期\n6. 蘇打水每日三次. 飯後.\n外部治療 - For all\n1. Abhyanga 按摩. 2. 澡汗.\nVata - Ghee. 草藥: Gokshura, Rock salt, Bala, Syonaka, Usheera, Yava, Horse gram. Varuna. 熬成藥Ghee. 每晚一拳匙.\npaste 糊. 草藥: Eranda root, Brihati, Gokshura, consumed with butter milk. 於早晚各10g. (與前項一起使用).\nPitta - Ghee. 草藥: Saliparni, Syonaka, Paatali, Punarnava - For 1拳匙. 於晚上.\npaste 糊: Yashtimadhu, Pashanabheda - 10g 混合溫水.\nKapha - Ghee: Ela, Guggulu, Maricha, Kushtha, Chithraka - 1拳匙. 晚上.\npaste: Usheera, Chandana, Ela, Karpoora - 10g 混合溫水.\nSukra精液: - 用 Ankola, Kathaka 粉10g. 混合水和粗糖.\n- Ajamoda, Sunti 粉10g. 混合啤酒或溫水.\n- Sigru root, drum stick root (鼓根) 30ml. For 药湯. 早. 晚.\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0013",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 13 頁",
+      "snippet": "```markdown\n(乾/癢).\n續前頁的 Yoni kandu 治療草藥配方.\n① 草葯 ānantamūla, black variety, Sariva, ṇisotha, lodhra, gajapippali;\n- For Yoni kandu (陰道乾癢).\n② 配方 'Subhakari Vati': 等量.\nCitraka, Amritasāra, lauha, vida, variety, sale, mustaka. - Decoction.\n③ 配方 'Silajatvādi Curnam': 等量.\npowder - 'silajit, borax. Vanśalocana, 純化塩.\nRoots - Citraka, padmaka, nilotapala, shunti, mustaka, raisin 葡萄乾.\nGudūci, jivanti, madhuka. 及純化的白色檀香和紅色檀香.\n沖洗陰道使用冷水, 使用油性的物質, 或用 basti (enema) 療法.\nYoni durgandhahara yoga.\n① 配方: Pāncapallavādi ghrta.\n① pancapallava. ② yasti. ③ jati puspā. 清洗陰道(入內部).除惡臭.\n② 塞劑 (Vartti): ① Ikṣvāku seeds. ② danti. ③ pippali. ④ jaggery. ⑤ madana.\n⑥ yeast. ⑦ snuhi kṣīra. 塞入陰道, 語導月經.\n③ 治療 Nāṣṭartava: 語導月經.\n1. 用 Japa 花混合 kanji. 2. Jyotismati 葉炒 ghee.\n④ 治療 Antapravista yoni: 陰道內收縮. 月經重. 用 Susavi root 粉糊. 脫垂用 老鼠的脂肪.\n⑤ 配方 Vacādi lepa: ① Vaca. ② nilotpala. ③ kustha. ④ matīca. ⑤ aśvagandha, haridra.\n堅固陰道.\n⑥ 配方 Ārtavahara yoga: amalaka curna(粉), Yasanjana, haritaki curna 一起混合水. 或 Slesmataka 葉. 也是有效的. 用於檢查月經.\n```",
+      "original_text": "```markdown\n(乾/癢).\n續前頁的 Yoni kandu 治療草藥配方.\n① 草葯 ānantamūla, black variety, Sariva, ṇisotha, lodhra, gajapippali;\n- For Yoni kandu (陰道乾癢).\n② 配方 'Subhakari Vati': 等量.\nCitraka, Amritasāra, lauha, vida, variety, sale, mustaka. - Decoction.\n③ 配方 'Silajatvādi Curnam': 等量.\npowder - 'silajit, borax. Vanśalocana, 純化塩.\nRoots - Citraka, padmaka, nilotapala, shunti, mustaka, raisin 葡萄乾.\nGudūci, jivanti, madhuka. 及純化的白色檀香和紅色檀香.\n沖洗陰道使用冷水, 使用油性的物質, 或用 basti (enema) 療法.\nYoni durgandhahara yoga.\n① 配方: Pāncapallavādi ghrta.\n① pancapallava. ② yasti. ③ jati puspā. 清洗陰道(入內部).除惡臭.\n② 塞劑 (Vartti): ① Ikṣvāku seeds. ② danti. ③ pippali. ④ jaggery. ⑤ madana.\n⑥ yeast. ⑦ snuhi kṣīra. 塞入陰道, 語導月經.\n③ 治療 Nāṣṭartava: 語導月經.\n1. 用 Japa 花混合 kanji. 2. Jyotismati 葉炒 ghee.\n④ 治療 Antapravista yoni: 陰道內收縮. 月經重. 用 Susavi root 粉糊. 脫垂用 老鼠的脂肪.\n⑤ 配方 Vacādi lepa: ① Vaca. ② nilotpala. ③ kustha. ④ matīca. ⑤ aśvagandha, haridra.\n堅固陰道.\n⑥ 配方 Ārtavahara yoga: amalaka curna(粉), Yasanjana, haritaki curna 一起混合水. 或 Slesmataka 葉. 也是有效的. 用於檢查月經.\n```",
+      "digest_content": "```markdown\n(乾/癢).\n續前頁的 Yoni kandu 治療草藥配方.\n① 草葯 ānantamūla, black variety, Sariva, ṇisotha, lodhra, gajapippali;\n- For Yoni kandu (陰道乾癢).\n② 配方 'Subhakari Vati': 等量.\nCitraka, Amritasāra, lauha, vida, variety, sale, mustaka. - Decoction.\n③ 配方 'Silajatvādi Curnam': 等量.\npowder - 'silajit, borax. Vanśalocana, 純化塩.\nRoots - Citraka, padmaka, nilotapala, shunti, mustaka, raisin 葡萄乾.\nGudūci, jivanti, madhuka. 及純化的白色檀香和紅色檀香.\n沖洗陰道使用冷水, 使用油性的物質, 或用 basti (enema) 療法.\nYoni durgandhahara yoga.\n① 配方: Pāncapallavādi ghrta.\n① pancapallava. ② yasti. ③ jati puspā. 清洗陰道(入內部).除惡臭.\n② 塞劑 (Vartti): ① Ikṣvāku seeds. ② danti. ③ pippali. ④ jaggery. ⑤ madana.\n⑥ yeast. ⑦ snuhi kṣīra. 塞入陰道, 語導月經.\n③ 治療 Nāṣṭartava: 語導月經.\n1. 用 Japa 花混合 kanji. 2. Jyotismati 葉炒 ghee.\n④ 治療 Antapravista yoni: 陰道內收縮. 月經重. 用 Susavi root 粉糊. 脫垂用 老鼠的脂肪.\n⑤ 配方 Vacādi lepa: ① Vaca. ② nilotpala. ③ kustha. ④ matīca. ⑤ aśvagandha, haridra.\n堅固陰道.\n⑥ 配方 Ārtavahara yoga: amalaka curna(粉), Yasanjana, haritaki curna 一起混合水. 或 Slesmataka 葉. 也是有效的. 用於檢查月經.\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0014",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 14 頁",
+      "snippet": "**1. Layout & Region Analysis**\nThe provided image is the cover of a bound book or journal, not a page containing text or layout elements. It features an ornate, embossed leather cover with no visible text, columns, tables, or side notes. The central design is a stylized tree within an arched frame, surrounded by Celtic knotwork and floral patterns. The cover is secured with two brass clasps on the right side. There is no reading flow or textual structure to analyze.\n**2. Verbatim Multi-Lingual Decoding**\nThere is no text present in the image. Therefore, no Traditional Chinese, English, or Sanskrit transcription can be performed.\n**3. Symbol & Table Preservation**\nThere are no symbols or tables to preserve, as the image contains no textual content.\n---\n**Final Output:**\nThe image is a decorative, embossed leather cover of a book or journal. It contains no text, tables, or symbols to transcribe or preserve. The design features a central tree motif within an arched frame, surrounded by Celtic knotwork and floral patterns. The cover is secured with two brass clasps on the right side. No transcription is possible due to the absence of textual content.",
+      "original_text": "**1. Layout & Region Analysis**\nThe provided image is the cover of a bound book or journal, not a page containing text or layout elements. It features an ornate, embossed leather cover with no visible text, columns, tables, or side notes. The central design is a stylized tree within an arched frame, surrounded by Celtic knotwork and floral patterns. The cover is secured with two brass clasps on the right side. There is no reading flow or textual structure to analyze.\n**2. Verbatim Multi-Lingual Decoding**\nThere is no text present in the image. Therefore, no Traditional Chinese, English, or Sanskrit transcription can be performed.\n**3. Symbol & Table Preservation**\nThere are no symbols or tables to preserve, as the image contains no textual content.\n---\n**Final Output:**\nThe image is a decorative, embossed leather cover of a book or journal. It contains no text, tables, or symbols to transcribe or preserve. The design features a central tree motif within an arched frame, surrounded by Celtic knotwork and floral patterns. The cover is secured with two brass clasps on the right side. No transcription is possible due to the absence of textual content.",
+      "digest_content": "**1. Layout & Region Analysis**\nThe provided image is the cover of a bound book or journal, not a page containing text or layout elements. It features an ornate, embossed leather cover with no visible text, columns, tables, or side notes. The central design is a stylized tree within an arched frame, surrounded by Celtic knotwork and floral patterns. The cover is secured with two brass clasps on the right side. There is no reading flow or textual structure to analyze.\n**2. Verbatim Multi-Lingual Decoding**\nThere is no text present in the image. Therefore, no Traditional Chinese, English, or Sanskrit transcription can be performed.\n**3. Symbol & Table Preservation**\nThere are no symbols or tables to preserve, as the image contains no textual content.\n---\n**Final Output:**\nThe image is a decorative, embossed leather cover of a book or journal. It contains no text, tables, or symbols to transcribe or preserve. The design features a central tree motif within an arched frame, surrounded by Celtic knotwork and floral patterns. The cover is secured with two brass clasps on the right side. No transcription is possible due to the absence of textual content.",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0015",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 15 頁",
+      "snippet": "```markdown\n患者: 刘準備按摩油緩解“冷”和“發燒”. 要溶解雜質, 須用油灌腸和非油灌腸 (瀉藥). 和降低 Vata 的飲食.\n① 等量的 - syāma, trivṛt, magadhikā, danti, nilikā 的糊和 % 的 māsa. 混合公牛的尿液。加 2 匙鹽和手掌大的 jaggery. 有利的.\nCaraka (≈). P423.\n② Ānāha (hardness of bowels) 硬度的大便: 是由於 Ama 靠近心臟的剛性 (沒有彈性, 沉重的頭部和腹部, 經常感冒有嚕脹和粘膜炎, 應搭配 “嘔吐” 和幫助消化的食物。[26].\n**Mūtrakrocchra (dysuria) 排尿困難** - 由於體力消耗過大, 攝入刺激性的藥物, 粗糙的食物和酒, 騎快速車, 吃沼澤動物, 魚類暴飲暴食和消化不良, 呈現出八種排尿困難的狀態.\n1. Vatika dysuria - 膀胱溝, 骨盆, 陰莖劇烈疼痛, 量少, 頻繁.\n2. Pittaja - 尿液呈黃色, 或燒灼感, 或伴隨血尿, 頻繁和困難.\n3. Kaphaja - 腰脹的尿道, 膀胱, 和陰莖, 泥濘的尿液.\n4. Sannipāta - 所有的症狀都出現, 是困難的排尿. [27-30]\n**Aśmari (Calculus) 結石** - 當上昇的 Vata, 乾涸了精液或尿液, pitta 和 kapha, stone, calculi 結石就會逐漸的出現. [31].\n當結石像花, 石, 光滑, 棱形, 把進來的尿推移, 並阻礙尿液的流量, 導致膀胱疼痛. 當尿液流過陰莖和膀胱的縫線, 病人異常痛苦. 若結石壓住陰莖, 有時會有排便, 有時有尿. 若通道或膀胱有結石, 因為尿液通過而流血, 形成血尿. 必須要將結石從尿道移開, 才能輕鬆的排尿. [32-33].\n**Sārkara (gravels) 碎石** - 當 Vāyu 解體, 由結石演變為碎石, 然後走出泌尿通道. 透過精液檢查各別的 Doshas 排放在膀胱, 展生疼痛在陰莖, 膀胱或骨盤, 困難的排尿, 尿液和精液混合在患者的骨盆區域, 那將使睾丸變硬, 腫大和劇烈的疼痛. [35]. --- 接下頁下段.\n```",
+      "original_text": "```markdown\n患者: 刘準備按摩油緩解“冷”和“發燒”. 要溶解雜質, 須用油灌腸和非油灌腸 (瀉藥). 和降低 Vata 的飲食.\n① 等量的 - syāma, trivṛt, magadhikā, danti, nilikā 的糊和 % 的 māsa. 混合公牛的尿液。加 2 匙鹽和手掌大的 jaggery. 有利的.\nCaraka (≈). P423.\n② Ānāha (hardness of bowels) 硬度的大便: 是由於 Ama 靠近心臟的剛性 (沒有彈性, 沉重的頭部和腹部, 經常感冒有嚕脹和粘膜炎, 應搭配 “嘔吐” 和幫助消化的食物。[26].\n**Mūtrakrocchra (dysuria) 排尿困難** - 由於體力消耗過大, 攝入刺激性的藥物, 粗糙的食物和酒, 騎快速車, 吃沼澤動物, 魚類暴飲暴食和消化不良, 呈現出八種排尿困難的狀態.\n1. Vatika dysuria - 膀胱溝, 骨盆, 陰莖劇烈疼痛, 量少, 頻繁.\n2. Pittaja - 尿液呈黃色, 或燒灼感, 或伴隨血尿, 頻繁和困難.\n3. Kaphaja - 腰脹的尿道, 膀胱, 和陰莖, 泥濘的尿液.\n4. Sannipāta - 所有的症狀都出現, 是困難的排尿. [27-30]\n**Aśmari (Calculus) 結石** - 當上昇的 Vata, 乾涸了精液或尿液, pitta 和 kapha, stone, calculi 結石就會逐漸的出現. [31].\n當結石像花, 石, 光滑, 棱形, 把進來的尿推移, 並阻礙尿液的流量, 導致膀胱疼痛. 當尿液流過陰莖和膀胱的縫線, 病人異常痛苦. 若結石壓住陰莖, 有時會有排便, 有時有尿. 若通道或膀胱有結石, 因為尿液通過而流血, 形成血尿. 必須要將結石從尿道移開, 才能輕鬆的排尿. [32-33].\n**Sārkara (gravels) 碎石** - 當 Vāyu 解體, 由結石演變為碎石, 然後走出泌尿通道. 透過精液檢查各別的 Doshas 排放在膀胱, 展生疼痛在陰莖, 膀胱或骨盤, 困難的排尿, 尿液和精液混合在患者的骨盆區域, 那將使睾丸變硬, 腫大和劇烈的疼痛. [35]. --- 接下頁下段.\n```",
+      "digest_content": "```markdown\n患者: 刘準備按摩油緩解“冷”和“發燒”. 要溶解雜質, 須用油灌腸和非油灌腸 (瀉藥). 和降低 Vata 的飲食.\n① 等量的 - syāma, trivṛt, magadhikā, danti, nilikā 的糊和 % 的 māsa. 混合公牛的尿液。加 2 匙鹽和手掌大的 jaggery. 有利的.\nCaraka (≈). P423.\n② Ānāha (hardness of bowels) 硬度的大便: 是由於 Ama 靠近心臟的剛性 (沒有彈性, 沉重的頭部和腹部, 經常感冒有嚕脹和粘膜炎, 應搭配 “嘔吐” 和幫助消化的食物。[26].\n**Mūtrakrocchra (dysuria) 排尿困難** - 由於體力消耗過大, 攝入刺激性的藥物, 粗糙的食物和酒, 騎快速車, 吃沼澤動物, 魚類暴飲暴食和消化不良, 呈現出八種排尿困難的狀態.\n1. Vatika dysuria - 膀胱溝, 骨盆, 陰莖劇烈疼痛, 量少, 頻繁.\n2. Pittaja - 尿液呈黃色, 或燒灼感, 或伴隨血尿, 頻繁和困難.\n3. Kaphaja - 腰脹的尿道, 膀胱, 和陰莖, 泥濘的尿液.\n4. Sannipāta - 所有的症狀都出現, 是困難的排尿. [27-30]\n**Aśmari (Calculus) 結石** - 當上昇的 Vata, 乾涸了精液或尿液, pitta 和 kapha, stone, calculi 結石就會逐漸的出現. [31].\n當結石像花, 石, 光滑, 棱形, 把進來的尿推移, 並阻礙尿液的流量, 導致膀胱疼痛. 當尿液流過陰莖和膀胱的縫線, 病人異常痛苦. 若結石壓住陰莖, 有時會有排便, 有時有尿. 若通道或膀胱有結石, 因為尿液通過而流血, 形成血尿. 必須要將結石從尿道移開, 才能輕鬆的排尿. [32-33].\n**Sārkara (gravels) 碎石** - 當 Vāyu 解體, 由結石演變為碎石, 然後走出泌尿通道. 透過精液檢查各別的 Doshas 排放在膀胱, 展生疼痛在陰莖, 膀胱或骨盤, 困難的排尿, 尿液和精液混合在患者的骨盆區域, 那將使睾丸變硬, 腫大和劇烈的疼痛. [35]. --- 接下頁下段.\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0016",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 16 頁",
+      "snippet": "```markdown\n湯\n醫生可利用sura, aristā, asava, 於每個Dosha.在早晨喝肉添加Rasona, 更多的牛奶和肉湯。\n※ 治療精液(shukra)的疾病，和經血(Artava)、乳房、和陽瘧(klaibya)胎兒阻塞(Mudharabah)，和懷孕的婦女，醫生形勢細讀陰道疾病，及治療早產和發燒。\nBhaisaiy, P360.\nYoni Viyapa Chikitsa → Treatment. 女性陰道疾病治療\n陰道(生殖器)的相關疾病，可用下列方式治療\n① 陰道灌洗 (oil enema) / uttarabasti\n② 藥物膏 / ointments,\n③ 米胡 (kalkas).\n④ 薰蒸.\n⑤ picu (picHu). 將綿布沾藥油或植物汁液，如榕樹汁banyan.\n⑥ 油，(oil, Ghee, juice).\n此配方適用於：① 女性陰道疾病，② 心臟疾病，③ 腹部疾病和④ 病。\n成份：每一種粉末 12gm.\n① Vaca, ② pippali, ③ adusa, ④ 鹽 (rock salt), ⑤ Yavakṣara.\n⑥ Citraka, ⑦ jaggery, 然後；再加入 2gm Ghee，一起火炒。\n(每種12gm粉末 × 7種 = 84gm的粉末與2gm ghee一起炒) + 少許葡萄酒.\n② 可利用下列植物製成藥膏或藥湯塗抹在陰道內.\nGuduchi, Triphala, Danti root,\n③ 下列植物，等量混合後，做成塞劑，放入陰道中.\npippali, black pepper, urada beans (馬拉特豆), aniseed入角,\nkustha, Rock salt,\n```",
+      "original_text": "```markdown\n湯\n醫生可利用sura, aristā, asava, 於每個Dosha.在早晨喝肉添加Rasona, 更多的牛奶和肉湯。\n※ 治療精液(shukra)的疾病，和經血(Artava)、乳房、和陽瘧(klaibya)胎兒阻塞(Mudharabah)，和懷孕的婦女，醫生形勢細讀陰道疾病，及治療早產和發燒。\nBhaisaiy, P360.\nYoni Viyapa Chikitsa → Treatment. 女性陰道疾病治療\n陰道(生殖器)的相關疾病，可用下列方式治療\n① 陰道灌洗 (oil enema) / uttarabasti\n② 藥物膏 / ointments,\n③ 米胡 (kalkas).\n④ 薰蒸.\n⑤ picu (picHu). 將綿布沾藥油或植物汁液，如榕樹汁banyan.\n⑥ 油，(oil, Ghee, juice).\n此配方適用於：① 女性陰道疾病，② 心臟疾病，③ 腹部疾病和④ 病。\n成份：每一種粉末 12gm.\n① Vaca, ② pippali, ③ adusa, ④ 鹽 (rock salt), ⑤ Yavakṣara.\n⑥ Citraka, ⑦ jaggery, 然後；再加入 2gm Ghee，一起火炒。\n(每種12gm粉末 × 7種 = 84gm的粉末與2gm ghee一起炒) + 少許葡萄酒.\n② 可利用下列植物製成藥膏或藥湯塗抹在陰道內.\nGuduchi, Triphala, Danti root,\n③ 下列植物，等量混合後，做成塞劑，放入陰道中.\npippali, black pepper, urada beans (馬拉特豆), aniseed入角,\nkustha, Rock salt,\n```",
+      "digest_content": "```markdown\n湯\n醫生可利用sura, aristā, asava, 於每個Dosha.在早晨喝肉添加Rasona, 更多的牛奶和肉湯。\n※ 治療精液(shukra)的疾病，和經血(Artava)、乳房、和陽瘧(klaibya)胎兒阻塞(Mudharabah)，和懷孕的婦女，醫生形勢細讀陰道疾病，及治療早產和發燒。\nBhaisaiy, P360.\nYoni Viyapa Chikitsa → Treatment. 女性陰道疾病治療\n陰道(生殖器)的相關疾病，可用下列方式治療\n① 陰道灌洗 (oil enema) / uttarabasti\n② 藥物膏 / ointments,\n③ 米胡 (kalkas).\n④ 薰蒸.\n⑤ picu (picHu). 將綿布沾藥油或植物汁液，如榕樹汁banyan.\n⑥ 油，(oil, Ghee, juice).\n此配方適用於：① 女性陰道疾病，② 心臟疾病，③ 腹部疾病和④ 病。\n成份：每一種粉末 12gm.\n① Vaca, ② pippali, ③ adusa, ④ 鹽 (rock salt), ⑤ Yavakṣara.\n⑥ Citraka, ⑦ jaggery, 然後；再加入 2gm Ghee，一起火炒。\n(每種12gm粉末 × 7種 = 84gm的粉末與2gm ghee一起炒) + 少許葡萄酒.\n② 可利用下列植物製成藥膏或藥湯塗抹在陰道內.\nGuduchi, Triphala, Danti root,\n③ 下列植物，等量混合後，做成塞劑，放入陰道中.\npippali, black pepper, urada beans (馬拉特豆), aniseed入角,\nkustha, Rock salt,\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0017",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 17 頁",
+      "snippet": "```markdown\n### Layout & Region Analysis\n- **Header**: The topmost line is a bolded heading: `• Arbuda 惡性腫瘤`.\n- **Reading Flow**: The text flows in a single left-to-right column, with no multi-column structure. There are no tables or side notes.\n- **Structure**: The content is organized into three distinct paragraphs, each beginning with a bullet point or indentation.\n---\n### Verbatim Multi-Lingual Decoding\n- **Paragraph 1**:\n> Arbuda 惡性腫瘤\n> 由於 Doshas 的增高，侵入肌肉和血液，而產生圓形不動的物質，它是由輕微的疼痛，從深層次漸漸變大緩慢的增加，是一種非化膿的肌肉組織腫瘤 — 被稱為 “Arbuda” 即癌症。\n- **Paragraph 2**:\n> 惡性腫瘤可分為六種類型：Vataja, pittaja, kaphaja, raktaja, mamsaja 和 medaja，各自類型有不同的症狀。\n- **Paragraph 3**:\n> 當高 Dosha 侵入血液中，而產生大大小小的顆粒，類似豆芽狀而遍佈在全身各地迅速的發展，不斷的放電以致於導致過渡失血，因而形成貧血，稱 Raktarbuda 而滲出大尺寸的肌肉瘤。\n---\n### Symbol & Table Preservation\n- **Symbols**: The handwritten text contains no arrow symbols ('↑' or '↓') or tables.\n- **Markdown Conversion**: No tables are present to convert.\n```",
+      "original_text": "```markdown\n### Layout & Region Analysis\n- **Header**: The topmost line is a bolded heading: `• Arbuda 惡性腫瘤`.\n- **Reading Flow**: The text flows in a single left-to-right column, with no multi-column structure. There are no tables or side notes.\n- **Structure**: The content is organized into three distinct paragraphs, each beginning with a bullet point or indentation.\n---\n### Verbatim Multi-Lingual Decoding\n- **Paragraph 1**:\n> Arbuda 惡性腫瘤\n> 由於 Doshas 的增高，侵入肌肉和血液，而產生圓形不動的物質，它是由輕微的疼痛，從深層次漸漸變大緩慢的增加，是一種非化膿的肌肉組織腫瘤 — 被稱為 “Arbuda” 即癌症。\n- **Paragraph 2**:\n> 惡性腫瘤可分為六種類型：Vataja, pittaja, kaphaja, raktaja, mamsaja 和 medaja，各自類型有不同的症狀。\n- **Paragraph 3**:\n> 當高 Dosha 侵入血液中，而產生大大小小的顆粒，類似豆芽狀而遍佈在全身各地迅速的發展，不斷的放電以致於導致過渡失血，因而形成貧血，稱 Raktarbuda 而滲出大尺寸的肌肉瘤。\n---\n### Symbol & Table Preservation\n- **Symbols**: The handwritten text contains no arrow symbols ('↑' or '↓') or tables.\n- **Markdown Conversion**: No tables are present to convert.\n```",
+      "digest_content": "```markdown\n### Layout & Region Analysis\n- **Header**: The topmost line is a bolded heading: `• Arbuda 惡性腫瘤`.\n- **Reading Flow**: The text flows in a single left-to-right column, with no multi-column structure. There are no tables or side notes.\n- **Structure**: The content is organized into three distinct paragraphs, each beginning with a bullet point or indentation.\n---\n### Verbatim Multi-Lingual Decoding\n- **Paragraph 1**:\n> Arbuda 惡性腫瘤\n> 由於 Doshas 的增高，侵入肌肉和血液，而產生圓形不動的物質，它是由輕微的疼痛，從深層次漸漸變大緩慢的增加，是一種非化膿的肌肉組織腫瘤 — 被稱為 “Arbuda” 即癌症。\n- **Paragraph 2**:\n> 惡性腫瘤可分為六種類型：Vataja, pittaja, kaphaja, raktaja, mamsaja 和 medaja，各自類型有不同的症狀。\n- **Paragraph 3**:\n> 當高 Dosha 侵入血液中，而產生大大小小的顆粒，類似豆芽狀而遍佈在全身各地迅速的發展，不斷的放電以致於導致過渡失血，因而形成貧血，稱 Raktarbuda 而滲出大尺寸的肌肉瘤。\n---\n### Symbol & Table Preservation\n- **Symbols**: The handwritten text contains no arrow symbols ('↑' or '↓') or tables.\n- **Markdown Conversion**: No tables are present to convert.\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0018",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 18 頁",
+      "snippet": "```markdown\n四類型.\n1. Vata.\n2. Pitta.\n3. Kapha.\n4. Sukra 精液.\n前駝症狀:\n1. 腹部脹脹.\n2. 擴張的膀胱.\n3. 在結石的附近劇烈的疼痛.\n4. 尿的氣味, 像是山羊的味道.\n5. 結石的部份發熱, 食慾不振.\n6. 肚臍附近疼痛.\n7. 膀胱頭疼痛.\n8. 尿路的路徑受阻, 流尿中斷.\n9. 尿色異常.\n10. 疼痛使得身體更勞累.\n11. 須使勁才能排尿.\n12. 尿液通過時, 磨擦到結石, 造成傷口, 尿液中將混含有血液.\nVata症狀: 1. 痛得很厲害. 2. 磨齒. 3. 摔抖. 4. 不斷的哭泣. 5. 由於擠壓陰莖, 而不斷疼痛. 6. 不斷揉肚脹. 7. 空洞的糞便, 伴隨著氣體. 8. 頻繁的排尿, 滴狀的. 9. 石頭是黑色, 紅黑色, 粗糙的.\nPitta症狀: 1. 在膀胱有燒灼感. 2. 尿很溫暖. 3. 石頭像紅豆的種子, 紅黃混合.\nKapha症狀: 1. 膀胱如有刺痛感. 2. 尿很冷畏寒. 3. 沉重感. 4. 石頭光滑, 淺棕色或白色.\nSukra症狀: 病因: 由於抑制流動的精液, 沒有射出. 由於這樣, 因而提高了Vata, 由於Vata是乾燥粗糙的特性, 因而乾潤了未射出的精液, 形成石頭在陰囊中.\n症狀: 膀胱和陰囊疼痛, 排尿困難, 陰囊腫脹, 石頭像碎小塊.\nChikitsa (Treatments)治療:\n1. Gokshura decoction or punarnavadi decoction or Brihatyadi decoction.\n劑量: 15ml decoction + 45ml water - 天3-4次.\n2. Chandraprabha vati tablet - For 早、晚各2粒.\n3. Cystone tablet (Himalaya) - For 早、晚各2粒, 持續6-8週.\n```",
+      "original_text": "```markdown\n四類型.\n1. Vata.\n2. Pitta.\n3. Kapha.\n4. Sukra 精液.\n前駝症狀:\n1. 腹部脹脹.\n2. 擴張的膀胱.\n3. 在結石的附近劇烈的疼痛.\n4. 尿的氣味, 像是山羊的味道.\n5. 結石的部份發熱, 食慾不振.\n6. 肚臍附近疼痛.\n7. 膀胱頭疼痛.\n8. 尿路的路徑受阻, 流尿中斷.\n9. 尿色異常.\n10. 疼痛使得身體更勞累.\n11. 須使勁才能排尿.\n12. 尿液通過時, 磨擦到結石, 造成傷口, 尿液中將混含有血液.\nVata症狀: 1. 痛得很厲害. 2. 磨齒. 3. 摔抖. 4. 不斷的哭泣. 5. 由於擠壓陰莖, 而不斷疼痛. 6. 不斷揉肚脹. 7. 空洞的糞便, 伴隨著氣體. 8. 頻繁的排尿, 滴狀的. 9. 石頭是黑色, 紅黑色, 粗糙的.\nPitta症狀: 1. 在膀胱有燒灼感. 2. 尿很溫暖. 3. 石頭像紅豆的種子, 紅黃混合.\nKapha症狀: 1. 膀胱如有刺痛感. 2. 尿很冷畏寒. 3. 沉重感. 4. 石頭光滑, 淺棕色或白色.\nSukra症狀: 病因: 由於抑制流動的精液, 沒有射出. 由於這樣, 因而提高了Vata, 由於Vata是乾燥粗糙的特性, 因而乾潤了未射出的精液, 形成石頭在陰囊中.\n症狀: 膀胱和陰囊疼痛, 排尿困難, 陰囊腫脹, 石頭像碎小塊.\nChikitsa (Treatments)治療:\n1. Gokshura decoction or punarnavadi decoction or Brihatyadi decoction.\n劑量: 15ml decoction + 45ml water - 天3-4次.\n2. Chandraprabha vati tablet - For 早、晚各2粒.\n3. Cystone tablet (Himalaya) - For 早、晚各2粒, 持續6-8週.\n```",
+      "digest_content": "```markdown\n四類型.\n1. Vata.\n2. Pitta.\n3. Kapha.\n4. Sukra 精液.\n前駝症狀:\n1. 腹部脹脹.\n2. 擴張的膀胱.\n3. 在結石的附近劇烈的疼痛.\n4. 尿的氣味, 像是山羊的味道.\n5. 結石的部份發熱, 食慾不振.\n6. 肚臍附近疼痛.\n7. 膀胱頭疼痛.\n8. 尿路的路徑受阻, 流尿中斷.\n9. 尿色異常.\n10. 疼痛使得身體更勞累.\n11. 須使勁才能排尿.\n12. 尿液通過時, 磨擦到結石, 造成傷口, 尿液中將混含有血液.\nVata症狀: 1. 痛得很厲害. 2. 磨齒. 3. 摔抖. 4. 不斷的哭泣. 5. 由於擠壓陰莖, 而不斷疼痛. 6. 不斷揉肚脹. 7. 空洞的糞便, 伴隨著氣體. 8. 頻繁的排尿, 滴狀的. 9. 石頭是黑色, 紅黑色, 粗糙的.\nPitta症狀: 1. 在膀胱有燒灼感. 2. 尿很溫暖. 3. 石頭像紅豆的種子, 紅黃混合.\nKapha症狀: 1. 膀胱如有刺痛感. 2. 尿很冷畏寒. 3. 沉重感. 4. 石頭光滑, 淺棕色或白色.\nSukra症狀: 病因: 由於抑制流動的精液, 沒有射出. 由於這樣, 因而提高了Vata, 由於Vata是乾燥粗糙的特性, 因而乾潤了未射出的精液, 形成石頭在陰囊中.\n症狀: 膀胱和陰囊疼痛, 排尿困難, 陰囊腫脹, 石頭像碎小塊.\nChikitsa (Treatments)治療:\n1. Gokshura decoction or punarnavadi decoction or Brihatyadi decoction.\n劑量: 15ml decoction + 45ml water - 天3-4次.\n2. Chandraprabha vati tablet - For 早、晚各2粒.\n3. Cystone tablet (Himalaya) - For 早、晚各2粒, 持續6-8週.\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0019",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 19 頁",
+      "snippet": "```markdown\n# Vrukka A'smari (Renal Calculus) 腎結石\nVrukka - 指腎臟或泌尿系統. A'smari - 指石頭.\n在我們的身體裡有兩個腎臟. 兩個腎臟都和主動脈和下腔靜脈連接.\n血液通過下腔靜脈到達腎臟. 腎臟淨化不純的血液. 被排出的部份. 稱為\n「尿」. 尿液通過輸尿管進入膀胱. 輸尿管是連接腎臟與膀胱的鍵連.\n膀胱中的尿液. 通過尿道移動. 排出體外.\n腎靜脈將不純淨的血液如上淨化. 使成好的血液. 同時使廢物\n形成尿液.\n## 形成「結石」的原因 (Vidana)\n1. 住在炎熱的地區. 沒有喝足夠的水.\n2. 攝入過多「乾燥」. 辣味. 酒精. 鹵鹹性.\n3. 泌尿道經常感染.\n4. 慢性痛風.\n5. 尿酸過多\n6. 身內過多的鈣.\n7. 高血壓\n8. 藥物\n9. 遺傳因素\n10. 胃. 和腸道疾病\n## 疾病:\nVata覆蓋在膀胱口. 形成枯竭的尿液. 同時加重Kapha. 然後乾燥的尿液混合著Pitta. 或混合著Kapha. 或混合著精液(Sukra). 產生的質量. 看起來像石頭.\n稱為結石 (A'smari).\n```",
+      "original_text": "```markdown\n# Vrukka A'smari (Renal Calculus) 腎結石\nVrukka - 指腎臟或泌尿系統. A'smari - 指石頭.\n在我們的身體裡有兩個腎臟. 兩個腎臟都和主動脈和下腔靜脈連接.\n血液通過下腔靜脈到達腎臟. 腎臟淨化不純的血液. 被排出的部份. 稱為\n「尿」. 尿液通過輸尿管進入膀胱. 輸尿管是連接腎臟與膀胱的鍵連.\n膀胱中的尿液. 通過尿道移動. 排出體外.\n腎靜脈將不純淨的血液如上淨化. 使成好的血液. 同時使廢物\n形成尿液.\n## 形成「結石」的原因 (Vidana)\n1. 住在炎熱的地區. 沒有喝足夠的水.\n2. 攝入過多「乾燥」. 辣味. 酒精. 鹵鹹性.\n3. 泌尿道經常感染.\n4. 慢性痛風.\n5. 尿酸過多\n6. 身內過多的鈣.\n7. 高血壓\n8. 藥物\n9. 遺傳因素\n10. 胃. 和腸道疾病\n## 疾病:\nVata覆蓋在膀胱口. 形成枯竭的尿液. 同時加重Kapha. 然後乾燥的尿液混合著Pitta. 或混合著Kapha. 或混合著精液(Sukra). 產生的質量. 看起來像石頭.\n稱為結石 (A'smari).\n```",
+      "digest_content": "```markdown\n# Vrukka A'smari (Renal Calculus) 腎結石\nVrukka - 指腎臟或泌尿系統. A'smari - 指石頭.\n在我們的身體裡有兩個腎臟. 兩個腎臟都和主動脈和下腔靜脈連接.\n血液通過下腔靜脈到達腎臟. 腎臟淨化不純的血液. 被排出的部份. 稱為\n「尿」. 尿液通過輸尿管進入膀胱. 輸尿管是連接腎臟與膀胱的鍵連.\n膀胱中的尿液. 通過尿道移動. 排出體外.\n腎靜脈將不純淨的血液如上淨化. 使成好的血液. 同時使廢物\n形成尿液.\n## 形成「結石」的原因 (Vidana)\n1. 住在炎熱的地區. 沒有喝足夠的水.\n2. 攝入過多「乾燥」. 辣味. 酒精. 鹵鹹性.\n3. 泌尿道經常感染.\n4. 慢性痛風.\n5. 尿酸過多\n6. 身內過多的鈣.\n7. 高血壓\n8. 藥物\n9. 遺傳因素\n10. 胃. 和腸道疾病\n## 疾病:\nVata覆蓋在膀胱口. 形成枯竭的尿液. 同時加重Kapha. 然後乾燥的尿液混合著Pitta. 或混合著Kapha. 或混合著精液(Sukra). 產生的質量. 看起來像石頭.\n稱為結石 (A'smari).\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0020",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 20 頁",
+      "snippet": "```markdown\n# GRANȚHI-ARBUDA-ŚLIPADA-APACI-ṆADI VIJÑĀNIYA\n腫瘤知識 (Knowledge of Tumors etc).\n- 良性腫瘤 (Grāṇthi) · 惡性腫瘤 (Arbuda) · 絲蟲病 (Ślipada) ·\n- 瘢癢 (Apaci) · 鼻竇潰瘍 (NADI Vrana) · 陰道腫瘤 (Yoni Kanda)\n---\n## Grāṇthi - benign tumor 良性腫瘤\n廢物 Malas. kapha dosha 佔優勢, 損壞脂肪、肌肉和血液組織, 駐足在溝道中, 形成一個緊實的圓。這些有九種形式, 分別從各自三Dosha, 血液、肌肉、脂肪、骨骼、血管和外傷而來。\n如果引起因是由於 Vata 而產生的, 症狀會有疼痛、擴大、穿刺、破壞, 且呈現黑色, 由一個地方移轉到其定地方, 沒有理由的增大或變小, 凸起來像是柔軟的水泡, 如刺破則流清血。\n若起因是 pitta, 則會有燒灼感, 呈現黃或紅色, 快速成熟散撥, 刺破時散熱血 (大量)。\n起因是 Kapha, 則頭痛感、硬、冷, 在皮膚上有一些顏色, 成熟時散發著膿濁。\n② 由於 Dosha, 血液變得污濁, 腫瘤產生在靜脈和肌肉中, 使得蠕蟲病毒 (細菌) 露出, 在患處失去感覺, 那時提高了 pitta dosha, 因而所有 pitta 的疾病將被挑起。\n③ 由於不正常的攝入肉類食品, 肌肉組織因而損壞, 而產生腫瘤, 這是油膩、大、硬的, 並崁在靜脈/動脈中, 混和著其定的 kapha 症狀。\n④ 由於不正常的攝入脂肪食品, 損壞脂肪組織, 記端在肌肉或皮膚上, 形成大規模的腫瘤, 如是油膩、柔和、不可移動的, 有相似症狀如 kapha 起源。不論是提高 kapha 或降低 kapha 都依賴身體大小, 當刺破時, 散發著厚重的銅色、白色或黑色的脂肪液。\n⑤ 腫瘤的發展會形成骨折的結果, 創傷的腫瘤也許向上或向下, 這是良性腫瘤。\n⑥ Vata 如果加劇侵入靜脈血流網路 (溝道), 導致他們收縮、變形、乾燥, 產生了一個腫瘤, 這是挾動脈且主痛, 這是 śira grāṇthi.\n⑦ 潰瘍病人, 沉溺於所有口味, 當潰瘍沒有包紮或被石頭打, 若 Vata 加劇污濁的血沒有排出, 因而乾涸污濁的血形成腫瘤。潰瘍引起的腫瘤具有燒灼感和癌癢, 這是 Vrāṇa grāṇthi.\n```",
+      "original_text": "```markdown\n# GRANȚHI-ARBUDA-ŚLIPADA-APACI-ṆADI VIJÑĀNIYA\n腫瘤知識 (Knowledge of Tumors etc).\n- 良性腫瘤 (Grāṇthi) · 惡性腫瘤 (Arbuda) · 絲蟲病 (Ślipada) ·\n- 瘢癢 (Apaci) · 鼻竇潰瘍 (NADI Vrana) · 陰道腫瘤 (Yoni Kanda)\n---\n## Grāṇthi - benign tumor 良性腫瘤\n廢物 Malas. kapha dosha 佔優勢, 損壞脂肪、肌肉和血液組織, 駐足在溝道中, 形成一個緊實的圓。這些有九種形式, 分別從各自三Dosha, 血液、肌肉、脂肪、骨骼、血管和外傷而來。\n如果引起因是由於 Vata 而產生的, 症狀會有疼痛、擴大、穿刺、破壞, 且呈現黑色, 由一個地方移轉到其定地方, 沒有理由的增大或變小, 凸起來像是柔軟的水泡, 如刺破則流清血。\n若起因是 pitta, 則會有燒灼感, 呈現黃或紅色, 快速成熟散撥, 刺破時散熱血 (大量)。\n起因是 Kapha, 則頭痛感、硬、冷, 在皮膚上有一些顏色, 成熟時散發著膿濁。\n② 由於 Dosha, 血液變得污濁, 腫瘤產生在靜脈和肌肉中, 使得蠕蟲病毒 (細菌) 露出, 在患處失去感覺, 那時提高了 pitta dosha, 因而所有 pitta 的疾病將被挑起。\n③ 由於不正常的攝入肉類食品, 肌肉組織因而損壞, 而產生腫瘤, 這是油膩、大、硬的, 並崁在靜脈/動脈中, 混和著其定的 kapha 症狀。\n④ 由於不正常的攝入脂肪食品, 損壞脂肪組織, 記端在肌肉或皮膚上, 形成大規模的腫瘤, 如是油膩、柔和、不可移動的, 有相似症狀如 kapha 起源。不論是提高 kapha 或降低 kapha 都依賴身體大小, 當刺破時, 散發著厚重的銅色、白色或黑色的脂肪液。\n⑤ 腫瘤的發展會形成骨折的結果, 創傷的腫瘤也許向上或向下, 這是良性腫瘤。\n⑥ Vata 如果加劇侵入靜脈血流網路 (溝道), 導致他們收縮、變形、乾燥, 產生了一個腫瘤, 這是挾動脈且主痛, 這是 śira grāṇthi.\n⑦ 潰瘍病人, 沉溺於所有口味, 當潰瘍沒有包紮或被石頭打, 若 Vata 加劇污濁的血沒有排出, 因而乾涸污濁的血形成腫瘤。潰瘍引起的腫瘤具有燒灼感和癌癢, 這是 Vrāṇa grāṇthi.\n```",
+      "digest_content": "```markdown\n# GRANȚHI-ARBUDA-ŚLIPADA-APACI-ṆADI VIJÑĀNIYA\n腫瘤知識 (Knowledge of Tumors etc).\n- 良性腫瘤 (Grāṇthi) · 惡性腫瘤 (Arbuda) · 絲蟲病 (Ślipada) ·\n- 瘢癢 (Apaci) · 鼻竇潰瘍 (NADI Vrana) · 陰道腫瘤 (Yoni Kanda)\n---\n## Grāṇthi - benign tumor 良性腫瘤\n廢物 Malas. kapha dosha 佔優勢, 損壞脂肪、肌肉和血液組織, 駐足在溝道中, 形成一個緊實的圓。這些有九種形式, 分別從各自三Dosha, 血液、肌肉、脂肪、骨骼、血管和外傷而來。\n如果引起因是由於 Vata 而產生的, 症狀會有疼痛、擴大、穿刺、破壞, 且呈現黑色, 由一個地方移轉到其定地方, 沒有理由的增大或變小, 凸起來像是柔軟的水泡, 如刺破則流清血。\n若起因是 pitta, 則會有燒灼感, 呈現黃或紅色, 快速成熟散撥, 刺破時散熱血 (大量)。\n起因是 Kapha, 則頭痛感、硬、冷, 在皮膚上有一些顏色, 成熟時散發著膿濁。\n② 由於 Dosha, 血液變得污濁, 腫瘤產生在靜脈和肌肉中, 使得蠕蟲病毒 (細菌) 露出, 在患處失去感覺, 那時提高了 pitta dosha, 因而所有 pitta 的疾病將被挑起。\n③ 由於不正常的攝入肉類食品, 肌肉組織因而損壞, 而產生腫瘤, 這是油膩、大、硬的, 並崁在靜脈/動脈中, 混和著其定的 kapha 症狀。\n④ 由於不正常的攝入脂肪食品, 損壞脂肪組織, 記端在肌肉或皮膚上, 形成大規模的腫瘤, 如是油膩、柔和、不可移動的, 有相似症狀如 kapha 起源。不論是提高 kapha 或降低 kapha 都依賴身體大小, 當刺破時, 散發著厚重的銅色、白色或黑色的脂肪液。\n⑤ 腫瘤的發展會形成骨折的結果, 創傷的腫瘤也許向上或向下, 這是良性腫瘤。\n⑥ Vata 如果加劇侵入靜脈血流網路 (溝道), 導致他們收縮、變形、乾燥, 產生了一個腫瘤, 這是挾動脈且主痛, 這是 śira grāṇthi.\n⑦ 潰瘍病人, 沉溺於所有口味, 當潰瘍沒有包紮或被石頭打, 若 Vata 加劇污濁的血沒有排出, 因而乾涸污濁的血形成腫瘤。潰瘍引起的腫瘤具有燒灼感和癌癢, 這是 Vrāṇa grāṇthi.\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0021",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 21 頁",
+      "snippet": "```markdown\n# Asṛgdara Nidānam / Menorrhagia 月經過多 - Madhava P220\n## 原因:\n女子沉迷於酒精飲料、過度的房事、頻繁的流產、過食、不相容的食物、和未煮熟的食物。長距離的走路、搬運重物、外傷、悲傷、疲憊、白天睡眠，都有可能引起“月經過量”。\n## 疾病 - 一般的\n四類型：Vata, pitta, kapha, Tridoshas。這種症狀是在月經期間，全身及腹部疼痛。\n### Vata\n起因於 Vata，可能會有的症狀：當經血過量時，產生乏力、頭暈、昏厥、有毒狀態、口渴、燒灼感、白關蒼白等症狀，也伴隨著疼痛。血凝呈現粘、緋紅色、泡沫、類似洗羊肉水。\n### pitta\n起因於 pitta，排放出黃色、藍色、黑色或紅色、熱情的流出。\n### kapha\n起因於 kapha 時，經血有 Ama，重的氣味，混有黏液、淡黃-白色類似洗米水。\n### Tridosha\n起因於三 Doshas，這是不治之症。流量像蜂蜜、酥油，有屍體的氣味、和骨髓的顏色。醫生不該治療此類型。\n同樣的；如果流量的時間持續很長、殘留或口渴、燒灼感、發熱、虛弱的現象，也視為不治之症。\n## 健康經血的標準\n為期五天的經期日數。流體中沒有痰滯粘液，既不太多也不會太多 的流量，既沒有疼痛、也沒有燒灼感、或疼痛。\n經血浸在布上，而布可以洗去血液，沒有留下任何污漬（血的痕跡）。\n那這經血，被認為是健康的。\n```",
+      "original_text": "```markdown\n# Asṛgdara Nidānam / Menorrhagia 月經過多 - Madhava P220\n## 原因:\n女子沉迷於酒精飲料、過度的房事、頻繁的流產、過食、不相容的食物、和未煮熟的食物。長距離的走路、搬運重物、外傷、悲傷、疲憊、白天睡眠，都有可能引起“月經過量”。\n## 疾病 - 一般的\n四類型：Vata, pitta, kapha, Tridoshas。這種症狀是在月經期間，全身及腹部疼痛。\n### Vata\n起因於 Vata，可能會有的症狀：當經血過量時，產生乏力、頭暈、昏厥、有毒狀態、口渴、燒灼感、白關蒼白等症狀，也伴隨著疼痛。血凝呈現粘、緋紅色、泡沫、類似洗羊肉水。\n### pitta\n起因於 pitta，排放出黃色、藍色、黑色或紅色、熱情的流出。\n### kapha\n起因於 kapha 時，經血有 Ama，重的氣味，混有黏液、淡黃-白色類似洗米水。\n### Tridosha\n起因於三 Doshas，這是不治之症。流量像蜂蜜、酥油，有屍體的氣味、和骨髓的顏色。醫生不該治療此類型。\n同樣的；如果流量的時間持續很長、殘留或口渴、燒灼感、發熱、虛弱的現象，也視為不治之症。\n## 健康經血的標準\n為期五天的經期日數。流體中沒有痰滯粘液，既不太多也不會太多 的流量，既沒有疼痛、也沒有燒灼感、或疼痛。\n經血浸在布上，而布可以洗去血液，沒有留下任何污漬（血的痕跡）。\n那這經血，被認為是健康的。\n```",
+      "digest_content": "```markdown\n# Asṛgdara Nidānam / Menorrhagia 月經過多 - Madhava P220\n## 原因:\n女子沉迷於酒精飲料、過度的房事、頻繁的流產、過食、不相容的食物、和未煮熟的食物。長距離的走路、搬運重物、外傷、悲傷、疲憊、白天睡眠，都有可能引起“月經過量”。\n## 疾病 - 一般的\n四類型：Vata, pitta, kapha, Tridoshas。這種症狀是在月經期間，全身及腹部疼痛。\n### Vata\n起因於 Vata，可能會有的症狀：當經血過量時，產生乏力、頭暈、昏厥、有毒狀態、口渴、燒灼感、白關蒼白等症狀，也伴隨著疼痛。血凝呈現粘、緋紅色、泡沫、類似洗羊肉水。\n### pitta\n起因於 pitta，排放出黃色、藍色、黑色或紅色、熱情的流出。\n### kapha\n起因於 kapha 時，經血有 Ama，重的氣味，混有黏液、淡黃-白色類似洗米水。\n### Tridosha\n起因於三 Doshas，這是不治之症。流量像蜂蜜、酥油，有屍體的氣味、和骨髓的顏色。醫生不該治療此類型。\n同樣的；如果流量的時間持續很長、殘留或口渴、燒灼感、發熱、虛弱的現象，也視為不治之症。\n## 健康經血的標準\n為期五天的經期日數。流體中沒有痰滯粘液，既不太多也不會太多 的流量，既沒有疼痛、也沒有燒灼感、或疼痛。\n經血浸在布上，而布可以洗去血液，沒有留下任何污漬（血的痕跡）。\n那這經血，被認為是健康的。\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0022",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 22 頁",
+      "snippet": "```markdown\n# A'smari Nidānam (Vesical calculus) 膀胱結石\n## Layout & Region Analysis\n- **Header**: Top center: \"A'smari NIDANAM (Vesical calculus) 膀胱結石\"\n- **Right Margin Note**: Top right: \"Mad. P113.\"\n- **Main Body**: Single-column, left-to-right reading flow.\n- **Sectioned Content**: Text is organized into distinct paragraphs, each describing a specific type of A'smari (bladder calculus) based on Dosha.\n- **Subheadings**: Each type is introduced with a bolded Dosha name (e.g., \"Vataja A'smari\", \"Pittaja A'smari\").\n- **Footer**: Bottom center: \"Mādhava Nidānam chapter 32. P113-115.\"\n- **Page Number**: Bottom right: \"16.\"\n## Verbatim Multi-Lingual Decoding\n### General Introduction\n分別是來自於 Vata, Pitta, Kapha, 和 Sukra 精液, 另一種是 A'smari 結石.\n所有的人都有 Kapha 為基本, 結石 (A'smari) 的可怕就像是死亡之神.\nA'smari 的前期症狀有脹脹, 膀胱充盈, 尿的氣味類似山羊味, 難以排尿\n和發燒和食慾不振.\n所有的 A'smari 類型都由三 Doshas 的組合造成. 當結石形成時, 是因為 Vata 乾涸\n凝固.\n一般的症狀是在肚臍的區域疼痛, 會陰, 和膀胱亦痛. 當石頭阻塞尿流,\n然後: 恢復再撞出, 尿液是明顯的黃紅色, 混合著血. 是因為摩擦和運動\n的劇烈疼痛所至.\n---\n### Vataja A'smari\nVataja A'smari - 症狀非常劇烈的疼痛, 使人想咬牙和顫抖, 哭泣, 不斷的\n擠壓陰莖和肚臍. 糞便伴隨著排氣, 頻繁的尿液, 一滴一滴的\n排出, 石頭會是黑色, 紅黑色帶彩色.\n---\n### Pittaja A'smari\nPittaja A'smari - 在膀胱內有嚴重的燒灼感, 膀胱附近的觸感是熱的.\n石頭酷似腰果的種子, 其有紅色, 黃色或黑色.\n---\n### Kappaja A'smari\nKappaja A'smari - 在膀胱內有刺痛感, 冷的觸摸. 膀胱有沉重感, 石頭會\n較大, 表面光滑, 淺棕色或白色.\n---\n### Sukraja A'smari\nSukraja A'smari - 被形容為成年人. 精液放射出, 而存在尿道中, Vata\n乾涸了精液, 形成一塊石頭在陰囊裡面, 這會造成膀胱疼痛.\n排尿困難, 陰囊腫脹, 須摩擦尿道通道, 方可釋放出精液.\n---\n### Sarkara (gravel) 碎石\n'Sarkara (gravel) 碎石 - 是一種結石的型態, 被 Vata 分成細小的顆粒, 隨\n著尿液排出體外. 如果; 它變得更大, 阻礙尿流的通行, 將會有\n併發症, 如, 乏力, 疲勞, 消瘦, 下腹部疼痛, 食慾不振, 貧血, 排尿\n困難, 排尿灼熱, 心臟疼痛, 會嘔吐.\n---\n## Symbol & Table Preservation\nNo tables or arrows ('↑' or '↓') present in the handwritten text.\n```",
+      "original_text": "```markdown\n# A'smari Nidānam (Vesical calculus) 膀胱結石\n## Layout & Region Analysis\n- **Header**: Top center: \"A'smari NIDANAM (Vesical calculus) 膀胱結石\"\n- **Right Margin Note**: Top right: \"Mad. P113.\"\n- **Main Body**: Single-column, left-to-right reading flow.\n- **Sectioned Content**: Text is organized into distinct paragraphs, each describing a specific type of A'smari (bladder calculus) based on Dosha.\n- **Subheadings**: Each type is introduced with a bolded Dosha name (e.g., \"Vataja A'smari\", \"Pittaja A'smari\").\n- **Footer**: Bottom center: \"Mādhava Nidānam chapter 32. P113-115.\"\n- **Page Number**: Bottom right: \"16.\"\n## Verbatim Multi-Lingual Decoding\n### General Introduction\n分別是來自於 Vata, Pitta, Kapha, 和 Sukra 精液, 另一種是 A'smari 結石.\n所有的人都有 Kapha 為基本, 結石 (A'smari) 的可怕就像是死亡之神.\nA'smari 的前期症狀有脹脹, 膀胱充盈, 尿的氣味類似山羊味, 難以排尿\n和發燒和食慾不振.\n所有的 A'smari 類型都由三 Doshas 的組合造成. 當結石形成時, 是因為 Vata 乾涸\n凝固.\n一般的症狀是在肚臍的區域疼痛, 會陰, 和膀胱亦痛. 當石頭阻塞尿流,\n然後: 恢復再撞出, 尿液是明顯的黃紅色, 混合著血. 是因為摩擦和運動\n的劇烈疼痛所至.\n---\n### Vataja A'smari\nVataja A'smari - 症狀非常劇烈的疼痛, 使人想咬牙和顫抖, 哭泣, 不斷的\n擠壓陰莖和肚臍. 糞便伴隨著排氣, 頻繁的尿液, 一滴一滴的\n排出, 石頭會是黑色, 紅黑色帶彩色.\n---\n### Pittaja A'smari\nPittaja A'smari - 在膀胱內有嚴重的燒灼感, 膀胱附近的觸感是熱的.\n石頭酷似腰果的種子, 其有紅色, 黃色或黑色.\n---\n### Kappaja A'smari\nKappaja A'smari - 在膀胱內有刺痛感, 冷的觸摸. 膀胱有沉重感, 石頭會\n較大, 表面光滑, 淺棕色或白色.\n---\n### Sukraja A'smari\nSukraja A'smari - 被形容為成年人. 精液放射出, 而存在尿道中, Vata\n乾涸了精液, 形成一塊石頭在陰囊裡面, 這會造成膀胱疼痛.\n排尿困難, 陰囊腫脹, 須摩擦尿道通道, 方可釋放出精液.\n---\n### Sarkara (gravel) 碎石\n'Sarkara (gravel) 碎石 - 是一種結石的型態, 被 Vata 分成細小的顆粒, 隨\n著尿液排出體外. 如果; 它變得更大, 阻礙尿流的通行, 將會有\n併發症, 如, 乏力, 疲勞, 消瘦, 下腹部疼痛, 食慾不振, 貧血, 排尿\n困難, 排尿灼熱, 心臟疼痛, 會嘔吐.\n---\n## Symbol & Table Preservation\nNo tables or arrows ('↑' or '↓') present in the handwritten text.\n```",
+      "digest_content": "```markdown\n# A'smari Nidānam (Vesical calculus) 膀胱結石\n## Layout & Region Analysis\n- **Header**: Top center: \"A'smari NIDANAM (Vesical calculus) 膀胱結石\"\n- **Right Margin Note**: Top right: \"Mad. P113.\"\n- **Main Body**: Single-column, left-to-right reading flow.\n- **Sectioned Content**: Text is organized into distinct paragraphs, each describing a specific type of A'smari (bladder calculus) based on Dosha.\n- **Subheadings**: Each type is introduced with a bolded Dosha name (e.g., \"Vataja A'smari\", \"Pittaja A'smari\").\n- **Footer**: Bottom center: \"Mādhava Nidānam chapter 32. P113-115.\"\n- **Page Number**: Bottom right: \"16.\"\n## Verbatim Multi-Lingual Decoding\n### General Introduction\n分別是來自於 Vata, Pitta, Kapha, 和 Sukra 精液, 另一種是 A'smari 結石.\n所有的人都有 Kapha 為基本, 結石 (A'smari) 的可怕就像是死亡之神.\nA'smari 的前期症狀有脹脹, 膀胱充盈, 尿的氣味類似山羊味, 難以排尿\n和發燒和食慾不振.\n所有的 A'smari 類型都由三 Doshas 的組合造成. 當結石形成時, 是因為 Vata 乾涸\n凝固.\n一般的症狀是在肚臍的區域疼痛, 會陰, 和膀胱亦痛. 當石頭阻塞尿流,\n然後: 恢復再撞出, 尿液是明顯的黃紅色, 混合著血. 是因為摩擦和運動\n的劇烈疼痛所至.\n---\n### Vataja A'smari\nVataja A'smari - 症狀非常劇烈的疼痛, 使人想咬牙和顫抖, 哭泣, 不斷的\n擠壓陰莖和肚臍. 糞便伴隨著排氣, 頻繁的尿液, 一滴一滴的\n排出, 石頭會是黑色, 紅黑色帶彩色.\n---\n### Pittaja A'smari\nPittaja A'smari - 在膀胱內有嚴重的燒灼感, 膀胱附近的觸感是熱的.\n石頭酷似腰果的種子, 其有紅色, 黃色或黑色.\n---\n### Kappaja A'smari\nKappaja A'smari - 在膀胱內有刺痛感, 冷的觸摸. 膀胱有沉重感, 石頭會\n較大, 表面光滑, 淺棕色或白色.\n---\n### Sukraja A'smari\nSukraja A'smari - 被形容為成年人. 精液放射出, 而存在尿道中, Vata\n乾涸了精液, 形成一塊石頭在陰囊裡面, 這會造成膀胱疼痛.\n排尿困難, 陰囊腫脹, 須摩擦尿道通道, 方可釋放出精液.\n---\n### Sarkara (gravel) 碎石\n'Sarkara (gravel) 碎石 - 是一種結石的型態, 被 Vata 分成細小的顆粒, 隨\n著尿液排出體外. 如果; 它變得更大, 阻礙尿流的通行, 將會有\n併發症, 如, 乏力, 疲勞, 消瘦, 下腹部疼痛, 食慾不振, 貧血, 排尿\n困難, 排尿灼熱, 心臟疼痛, 會嘔吐.\n---\n## Symbol & Table Preservation\nNo tables or arrows ('↑' or '↓') present in the handwritten text.\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0023",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 23 頁",
+      "snippet": "```markdown\n- 用 Harithaki, punarnava 煮牛奶，取 30ml，於早、晚。\n## 可做的事：\n- 每天新鮮蘋果 · 每天 2-3 杯西柚 · 酸葡萄 · 每日要活動。\n- 空腹時，喝輕液體食物 · 按摩 · 降汗 · 坐浴 · 淨化 · dhara (療法)。\n- Vasthi (療法)。\n## 飲食：\n- 溫開水 · butter milk · Yava 或大麥 · horse gram · 米\n- 雞肉 · 新鮮的姜 · punarnava · Gaduchi · parpata · patola · Harithaki\n## 忌：注意事項 — 不可做的事\n- 抑制尿液、精液。· 注意食品：酸、粗、乾、重、不相容、冷。\n- 活動 = 鉅煉、性交、旅程（旅行）。\n> 过度運動\n## 檢測：\n- 測試血液中的尿酸。\n- 測試尿中紅細胞。\n- 腹部 CT 掃描。\n- 腹部磁共振。\n```",
+      "original_text": "```markdown\n- 用 Harithaki, punarnava 煮牛奶，取 30ml，於早、晚。\n## 可做的事：\n- 每天新鮮蘋果 · 每天 2-3 杯西柚 · 酸葡萄 · 每日要活動。\n- 空腹時，喝輕液體食物 · 按摩 · 降汗 · 坐浴 · 淨化 · dhara (療法)。\n- Vasthi (療法)。\n## 飲食：\n- 溫開水 · butter milk · Yava 或大麥 · horse gram · 米\n- 雞肉 · 新鮮的姜 · punarnava · Gaduchi · parpata · patola · Harithaki\n## 忌：注意事項 — 不可做的事\n- 抑制尿液、精液。· 注意食品：酸、粗、乾、重、不相容、冷。\n- 活動 = 鉅煉、性交、旅程（旅行）。\n> 过度運動\n## 檢測：\n- 測試血液中的尿酸。\n- 測試尿中紅細胞。\n- 腹部 CT 掃描。\n- 腹部磁共振。\n```",
+      "digest_content": "```markdown\n- 用 Harithaki, punarnava 煮牛奶，取 30ml，於早、晚。\n## 可做的事：\n- 每天新鮮蘋果 · 每天 2-3 杯西柚 · 酸葡萄 · 每日要活動。\n- 空腹時，喝輕液體食物 · 按摩 · 降汗 · 坐浴 · 淨化 · dhara (療法)。\n- Vasthi (療法)。\n## 飲食：\n- 溫開水 · butter milk · Yava 或大麥 · horse gram · 米\n- 雞肉 · 新鮮的姜 · punarnava · Gaduchi · parpata · patola · Harithaki\n## 忌：注意事項 — 不可做的事\n- 抑制尿液、精液。· 注意食品：酸、粗、乾、重、不相容、冷。\n- 活動 = 鉅煉、性交、旅程（旅行）。\n> 过度運動\n## 檢測：\n- 測試血液中的尿酸。\n- 測試尿中紅細胞。\n- 腹部 CT 掃描。\n- 腹部磁共振。\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0024",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 24 頁",
+      "snippet": "```markdown\n# Udavata Yoni / Dysmenorrhoea 月經困難\n在經期的過程中是疼痛的。由於下列原因，Vata 或好旺盛。\n在月經週期中是痛苦的過程。\n## 原因：\n一、異常的精液和經血。\n二、不當的睡姿。\n三、過度的房事。\n四、損壞的月經量。\n五、異常的卵子障礙。\n六、前世的因果。\n## 類型：異常的精液和經血。\n1. Vataja\n2. Pittaja\n3. Kaphaja\n4. Kunapa (Blood)\n5. Grandhi (kapha & Raktha). kapha混合血滲\n6. Puyabha (pitta & Blood) pitta混合血滲。類似膿。\n7. Ksheena (Vata & pitta) - 量下降（經血量減少）。\n8. Tridoshas - 有異味的糞便和尿液。\n## 症狀：\n喪失運動（行動）的能力，刺痛的痛苦，有痠（爬行）的感覺。\n經血 - 粗糙，和噪聲（氣排出的聲音）。經血呈泡沫，微黑紅色。\n薄、乾燥（非油油的）。胃不適（不舒服）。\n## 形態：\n一、痙攣：\n- 在第一天或第一個小時，呈現重度疼痛的腳。\n- 疼痛可能伴有嘔吐、頭疼、全身乏力、下腹部疼痛、手掌或下肢腿。\n- 最常發生在年輕的婦女。\n- 在30天後，會自然性的消失。\n- 必須依據那個Dosha高，而給予治療。\n二、後天的經痛：\n- 最常見於中、老年的婦女。\n- 開始的前3、4天，脾、胃開始疼痛。\n```",
+      "original_text": "```markdown\n# Udavata Yoni / Dysmenorrhoea 月經困難\n在經期的過程中是疼痛的。由於下列原因，Vata 或好旺盛。\n在月經週期中是痛苦的過程。\n## 原因：\n一、異常的精液和經血。\n二、不當的睡姿。\n三、過度的房事。\n四、損壞的月經量。\n五、異常的卵子障礙。\n六、前世的因果。\n## 類型：異常的精液和經血。\n1. Vataja\n2. Pittaja\n3. Kaphaja\n4. Kunapa (Blood)\n5. Grandhi (kapha & Raktha). kapha混合血滲\n6. Puyabha (pitta & Blood) pitta混合血滲。類似膿。\n7. Ksheena (Vata & pitta) - 量下降（經血量減少）。\n8. Tridoshas - 有異味的糞便和尿液。\n## 症狀：\n喪失運動（行動）的能力，刺痛的痛苦，有痠（爬行）的感覺。\n經血 - 粗糙，和噪聲（氣排出的聲音）。經血呈泡沫，微黑紅色。\n薄、乾燥（非油油的）。胃不適（不舒服）。\n## 形態：\n一、痙攣：\n- 在第一天或第一個小時，呈現重度疼痛的腳。\n- 疼痛可能伴有嘔吐、頭疼、全身乏力、下腹部疼痛、手掌或下肢腿。\n- 最常發生在年輕的婦女。\n- 在30天後，會自然性的消失。\n- 必須依據那個Dosha高，而給予治療。\n二、後天的經痛：\n- 最常見於中、老年的婦女。\n- 開始的前3、4天，脾、胃開始疼痛。\n```",
+      "digest_content": "```markdown\n# Udavata Yoni / Dysmenorrhoea 月經困難\n在經期的過程中是疼痛的。由於下列原因，Vata 或好旺盛。\n在月經週期中是痛苦的過程。\n## 原因：\n一、異常的精液和經血。\n二、不當的睡姿。\n三、過度的房事。\n四、損壞的月經量。\n五、異常的卵子障礙。\n六、前世的因果。\n## 類型：異常的精液和經血。\n1. Vataja\n2. Pittaja\n3. Kaphaja\n4. Kunapa (Blood)\n5. Grandhi (kapha & Raktha). kapha混合血滲\n6. Puyabha (pitta & Blood) pitta混合血滲。類似膿。\n7. Ksheena (Vata & pitta) - 量下降（經血量減少）。\n8. Tridoshas - 有異味的糞便和尿液。\n## 症狀：\n喪失運動（行動）的能力，刺痛的痛苦，有痠（爬行）的感覺。\n經血 - 粗糙，和噪聲（氣排出的聲音）。經血呈泡沫，微黑紅色。\n薄、乾燥（非油油的）。胃不適（不舒服）。\n## 形態：\n一、痙攣：\n- 在第一天或第一個小時，呈現重度疼痛的腳。\n- 疼痛可能伴有嘔吐、頭疼、全身乏力、下腹部疼痛、手掌或下肢腿。\n- 最常發生在年輕的婦女。\n- 在30天後，會自然性的消失。\n- 必須依據那個Dosha高，而給予治療。\n二、後天的經痛：\n- 最常見於中、老年的婦女。\n- 開始的前3、4天，脾、胃開始疼痛。\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0025",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 25 頁",
+      "snippet": "```markdown\n## 1. Layout & Region Analysis\n- **Header**: The top section contains the title “Yoni kandu (Dryness and Itching)” with a reference to “Bhaisajya P696.” This is underlined and serves as the main heading for the first section.\n- **Multi-column Reading Flow**: The document is structured with a left-to-right reading flow. The first section discusses “Yoni kandu,” followed by a section titled “Treatment of Andadhara Raga - 女性疾病” (Female Diseases). Within each section, the text flows left to right, with paragraphs and subheadings.\n- **Tables**: There is one table-like structure under the heading “② 配方 Patolādi kvātha” (Recipe Patolādi kvātha). It lists ingredients in a vertical list format, which is functionally a table.\n- **Side Notes**: There are no side notes or marginalia. All content is integrated into the main text flow.\n## 2. Verbatim Multi-Lingual Decoding\n### Section 1: Yoni kandu (Dryness and Itching)\n> Yoni kandu (Dryness and Itching) 陰道乾和癢 Bhaisajya P696.\n> 陰道乾.癢的原因: 由於過盛的Kapha dosha, 在複雜的經血釋放後, 延長了陰道的靜脈。或在經血週期開始時。或在一個人懷孕後, 或是痔引起。或是在“落膀”之後。\n> 那時陰道會得非常的乾和硬, 週圍都要得刺痛. 若當時陰道是灼熱的, 那將是非常的痛苦 (pitta). 若是冷的 (Vata, Kapha) 感覺會好些. 建議尋找醫生的協助。居家建議以粉油藥 (Vicecana purgation) 淨化, 或用藥湯淨化血瀦. 然後; 用膳食改善用 Rasayana.\n### Section 2: Treatment of Andadhara Raga - 女性疾病\n> Treatment of Andadhara Raga - 女性疾病\n> Andadhara - 由於過度的房事, 感冒, 有毒或不衛生有害的飲食. 而生病. 称之為“Andadhara”. 這症狀包括了: 乳房下方的胃痛, 緊張的排尿, 尿量少, 有時尿中帶有血, 厭食, 失去興趣, 沒有樂趣, 失去身體強度, 有發燒, 呕吐的傾向, 病人的舌頭出現紅或白的顏色。\n> 這要從膳食來加強身體, 並且調節 Vata Dosha 在體內, 並且遵循醫生的建議.\n### Section 3: Recipe Patolādi kvātha\n> ② 配方 Patolādi kvātha\n> 成份: Dried ginger, Vida salt, Bala root, pitamūli, Coriander. rāsna, Indrayava, Cinnamon bark, Smaller Cardamom, Cassia, clove, pepper, Gajapippali, turmeric, Dāru haridra.\n> 以上植物採用等量的份量. 熬成藥湯. 有“Andadhara”症狀的女性, 可以採取此配方藥湯.\n## 3. Symbol & Table Preservation\n### Table: Patolādi kvātha Ingredients\n| Ingredient         | English Translation         |\n|--------------------|-----------------------------|\n| Dried ginger       | Dried ginger                |\n| Vida salt          | Vida salt                   |\n| Bala root          | Bala root                   |\n| pitamūli           | pitamūli                    |\n| Coriander          | Coriander                   |\n| rāsna              | rāsna                       |\n| Indrayava          | Indrayava                   |\n| Cinnamon bark      | Cinnamon bark               |\n| Smaller Cardamom   | Smaller Cardamom            |\n| Cassia             | Cassia                      |\n| clove              | clove                       |\n| pepper             | pepper                      |\n| Gajapippali        | Gajapippali                 |\n| turmeric           | turmeric                    |\n| Dāru haridra       | Dāru haridra                |\n```",
+      "original_text": "```markdown\n## 1. Layout & Region Analysis\n- **Header**: The top section contains the title “Yoni kandu (Dryness and Itching)” with a reference to “Bhaisajya P696.” This is underlined and serves as the main heading for the first section.\n- **Multi-column Reading Flow**: The document is structured with a left-to-right reading flow. The first section discusses “Yoni kandu,” followed by a section titled “Treatment of Andadhara Raga - 女性疾病” (Female Diseases). Within each section, the text flows left to right, with paragraphs and subheadings.\n- **Tables**: There is one table-like structure under the heading “② 配方 Patolādi kvātha” (Recipe Patolādi kvātha). It lists ingredients in a vertical list format, which is functionally a table.\n- **Side Notes**: There are no side notes or marginalia. All content is integrated into the main text flow.\n## 2. Verbatim Multi-Lingual Decoding\n### Section 1: Yoni kandu (Dryness and Itching)\n> Yoni kandu (Dryness and Itching) 陰道乾和癢 Bhaisajya P696.\n> 陰道乾.癢的原因: 由於過盛的Kapha dosha, 在複雜的經血釋放後, 延長了陰道的靜脈。或在經血週期開始時。或在一個人懷孕後, 或是痔引起。或是在“落膀”之後。\n> 那時陰道會得非常的乾和硬, 週圍都要得刺痛. 若當時陰道是灼熱的, 那將是非常的痛苦 (pitta). 若是冷的 (Vata, Kapha) 感覺會好些. 建議尋找醫生的協助。居家建議以粉油藥 (Vicecana purgation) 淨化, 或用藥湯淨化血瀦. 然後; 用膳食改善用 Rasayana.\n### Section 2: Treatment of Andadhara Raga - 女性疾病\n> Treatment of Andadhara Raga - 女性疾病\n> Andadhara - 由於過度的房事, 感冒, 有毒或不衛生有害的飲食. 而生病. 称之為“Andadhara”. 這症狀包括了: 乳房下方的胃痛, 緊張的排尿, 尿量少, 有時尿中帶有血, 厭食, 失去興趣, 沒有樂趣, 失去身體強度, 有發燒, 呕吐的傾向, 病人的舌頭出現紅或白的顏色。\n> 這要從膳食來加強身體, 並且調節 Vata Dosha 在體內, 並且遵循醫生的建議.\n### Section 3: Recipe Patolādi kvātha\n> ② 配方 Patolādi kvātha\n> 成份: Dried ginger, Vida salt, Bala root, pitamūli, Coriander. rāsna, Indrayava, Cinnamon bark, Smaller Cardamom, Cassia, clove, pepper, Gajapippali, turmeric, Dāru haridra.\n> 以上植物採用等量的份量. 熬成藥湯. 有“Andadhara”症狀的女性, 可以採取此配方藥湯.\n## 3. Symbol & Table Preservation\n### Table: Patolādi kvātha Ingredients\n| Ingredient         | English Translation         |\n|--------------------|-----------------------------|\n| Dried ginger       | Dried ginger                |\n| Vida salt          | Vida salt                   |\n| Bala root          | Bala root                   |\n| pitamūli           | pitamūli                    |\n| Coriander          | Coriander                   |\n| rāsna              | rāsna                       |\n| Indrayava          | Indrayava                   |\n| Cinnamon bark      | Cinnamon bark               |\n| Smaller Cardamom   | Smaller Cardamom            |\n| Cassia             | Cassia                      |\n| clove              | clove                       |\n| pepper             | pepper                      |\n| Gajapippali        | Gajapippali                 |\n| turmeric           | turmeric                    |\n| Dāru haridra       | Dāru haridra                |\n```",
+      "digest_content": "```markdown\n## 1. Layout & Region Analysis\n- **Header**: The top section contains the title “Yoni kandu (Dryness and Itching)” with a reference to “Bhaisajya P696.” This is underlined and serves as the main heading for the first section.\n- **Multi-column Reading Flow**: The document is structured with a left-to-right reading flow. The first section discusses “Yoni kandu,” followed by a section titled “Treatment of Andadhara Raga - 女性疾病” (Female Diseases). Within each section, the text flows left to right, with paragraphs and subheadings.\n- **Tables**: There is one table-like structure under the heading “② 配方 Patolādi kvātha” (Recipe Patolādi kvātha). It lists ingredients in a vertical list format, which is functionally a table.\n- **Side Notes**: There are no side notes or marginalia. All content is integrated into the main text flow.\n## 2. Verbatim Multi-Lingual Decoding\n### Section 1: Yoni kandu (Dryness and Itching)\n> Yoni kandu (Dryness and Itching) 陰道乾和癢 Bhaisajya P696.\n> 陰道乾.癢的原因: 由於過盛的Kapha dosha, 在複雜的經血釋放後, 延長了陰道的靜脈。或在經血週期開始時。或在一個人懷孕後, 或是痔引起。或是在“落膀”之後。\n> 那時陰道會得非常的乾和硬, 週圍都要得刺痛. 若當時陰道是灼熱的, 那將是非常的痛苦 (pitta). 若是冷的 (Vata, Kapha) 感覺會好些. 建議尋找醫生的協助。居家建議以粉油藥 (Vicecana purgation) 淨化, 或用藥湯淨化血瀦. 然後; 用膳食改善用 Rasayana.\n### Section 2: Treatment of Andadhara Raga - 女性疾病\n> Treatment of Andadhara Raga - 女性疾病\n> Andadhara - 由於過度的房事, 感冒, 有毒或不衛生有害的飲食. 而生病. 称之為“Andadhara”. 這症狀包括了: 乳房下方的胃痛, 緊張的排尿, 尿量少, 有時尿中帶有血, 厭食, 失去興趣, 沒有樂趣, 失去身體強度, 有發燒, 呕吐的傾向, 病人的舌頭出現紅或白的顏色。\n> 這要從膳食來加強身體, 並且調節 Vata Dosha 在體內, 並且遵循醫生的建議.\n### Section 3: Recipe Patolādi kvātha\n> ② 配方 Patolādi kvātha\n> 成份: Dried ginger, Vida salt, Bala root, pitamūli, Coriander. rāsna, Indrayava, Cinnamon bark, Smaller Cardamom, Cassia, clove, pepper, Gajapippali, turmeric, Dāru haridra.\n> 以上植物採用等量的份量. 熬成藥湯. 有“Andadhara”症狀的女性, 可以採取此配方藥湯.\n## 3. Symbol & Table Preservation\n### Table: Patolādi kvātha Ingredients\n| Ingredient         | English Translation         |\n|--------------------|-----------------------------|\n| Dried ginger       | Dried ginger                |\n| Vida salt          | Vida salt                   |\n| Bala root          | Bala root                   |\n| pitamūli           | pitamūli                    |\n| Coriander          | Coriander                   |\n| rāsna              | rāsna                       |\n| Indrayava          | Indrayava                   |\n| Cinnamon bark      | Cinnamon bark               |\n| Smaller Cardamom   | Smaller Cardamom            |\n| Cassia             | Cassia                      |\n| clove              | clove                       |\n| pepper             | pepper                      |\n| Gajapippali        | Gajapippali                 |\n| turmeric           | turmeric                    |\n| Dāru haridra       | Dāru haridra                |\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
+    },
+    {
+      "id": "DX1-P0026",
+      "doc": "DX1",
+      "title": "疾病診療手抄講義 (一) 第 26 頁",
+      "snippet": "```markdown\n## Layout & Region Analysis\nThe handwritten document is structured into two primary vertical sections, each beginning with a heading in English: `Pittaja` and `Kaphaja`. These sections are organized as lists of medical conditions (yoni) with their Sanskrit names, descriptions in Traditional Chinese, and treatment notes.\n- **Left Column (Pittaja)**: Contains entries for `Pittaja` conditions, including `ksarā yoni`, `Vamini yoni`, `Sramsīni yoni`, `Putraghni yoni`, `Pittala yoni`, and a concluding summary sentence.\n- **Right Column (Kaphaja)**: Contains entries for `Kaphaja` conditions, including `Atyananda yoni`, `Karnīni yoni`, `Acarānā yoni`, `Aticārna yoni`, and `Slesmāla yoni`, followed by a summary and treatment notes.\n- **Side Notes**: A long vertical arrow points from the bottom of the `Kaphaja` section to the treatment notes below, indicating a connection between the listed conditions and their treatments.\n- **Tables**: No formal tables are present, but the structure of the text implies a tabular layout with columns for Sanskrit terms, Chinese descriptions, and treatments.\n---\n## Verbatim Multi-Lingual Decoding\n### Pittaja Section\n**Pittaja: ksarā yoni / Lohita ksaya yoni** - 大量的月經量伴隨著燒灼感, 同時可能嚴重失血.\n**Vamini yoni** - 經血中伴隨著卵子, 也伴隨著 Vata (Air/gas) 駛除卵子。治療: ① 班汗. ② picu (用 oil 或 ghee).\n**Sramsīni yoni** - 女人經血過多, 身體虛弱, 分娩困難 / prasrānsini yoni。治療:\n**Putraghni yoni** - 女人懷胎短週期, 因為失血過多而流產.\n**Pittala yoni** - 有潰傷在陰道, 產生嚴重的燒灼感和陰燒.\n**上述的症狀, 若增高 pitta, 則病情加重, 該為 - pittavṛddhi.**\n---\n### Kaphaja Section\n**Kaphaja: Atyananda yoni** - 沒有得到“交配”的快感.\n**Karnīni yoni** - 在陰道內, 有大量的 kapha 生長的肉和血 (似血塊 豇芽). ① 治療\n**Acarānā yoni** - 在男人射出精液前, 女人早已獲得快感. / prākcaranāyoni.\n**Aticārna yoni** - 性交次數多, 但不保留種子, 不易受孕. 或時間\n**Slesmāla yoni** - 陰道有粘糊糊的物質, 伴隨著瘙癢 和寒冷的感覺.\n---\n### Summary & Treatment Notes\n**以上都是 Kapha 增高, 過於旺盛的現象.**\n① 治療 Acārānā yoni - 取一塊亞麻布浸泡牛膽汁或魚膽汁二次, 或用酵母粉 與蜂蜜混合, 清洗陰道.\n② 治療 Karnīni yoni - 取 kustha, pippali, arka leaves, saindhava 和山羊乳混合, 用食指進入清洗陰道.\n```\n---\n## Symbol & Table Preservation\nNo arrow symbols ('↑' or '↓') are present in the document. The text is presented in a list format without formal tables. The structure is inherently tabular, with implicit columns for Sanskrit terms, Chinese descriptions, and treatments.\nNo GitHub Flavored Markdown tables are required, as the content is not structured as a formal table. The layout is best represented as a list of entries with their respective descriptions and treatments.\n```",
+      "original_text": "```markdown\n## Layout & Region Analysis\nThe handwritten document is structured into two primary vertical sections, each beginning with a heading in English: `Pittaja` and `Kaphaja`. These sections are organized as lists of medical conditions (yoni) with their Sanskrit names, descriptions in Traditional Chinese, and treatment notes.\n- **Left Column (Pittaja)**: Contains entries for `Pittaja` conditions, including `ksarā yoni`, `Vamini yoni`, `Sramsīni yoni`, `Putraghni yoni`, `Pittala yoni`, and a concluding summary sentence.\n- **Right Column (Kaphaja)**: Contains entries for `Kaphaja` conditions, including `Atyananda yoni`, `Karnīni yoni`, `Acarānā yoni`, `Aticārna yoni`, and `Slesmāla yoni`, followed by a summary and treatment notes.\n- **Side Notes**: A long vertical arrow points from the bottom of the `Kaphaja` section to the treatment notes below, indicating a connection between the listed conditions and their treatments.\n- **Tables**: No formal tables are present, but the structure of the text implies a tabular layout with columns for Sanskrit terms, Chinese descriptions, and treatments.\n---\n## Verbatim Multi-Lingual Decoding\n### Pittaja Section\n**Pittaja: ksarā yoni / Lohita ksaya yoni** - 大量的月經量伴隨著燒灼感, 同時可能嚴重失血.\n**Vamini yoni** - 經血中伴隨著卵子, 也伴隨著 Vata (Air/gas) 駛除卵子。治療: ① 班汗. ② picu (用 oil 或 ghee).\n**Sramsīni yoni** - 女人經血過多, 身體虛弱, 分娩困難 / prasrānsini yoni。治療:\n**Putraghni yoni** - 女人懷胎短週期, 因為失血過多而流產.\n**Pittala yoni** - 有潰傷在陰道, 產生嚴重的燒灼感和陰燒.\n**上述的症狀, 若增高 pitta, 則病情加重, 該為 - pittavṛddhi.**\n---\n### Kaphaja Section\n**Kaphaja: Atyananda yoni** - 沒有得到“交配”的快感.\n**Karnīni yoni** - 在陰道內, 有大量的 kapha 生長的肉和血 (似血塊 豇芽). ① 治療\n**Acarānā yoni** - 在男人射出精液前, 女人早已獲得快感. / prākcaranāyoni.\n**Aticārna yoni** - 性交次數多, 但不保留種子, 不易受孕. 或時間\n**Slesmāla yoni** - 陰道有粘糊糊的物質, 伴隨著瘙癢 和寒冷的感覺.\n---\n### Summary & Treatment Notes\n**以上都是 Kapha 增高, 過於旺盛的現象.**\n① 治療 Acārānā yoni - 取一塊亞麻布浸泡牛膽汁或魚膽汁二次, 或用酵母粉 與蜂蜜混合, 清洗陰道.\n② 治療 Karnīni yoni - 取 kustha, pippali, arka leaves, saindhava 和山羊乳混合, 用食指進入清洗陰道.\n```\n---\n## Symbol & Table Preservation\nNo arrow symbols ('↑' or '↓') are present in the document. The text is presented in a list format without formal tables. The structure is inherently tabular, with implicit columns for Sanskrit terms, Chinese descriptions, and treatments.\nNo GitHub Flavored Markdown tables are required, as the content is not structured as a formal table. The layout is best represented as a list of entries with their respective descriptions and treatments.\n```",
+      "digest_content": "```markdown\n## Layout & Region Analysis\nThe handwritten document is structured into two primary vertical sections, each beginning with a heading in English: `Pittaja` and `Kaphaja`. These sections are organized as lists of medical conditions (yoni) with their Sanskrit names, descriptions in Traditional Chinese, and treatment notes.\n- **Left Column (Pittaja)**: Contains entries for `Pittaja` conditions, including `ksarā yoni`, `Vamini yoni`, `Sramsīni yoni`, `Putraghni yoni`, `Pittala yoni`, and a concluding summary sentence.\n- **Right Column (Kaphaja)**: Contains entries for `Kaphaja` conditions, including `Atyananda yoni`, `Karnīni yoni`, `Acarānā yoni`, `Aticārna yoni`, and `Slesmāla yoni`, followed by a summary and treatment notes.\n- **Side Notes**: A long vertical arrow points from the bottom of the `Kaphaja` section to the treatment notes below, indicating a connection between the listed conditions and their treatments.\n- **Tables**: No formal tables are present, but the structure of the text implies a tabular layout with columns for Sanskrit terms, Chinese descriptions, and treatments.\n---\n## Verbatim Multi-Lingual Decoding\n### Pittaja Section\n**Pittaja: ksarā yoni / Lohita ksaya yoni** - 大量的月經量伴隨著燒灼感, 同時可能嚴重失血.\n**Vamini yoni** - 經血中伴隨著卵子, 也伴隨著 Vata (Air/gas) 駛除卵子。治療: ① 班汗. ② picu (用 oil 或 ghee).\n**Sramsīni yoni** - 女人經血過多, 身體虛弱, 分娩困難 / prasrānsini yoni。治療:\n**Putraghni yoni** - 女人懷胎短週期, 因為失血過多而流產.\n**Pittala yoni** - 有潰傷在陰道, 產生嚴重的燒灼感和陰燒.\n**上述的症狀, 若增高 pitta, 則病情加重, 該為 - pittavṛddhi.**\n---\n### Kaphaja Section\n**Kaphaja: Atyananda yoni** - 沒有得到“交配”的快感.\n**Karnīni yoni** - 在陰道內, 有大量的 kapha 生長的肉和血 (似血塊 豇芽). ① 治療\n**Acarānā yoni** - 在男人射出精液前, 女人早已獲得快感. / prākcaranāyoni.\n**Aticārna yoni** - 性交次數多, 但不保留種子, 不易受孕. 或時間\n**Slesmāla yoni** - 陰道有粘糊糊的物質, 伴隨著瘙癢 和寒冷的感覺.\n---\n### Summary & Treatment Notes\n**以上都是 Kapha 增高, 過於旺盛的現象.**\n① 治療 Acārānā yoni - 取一塊亞麻布浸泡牛膽汁或魚膽汁二次, 或用酵母粉 與蜂蜜混合, 清洗陰道.\n② 治療 Karnīni yoni - 取 kustha, pippali, arka leaves, saindhava 和山羊乳混合, 用食指進入清洗陰道.\n```\n---\n## Symbol & Table Preservation\nNo arrow symbols ('↑' or '↓') are present in the document. The text is presented in a list format without formal tables. The structure is inherently tabular, with implicit columns for Sanskrit terms, Chinese descriptions, and treatments.\nNo GitHub Flavored Markdown tables are required, as the content is not structured as a formal table. The layout is best represented as a list of entries with their respective descriptions and treatments.\n```",
+      "keywords": [
+        "疾病診療",
+        "體質診斷",
+        "Pitta",
+        "Vata",
+        "Kapha"
+      ],
+      "rel_srotas": [
+        "Raktavaha",
+        "Annavaha"
+      ],
+      "rel_dhatus": [
+        "Rakta",
+        "Rasa"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Pitta",
+        "Kapha"
+      ],
+      "rel_herbs": [],
+      "rel_symptoms": [
+        "診斷",
+        "發炎"
+      ],
+      "rel_pages": [],
+      "raw_file_path": "./assets/images/scans/scan_disease.jpg",
+      "source_file": "docs/DX1.md"
     }
   ]
 }
