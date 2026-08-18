@@ -1,4 +1,4 @@
-// app.js - 朱婕老師阿育吠陀開源知識庫 3.0 (2026 標準 Markdown 轉 HTML 渲染與圖文對照全量引擎)
+// app.js - 朱婕老師阿育吠陀開源知識庫 3.0 (2026 無 AI 罐頭廢話、極致實用對照與圖文對照全量引擎)
 
 let globalData = { herbs: [], pages: [] };
 let favorites = JSON.parse(localStorage.getItem("ayurveda_favs") || "[]");
@@ -531,9 +531,6 @@ function openReaderView(title, content, rasa, virya, vipaka, dosha, type, bookCo
             <div style="margin-bottom: 12px; line-height: 1.8;">${htmlContent}</div>
             ${rasa ? `<p style="margin-bottom: 6px;"><strong>🌿 性味歸經:</strong> ${rasa} | ${virya || ""} | ${vipaka || ""}</p>` : ""}
             ${dosha ? `<p style="margin-bottom: 6px;"><strong>🧘 Dosha 作用:</strong> ${dosha}</p>` : ""}
-            <div style="margin-top: 14px; padding: 12px; background: rgba(16,185,129,0.15); border-radius: 8px; font-size: 0.9rem; border-left: 4px solid #10B981;">
-                已對該講義條目完成朱婕老師手稿雙軌對照與印度 AYUSH API 藥典核驗。
-            </div>
         `;
     }
     if (modal) modal.style.display = "flex";

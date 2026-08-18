@@ -301,7 +301,7 @@
     <section id="gallery" class="scroll-reveal" style="margin-bottom: 3.5rem;">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
         <h2 style="font-family: 'Noto Serif TC', serif;">📜 朱婕老師手寫筆記原圖藝廊 (Authentic Scanned Notes Gallery)</h2>
-        <span style="color: var(--text-muted); font-size: 0.92rem;">點擊任一張手稿原圖，即可開啟 3-in-1 圖文對照與文字轉錄閱覽器</span>
+        <span style="color: var(--text-muted); font-size: 0.92rem;">點擊任一張手稿原圖，即可開啟雙欄圖文對照與文字轉錄閱覽器</span>
       </div>
 
       <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.8rem;">
@@ -409,7 +409,7 @@
   <div class="modal-overlay" id="readerModal">
     <div class="modal-card" style="max-width: 950px; width: 95vw;">
       <button class="close-btn" id="closeReaderBtn">&times;</button>
-      <h2 style="color: var(--gold-accent); margin-bottom: 1rem; font-family: 'Noto Serif TC', serif;">🖼️ 朱婕老師原稿講義與 3-in-1 圖文對照閱覽器</h2>
+      <h2 style="color: var(--gold-accent); margin-bottom: 1rem; font-family: 'Noto Serif TC', serif;">🖼️ 朱婕老師原稿講義對照閱覽器</h2>
       
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.6rem; text-align: left; margin-top: 1rem;">
         <div style="background: rgba(0,0,0,0.4); padding: 1.2rem; border-radius: var(--radius-lg); border: 1px solid var(--border-subtle);">
@@ -483,7 +483,7 @@
   <script src="./assets/js/app.js"></script>
   <script>
     function openScanReader(imgSrc, title, bookCode) {
-        openReaderView(title, "已對該冊手抄講義完成文字轉錄與三合一權威藥典（API/THP）對照與核驗。", "", "", "", "", "SCAN", bookCode, imgSrc);
+        openReaderView(title, "點擊手稿原圖可對照朱婕老師原始手寫文字與詳細處方。", "", "", "", "", "SCAN", bookCode, imgSrc);
     }
   </script>
 </body>
