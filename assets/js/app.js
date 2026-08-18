@@ -1,4 +1,4 @@
-// app.js - 朱婕老師阿育吠陀開源知識庫 3.0 (2026 旗艦極致閱讀與 613 頁動態對照全量引擎)
+// app.js - 朱婕老師阿育吠陀開源知識庫 3.0 (2026 全資料關聯性網狀檢索與動態圖文對照引擎)
 
 let globalData = { herbs: [], pages: [] };
 let favorites = JSON.parse(localStorage.getItem("ayurveda_favs") || "[]");
@@ -12,7 +12,7 @@ const SROTAS_SEARCH_MAP = {
     'Mamsavaha': 'Mamsavaha 肌肉 蛋白質 體力',
     'Medovaha': 'Medovaha 脂肪 代謝 降脂 減重',
     'Asthivaha': 'Asthivaha 骨骼 關節 風濕 骨質',
-    'Majjavaha': 'Majjavaha 神經 骨髓 鎮靜 失眠 睡茄',
+    'Majjavaha': 'Majjavaha 神經 骨髓 腦 失眠 鎮靜 睡茄',
     'Shukravaha': 'Shukravaha 生殖 精氣 補益 刺蒺藜',
     'Artavaha': 'Artavaha 子宮 月經 婦科 天門冬 無憂樹',
     'Stanyavaha': 'Stanyavaha 乳汁 哺育 催乳 小茴香',
@@ -146,7 +146,7 @@ const FALLBACK_HERBS = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("🌿 朱婕老師阿育吠陀開源知識庫 3.0 全冊 613 頁全文檢索暨多模態圖文對照引擎啟動！");
+    console.log("🌿 朱婕老師阿育吠陀開源知識庫 3.0 全資料關聯性網狀檢索與動態圖文對照引擎啟動！");
     
     initScrollReveal();
     updateFavBadge();
@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", () => {
             globalData = data;
             const countBadge = document.getElementById("herbCountBadge");
             if (countBadge) {
-                countBadge.textContent = `全冊 630 頁手稿 (已整合全量 ${data.pages ? data.pages.length : 613} 個講義條目 & 精選草藥)`;
+                countBadge.textContent = `全冊 630 頁手稿 (已建立全資料關聯性網狀結構: ${data.pages ? data.pages.length : 613} 個手稿頁面與關聯草藥)`;
             }
             renderAllPortalItems();
             checkUrlQueryParams();
@@ -239,7 +239,7 @@ function toggleMindMapCategory(cat) {
 function renderAllPortalItems() {
     const herbList = (globalData.herbs && globalData.herbs.length > 0) ? globalData.herbs : FALLBACK_HERBS;
     const pageList = (globalData.pages && globalData.pages.length > 0) ? globalData.pages.slice(0, 36) : [];
-    renderMixedCards(herbList, pageList, `全量草藥與講義條目 (全冊 613 條手稿)`);
+    renderMixedCards(herbList, pageList, `全資料關聯性展示 (全冊 613 條手稿與草藥對照)`);
 }
 
 function renderMixedCards(herbsList, pagesList, titleTag, queryStr = "") {
@@ -257,7 +257,7 @@ function renderMixedCards(herbsList, pagesList, titleTag, queryStr = "") {
                 <div style="grid-column: 1/-1; text-align: center; padding: 3rem 1.5rem; background: var(--bg-surface); border-radius: var(--radius-lg); border: 1.5px solid var(--border-subtle);">
                     <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🔍</div>
                     <h3 style="color: var(--gold-light); font-size: 1.3rem; margin-bottom: 0.5rem;">未找到與「${queryStr}」相關的草藥或講義頁面</h3>
-                    <p style="color: var(--text-secondary); font-size: 0.95rem;">請嘗試輸入其他關鍵字（例如：Pranavaha, 失眠, 便秘, 子宮, 發炎, 風濕, Triphala）</p>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">請嘗試點擊思維地圖或搜尋其他關鍵字（例如：Pranavaha, 失眠, 便秘, 子宮, 發炎, 風濕, Triphala）</p>
                 </div>
             `;
             grid.style.opacity = "1";
@@ -303,7 +303,7 @@ function renderMixedCards(herbsList, pagesList, titleTag, queryStr = "") {
             grid.appendChild(card);
         });
 
-        // 2. 渲染 613 頁手稿講義卡片 (動態圖圖片與識別碼配對)
+        // 2. 渲染 613 頁手稿講義卡片 (含全資料關聯性結構標籤：Srotas 渠道 + Dhatu 組織 + 關聯草藥)
         pagesList.forEach(p => {
             const isFav = favorites.some(f => f.id === p.id);
             const card = document.createElement("div");
@@ -319,6 +319,11 @@ function renderMixedCards(herbsList, pagesList, titleTag, queryStr = "") {
 
             const bookCode = p.doc ? `${p.doc}-${p.id || 'P001'}` : (p.id || "P001");
 
+            // 全資料關聯標籤 HTML 生成
+            const srotasBadges = (p.rel_srotas || []).map(s => `<span class="badge-tag" style="cursor:pointer; background:rgba(245,158,11,0.2); color:#F59E0B; border-color:rgba(245,158,11,0.4);" onclick="filterByChannel('${s}', '${s}渠道')">🌀 ${s}</span>`).join(' ');
+            const dhatusBadges = (p.rel_dhatus || []).map(d => `<span class="badge-tag" style="cursor:pointer; background:rgba(52,211,153,0.2); color:#34D399; border-color:rgba(52,211,153,0.4);" onclick="filterByChannel('${d}', '${d}層')">🫀 ${d}</span>`).join(' ');
+            const herbsBadges  = (p.rel_herbs || []).map(h => `<span class="badge-tag" style="cursor:pointer; background:rgba(196,181,253,0.2); color:#C4B5FD; border-color:rgba(196,181,253,0.4);" onclick="searchAndRender('${h}')">🌿 ${h}</span>`).join(' ');
+
             card.innerHTML = `
                 <div>
                     <div class="herb-header">
@@ -328,6 +333,9 @@ function renderMixedCards(herbsList, pagesList, titleTag, queryStr = "") {
                         </div>
                         <span class="badge-tag" style="background: rgba(167, 139, 250, 0.2); color: #C4B5FD; border-color: rgba(167, 139, 250, 0.4);">手稿講義</span>
                     </div>
+
+                    ${(srotasBadges || dhatusBadges || herbsBadges) ? `<div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px;">${srotasBadges} ${dhatusBadges} ${herbsBadges}</div>` : ''}
+
                     <p style="font-size: 0.92rem; color: var(--text-primary); background: rgba(0,0,0,0.4); padding: 12px 14px; border-radius: 10px; margin-bottom: 1rem; line-height: 1.7; max-height: 140px; overflow-y: auto;">
                         ${highlightQuery(p.snippet || "朱婕老師阿育吠陀手抄筆記轉錄內文...", queryStr)}
                     </p>
@@ -342,7 +350,7 @@ function renderMixedCards(herbsList, pagesList, titleTag, queryStr = "") {
 
         const countBadge = document.getElementById("herbCountBadge");
         if (countBadge) {
-            countBadge.textContent = `${titleTag || '全量呈現'} (${herbsList.length} 個草藥條目 + ${pagesList.length} 頁手稿對照)`;
+            countBadge.textContent = `${titleTag || '全量呈現'} (${herbsList.length} 個草藥條目 + ${pagesList.length} 頁手稿關聯對照)`;
         }
 
         grid.style.opacity = "1";
@@ -369,14 +377,17 @@ function searchAndRender(query) {
         return tokens.some(token => text.includes(token));
     });
 
-    // 2. 搜尋 613 頁全冊手稿講義 (多詞彙智慧匹配 OR 邏輯)
+    // 2. 搜尋 613 頁全冊手稿講義 (支援全資料關聯性標籤 rel_srotas, rel_dhatus, rel_herbs 全面相聯比對！)
     const pageList = globalData.pages || [];
     const matchedPages = pageList.filter(p => {
+        const hasSrotas = (p.rel_srotas || []).some(s => tokens.some(t => s.toLowerCase().includes(t)));
+        const hasDhatus = (p.rel_dhatus || []).some(d => tokens.some(t => d.toLowerCase().includes(t)));
+        const hasHerbs  = (p.rel_herbs || []).some(h => tokens.some(t => h.toLowerCase().includes(t)));
         const text = `${p.title || ""} ${p.snippet || ""} ${(p.keywords || []).join(' ')} ${p.doc || ""}`.toLowerCase();
-        return tokens.some(token => text.includes(token));
+        return hasSrotas || hasDhatus || hasHerbs || tokens.some(token => text.includes(token));
     }).slice(0, 40);
 
-    renderMixedCards(matchedHerbs, matchedPages, `搜尋「${query}」：找到`, query);
+    renderMixedCards(matchedHerbs, matchedPages, `關聯搜尋「${query}」：找到`, query);
 }
 
 function highlightQuery(text, query) {
@@ -384,7 +395,7 @@ function highlightQuery(text, query) {
     const tokens = query.toLowerCase().trim().split(/\s+/);
     let result = text;
     tokens.forEach(token => {
-        if (!token) return;
+        if (!token || token.length < 2) return;
         const escaped = token.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         const regex = new RegExp(`(${escaped})`, 'gi');
         result = result.replace(regex, '<mark style="background: #F59E0B; color: #000; font-weight: bold; padding: 1px 4px; border-radius: 4px;">$1</mark>');
@@ -416,7 +427,7 @@ function filterByGuna(guna) {
         return text.includes(guna.toLowerCase());
     }).slice(0, 30);
 
-    renderMixedCards(filteredHerbs, filteredPages, `Guna 屬性「${guna}」對照`, guna);
+    renderMixedCards(filteredHerbs, filteredPages, `Guna 屬性「${guna}」關聯`, guna);
 }
 
 function filterByChannel(channelKey, displayName) {
@@ -432,8 +443,25 @@ function filterByChannel(channelKey, displayName) {
         herbsSec.scrollIntoView({ behavior: 'smooth' });
     }
 
-    // 發起精準跨頁多詞彙搜尋
-    searchAndRender(searchTerms);
+    // 全資料關聯性核心：直接依據點擊的關聯標籤進行關聯檢索！
+    const keyLower = channelKey.toLowerCase();
+    const herbList = (globalData.herbs && globalData.herbs.length > 0) ? globalData.herbs : FALLBACK_HERBS;
+    const pageList = globalData.pages || [];
+
+    const matchedHerbs = herbList.filter(h => {
+        const text = `${h.name || ""} ${h.name_zh || ""} ${h.sanskrit || ""} ${h.latin || ""} ${h.tcm || ""} ${h.rasa || ""} ${h.virya || ""} ${h.vipaka || ""} ${h.dosha || ""} ${h.dosha_effect || ""} ${h.used_for || ""} ${h.summary || ""} ${h.desc || ""} ${h.description || ""}`.toLowerCase();
+        return text.includes(keyLower);
+    });
+
+    const matchedPages = pageList.filter(p => {
+        const hasSrotas = (p.rel_srotas || []).some(s => s.toLowerCase() === keyLower);
+        const hasDhatus = (p.rel_dhatus || []).some(d => d.toLowerCase() === keyLower);
+        const hasHerbs  = (p.rel_herbs || []).some(h => h.toLowerCase() === keyLower);
+        const text = `${p.title || ""} ${p.snippet || ""} ${(p.keywords || []).join(' ')} ${p.doc || ""}`.toLowerCase();
+        return hasSrotas || hasDhatus || hasHerbs || text.includes(keyLower);
+    }).slice(0, 40);
+
+    renderMixedCards(matchedHerbs, matchedPages, `全資料關聯「${displayName || channelKey}」：找到`, channelKey);
     injectDynamicSEO(`《朱婕老師阿育吠陀學習路徑：${displayName}》- 知識庫 3.0`, `從朱婕老師手稿《${displayName}》出發擴展延伸之對應單方草藥與講義處方`, window.location.href);
 }
 
