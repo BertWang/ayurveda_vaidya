@@ -12,7 +12,7 @@
   <meta property="og:description" content="朱婕老師畢生阿育吠陀手寫筆記全量開源數位化，提供草藥圖鑑、性味歸經與藥典對照查詢。">
   <meta property="og:url" content="https://bertwang.github.io/ayurveda_vaidya/">
   <meta property="og:image" content="https://bertwang.github.io/ayurveda_vaidya/assets/images/teacher_lisochu.jpg">
-  
+
   <!-- CSS 樣式引入 -->
   <link rel="stylesheet" href="./assets/css/styles.css">
   
@@ -74,7 +74,7 @@
       🌿 <span>朱婕老師阿育吠陀</span> 知識庫 3.0
     </a>
     <ul class="nav-links">
-      <li><a href="#herbs" class="active">🌿 草藥圖鑑</a></li>
+      <li><a href="#herbs" class="active">🌿 草藥與講義檢索</a></li>
       <li><a href="#mindmap" style="color: #C4B5FD; font-weight: bold;">🧠 思維地圖</a></li>
       <li><a href="#channels" style="color: #FBBF24; font-weight: bold;">🌀 14渠道與7組織</a></li>
       <li><a href="#gallery">📜 講義手稿</a></li>
@@ -87,7 +87,7 @@
   <!-- 主要內容區域 -->
   <main class="main-container">
     
-    <!-- Hero 品牌與精神傳承卡片 -->
+    <!-- Hero 品牌與搜尋框卡片 -->
     <section class="hero-card scroll-reveal">
       <h1 class="hero-title">朱婕老師阿育吠陀開源知識庫</h1>
       <p class="hero-subtitle">"Aal Izz Well"（一切安好）—— 傳承古印度傳統醫學與生命之愛</p>
@@ -100,6 +100,32 @@
       <div class="search-box">
         <span class="search-icon">🔍</span>
         <input type="text" id="searchInput" class="search-input" placeholder="跨全冊 630 頁即時檢索：輸入草藥名（旱蓮草/Triphala）、適應症（失眠/子宮/便秘）或 Dosha (Vata/Pitta/Kapha)...">
+      </div>
+    </section>
+
+    <!-- 🌿 草藥與講義搜尋結果網格 Section (緊貼搜尋框下方，0 距離直觀呈現！) -->
+    <section id="herbs" class="scroll-reveal" style="margin-bottom: 3rem;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+        <h2 style="font-family: 'Noto Serif TC', serif;">🌿 阿育吠陀草藥與講義精選圖鑑 (Herbal Lexicon)</h2>
+        <span style="color: var(--text-muted); font-size: 0.92rem;" id="herbCountBadge">已成功載入全冊 630 頁手槁 (613 個對照頁面條目)</span>
+      </div>
+
+      <!-- 20 Gunas 屬性與 Dosha 動態過濾標籤 -->
+      <div class="gunas-filter-container" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 1.5rem;">
+        <button class="guna-chip active" data-guna="all">全量草藥 (All)</button>
+        <button class="guna-chip" data-guna="重">重 (Guru)</button>
+        <button class="guna-chip" data-guna="輕">輕 (Laghu)</button>
+        <button class="guna-chip" data-guna="冷">冷 (Sheeta)</button>
+        <button class="guna-chip" data-guna="熱">熱 (Ushna)</button>
+        <button class="guna-chip" data-guna="油">油 (Snigdha)</button>
+        <button class="guna-chip" data-guna="乾">乾 (Ruksha)</button>
+        <button class="guna-chip" data-guna="Vata" style="border-color: var(--vata-color);">Vata ↓ (風型鎮靜)</button>
+        <button class="guna-chip" data-guna="Pitta" style="border-color: var(--pitta-color);">Pitta ↓ (火型鎮靜)</button>
+        <button class="guna-chip" data-guna="Kapha" style="border-color: var(--kapha-color);">Kapha ↓ (水型鎮靜)</button>
+      </div>
+
+      <div class="grid-container" id="herbGrid">
+        <!-- 動態 JavaScript 搜尋結果渲染區域 -->
       </div>
     </section>
 
@@ -288,8 +314,6 @@
       </div>
     </section>
 
-
-
     <!-- 🌸 朱婕老師生平與求學故事專區 Section -->
     <section id="story" class="scroll-reveal" style="margin-bottom: 3rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 3rem 2.4rem; backdrop-filter: blur(16px);">
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.2rem; align-items: center;">
@@ -353,40 +377,6 @@
           <h4 style="color: var(--gold-light); margin-bottom: 6px; font-family: 'Noto Serif TC', serif;">📜 居家療法手稿原頁</h4>
           <p style="font-size: 0.88rem; color: var(--text-secondary);">失眠、安神與日常油壓手抄指南</p>
         </div>
-      </div>
-    </section>
-
-
-
-    <!-- 20 Gunas 屬性動態過濾大表 Section -->
-    <section id="matrix" class="scroll-reveal" style="margin-bottom: 3rem;">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem;">
-        <h2 style="font-family: 'Noto Serif TC', serif;">⚖️ 20 Gunas 屬性與 Dosha 動態過濾大表</h2>
-        <span style="color: var(--text-muted); font-size: 0.92rem;">對標《BASICS-P0025》6,207 字全冊最高密度手稿大表</span>
-      </div>
-      <div class="gunas-filter-container" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 1.2rem;">
-        <button class="guna-chip active" data-guna="all">全量草藥 (All)</button>
-        <button class="guna-chip" data-guna="重">重 (Guru)</button>
-        <button class="guna-chip" data-guna="輕">輕 (Laghu)</button>
-        <button class="guna-chip" data-guna="冷">冷 (Sheeta)</button>
-        <button class="guna-chip" data-guna="熱">熱 (Ushna)</button>
-        <button class="guna-chip" data-guna="油">油 (Snigdha)</button>
-        <button class="guna-chip" data-guna="乾">乾 (Ruksha)</button>
-        <button class="guna-chip" data-guna="Vata" style="border-color: var(--vata-color);">Vata ↓ (風型鎮靜)</button>
-        <button class="guna-chip" data-guna="Pitta" style="border-color: var(--pitta-color);">Pitta ↓ (火型鎮靜)</button>
-        <button class="guna-chip" data-guna="Kapha" style="border-color: var(--kapha-color);">Kapha ↓ (水型鎮靜)</button>
-      </div>
-    </section>
-
-    <!-- 草藥圖鑑卡片網格 Section -->
-    <section id="herbs" class="scroll-reveal" style="margin-bottom: 3rem;">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-        <h2 style="font-family: 'Noto Serif TC', serif;">🌿 阿育吠陀草藥與講義精選圖鑑 (Herbal Lexicon)</h2>
-        <span style="color: var(--text-muted); font-size: 0.92rem;" id="herbCountBadge">已成功載入全冊 630 頁手槁 (613 個對照頁面條目)</span>
-      </div>
-
-      <div class="grid-container" id="herbGrid">
-        <!-- 動態 JavaScript 渲染區域 -->
       </div>
     </section>
 
