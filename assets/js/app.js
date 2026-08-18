@@ -1,4 +1,4 @@
-// app.js - 朱婕老師阿育吠陀開源知識庫 3.0 (2026 無 AI 罐頭廢話、極致實用對照與圖文對照全量引擎)
+// app.js - 朱婕老師阿育吠陀開源知識庫 3.0 (2026 內容 ↔ 原文 ↔ 原檔 三位一體全對照引擎)
 
 let globalData = { herbs: [], pages: [] };
 let favorites = JSON.parse(localStorage.getItem("ayurveda_favs") || "[]");
@@ -29,7 +29,7 @@ const SROTAS_SEARCH_MAP = {
     'Shukra': 'Shukra 生殖 精氣'
 };
 
-// 預載備用草藥資料 (確保在 CORS 或離線環境下依然呈現高質感卡片網格)
+// 預載備用草藥資料
 const FALLBACK_HERBS = [
     {
         id: "bhringraj",
@@ -43,7 +43,8 @@ const FALLBACK_HERBS = [
         tcm: "墨旱蓮 (甘酸寒，歸肝腎經)",
         desc: "朱婕老師筆記要點：頭皮養護第一聖藥，具平息火型體質 (Pitta) 炎熱、清肝明目、滋養髮根與鎮靜心靈之功效。",
         img_src: "./assets/images/scans/scan_single1.jpg",
-        book_code: "SINGLE1-P0001"
+        book_code: "SINGLE1-P0001",
+        source_file: "docs/SINGLE1.md"
     },
     {
         id: "triphala",
@@ -57,7 +58,8 @@ const FALLBACK_HERBS = [
         tcm: "三果實經典方 (歸肺、大腸、肝經)",
         desc: "朱婕老師筆記要點：阿育吠陀千古第一經典複方！由訶子、毛訶子與餘甘子三果組成，溫和排毒、促進消化與滋補強身。",
         img_src: "./assets/images/scans/scan_formulas.jpg",
-        book_code: "FORMULAS-P0042"
+        book_code: "FORMULAS-P0042",
+        source_file: "docs/FORMULAS.md"
     },
     {
         id: "ashwagandha",
@@ -71,82 +73,13 @@ const FALLBACK_HERBS = [
         tcm: "印度人蔘 (甘溫，歸腎心脾經)",
         desc: "朱婕老師筆記要點：風型體質 (Vata) 神經緊張與失眠最佳滋補草藥，具強壯神經系統、對抗壓力與睡眠調理提升體能之效。",
         img_src: "./assets/images/scans/scan_home.jpg",
-        book_code: "HOME-P0105"
-    },
-    {
-        id: "ashoka",
-        name: "無憂樹 (Ashoka)",
-        sanskrit: "Saraca asoca / 無憂樹皮",
-        dosha: "Pitta ↓ / K ↓",
-        latin: "Saraca asoca (Roxb.) Willd.",
-        rasa: "澀 (Kashaya), 苦 (Tikta)",
-        virya: "涼 (Sheeta)",
-        vipaka: "辛 (Katu)",
-        tcm: "無憂樹皮 (苦澀涼，歸肝沖任經)",
-        desc: "朱婕老師筆記要點 (留白圓夢)：婦科子宮渠道 (Srotas) 養護第一聖藥，清熱涼血、調經止痛。",
-        img_src: "./assets/images/scans/scan_disease.jpg",
-        book_code: "DISEASE-P0088"
-    },
-    {
-        id: "haritaki",
-        name: "訶子 (Haritaki)",
-        sanskrit: "Terminalia chebula / 訶黎勒",
-        dosha: "Vata ↓ (阿育藥王)",
-        latin: "Terminalia chebula Retz.",
-        rasa: "包含五味 (苦酸澀甘辛)",
-        virya: "熱 (Ushna)",
-        vipaka: "甘 (Madhura)",
-        tcm: "訶子 (苦酸澀平，歸肺大腸經)",
-        desc: "朱婕老師筆記要點：阿育吠陀藥王，強效調節腸道風氣 (Vata)，潤腸通便、斂肺澀腸、調理消化與便秘。",
-        img_src: "./assets/images/scans/scan_single2.jpg",
-        book_code: "SINGLE2-P0015"
-    },
-    {
-        id: "shatavari",
-        name: "印度天門冬 (Shatavari)",
-        sanskrit: "Asparagus racemosus",
-        dosha: "Vata ↓ / Pitta ↓",
-        latin: "Asparagus racemosus Willd.",
-        rasa: "甘 (Madhura), 苦 (Tikta)",
-        virya: "涼 (Sheeta)",
-        vipaka: "甘 (Madhura)",
-        tcm: "印度天門冬 (甘苦寒，歸肺腎經)",
-        desc: "朱婕老師筆記要點：女性滋陰生津、婦科子宮養護與乳汁分泌第一聖藥。",
-        img_src: "./assets/images/scans/scan_disease.jpg",
-        book_code: "DISEASE-P0088"
-    },
-    {
-        id: "guduchi",
-        name: "寬筋藤 (Guduchi / Amrita)",
-        sanskrit: "Tinospora cordifolia",
-        dosha: "完全平衡 Tridosha",
-        latin: "Tinospora cordifolia (Willd.) Miers",
-        rasa: "苦 (Tikta), 澀 (Kashaya)",
-        virya: "熱 (Ushna)",
-        vipaka: "甘 (Madhura)",
-        tcm: "寬筋藤 (苦寒，歸肝脾腎經)",
-        desc: "朱婕老師筆記要點：阿育吠陀長生仙草 (Amrita)，免疫調節、清血排毒與舒筋活絡關節風濕痛風。",
-        img_src: "./assets/images/scans/scan_formulas.jpg",
-        book_code: "FORMULAS-P0099"
-    },
-    {
-        id: "tulsi",
-        name: "聖羅勒 (Tulsi)",
-        sanskrit: "Ocimum sanctum",
-        dosha: "Kapha ↓ / Vata ↓",
-        latin: "Ocimum sanctum L.",
-        rasa: "辛 (Katu), 苦 (Tikta)",
-        virya: "熱 (Ushna)",
-        vipaka: "辛 (Katu)",
-        tcm: "聖羅勒 (辛溫，歸肺脾心經)",
-        desc: "朱婕老師筆記要點：聖草 Tulsi，強效宣肺止咳、提升防禦力與帶來心靈平靜鎮靜安神。",
-        img_src: "./assets/images/scans/scan_single1.jpg",
-        book_code: "SINGLE1-P0089"
+        book_code: "HOME-P0105",
+        source_file: "docs/HOME.md"
     }
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("🌿 朱婕老師阿育吠陀開源知識庫 3.0 標準 Markdown 轉 HTML 與動態對照全量引擎啟動！");
+    console.log("🌿 朱婕老師阿育吠陀開源知識庫 3.0 『內容 ↔ 原文 ↔ 原檔』三位一體全對照引擎啟動！");
     
     initScrollReveal();
     updateFavBadge();
@@ -160,13 +93,13 @@ document.addEventListener("DOMContentLoaded", () => {
             globalData = data;
             const countBadge = document.getElementById("herbCountBadge");
             if (countBadge) {
-                countBadge.textContent = `全冊 630 頁手稿 (已建立全資料關聯性網狀結構: ${data.pages ? data.pages.length : 613} 個手稿頁面與關聯草藥)`;
+                countBadge.textContent = `全冊 630 頁手稿 (內容 ↔ 原文 ↔ 原檔 613 頁三位一體實體關聯完成)`;
             }
             renderAllPortalItems();
             checkUrlQueryParams();
         })
         .catch(err => {
-            console.warn("⚠️ 採用預載備用草藥庫與靜態卡片，保護網頁載入體驗：", err);
+            console.warn("⚠️ 採用預載備用草藥庫，保護載入體驗：", err);
             globalData = { herbs: FALLBACK_HERBS, pages: [] };
             renderAllPortalItems();
         });
@@ -327,21 +260,16 @@ function renderMixedCards(herbsList, pagesList, titleTag, queryStr = "") {
             grid.appendChild(card);
         });
 
-        // 2. 渲染 613 頁手稿講義卡片 (使用 parseMarkdownToHtml 進行標準 HTML 轉換)
+        // 2. 渲染 613 頁手稿講義卡片 (含 內容 ↔ 原文 ↔ 原檔 三位一體連結)
         pagesList.forEach(p => {
             const isFav = favorites.some(f => f.id === p.id);
             const card = document.createElement("div");
             card.className = "herb-card scroll-reveal revealed";
             card.style.borderColor = "var(--emerald-accent)";
 
-            let pageImg = "./assets/images/scans/scan_single1.jpg";
-            const docUpper = (p.doc || "").toUpperCase();
-            if (docUpper.includes("DISEASE")) pageImg = "./assets/images/scans/scan_disease.jpg";
-            else if (docUpper.includes("FORMULA")) pageImg = "./assets/images/scans/scan_formulas.jpg";
-            else if (docUpper.includes("HOME")) pageImg = "./assets/images/scans/scan_home.jpg";
-            else if (p.id && (p.id.includes("2") || p.id.includes("15"))) pageImg = "./assets/images/scans/scan_single2.jpg";
-
+            const pageImg = p.raw_file_path || "./assets/images/scans/scan_single1.jpg";
             const bookCode = p.doc ? `${p.doc}-${p.id || 'P001'}` : (p.id || "P001");
+            const sourceFile = p.source_file || `docs/${p.doc || 'SINGLE1'}.md`;
 
             // 全資料關聯標籤 HTML 生成
             const srotasBadges = (p.rel_srotas || []).map(s => `<span class="badge-tag" style="cursor:pointer; background:rgba(245,158,11,0.2); color:#F59E0B; border-color:rgba(245,158,11,0.4);" onclick="filterByChannel('${s}', '${s}渠道')">🌀 ${s}</span>`).join(' ');
@@ -358,9 +286,9 @@ function renderMixedCards(herbsList, pagesList, titleTag, queryStr = "") {
                     <div class="herb-header">
                         <div>
                             <h3 class="herb-name" style="color: var(--emerald-accent); font-size: 1.15rem;">📜 ${highlightQuery(p.title || "手稿講義", queryStr)}</h3>
-                            <span class="herb-sanskrit">講義識別碼: ${bookCode}</span>
+                            <span class="herb-sanskrit">講義碼: ${bookCode} | 📁 原檔: ${sourceFile}</span>
                         </div>
-                        <span class="badge-tag" style="background: rgba(167, 139, 250, 0.2); color: #C4B5FD; border-color: rgba(167, 139, 250, 0.4);">手稿講義</span>
+                        <span class="badge-tag" style="background: rgba(167, 139, 250, 0.2); color: #C4B5FD; border-color: rgba(167, 139, 250, 0.4);">手稿對照</span>
                     </div>
 
                     ${(srotasBadges || dhatusBadges || herbsBadges) ? `<div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px;">${srotasBadges} ${dhatusBadges} ${herbsBadges}</div>` : ''}
@@ -370,7 +298,7 @@ function renderMixedCards(herbsList, pagesList, titleTag, queryStr = "") {
                     </div>
                 </div>
                 <div class="card-actions">
-                    <button class="btn-icon" onclick="openReaderView('📜 ${escapeJsString(p.title || "")}', \`${escapeJsString(rawSnippet)}\`, '', '', '', '', 'PAGE', '${bookCode}', '${pageImg}')">🖼️ 閱覽講義手稿</button>
+                    <button class="btn-icon" onclick="openReaderView('📜 ${escapeJsString(p.title || "")}', \`${escapeJsString(rawSnippet)}\`, '', '', '', '', 'PAGE', '${bookCode}', '${pageImg}', '${sourceFile}')">🖼️ 內容/原文/原檔對照</button>
                     <button class="btn-icon" onclick="toggleFavorite('${p.id}', '${escapeJsString(p.title || "")}')">${isFav ? "❤️ 已收錄" : "🤍 收錄手帳"}</button>
                 </div>
             `;
@@ -379,7 +307,7 @@ function renderMixedCards(herbsList, pagesList, titleTag, queryStr = "") {
 
         const countBadge = document.getElementById("herbCountBadge");
         if (countBadge) {
-            countBadge.textContent = `${titleTag || '全量呈現'} (${herbsList.length} 個草藥條目 + ${pagesList.length} 頁手稿關聯對照)`;
+            countBadge.textContent = `${titleTag || '全量呈現'} (${herbsList.length} 個草藥條目 + ${pagesList.length} 頁內容與原檔關聯對照)`;
         }
 
         grid.style.opacity = "1";
@@ -472,7 +400,6 @@ function filterByChannel(channelKey, displayName) {
         herbsSec.scrollIntoView({ behavior: 'smooth' });
     }
 
-    // 全資料關聯性核心：直接依據點擊的關聯標籤進行關聯檢索！
     const keyLower = channelKey.toLowerCase();
     const herbList = (globalData.herbs && globalData.herbs.length > 0) ? globalData.herbs : FALLBACK_HERBS;
     const pageList = globalData.pages || [];
@@ -494,7 +421,7 @@ function filterByChannel(channelKey, displayName) {
     injectDynamicSEO(`《朱婕老師阿育吠陀學習路徑：${displayName}》- 知識庫 3.0`, `從朱婕老師手稿《${displayName}》出發擴展延伸之對應單方草藥與講義處方`, window.location.href);
 }
 
-function openReaderView(title, content, rasa, virya, vipaka, dosha, type, bookCode, customImgSrc) {
+function openReaderView(title, content, rasa, virya, vipaka, dosha, type, bookCode, customImgSrc, sourceFile) {
     const readerTitle = document.getElementById("readerTitle");
     const readerContent = document.getElementById("readerContent");
     const readerImage = document.getElementById("readerImage");
@@ -503,27 +430,12 @@ function openReaderView(title, content, rasa, virya, vipaka, dosha, type, bookCo
 
     if (readerTitle) readerTitle.textContent = title;
 
-    // 動態配對原圖與原稿識別碼標籤
     let imgSrc = customImgSrc || "./assets/images/scans/scan_single1.jpg";
     let codeTag = bookCode || "SINGLE1-P0001";
-
-    if (!customImgSrc) {
-        const codeUpper = (bookCode || "").toUpperCase();
-        if (codeUpper.includes("SINGLE2") || codeUpper.includes("HARITAKI")) {
-            imgSrc = "./assets/images/scans/scan_single2.jpg";
-        } else if (codeUpper.includes("FORMULA")) {
-            imgSrc = "./assets/images/scans/scan_formulas.jpg";
-        } else if (codeUpper.includes("DISEASE")) {
-            imgSrc = "./assets/images/scans/scan_disease.jpg";
-        } else if (codeUpper.includes("HOME")) {
-            imgSrc = "./assets/images/scans/scan_home.jpg";
-        } else {
-            imgSrc = "./assets/images/scans/scan_single1.jpg";
-        }
-    }
+    let sourcePath = sourceFile || `docs/SINGLE1.md`;
 
     if (readerImage) readerImage.src = imgSrc;
-    if (readerImageTag) readerImageTag.textContent = `原稿識別冊號: ${codeTag} (純質典藏對照)`;
+    if (readerImageTag) readerImageTag.innerHTML = `📜 原稿識別碼: <strong>${codeTag}</strong> | 📁 原始檔: <code>${sourcePath}</code>`;
 
     if (readerContent) {
         const htmlContent = parseMarkdownToHtml(content);
@@ -545,7 +457,7 @@ function openHerbDetail(herbId) {
         `🌿 ${herbName} (${herb.sanskrit || ""})`,
         descText,
         herb.rasa, herb.virya, herb.vipaka, herb.dosha || herb.dosha_effect,
-        "HERB", herb.book_code || "SINGLE1-P0001", herb.img_src || "./assets/images/scans/scan_single1.jpg"
+        "HERB", herb.book_code || "SINGLE1-P0001", herb.img_src || "./assets/images/scans/scan_single1.jpg", herb.source_file || "docs/SINGLE1.md"
     );
 }
 
