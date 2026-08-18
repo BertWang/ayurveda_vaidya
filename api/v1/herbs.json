@@ -1216,35 +1216,61 @@
       "id": "BASICS-P0001",
       "doc": "CHANNEL_CARDS",
       "title": "渠道組織小白卡講義 第 1 頁",
-      "snippet": "📌 渠道組識(小白卡)｜L1 候選",
+      "snippet": "- **氣管道**: Pranavaha Srota — Vata (風型體質主導生命氣)\n- **消化管道**: Annavaha Srota (食物與營養消化渠道)\n- **水管道**: Udakavaha Srota — Kapha / 新陳代謝 (水液與體液代謝渠道)\n- **泌尿管道**: Mutravaha Srota (尿液與水份排泄渠道)\n- **排泄管道**: Purishavaha Srota (腸道與糞便排泄渠道)\n- **排汗管道**: Swedavaha Srota (皮膚發汗與體溫調節渠道)",
       "keywords": [],
-      "rel_srotas": [],
-      "rel_dhatus": [],
-      "rel_doshas": [],
+      "rel_srotas": [
+        "Pranavaha",
+        "Annavaha",
+        "Udakavaha",
+        "Mutravaha",
+        "Purishavaha",
+        "Svedavaha"
+      ],
+      "rel_dhatus": [
+        "Rasa",
+        "Rakta"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Kapha"
+      ],
       "rel_herbs": [],
       "rel_symptoms": [],
       "rel_pages": [],
       "raw_file_path": "./assets/images/scans/pages/CHANNEL_CARDS_P0001.jpg",
       "source_file": "docs/CHANNEL_CARDS.md",
-      "original_text": "📌 渠道組識(小白卡)｜L1 候選",
-      "digest_content": "📌 渠道組識(小白卡)｜L1 候選"
+      "original_text": "- **氣管道**: Pranavaha Srota — Vata (風型體質主導生命氣)\n- **消化管道**: Annavaha Srota (食物與營養消化渠道)\n- **水管道**: Udakavaha Srota — Kapha / 新陳代謝 (水液與體液代謝渠道)\n- **泌尿管道**: Mutravaha Srota (尿液與水份排泄渠道)\n- **排泄管道**: Purishavaha Srota (腸道與糞便排泄渠道)\n- **排汗管道**: Swedavaha Srota (皮膚發汗與體溫調節渠道)",
+      "digest_content": "- **氣管道**: Pranavaha Srota — Vata (風型體質主導生命氣)\n- **消化管道**: Annavaha Srota (食物與營養消化渠道)\n- **水管道**: Udakavaha Srota — Kapha / 新陳代謝 (水液與體液代謝渠道)\n- **泌尿管道**: Mutravaha Srota (尿液與水份排泄渠道)\n- **排泄管道**: Purishavaha Srota (腸道與糞便排泄渠道)\n- **排汗管道**: Swedavaha Srota (皮膚發汗與體溫調節渠道)"
     },
     {
       "id": "CHANNEL_CARDS-P0001",
       "doc": "CHANNEL_CARDS",
       "title": "渠道組織小白卡講義 第 1 頁",
-      "snippet": "- **Header**: The top of the page features a series of colored tab dividers with handwritten text: \"Swedavaha\", \"Pura三車\", \"Purishava\", \"Ojas\", and \"travaha 屈\". These appear to be section headers or topic tags.\n- **Main Content Area**: The primary content is handwritten on the white page.\n- **Top Section**: Centered, underlined title: \"Ojas\".\n- **Left Column**: Begins with the heading \"Karma:\" followed by three items listed with circled numbers: ②, ③②, and ③④.\n- **Bottom Section**: A single item, ②⑥, is written lower on the page, aligned to the left.\nNo multi-column reading flow beyond the left-aligned list is present. No tables or side notes are visible.\n- **Header Text**:\n- \"Swedavaha\"\n- \"Pura三車\" (combines English \"Pura\" with Chinese characters \"三車\" meaning \"three carts\")\n- \"Purishava\"\n- \"Ojas\"\n- \"travaha 屈\" (combines English \"travaha\" with Chinese character \"屈\" meaning \"bend\" or \"to bow\")\n- **Main Content**:\n- Title: \"Ojas\"\n- Under \"Karma:\":\n- ② Vitapa.\n- ③② Kakandara\n- ③④ Parshvasabdhī\n- Bottom: ②⑥ Hridaya\nNo arrow symbols ('↑' or '↓') are present in the image.\nNo tables are present in the image.\nThe content is presented as a simple list with circled numbers. No conversion to GitHub Flavored Markdown tables is required.",
+      "snippet": "- **氣管道**: Pranavaha Srota — Vata (風型體質主導生命氣)\n- **消化管道**: Annavaha Srota (食物與營養消化渠道)\n- **水管道**: Udakavaha Srota — Kapha / 新陳代謝 (水液與體液代謝渠道)\n- **泌尿管道**: Mutravaha Srota (尿液與水份排泄渠道)\n- **排泄管道**: Purishavaha Srota (腸道與糞便排泄渠道)\n- **排汗管道**: Swedavaha Srota (皮膚發汗與體溫調節渠道)",
       "keywords": [],
-      "rel_srotas": [],
-      "rel_dhatus": [],
-      "rel_doshas": [],
+      "rel_srotas": [
+        "Pranavaha",
+        "Annavaha",
+        "Udakavaha",
+        "Mutravaha",
+        "Purishavaha",
+        "Svedavaha"
+      ],
+      "rel_dhatus": [
+        "Rasa",
+        "Rakta"
+      ],
+      "rel_doshas": [
+        "Vata",
+        "Kapha"
+      ],
       "rel_herbs": [],
       "rel_symptoms": [],
       "rel_pages": [],
       "raw_file_path": "./assets/images/scans/pages/CHANNEL_CARDS_P0001.jpg",
       "source_file": "docs/CHANNEL_CARDS.md",
-      "original_text": "- **Header**: The top of the page features a series of colored tab dividers with handwritten text: \"Swedavaha\", \"Pura三車\", \"Purishava\", \"Ojas\", and \"travaha 屈\". These appear to be section headers or topic tags.\n- **Main Content Area**: The primary content is handwritten on the white page.\n- **Top Section**: Centered, underlined title: \"Ojas\".\n- **Left Column**: Begins with the heading \"Karma:\" followed by three items listed with circled numbers: ②, ③②, and ③④.\n- **Bottom Section**: A single item, ②⑥, is written lower on the page, aligned to the left.\nNo multi-column reading flow beyond the left-aligned list is present. No tables or side notes are visible.\n- **Header Text**:\n- \"Swedavaha\"\n- \"Pura三車\" (combines English \"Pura\" with Chinese characters \"三車\" meaning \"three carts\")\n- \"Purishava\"\n- \"Ojas\"\n- \"travaha 屈\" (combines English \"travaha\" with Chinese character \"屈\" meaning \"bend\" or \"to bow\")\n- **Main Content**:\n- Title: \"Ojas\"\n- Under \"Karma:\":\n- ② Vitapa.\n- ③② Kakandara\n- ③④ Parshvasabdhī\n- Bottom: ②⑥ Hridaya\nNo arrow symbols ('↑' or '↓') are present in the image.\nNo tables are present in the image.\nThe content is presented as a simple list with circled numbers. No conversion to GitHub Flavored Markdown tables is required.",
-      "digest_content": "- **Header**: The top of the page features a series of colored tab dividers with handwritten text: \"Swedavaha\", \"Pura三車\", \"Purishava\", \"Ojas\", and \"travaha 屈\". These appear to be section headers or topic tags.\n- **Main Content Area**: The primary content is handwritten on the white page.\n- **Top Section**: Centered, underlined title: \"Ojas\".\n- **Left Column**: Begins with the heading \"Karma:\" followed by three items listed with circled numbers: ②, ③②, and ③④.\n- **Bottom Section**: A single item, ②⑥, is written lower on the page, aligned to the left.\nNo multi-column reading flow beyond the left-aligned list is present. No tables or side notes are visible.\n- **Header Text**:\n- \"Swedavaha\"\n- \"Pura三車\" (combines English \"Pura\" with Chinese characters \"三車\" meaning \"three carts\")\n- \"Purishava\"\n- \"Ojas\"\n- \"travaha 屈\" (combines English \"travaha\" with Chinese character \"屈\" meaning \"bend\" or \"to bow\")\n- **Main Content**:\n- Title: \"Ojas\"\n- Under \"Karma:\":\n- ② Vitapa.\n- ③② Kakandara\n- ③④ Parshvasabdhī\n- Bottom: ②⑥ Hridaya\nNo arrow symbols ('↑' or '↓') are present in the image.\nNo tables are present in the image.\nThe content is presented as a simple list with circled numbers. No conversion to GitHub Flavored Markdown tables is required."
+      "original_text": "- **氣管道**: Pranavaha Srota — Vata (風型體質主導生命氣)\n- **消化管道**: Annavaha Srota (食物與營養消化渠道)\n- **水管道**: Udakavaha Srota — Kapha / 新陳代謝 (水液與體液代謝渠道)\n- **泌尿管道**: Mutravaha Srota (尿液與水份排泄渠道)\n- **排泄管道**: Purishavaha Srota (腸道與糞便排泄渠道)\n- **排汗管道**: Swedavaha Srota (皮膚發汗與體溫調節渠道)",
+      "digest_content": "- **氣管道**: Pranavaha Srota — Vata (風型體質主導生命氣)\n- **消化管道**: Annavaha Srota (食物與營養消化渠道)\n- **水管道**: Udakavaha Srota — Kapha / 新陳代謝 (水液與體液代謝渠道)\n- **泌尿管道**: Mutravaha Srota (尿液與水份排泄渠道)\n- **排泄管道**: Purishavaha Srota (腸道與糞便排泄渠道)\n- **排汗管道**: Swedavaha Srota (皮膚發汗與體溫調節渠道)"
     },
     {
       "id": "CHANNEL_CARDS-P0002",
