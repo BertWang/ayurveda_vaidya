@@ -1,54 +1,50 @@
 /* ==========================================================================
-   朱婕老師阿育吠陀開源知識庫 3.0 (Ayurveda Open Knowledge Hub 3.0) 頂級典藏美學設計系統
+   朱婕老師阿育吠陀開源知識庫 3.0 (Ayurveda Open Knowledge Hub 3.0)
+   2026 現代極致閱讀與高質感設計系統 (Modern Clean & Accessible Design System)
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Serif+TC:wght@600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@600;700;900&display=swap');
 
 :root {
-  /* 🎨 尊貴皇家黑曜石與琥珀綠金調性 */
-  --bg-dark: #080C0A;
-  --bg-card: rgba(18, 26, 21, 0.72);
-  --bg-card-hover: rgba(26, 38, 30, 0.85);
+  /* 🎨 現代高易讀性綠寶石與琥珀金黑曜暗色主題 (High-Contrast Clean Palette) */
+  --bg-dark: #0B120E;
+  --bg-card: #131E18;
+  --bg-card-hover: #1A2920;
   
   --emerald-primary: #10B981;
   --emerald-light: #34D399;
-  --emerald-glow: rgba(16, 185, 129, 0.25);
-  
   --gold-accent: #F59E0B;
   --gold-light: #FBBF24;
-  --gold-glow: rgba(245, 158, 11, 0.3);
-  
-  --purple-accent: #8B5CF6;
-  --purple-light: #C4B5FD;
-  --purple-glow: rgba(139, 92, 246, 0.25);
+  --purple-accent: #A78BFA;
   
   --vata-color: #C4B5FD;
-  --pitta-color: #F97316;
+  --pitta-color: #FB923C;
   --kapha-color: #34D399;
   
-  --text-main: #FAFAFA;
-  --text-sub: #E5E7EB;
-  --text-muted: #9CA3AF;
+  /* 📖 極致閱讀高對比文字色彩 */
+  --text-main: #FFFFFF;             /* 100% 高亮度純白，確保文字讀取毫不費力 */
+  --text-sub: #F3F4F6;              /* 明亮灰白 */
+  --text-muted: #D1D5DB;            /* 顯眼明亮次要文字，拒絕暗沉難讀 */
   
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --glass-border-gold: rgba(245, 158, 11, 0.35);
-  --glass-border-emerald: rgba(16, 185, 129, 0.35);
+  --card-border: rgba(255, 255, 255, 0.16);
+  --border-gold: rgba(245, 158, 11, 0.4);
+  --border-emerald: rgba(16, 185, 129, 0.4);
   
-  --radius-lg: 24px;
-  --radius-md: 16px;
-  --radius-sm: 10px;
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
   
-  --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: all 0.2s ease;
 }
 
 [data-theme="light"] {
-  --bg-dark: #F4F7F4;
-  --bg-card: rgba(255, 255, 255, 0.92);
-  --bg-card-hover: rgba(255, 255, 255, 1);
-  --text-main: #111827;
-  --text-sub: #1F2937;
-  --text-muted: #4B5563;
-  --glass-border: rgba(16, 185, 129, 0.2);
+  --bg-dark: #F8FAF8;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F0F7F2;
+  --text-main: #0F172A;
+  --text-sub: #1E293B;
+  --text-muted: #334155;
+  --card-border: rgba(16, 185, 129, 0.25);
 }
 
 * {
@@ -58,184 +54,139 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   background-color: var(--bg-dark);
   color: var(--text-main);
-  line-height: 1.7;
+  line-height: 1.8;
+  font-size: 16px;
   min-height: 100vh;
   overflow-x: hidden;
-  position: relative;
 }
 
-/* 🌌 尊貴深邃流金與極光漫射 Mesh Aura Background */
-body::before {
-  content: '';
-  position: fixed;
-  top: -30%;
-  left: -20%;
-  width: 160%;
-  height: 160%;
-  background: 
-    radial-gradient(circle at 20% 20%, rgba(16, 185, 129, 0.16) 0%, transparent 40%),
-    radial-gradient(circle at 80% 30%, rgba(245, 158, 11, 0.14) 0%, transparent 45%),
-    radial-gradient(circle at 50% 80%, rgba(139, 92, 246, 0.12) 0%, transparent 50%),
-    radial-gradient(circle at 10% 90%, rgba(6, 182, 212, 0.1) 0%, transparent 40%);
-  pointer-events: none;
-  z-index: -1;
-  animation: auraFloat 18s ease-in-out infinite alternate;
-}
-
-@keyframes auraFloat {
-  0% { transform: scale(1) translate(0, 0) rotate(0deg); }
-  50% { transform: scale(1.05) translate(-2%, 2%) rotate(2deg); }
-  100% { transform: scale(1.08) translate(2%, -1%) rotate(-2deg); }
-}
-
-/* 導覽列 Glass Navbar */
+/* 導覽列 Glass Navbar - 精簡排版不爆版 */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 76px;
-  background: rgba(8, 12, 10, 0.85);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border-bottom: 1px solid var(--glass-border-emerald);
+  height: 70px;
+  background: rgba(11, 18, 14, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-emerald);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2.2rem;
+  padding: 0 2rem;
   z-index: 1000;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .nav-brand {
-  font-size: 1.35rem;
-  font-weight: 900;
+  font-size: 1.25rem;
+  font-weight: 800;
   color: var(--text-main);
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   text-decoration: none;
   font-family: 'Noto Serif TC', serif;
-  letter-spacing: 1px;
+  white-space: nowrap;
 }
 
 .nav-brand span {
-  background: linear-gradient(135deg, var(--gold-light), var(--gold-accent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--gold-light);
 }
 
 .nav-links {
   display: flex;
-  gap: 1rem;
+  gap: 0.8rem;
   list-style: none;
   align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 .nav-links a {
-  color: var(--text-muted);
+  color: var(--text-sub);
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.92rem;
-  transition: var(--transition-smooth);
-  padding: 8px 16px;
-  border-radius: 12px;
+  font-size: 0.95rem;
+  transition: var(--transition-fast);
+  padding: 8px 14px;
+  border-radius: 8px;
+  white-space: nowrap;
 }
 
 .nav-links a:hover, .nav-links a.active {
   color: var(--text-main);
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 /* 主容器 Layout */
 .main-container {
-  max-width: 1320px;
-  margin: 110px auto 50px auto;
-  padding: 0 1.8rem;
+  max-width: 1240px;
+  margin: 100px auto 40px auto;
+  padding: 0 1.5rem;
 }
 
 /* Hero 卡片 */
 .hero-card {
-  background: linear-gradient(135deg, rgba(20, 32, 25, 0.75) 0%, rgba(10, 18, 14, 0.85) 100%);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid var(--glass-border-gold);
+  background: var(--bg-card);
+  border: 1px solid var(--border-gold);
   border-radius: var(--radius-lg);
-  padding: 4rem 2.5rem;
+  padding: 3rem 2rem;
   text-align: center;
-  margin-bottom: 3rem;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-card::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--emerald-primary), var(--gold-accent), var(--purple-accent));
+  margin-bottom: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .hero-title {
-  font-size: 2.85rem;
+  font-size: 2.5rem;
   font-weight: 900;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   font-family: 'Noto Serif TC', serif;
-  background: linear-gradient(135deg, #FFFFFF 0%, #FBBF24 50%, #F59E0B 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  letter-spacing: 1.5px;
-  text-shadow: 0 10px 30px rgba(245, 158, 11, 0.2);
+  color: #FFFFFF;
+  letter-spacing: 1px;
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: var(--gold-light);
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
   font-weight: 700;
-  letter-spacing: 0.5px;
 }
 
 /* 搜尋框 Search Box */
 .search-box {
   position: relative;
-  max-width: 800px;
-  margin: 2rem auto 0 auto;
+  max-width: 760px;
+  margin: 1.8rem auto 0 auto;
 }
 
 .search-input {
   width: 100%;
-  padding: 1.25rem 1.8rem 1.25rem 3.6rem;
-  font-size: 1.08rem;
-  border-radius: 60px;
-  border: 2px solid var(--glass-border-gold);
-  background: rgba(5, 10, 7, 0.65);
+  padding: 1.1rem 1.5rem 1.1rem 3.4rem;
+  font-size: 1.05rem;
+  border-radius: 50px;
+  border: 2px solid var(--border-gold);
+  background: rgba(0, 0, 0, 0.6);
   color: var(--text-main);
   outline: none;
-  transition: var(--transition-smooth);
-  backdrop-filter: blur(16px);
-  box-shadow: inset 0 2px 10px rgba(0,0,0,0.5);
+  transition: var(--transition-fast);
 }
 
 .search-input:focus {
-  border-color: var(--gold-accent);
-  box-shadow: 0 0 35px rgba(245, 158, 11, 0.45), inset 0 2px 10px rgba(0,0,0,0.3);
-  background: rgba(5, 10, 7, 0.85);
+  border-color: var(--gold-light);
+  box-shadow: 0 0 24px rgba(245, 158, 11, 0.4);
 }
 
 .search-icon {
   position: absolute;
-  left: 1.4rem;
+  left: 1.3rem;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--gold-light);
 }
 
@@ -247,24 +198,21 @@ body::before {
 }
 
 .guna-chip {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--card-border);
   color: var(--text-main);
-  padding: 9px 18px;
+  padding: 8px 16px;
   border-radius: 50px;
   font-size: 0.92rem;
   font-weight: 600;
   cursor: pointer;
-  transition: var(--transition-smooth);
-  backdrop-filter: blur(10px);
+  transition: var(--transition-fast);
 }
 
 .guna-chip:hover, .guna-chip.active {
-  background: linear-gradient(135deg, var(--gold-accent) 0%, #D97706 100%);
+  background: var(--gold-accent);
   color: #000;
   border-color: var(--gold-light);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.4);
   font-weight: 800;
 }
 
@@ -272,50 +220,45 @@ body::before {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 2rem;
+  gap: 1.8rem;
 }
 
 .herb-card {
   background: var(--bg-card);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--glass-border);
+  border: 1px solid var(--card-border);
   border-radius: var(--radius-md);
   padding: 1.8rem;
-  transition: var(--transition-smooth);
+  transition: var(--transition-fast);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
-  position: relative;
-  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .herb-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-4px);
   border-color: var(--gold-accent);
-  box-shadow: 0 20px 45px rgba(245, 158, 11, 0.3);
   background: var(--bg-card-hover);
+  box-shadow: 0 12px 32px rgba(245, 158, 11, 0.25);
 }
 
 .herb-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .herb-name {
   font-size: 1.35rem;
   font-weight: 800;
-  color: var(--text-main);
+  color: var(--gold-light);
   font-family: 'Noto Serif TC', serif;
-  letter-spacing: 0.5px;
 }
 
 .herb-sanskrit {
-  font-size: 0.88rem;
-  color: var(--gold-light);
+  font-size: 0.9rem;
+  color: var(--emerald-light);
   font-style: italic;
 }
 
@@ -323,9 +266,9 @@ body::before {
   display: inline-block;
   padding: 4px 12px;
   border-radius: 50px;
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   font-weight: 800;
-  background: rgba(16, 185, 129, 0.2);
+  background: rgba(16, 185, 129, 0.25);
   color: var(--emerald-light);
   border: 1px solid rgba(16, 185, 129, 0.4);
 }
@@ -340,14 +283,14 @@ body::before {
 .btn-icon {
   flex: 1;
   padding: 10px;
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   font-weight: 700;
-  border-radius: 10px;
-  border: 1px solid var(--glass-border);
-  background: rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+  background: rgba(255, 255, 255, 0.08);
   color: var(--text-main);
   cursor: pointer;
-  transition: var(--transition-smooth);
+  transition: var(--transition-fast);
   text-align: center;
 }
 
@@ -355,24 +298,22 @@ body::before {
   background: var(--gold-accent);
   color: #000;
   border-color: var(--gold-accent);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
 }
 
 .btn-sponsor {
   background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
   color: #000;
   font-weight: 800;
-  padding: 10px 22px;
+  padding: 9px 20px;
   border-radius: 50px;
   text-decoration: none;
-  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
-  transition: var(--transition-smooth);
+  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.35);
+  transition: var(--transition-fast);
+  white-space: nowrap;
 }
 
 .btn-sponsor:hover {
-  transform: scale(1.06);
-  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.6);
+  transform: scale(1.04);
 }
 
 /* Modal 彈窗系統 */
@@ -383,32 +324,32 @@ body::before {
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(12px);
   display: none;
   align-items: center;
   justify-content: center;
   z-index: 2000;
-  padding: 1.2rem;
+  padding: 1rem;
 }
 
 .modal-card {
-  background: #0B120E;
+  background: #0E1712;
   border: 1.5px solid var(--gold-accent);
   border-radius: var(--radius-lg);
-  padding: 2.5rem;
+  padding: 2.2rem;
   width: 100%;
-  max-height: 92vh;
+  max-height: 90vh;
   overflow-y: auto;
   position: relative;
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.8), 0 0 40px rgba(245, 158, 11, 0.25);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
   color: var(--text-main);
   text-align: center;
 }
 
 .close-btn {
   position: absolute;
-  top: 1.2rem;
-  right: 1.4rem;
+  top: 1rem;
+  right: 1.2rem;
   background: none;
   border: none;
   font-size: 2rem;
@@ -423,8 +364,8 @@ body::before {
 /* Scroll Reveal */
 .scroll-reveal {
   opacity: 0;
-  transform: translateY(24px);
-  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(20px);
+  transition: all 0.5s ease;
 }
 
 .scroll-reveal.revealed {
