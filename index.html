@@ -75,9 +75,9 @@
     </a>
     <ul class="nav-links">
       <li><a href="#herbs" class="active">🌿 草藥與講義檢索</a></li>
-      <li><a href="#mindmap" style="color: #C4B5FD; font-weight: bold;">🧠 思維地圖</a></li>
-      <li><a href="#channels" style="color: #FBBF24; font-weight: bold;">🌀 14渠道與7組織</a></li>
-      <li><a href="#gallery">📜 講義手稿</a></li>
+      <li><a href="#mindmap" style="color: #C4B5FD; font-weight: bold;">🧠 渠道與組織知識樹</a></li>
+      <li><a href="#story">📜 朱婕老師故事</a></li>
+      <li><a href="#gallery">📜 講義手稿原圖</a></li>
       <li><a href="#journal" id="openFavoritesBtn">🤍 離線手帳 (<span id="favCountBadge">0</span>)</a></li>
       <li><button id="themeToggleBtn" class="guna-chip" style="padding: 4px 12px; cursor: pointer;">🌙 模式切換</button></li>
       <li><a href="#sponsor" id="openSponsorBtn" class="btn-sponsor">☕ 贊助支持</a></li>
@@ -104,7 +104,7 @@
     </section>
 
     <!-- 🌿 草藥與講義搜尋結果網格 Section (緊貼搜尋框下方，0 距離直觀呈現！) -->
-    <section id="herbs" class="scroll-reveal" style="margin-bottom: 3rem;">
+    <section id="herbs" class="scroll-reveal" style="margin-bottom: 3.5rem;">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
         <h2 style="font-family: 'Noto Serif TC', serif;">🌿 阿育吠陀草藥與講義精選圖鑑 (Herbal Lexicon)</h2>
         <span style="color: var(--text-muted); font-size: 0.92rem;" id="herbCountBadge">已成功載入全冊 630 頁手槁 (613 個對照頁面條目)</span>
@@ -129,193 +129,148 @@
       </div>
     </section>
 
-    <!-- 🧠 朱婕老師親傳全量思維地圖 Section -->
-    <section id="mindmap" class="scroll-reveal" style="margin-bottom: 3rem; background: rgba(167, 139, 250, 0.08); border: 1.5px solid #C4B5FD; border-radius: var(--radius-xl); padding: 2.5rem 2rem;">
-      <div style="text-align: center; margin-bottom: 1.8rem;">
-        <h2 style="color: #C4B5FD; font-size: 1.7rem; margin-bottom: 0.5rem; font-family: 'Noto Serif TC', serif;">
-          🧠 朱婕老師親傳全量思維地圖：14 大 Srotas 渠道 × 7 大 Dhatus 組織 100% 全量網狀圖譜
+    <!-- 🧠 朱婕老師親傳心法：14 Srotas 渠道 × 7 Dhatus 組織 全量知識樹 (融合一體化設計) -->
+    <section id="mindmap" class="scroll-reveal" style="margin-bottom: 3.5rem; background: linear-gradient(135deg, rgba(167, 139, 250, 0.1), rgba(16, 185, 129, 0.08)); border: 1.5px solid rgba(167, 139, 250, 0.4); border-radius: var(--radius-xl); padding: 2.8rem 2.2rem; backdrop-filter: blur(18px);">
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <h2 style="color: #C4B5FD; font-size: 1.8rem; margin-bottom: 0.6rem; font-family: 'Noto Serif TC', serif; display: flex; align-items: center; justify-content: center; gap: 10px;">
+          🧠 朱婕老師親傳心法：14 大 Srotas 渠道 × 7 大 Dhatus 組織 全量知識總樞紐
         </h2>
-        <p style="color: var(--text-secondary); font-size: 1rem; max-width: 850px; margin: 0 auto; line-height: 1.7;">
-          點擊下方 14 大渠道或 7 大組織任意節點，即可全量過濾並延伸該管道對應的草藥、處方、Dosha 體質與講義頁面！
+        <p style="color: var(--text-secondary); font-size: 1.02rem; max-width: 860px; margin: 0 auto; line-height: 1.8;">
+          朱婕老師親自叮嚀：研習阿育吠陀切忌死記單一草藥，<strong>必須先理解病理堵塞在哪個渠道 (Srotas) 或哪層身體組織 (Dhatus)</strong>。
+          點擊下方任意管道或組織，即可發起 613 頁手稿精準檢索！
         </p>
       </div>
 
-      <div style="max-width: 1050px; margin: 0 auto;">
-        <div style="text-align: center; margin-bottom: 1.5rem;">
-          <div class="mindmap-node" style="background: linear-gradient(135deg, #7C3AED, #8B5CF6); color: #fff; font-size: 1.2rem; font-weight: bold; text-align: center; display: inline-block; padding: 12px 28px;">
-            🌿 朱婕老師阿育吠陀生命之樹 (14 Srotas × 7 Dhatus 全量總樞紐)
-          </div>
-        </div>
+      <!-- 動態分類切換 Tab Chips -->
+      <div style="display: flex; justify-content: center; gap: 14px; margin-bottom: 2rem; flex-wrap: wrap;">
+        <button class="guna-chip active" id="btnShowAllNodes" onclick="toggleMindMapCategory('all')" style="padding: 10px 22px; font-size: 1rem; font-weight: bold; border-color: #C4B5FD;">🌐 檢視全量總樞紐 (21大樞紐)</button>
+        <button class="guna-chip" id="btnShowSrotas" onclick="toggleMindMapCategory('srotas')" style="padding: 10px 22px; font-size: 1rem; font-weight: bold; border-color: #F59E0B;">🌀 14 大 Srotas 渠道 (Srotas)</button>
+        <button class="guna-chip" id="btnShowDhatus" onclick="toggleMindMapCategory('dhatus')" style="padding: 10px 22px; font-size: 1rem; font-weight: bold; border-color: #34D399;">🫀 7 大 Dhatus 組織 (Dhatus)</button>
+      </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(440px, 1fr)); gap: 1.8rem; text-align: left;">
+      <div style="max-width: 1100px; margin: 0 auto;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); gap: 2rem; text-align: left;">
           
-          <div style="background: rgba(0,0,0,0.4); padding: 1.5rem; border-radius: var(--radius-lg); border: 1px solid rgba(167, 139, 250, 0.4);">
-            <h3 style="color: #C4B5FD; margin-bottom: 1rem; border-bottom: 1px solid rgba(167, 139, 250, 0.3); padding-bottom: 0.4rem; font-family: 'Noto Serif TC', serif;">
-              🌀 14 大 Srotas 渠道全量延伸分支 (100% 齊全)
+          <!-- 14 Srotas 渠道區塊 -->
+          <div id="blockSrotas" style="background: rgba(0,0,0,0.45); padding: 1.8rem; border-radius: var(--radius-lg); border: 1.5px solid rgba(245, 158, 11, 0.4);">
+            <h3 style="color: #F59E0B; margin-bottom: 1.2rem; border-bottom: 1px solid rgba(245, 158, 11, 0.3); padding-bottom: 0.6rem; font-family: 'Noto Serif TC', serif; display: flex; align-items: center; gap: 8px;">
+              🌀 14 大 Srotas 渠道 (生理氣血能量管道)
             </h3>
             
-            <div class="mindmap-node" onclick="filterByChannel('Pranavaha', 'Pranavaha 呼吸渠道')">
-              1. 🫁 呼吸生命氣渠道 (Pranavaha Srota)
-              <div class="mindmap-child">└─ 延伸草藥：聖羅勒 (Tulsi)、甘草 ➔ 肺部與呼吸道講義</div>
+            <div style="display: grid; grid-template-columns: 1fr; gap: 10px;">
+              <div class="mindmap-node" onclick="filterByChannel('Pranavaha', 'Pranavaha 呼吸渠道')">
+                1. 🫁 呼吸生命氣渠道 (Pranavaha Srota)
+                <div class="mindmap-child">└─ 延伸草藥：聖羅勒 (Tulsi)、甘草 ➔ 肺部與呼吸道講義</div>
+              </div>
+              <div class="mindmap-node" onclick="filterByChannel('Annavaha', 'Annavaha 食物渠道')">
+                2. 🍲 食物與消化渠道 (Annavaha Srota)
+                <div class="mindmap-child">└─ 延伸草藥：三果實 (Triphala)、乾薑 ➔ 20 Gunas 屬性</div>
+              </div>
+              <div class="mindmap-node" onclick="filterByChannel('Udakavaha', 'Udakavaha 水份渠道')">
+                3. 💧 水份與體液渠道 (Udakavaha Srota)
+                <div class="mindmap-child">└─ 延伸草藥：積雪草 (Gotu Kola) ➔ 水份平衡調適</div>
+              </div>
+              <div class="mindmap-node" onclick="filterByChannel('Raktavaha', 'Raktavaha 血液渠道')">
+                4. 🩸 血液與肝脾渠道 (Raktavaha Srota)
+                <div class="mindmap-child">└─ 延伸草藥：旱蓮草 (Bhringraj)、印楝 ➔ 涼血清熱</div>
+              </div>
+              <div class="mindmap-node" onclick="filterByChannel('Mamsavaha', 'Mamsavaha 肌肉渠道')">
+                5. 💪 肌肉與組織渠道 (Mamsavaha Srota)
+                <div class="mindmap-child">└─ 延伸草藥：睡茄 (Ashwagandha) ➔ 肌肉強健處方</div>
+              </div>
+              <div class="mindmap-node" onclick="filterByChannel('Medovaha', 'Medovaha 脂肪渠道')">
+                6. 🌱 脂肪與代謝渠道 (Medovaha Srota)
+                <div class="mindmap-child">└─ 延伸草藥：沒藥 (Guggulu) ➔ 降脂與代謝調適</div>
+              </div>
+              <div class="mindmap-node" onclick="filterByChannel('Asthivaha', 'Asthivaha 骨骼渠道')">
+                7. 🦴 骨骼與關節渠道 (Asthivaha Srota)
+                <div class="mindmap-child">└─ 延伸草藥：寬筋藤 (Guduchi) ➔ 關節風濕強健</div>
+              </div>
+              <div class="mindmap-node" onclick="filterByChannel('Majjavaha', 'Majjavaha 神經渠道')">
+                8. 🧠 骨髓與神經渠道 (Majjavaha Srota)
+                <div class="mindmap-child">└─ 延伸草藥：蛇根木、睡茄 ➔ 神經鎮靜與睡眠</div>
+              </div>
+              <div class="mindmap-node" onclick="filterByChannel('Shukravaha', 'Shukravaha 精氣渠道')">
+                9. ⚡ 男性生殖精氣渠道 (Shukravaha Srota)
+                <div class="mindmap-child">└─ 延伸草藥：刺蒺藜 (Gokshura) ➔ 生殖精氣補益</div>
+              </div>
+              <div class="mindmap-node" onclick="filterByChannel('Artavaha', 'Artavaha 子宮渠道')">
+                10. 🌸 女性子宮生殖渠道 (Artavaha Srota)
+                <div class="mindmap-child">└─ 延伸草藥：天門冬 (Shatavari) ➔ 月經與婦科</div>
+              </div>
+              <div class="mindmap-node" onclick="filterByChannel('Stanyavaha', 'Stanyavaha 乳汁渠道')">
+                11. 🤱 乳汁與哺育渠道 (Stanyavaha Srota)
+                <div class="mindmap-child">└─ 延伸草藥：小茴香 ➔ 產後催乳與調理</div>
+              </div>
+              <div class="mindmap-node" onclick="filterByChannel('Purishavaha', 'Purishavaha 排泄渠道')">
+                12. 💩 糞便排泄渠道 (Purishavaha Srota)
+                <div class="mindmap-child">└─ 延伸草藥：訶子 (Haritaki) ➔ 潤腸通便腸道</div>
+              </div>
+              <div class="mindmap-node" onclick="filterByChannel('Mutravaha', 'Mutravaha 尿液渠道')">
+                13. 🚽 尿液排泄渠道 (Mutravaha Srota)
+                <div class="mindmap-child">└─ 延伸草藥：車前子 ➔ 利尿通淋泌尿養護</div>
+              </div>
+              <div class="mindmap-node" onclick="filterByChannel('Svedavaha', 'Svedavaha 汗液渠道')">
+                14. 💦 汗液皮膚排汗渠道 (Svedavaha Srota)
+                <div class="mindmap-child">└─ 延伸草藥：薄荷 ➔ 開臿發汗解表透疹</div>
+              </div>
             </div>
-
-            <div class="mindmap-node" onclick="filterByChannel('Annavaha', 'Annavaha 食物渠道')">
-              2. 🍲 食物與消化渠道 (Annavaha Srota)
-              <div class="mindmap-child">└─ 延伸草藥：三果實 (Triphala)、乾薑、阿魏 ➔ 20 Gunas 屬性</div>
-            </div>
-
-            <div class="mindmap-node" onclick="filterByChannel('Udakavaha', 'Udakavaha 水份渠道')">
-              3. 💧 水份與體液渠道 (Udakavaha Srota)
-              <div class="mindmap-child">└─ 延伸草藥：積雪草 (Gotu Kola)、椰子水 ➔ 水份平衡調適</div>
-            </div>
-
-            <div class="mindmap-node" onclick="filterByChannel('Raktavaha', 'Raktavaha 血液渠道')">
-              4. 🩸 血液與肝脾渠道 (Raktavaha Srota)
-              <div class="mindmap-child">└─ 延伸草藥：旱蓮草 (Bhringraj)、印楝 ➔ 涼血清熱排毒</div>
-            </div>
-
-            <div class="mindmap-node" onclick="filterByChannel('Mamsavaha', 'Mamsavaha 肌肉渠道')">
-              5. 💪 肌肉與組織渠道 (Mamsavaha Srota)
-              <div class="mindmap-child">└─ 延伸草藥：睡茄 (Ashwagandha)、廣防己 ➔ 肌肉強健處方</div>
-            </div>
-
-            <div class="mindmap-node" onclick="filterByChannel('Medovaha', 'Medovaha 脂肪渠道')">
-              6. 🌱 脂肪與代謝渠道 (Medovaha Srota)
-              <div class="mindmap-child">└─ 延伸草藥：沒藥 (Guggulu)、薑黃 ➔ 降脂與代謝調適</div>
-            </div>
-
-            <div class="mindmap-node" onclick="filterByChannel('Asthivaha', 'Asthivaha 骨骼渠道')">
-              7. 🦴 骨骼與關節渠道 (Asthivaha Srota)
-              <div class="mindmap-child">└─ 延伸草藥：寬筋藤 (Guduchi)、薛荔 ➔ 關節風濕強健</div>
-            </div>
-
-            <div class="mindmap-node" onclick="filterByChannel('Majjavaha', 'Majjavaha 神經渠道')">
-              8. 🧠 骨髓與神經渠道 (Majjavaha Srota)
-              <div class="mindmap-child">└─ 延伸草藥：蛇根木、睡茄 ➔ 神經鎮靜與睡眠調理</div>
-            </div>
-
-            <div class="mindmap-node" onclick="filterByChannel('Shukravaha', 'Shukravaha 精氣渠道')">
-              9. ⚡ 男性生殖精氣渠道 (Shukravaha Srota)
-              <div class="mindmap-child">└─ 延伸草藥：刺蒺藜 (Gokshura)、天門冬 ➔ 生殖精氣補益</div>
-            </div>
-
-            <div class="mindmap-node" onclick="filterByChannel('Artavaha', 'Artavaha 子宮渠道')">
-              10. 🌸 女性子宮生殖渠道 (Artavaha Srota)
-              <div class="mindmap-child">└─ 延伸草藥：無憂樹 (Ashoka)、天門冬 ➔ 月經調理與婦科</div>
-            </div>
-
-            <div class="mindmap-node" onclick="filterByChannel('Stanyavaha', 'Stanyavaha 乳汁渠道')">
-              11. 🤱 乳汁與哺育渠道 (Stanyavaha Srota)
-              <div class="mindmap-child">└─ 延伸草藥：小茴香、天門冬 ➔ 產後催乳與調理</div>
-            </div>
-
-            <div class="mindmap-node" onclick="filterByChannel('Purishavaha', 'Purishavaha 排泄渠道')">
-              12. 💩 糞便排泄渠道 (Purishavaha Srota)
-              <div class="mindmap-child">└─ 延伸草藥：訶子 (Haritaki)、番瀉葉 ➔ 潤腸通便腸道</div>
-            </div>
-
-            <div class="mindmap-node" onclick="filterByChannel('Mutravaha', 'Mutravaha 尿液渠道')">
-              13. 🚽 尿液排泄渠道 (Mutravaha Srota)
-              <div class="mindmap-child">└─ 延伸草藥：車前子、刺蒺藜 ➔ 利尿通淋泌尿養護</div>
-            </div>
-
-            <div class="mindmap-node" onclick="filterByChannel('Svedavaha', 'Svedavaha 汗液渠道')">
-              14. 💦 汗液皮膚排汗渠道 (Svedavaha Srota)
-              <div class="mindmap-child">└─ 延伸草藥：薄荷、香附 ➔ 開臿發汗解表透疹</div>
-            </div>
-
           </div>
 
-          <div style="background: rgba(0,0,0,0.4); padding: 1.5rem; border-radius: var(--radius-lg); border: 1px solid rgba(16, 185, 129, 0.4);">
-            <h3 style="color: #34D399; margin-bottom: 1rem; border-bottom: 1px solid rgba(16, 185, 129, 0.3); padding-bottom: 0.4rem; font-family: 'Noto Serif TC', serif;">
-              🫀 7 大 Dhatus 組織層級全量分支 (100% 齊全)
+          <!-- 7 Dhatus 組織層級區塊 -->
+          <div id="blockDhatus" style="background: rgba(0,0,0,0.45); padding: 1.8rem; border-radius: var(--radius-lg); border: 1.5px solid rgba(16, 185, 129, 0.4);">
+            <h3 style="color: #34D399; margin-bottom: 1.2rem; border-bottom: 1px solid rgba(16, 185, 129, 0.3); padding-bottom: 0.6rem; font-family: 'Noto Serif TC', serif; display: flex; align-items: center; gap: 8px;">
+              🫀 7 大 Dhatus 組織層級 (身體 7 層遞進結構)
             </h3>
 
-            <div class="mindmap-node" style="border-color: #34D399;" onclick="filterByChannel('Rasa', 'Rasa 血漿層')">
-              1. 💧 Rasa Dhatu (血漿與津液組織層)
-              <div class="mindmap-child">└─ 核心概念：營養輸送與基礎體液平衡</div>
+            <div style="display: grid; grid-template-columns: 1fr; gap: 10px;">
+              <div class="mindmap-node" style="border-color: #34D399;" onclick="filterByChannel('Rasa', 'Rasa 血漿層')">
+                1. 💧 Rasa Dhatu (血漿與津液組織層)
+                <div class="mindmap-child">└─ 核心概念：營養輸送與基礎體液平衡</div>
+              </div>
+
+              <div class="mindmap-node" style="border-color: #EF4444;" onclick="filterByChannel('Rakta', 'Rakta 血液層')">
+                2. 🩸 Rakta Dhatu (血液與紅素組織層)
+                <div class="mindmap-child">└─ 核心概念：體溫皮色與氧氣攜帶</div>
+              </div>
+
+              <div class="mindmap-node" style="border-color: #F97316;" onclick="filterByChannel('Mamsa', 'Mamsa 肌肉層')">
+                3. 💪 Mamsa Dhatu (肌肉與蛋白質組織層)
+                <div class="mindmap-child">└─ 核心概念：器官包覆與體力支撐</div>
+              </div>
+
+              <div class="mindmap-node" style="border-color: #F59E0B;" onclick="filterByChannel('Meda', 'Meda 脂肪層')">
+                4. 🟡 Meda Dhatu (脂肪與脂質組織層)
+                <div class="mindmap-child">└─ 核心概念：關節潤滑與能量儲存</div>
+              </div>
+
+              <div class="mindmap-node" style="border-color: #A78BFA;" onclick="filterByChannel('Asthi', 'Asthi 骨骼層')">
+                5. 🦴 Asthi Dhatu (骨骼與礦物質組織層)
+                <div class="mindmap-child">└─ 核心概念：身體骨架與構造保護</div>
+              </div>
+
+              <div class="mindmap-node" style="border-color: #3B82F6;" onclick="filterByChannel('Majja', 'Majja 神經層')">
+                6. 🧠 Majja Dhatu (骨髓與神經組織層)
+                <div class="mindmap-child">└─ 核心概念：神經傳導與腦脊髓充盈</div>
+              </div>
+
+              <div class="mindmap-node" style="border-color: #06B6D4;" onclick="filterByChannel('Shukra', 'Shukra 生殖層')">
+                7. ✨ Shukra Dhatu (生殖與精氣組織層)
+                <div class="mindmap-child">└─ 核心概念：生命繁衍與 Ojas 免疫生命力</div>
+              </div>
             </div>
 
-            <div class="mindmap-node" style="border-color: #EF4444;" onclick="filterByChannel('Rakta', 'Rakta 血液層')">
-              2. 🩸 Rakta Dhatu (血液與紅素組織層)
-              <div class="mindmap-child">└─ 核心概念：體溫皮色與氧氣攜帶</div>
-            </div>
-
-            <div class="mindmap-node" style="border-color: #F97316;" onclick="filterByChannel('Mamsa', 'Mamsa 肌肉層')">
-              3. 💪 Mamsa Dhatu (肌肉與蛋白質組織層)
-              <div class="mindmap-child">└─ 核心概念：器官包覆與體力支撐</div>
-            </div>
-
-            <div class="mindmap-node" style="border-color: #F59E0B;" onclick="filterByChannel('Meda', 'Meda 脂肪層')">
-              4. 🟡 Meda Dhatu (脂肪與脂質組織層)
-              <div class="mindmap-child">└─ 核心概念：關節潤滑與能量儲存</div>
-            </div>
-
-            <div class="mindmap-node" style="border-color: #A78BFA;" onclick="filterByChannel('Asthi', 'Asthi 骨骼層')">
-              5. 🦴 Asthi Dhatu (骨骼與礦物質組織層)
-              <div class="mindmap-child">└─ 核心概念：身體骨架與構造保護</div>
-            </div>
-
-            <div class="mindmap-node" style="border-color: #3B82F6;" onclick="filterByChannel('Majja', 'Majja 神經層')">
-              6. 🧠 Majja Dhatu (骨髓與神經組織層)
-              <div class="mindmap-child">└─ 核心概念：神經傳導與腦脊髓充盈</div>
-            </div>
-
-            <div class="mindmap-node" style="border-color: #06B6D4;" onclick="filterByChannel('Shukra', 'Shukra 生殖層')">
-              7. ✨ Shukra Dhatu (生殖與精氣組織層)
-              <div class="mindmap-child">└─ 核心概念：生命繁衍與 Ojas 免疫生命力</div>
-            </div>
-
-            <div style="margin-top: 2rem; padding: 1.2rem; background: rgba(245, 158, 11, 0.15); border-radius: 12px; border-left: 4px solid #F59E0B; font-size: 0.95rem; line-height: 1.7;">
-              <strong>💡 朱婕老師親傳訣竅：</strong><br>
-              身體 7 大組織依序由 Rasa 遞進滋養至 Shukra。若 Rasa 堵塞，則後續 6 大組織皆無法獲得完整營養。點擊上述任意節點即可展開專屬草藥！
+            <div style="margin-top: 2rem; padding: 1.4rem; background: rgba(245, 158, 11, 0.12); border-radius: 12px; border-left: 4px solid #F59E0B; font-size: 0.95rem; line-height: 1.75;">
+              <strong style="color: #F59E0B;">💡 朱婕老師親傳心法訣竅：</strong><br>
+              身體 7 大組織依序由 Rasa 遞進滋養至 Shukra。若 Rasa 堵塞，則後續 6 大組織皆無法獲得完整營養。點擊上述任意節點即可在上方展開專屬草藥與講義！
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 🌀 朱婕老師親傳學習路徑 Section -->
-    <section id="channels" class="scroll-reveal" style="margin-bottom: 3rem; background: rgba(245, 158, 11, 0.08); border: 1.5px solid var(--gold-accent); border-radius: var(--radius-xl); padding: 2.5rem 2rem;">
-      <div style="text-align: center; margin-bottom: 1.8rem;">
-        <h2 style="color: var(--gold-accent); font-size: 1.7rem; margin-bottom: 0.5rem; font-family: 'Noto Serif TC', serif;">
-          🌀 朱婕老師親傳學習路徑：從 14 大渠道 (Srotas) 與 7 大組織 (Dhatus) 擴展延伸
-        </h2>
-        <p style="color: var(--text-secondary); font-size: 1rem; max-width: 850px; margin: 0 auto; line-height: 1.7;">
-          朱婕老師親自叮嚀：研習阿育吠陀切忌死記單一草藥，<strong>必須先從《渠道療癒 (Srotas)》與《組織/小白卡 (Dhatus)》作為核心面向去讀取</strong>，
-          理解病理堵塞在哪個渠道、哪層身體組織，進而向外擴展延伸至對應的單方草藥、複方處方與體質調適！
-        </p>
-      </div>
-
-      <div style="margin-bottom: 1.5rem;">
-        <h4 style="color: var(--text-primary); margin-bottom: 0.8rem; font-size: 1.05rem;">1. 點擊【14 大 Srotas 渠道】展開延伸草藥與講義處方：</h4>
-        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-          <button class="guna-chip channel-btn" onclick="filterByChannel('Pranavaha', 'Pranavaha 呼吸渠道')">🫁 呼吸渠道 (Pranavaha)</button>
-          <button class="guna-chip channel-btn" onclick="filterByChannel('Annavaha', 'Annavaha 食物渠道')">🍲 食物消化渠道 (Annavaha)</button>
-          <button class="guna-chip channel-btn" onclick="filterByChannel('Manovaha', 'Manovaha 神經渠道')">🧠 心靈神經渠道 (Manovaha)</button>
-          <button class="guna-chip channel-btn" onclick="filterByChannel('Udakavaha', 'Udakavaha 水份渠道')">💧 水份渠道 (Udakavaha)</button>
-          <button class="guna-chip channel-btn" onclick="filterByChannel('Raktavaha', 'Raktavaha 血液渠道')">🩸 血液渠道 (Raktavaha)</button>
-          <button class="guna-chip channel-btn" onclick="filterByChannel('Purishavaha', 'Purishavaha 排泄渠道')">🌱 排泄渠道 (Purishavaha)</button>
-          <button class="guna-chip channel-btn" onclick="filterByChannel('Artavaha', 'Artavaha 子宮渠道')">🌸 女性子宮渠道 (Artavaha)</button>
-        </div>
-      </div>
-
-      <div>
-        <h4 style="color: var(--text-primary); margin-bottom: 0.8rem; font-size: 1.05rem;">2. 點擊【7 大 Dhatus 組織】展開延伸層級調理：</h4>
-        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-          <button class="guna-chip channel-btn" style="border-color: #34D399;" onclick="filterByChannel('Rasa', 'Rasa 血漿層')">1. Rasa (血漿/津液層)</button>
-          <button class="guna-chip channel-btn" style="border-color: #EF4444;" onclick="filterByChannel('Rakta', 'Rakta 血液層')">2. Rakta (血液紅素層)</button>
-          <button class="guna-chip channel-btn" style="border-color: #F97316;" onclick="filterByChannel('Mamsa', 'Mamsa 肌肉層')">3. Mamsa (肌肉組織層)</button>
-          <button class="guna-chip channel-btn" style="border-color: #F59E0B;" onclick="filterByChannel('Meda', 'Meda 脂肪層')">4. Meda (脂肪代謝層)</button>
-          <button class="guna-chip channel-btn" style="border-color: #A78BFA;" onclick="filterByChannel('Asthi', 'Asthi 骨骼層')">5. Asthi (骨骼支撐層)</button>
-          <button class="guna-chip channel-btn" style="border-color: #3B82F6;" onclick="filterByChannel('Majja', 'Majja 神經層')">6. Majja (骨髓神經層)</button>
-          <button class="guna-chip channel-btn" style="border-color: #06B6D4;" onclick="filterByChannel('Shukra', 'Shukra 生殖層')">7. Shukra (生殖精氣層)</button>
         </div>
       </div>
     </section>
 
     <!-- 🌸 朱婕老師生平與求學故事專區 Section -->
-    <section id="story" class="scroll-reveal" style="margin-bottom: 3rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 3rem 2.4rem; backdrop-filter: blur(16px);">
+    <section id="story" class="scroll-reveal" style="margin-bottom: 3.5rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 3rem 2.4rem; backdrop-filter: blur(16px);">
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.2rem; align-items: center;">
         <div style="text-align: center;">
           <div style="position: relative; display: inline-block; padding: 10px; background: linear-gradient(135deg, var(--gold-accent), var(--emerald-primary)); border-radius: 24px; box-shadow: 0 16px 40px rgba(0,0,0,0.5);">
@@ -345,7 +300,7 @@
     </section>
 
     <!-- 📜 朱婕老師手寫筆記原圖藝廊 Section -->
-    <section id="gallery" class="scroll-reveal" style="margin-bottom: 3rem;">
+    <section id="gallery" class="scroll-reveal" style="margin-bottom: 3.5rem;">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
         <h2 style="font-family: 'Noto Serif TC', serif;">📜 朱婕老師手寫筆記原圖藝廊 (Authentic Scanned Notes Gallery)</h2>
         <span style="color: var(--text-muted); font-size: 0.92rem;">點擊任一張手稿原圖，即可開啟 3-in-1 圖文對照與文字轉錄閱覽器</span>
@@ -483,7 +438,7 @@
       <button class="close-btn" id="closeReferencesBtn">&times;</button>
       <h2 style="color: var(--gold-accent); margin-bottom: 1rem; font-family: 'Noto Serif TC', serif;">📚 本專案所參考之權威官方 API 與藥典出處</h2>
       <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 1.5rem;">
-        本專案之草藥性味、拉丁學名與安全指引，正向對照並引用以下全球權威機構之官方 API 與典籍資料庫：
+        本專案之草藥性味、拉丁學名與安全指引，正向對照並引用以下權威機構之官方 API 與典籍資料庫：
       </p>
       
       <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 1.5rem; text-align: left;">

@@ -177,6 +177,31 @@ document.addEventListener("DOMContentLoaded", () => {
     setupModal("openSponsorBtn", "sponsorModal", "closeSponsorBtn");
 });
 
+function toggleMindMapCategory(cat) {
+    const blockSrotas = document.getElementById("blockSrotas");
+    const blockDhatus = document.getElementById("blockDhatus");
+
+    const btnAll = document.getElementById("btnShowAllNodes");
+    const btnSrotas = document.getElementById("btnShowSrotas");
+    const btnDhatus = document.getElementById("btnShowDhatus");
+
+    [btnAll, btnSrotas, btnDhatus].forEach(b => { if (b) b.classList.remove("active"); });
+
+    if (cat === "srotas") {
+        if (blockSrotas) blockSrotas.style.display = "block";
+        if (blockDhatus) blockDhatus.style.display = "none";
+        if (btnSrotas) btnSrotas.classList.add("active");
+    } else if (cat === "dhatus") {
+        if (blockSrotas) blockSrotas.style.display = "none";
+        if (blockDhatus) blockDhatus.style.display = "block";
+        if (btnDhatus) btnDhatus.classList.add("active");
+    } else {
+        if (blockSrotas) blockSrotas.style.display = "block";
+        if (blockDhatus) blockDhatus.style.display = "block";
+        if (btnAll) btnAll.classList.add("active");
+    }
+}
+
 function renderAllPortalItems() {
     const herbList = (globalData.herbs && globalData.herbs.length > 0) ? globalData.herbs : FALLBACK_HERBS;
     const pageList = (globalData.pages && globalData.pages.length > 0) ? globalData.pages.slice(0, 36) : [];
