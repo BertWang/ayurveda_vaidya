@@ -1,4 +1,4 @@
-// app.js - 朱婕老師阿育吠陀開源知識庫 3.0 (2026 全資料關聯性網狀檢索與動態圖文對照引擎)
+// app.js - 朱婕老師阿育吠陀開源知識庫 3.0 (2026 標準 Markdown 轉 HTML 渲染與圖文對照全量引擎)
 
 let globalData = { herbs: [], pages: [] };
 let favorites = JSON.parse(localStorage.getItem("ayurveda_favs") || "[]");
@@ -146,7 +146,7 @@ const FALLBACK_HERBS = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("🌿 朱婕老師阿育吠陀開源知識庫 3.0 全資料關聯性網狀檢索與動態圖文對照引擎啟動！");
+    console.log("🌿 朱婕老師阿育吠陀開源知識庫 3.0 標準 Markdown 轉 HTML 與動態對照全量引擎啟動！");
     
     initScrollReveal();
     updateFavBadge();
@@ -211,6 +211,29 @@ document.addEventListener("DOMContentLoaded", () => {
     setupModal("openSponsorBtn", "sponsorModal", "closeSponsorBtn");
 });
 
+// 核心 Markdown 轉標準 HTML 渲染解析器
+function parseMarkdownToHtml(mdText) {
+    if (!mdText) return '';
+    let html = mdText;
+
+    // 1. 強調與粗體: **text** -> <strong>text</strong>
+    html = html.replace(/\*\*(.*?)\*\*/g, '<strong style="color:var(--gold-accent);">$1</strong>');
+
+    // 2. 行內程式碼: `text` -> <code>text</code>
+    html = html.replace(/`(.*?)`/g, '<code style="background:rgba(245,158,11,0.15); color:#F59E0B; padding:2px 6px; border-radius:4px; font-family:monospace;">$1</code>');
+
+    // 3. 標題: # Header / 📌 Header -> Styled Header
+    html = html.replace(/^(?:#+|📌)\s*(.*$)/gim, '<h4 style="color:var(--gold-light); margin: 8px 0 4px 0; font-family:\'Noto Serif TC\', serif; font-size:1.02rem;">📌 $1</h4>');
+
+    // 4. 處方條目區塊: 💊 【處方條目 XXX】 -> 格式化 HTML 處方卡
+    html = html.replace(/💊\s*【處方條目\s*(\d+)】\s*(.*)/gi, '<div style="margin: 8px 0; padding: 10px 14px; background: rgba(16, 185, 129, 0.12); border-left: 4px solid #10B981; border-radius: 8px; font-size: 0.93rem; line-height: 1.6;"><strong style="color: #34D399; font-size:0.95rem;">💊 處方配方 $1：</strong> $2</div>');
+
+    // 5. 換行符號: \n -> <br>
+    html = html.replace(/\n/g, '<br>');
+
+    return html;
+}
+
 function toggleMindMapCategory(cat) {
     const blockSrotas = document.getElementById("blockSrotas");
     const blockDhatus = document.getElementById("blockDhatus");
@@ -273,6 +296,7 @@ function renderMixedCards(herbsList, pagesList, titleTag, queryStr = "") {
             
             const herbName = herb.name_zh || herb.name || "";
             const descText = herb.desc || herb.description || herb.summary || herb.used_for || "";
+            const descHtml = parseMarkdownToHtml(highlightQuery(descText, queryStr));
 
             card.innerHTML = `
                 <div>
@@ -290,9 +314,9 @@ function renderMixedCards(herbsList, pagesList, titleTag, queryStr = "") {
                         ${herb.tcm ? `<p style="margin-bottom: 4px;"><strong>☯️ 中醫歸經:</strong> ${herb.tcm}</p>` : ""}
                     </div>
                     
-                    <p style="font-size: 0.9rem; color: var(--text-secondary); background: rgba(0,0,0,0.3); padding: 10px 12px; border-radius: 8px; margin-bottom: 1.2rem;">
-                        ${highlightQuery(descText, queryStr)}
-                    </p>
+                    <div style="font-size: 0.9rem; color: var(--text-secondary); background: rgba(0,0,0,0.3); padding: 10px 12px; border-radius: 8px; margin-bottom: 1.2rem;">
+                        ${descHtml}
+                    </div>
                 </div>
 
                 <div class="card-actions">
@@ -303,7 +327,7 @@ function renderMixedCards(herbsList, pagesList, titleTag, queryStr = "") {
             grid.appendChild(card);
         });
 
-        // 2. 渲染 613 頁手稿講義卡片 (含全資料關聯性結構標籤：Srotas 渠道 + Dhatu 組織 + 關聯草藥)
+        // 2. 渲染 613 頁手稿講義卡片 (使用 parseMarkdownToHtml 進行標準 HTML 轉換)
         pagesList.forEach(p => {
             const isFav = favorites.some(f => f.id === p.id);
             const card = document.createElement("div");
@@ -324,6 +348,11 @@ function renderMixedCards(herbsList, pagesList, titleTag, queryStr = "") {
             const dhatusBadges = (p.rel_dhatus || []).map(d => `<span class="badge-tag" style="cursor:pointer; background:rgba(52,211,153,0.2); color:#34D399; border-color:rgba(52,211,153,0.4);" onclick="filterByChannel('${d}', '${d}層')">🫀 ${d}</span>`).join(' ');
             const herbsBadges  = (p.rel_herbs || []).map(h => `<span class="badge-tag" style="cursor:pointer; background:rgba(196,181,253,0.2); color:#C4B5FD; border-color:rgba(196,181,253,0.4);" onclick="searchAndRender('${h}')">🌿 ${h}</span>`).join(' ');
 
+            // 標準 HTML 內容解析轉換
+            const rawSnippet = p.snippet || "朱婕老師阿育吠陀手抄筆記轉錄內文...";
+            const highlightedSnippet = highlightQuery(rawSnippet, queryStr);
+            const htmlSnippet = parseMarkdownToHtml(highlightedSnippet);
+
             card.innerHTML = `
                 <div>
                     <div class="herb-header">
@@ -336,12 +365,12 @@ function renderMixedCards(herbsList, pagesList, titleTag, queryStr = "") {
 
                     ${(srotasBadges || dhatusBadges || herbsBadges) ? `<div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px;">${srotasBadges} ${dhatusBadges} ${herbsBadges}</div>` : ''}
 
-                    <p style="font-size: 0.92rem; color: var(--text-primary); background: rgba(0,0,0,0.4); padding: 12px 14px; border-radius: 10px; margin-bottom: 1rem; line-height: 1.7; max-height: 140px; overflow-y: auto;">
-                        ${highlightQuery(p.snippet || "朱婕老師阿育吠陀手抄筆記轉錄內文...", queryStr)}
-                    </p>
+                    <div style="font-size: 0.92rem; color: var(--text-primary); background: rgba(0,0,0,0.4); padding: 12px 14px; border-radius: 10px; margin-bottom: 1rem; line-height: 1.7; max-height: 180px; overflow-y: auto;">
+                        ${htmlSnippet}
+                    </div>
                 </div>
                 <div class="card-actions">
-                    <button class="btn-icon" onclick="openReaderView('📜 ${escapeJsString(p.title || "")}', \`${escapeJsString(p.snippet || "")}\`, '', '', '', '', 'PAGE', '${bookCode}', '${pageImg}')">🖼️ 閱覽講義手稿</button>
+                    <button class="btn-icon" onclick="openReaderView('📜 ${escapeJsString(p.title || "")}', \`${escapeJsString(rawSnippet)}\`, '', '', '', '', 'PAGE', '${bookCode}', '${pageImg}')">🖼️ 閱覽講義手稿</button>
                     <button class="btn-icon" onclick="toggleFavorite('${p.id}', '${escapeJsString(p.title || "")}')">${isFav ? "❤️ 已收錄" : "🤍 收錄手帳"}</button>
                 </div>
             `;
@@ -497,8 +526,9 @@ function openReaderView(title, content, rasa, virya, vipaka, dosha, type, bookCo
     if (readerImageTag) readerImageTag.textContent = `原稿識別冊號: ${codeTag} (純質典藏對照)`;
 
     if (readerContent) {
+        const htmlContent = parseMarkdownToHtml(content);
         readerContent.innerHTML = `
-            <p style="margin-bottom: 12px; line-height: 1.8;">${content}</p>
+            <div style="margin-bottom: 12px; line-height: 1.8;">${htmlContent}</div>
             ${rasa ? `<p style="margin-bottom: 6px;"><strong>🌿 性味歸經:</strong> ${rasa} | ${virya || ""} | ${vipaka || ""}</p>` : ""}
             ${dosha ? `<p style="margin-bottom: 6px;"><strong>🧘 Dosha 作用:</strong> ${dosha}</p>` : ""}
             <div style="margin-top: 14px; padding: 12px; background: rgba(16,185,129,0.15); border-radius: 8px; font-size: 0.9rem; border-left: 4px solid #10B981;">
