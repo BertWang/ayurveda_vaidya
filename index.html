@@ -77,7 +77,6 @@
       <li><a href="#herbs" class="active">🌿 草藥圖鑑</a></li>
       <li><a href="#mindmap" style="color: #C4B5FD; font-weight: bold;">🧠 思維地圖</a></li>
       <li><a href="#channels" style="color: #FBBF24; font-weight: bold;">🌀 14渠道與7組織</a></li>
-      <li><a href="#quiz">🧘 Dosha 測驗</a></li>
       <li><a href="#gallery">📜 講義手稿</a></li>
       <li><a href="#journal" id="openFavoritesBtn">🤍 離線手帳 (<span id="favCountBadge">0</span>)</a></li>
       <li><button id="themeToggleBtn" class="guna-chip" style="padding: 4px 12px; cursor: pointer;">🌙 模式切換</button></li>
@@ -289,43 +288,7 @@
       </div>
     </section>
 
-    <!-- 🧘 阿育吠陀 Dosha 三體質互動小測驗 Section -->
-    <section id="quiz" class="scroll-reveal" style="margin-bottom: 3rem; background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(167, 139, 250, 0.1)); border: 1.5px solid var(--gold-accent); border-radius: var(--radius-xl); padding: 2.5rem 2rem; backdrop-filter: blur(14px);">
-      <div style="text-align: center; margin-bottom: 1.5rem;">
-        <h2 style="color: var(--gold-accent); font-size: 1.7rem; margin-bottom: 0.5rem; font-family: 'Noto Serif TC', serif;">🧘 3 分鐘 Dosha 三體質互動小測驗</h2>
-        <p style="color: var(--text-secondary); font-size: 1rem;">測測您的主導體質是風 (Vata)、火 (Pitta) 還是水 (Kapha)，獲得朱婕老師講義精選草藥推薦！</p>
-      </div>
 
-      <div id="quizContainer" style="max-width: 740px; margin: 0 auto; text-align: left;">
-        <div class="quiz-q" style="margin-bottom: 1.4rem;">
-          <h4 style="color: var(--text-primary); margin-bottom: 0.6rem; font-size: 1.05rem;">1. 您的體型與體重變化傾向？</h4>
-          <label style="display: block; margin: 8px 0; cursor: pointer;"><input type="radio" name="q1" value="vata" checked> A. 體型偏瘦或骨感，難以增重，關節易有響聲 (Vata 風型)</label>
-          <label style="display: block; margin: 8px 0; cursor: pointer;"><input type="radio" name="q1" value="pitta"> B. 中等結實，肌肉線條明顯，體溫偏高易發炎 (Pitta 火型)</label>
-          <label style="display: block; margin: 8px 0; cursor: pointer;"><input type="radio" name="q1" value="kapha"> C. 骨架較大或圓潤，體重易增加難減重 (Kapha 水型)</label>
-        </div>
-
-        <div class="quiz-q" style="margin-bottom: 1.4rem;">
-          <h4 style="color: var(--text-primary); margin-bottom: 0.6rem; font-size: 1.05rem;">2. 您的睡眠品質與心理特徵？</h4>
-          <label style="display: block; margin: 8px 0; cursor: pointer;"><input type="radio" name="q2" value="vata" checked> A. 淺眠多夢，思緒活躍敏捷但易焦慮 (Vata 風型)</label>
-          <label style="display: block; margin: 8px 0; cursor: pointer;"><input type="radio" name="q2" value="pitta"> B. 睡眠短但高效，目標導向且富領導力，易煩躁 (Pitta 火型)</label>
-          <label style="display: block; margin: 8px 0; cursor: pointer;"><input type="radio" name="q2" value="kapha"> C. 沉睡難起，性格沉穩包容但偶爾沉重懶散 (Kapha 水型)</label>
-        </div>
-
-        <div class="quiz-q" style="margin-bottom: 1.6rem;">
-          <h4 style="color: var(--text-primary); margin-bottom: 0.6rem; font-size: 1.05rem;">3. 您的消化能力與皮膚反應？</h4>
-          <label style="display: block; margin: 8px 0; cursor: pointer;"><input type="radio" name="q3" value="vata" checked> A. 食慾不規律，易腹脹乾瀉，皮膚偏乾怕冷 (Vata 風型)</label>
-          <label style="display: block; margin: 8px 0; cursor: pointer;"><input type="radio" name="q3" value="pitta"> B. 食慾旺盛不能挨餓，易胃酸過多或泛紅粉刺 (Pitta 火型)</label>
-          <label style="display: block; margin: 8px 0; cursor: pointer;"><input type="radio" name="q3" value="kapha"> C. 消化較慢，食量不大但易沉重，皮膚潤澤偏冷 (Kapha 水型)</label>
-        </div>
-
-        <div style="text-align: center;">
-          <button id="submitQuizBtn" class="btn-sponsor" style="padding: 12px 34px; font-size: 1.05rem; cursor: pointer;">✨ 分析我的 Dosha 體質與專屬草藥推薦</button>
-        </div>
-
-        <div id="quizResult" style="display: none; margin-top: 1.5rem; padding: 1.6rem; background: rgba(0,0,0,0.5); border-radius: var(--radius-lg); border: 1.5px solid var(--gold-accent);">
-        </div>
-      </div>
-    </section>
 
     <!-- 🌸 朱婕老師生平與求學故事專區 Section -->
     <section id="story" class="scroll-reveal" style="margin-bottom: 3rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 3rem 2.4rem; backdrop-filter: blur(16px);">
