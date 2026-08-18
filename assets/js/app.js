@@ -1,4 +1,4 @@
-// app.js - 朱婕老師阿育吠陀開源知識庫 3.0 (2026 全面修復 UI 渲染、表格轉譯與重複識別碼 BUG)
+// app.js - 朱婕老師阿育吠陀開源知識庫 3.0 (2026 最新單一識別碼與極致 UI 排版版)
 
 let globalData = { herbs: [], pages: [] };
 let favorites = JSON.parse(localStorage.getItem("ayurveda_favs") || "[]");
@@ -77,7 +77,7 @@ const FALLBACK_HERBS = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("🌿 朱婕老師阿育吠陀開源知識庫 3.0 修復渲染與識別碼 BUG 啟動！");
+    console.log("🌿 朱婕老師阿育吠陀開源知識庫 3.0 極致 UI 排版全量引擎啟動！");
     
     initScrollReveal();
     updateFavBadge();
@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
             globalData = data;
             const countBadge = document.getElementById("herbCountBadge");
             if (countBadge) {
-                countBadge.textContent = `全冊 630 頁手稿 (已完成 UI 與對照修復: ${data.pages ? data.pages.length : 613} 個頁面)`;
+                countBadge.textContent = `全冊 630 頁手稿 (內容 ↔ 原文 ↔ 原檔 613 頁三位一體對照)`;
             }
             renderAllPortalItems();
             checkUrlQueryParams();
@@ -142,24 +142,15 @@ document.addEventListener("DOMContentLoaded", () => {
     setupModal("openSponsorBtn", "sponsorModal", "closeSponsorBtn");
 });
 
-// 核心 Markdown 轉標準 HTML 渲染解析器 (含 Markdown 表格解析)
 function parseMarkdownToHtml(mdText) {
     if (!mdText) return '';
     let html = mdText;
 
-    // 1. 強調與粗體: **text** -> <strong>text</strong>
     html = html.replace(/\*\*(.*?)\*\*/g, '<strong style="color:var(--gold-accent);">$1</strong>');
-
-    // 2. 行內程式碼: `text` -> <code>text</code>
     html = html.replace(/`(.*?)`/g, '<code style="background:rgba(245,158,11,0.15); color:#F59E0B; padding:2px 6px; border-radius:4px; font-family:monospace;">$1</code>');
-
-    // 3. 標題: # Header / 📌 Header -> Styled Header
     html = html.replace(/^(?:#+|📌)\s*(.*$)/gim, '<h4 style="color:var(--gold-light); margin: 8px 0 4px 0; font-family:\'Noto Serif TC\', serif; font-size:1.02rem;">📌 $1</h4>');
-
-    // 4. 處方條目區塊: 💊 【處方條目 XXX】 -> 格式化 HTML 處方卡
     html = html.replace(/💊\s*【處方條目\s*(\d+)】\s*(.*)/gi, '<div style="margin: 8px 0; padding: 10px 14px; background: rgba(16, 185, 129, 0.12); border-left: 4px solid #10B981; border-radius: 8px; font-size: 0.93rem; line-height: 1.6;"><strong style="color: #34D399; font-size:0.95rem;">💊 處方配方 $1：</strong> $2</div>');
 
-    // 5. Markdown 表格 parser (| Col1 | Col2 |) -> <table style="...">
     if (html.includes('|')) {
         let lines = html.split('\n');
         let newLines = [];
@@ -168,8 +159,8 @@ function parseMarkdownToHtml(mdText) {
 
         lines.forEach(line => {
             let trimmed = line.trim();
-            if (trimmed.startswith && trimmed.startsWith('|') && trimmed.endsWith('|')) {
-                if (trimmed.includes('---')) return; // 跳過分隔線
+            if (trimmed.startsWith && trimmed.startsWith('|') && trimmed.endsWith('|')) {
+                if (trimmed.includes('---')) return;
                 let cells = trimmed.split('|').slice(1, -1);
                 let rowHtml = cells.map(c => `<td style="padding: 6px 10px; border: 1px solid rgba(255,255,255,0.15); font-size: 0.88rem;">${c.trim()}</td>`).join('');
                 tableRows.push(`<tr>${rowHtml}</tr>`);
@@ -189,9 +180,7 @@ function parseMarkdownToHtml(mdText) {
         html = newLines.join('\n');
     }
 
-    // 6. 換行符號: \n -> <br>
     html = html.replace(/\n/g, '<br>');
-
     return html;
 }
 
@@ -299,7 +288,7 @@ function renderMixedCards(herbsList, pagesList, titleTag, queryStr = "") {
                         ${herb.tcm ? `<p style="margin-bottom: 4px;"><strong>☯️ 中醫歸經:</strong> ${herb.tcm}</p>` : ""}
                     </div>
                     
-                    <div style="font-size: 0.9rem; color: var(--text-secondary); background: rgba(0,0,0,0.3); padding: 10px 12px; border-radius: 8px; margin-bottom: 1.2rem;">
+                    <div class="snippet-box">
                         ${descHtml}
                     </div>
                 </div>
@@ -312,21 +301,15 @@ function renderMixedCards(herbsList, pagesList, titleTag, queryStr = "") {
             grid.appendChild(card);
         });
 
-        // 2. 渲染 613 頁手稿講義卡片 (修復重複識別碼 BASICS-P0001)
+        // 2. 渲染 613 頁手稿講義卡片 (🔥 徹底消除 BASICS-BASICS-P0022 重複 BUG)
         pagesList.forEach(p => {
             const isFav = favorites.some(f => f.id === p.id);
             const card = document.createElement("div");
             card.className = "herb-card scroll-reveal revealed";
             card.style.borderColor = "var(--emerald-accent)";
 
-            const pageImg = p.raw_file_path || "./assets/images/scans/scan_single1.jpg";
-            
-            // 🔥 修復 BUG 1: 防止識別碼重複前綴 (如 BASICS-BASICS-P0022)
-            let bookCode = p.id || "P001";
-            if (p.doc && !bookCode.startsWith(p.doc)) {
-                bookCode = `${p.doc}-${bookCode}`;
-            }
-
+            // 🔥 直接使用 p.id (絕不再做 `${p.doc}-${p.id}` 之重複疊加!)
+            const bookCode = p.id || "P0001";
             const sourceFile = p.source_file || `docs/${p.doc || 'SINGLE1'}.md`;
             const displayTitle = p.title && !p.title.includes("UNKNOWN") ? p.title : "阿育吠陀手稿講義";
 
@@ -342,7 +325,7 @@ function renderMixedCards(herbsList, pagesList, titleTag, queryStr = "") {
                 <div>
                     <div class="herb-header">
                         <div>
-                            <h3 class="herb-name" style="color: var(--emerald-accent); font-size: 1.15rem;">📜 ${highlightQuery(displayTitle, queryStr)}</h3>
+                            <h3 class="herb-name" style="color: var(--emerald-accent); font-size: 1.2rem;">📜 ${highlightQuery(displayTitle, queryStr)}</h3>
                             <span class="herb-sanskrit">講義碼: ${bookCode} | 📁 原檔: ${sourceFile}</span>
                         </div>
                         <span class="badge-tag" style="background: rgba(167, 139, 250, 0.2); color: #C4B5FD; border-color: rgba(167, 139, 250, 0.4);">手稿對照</span>
@@ -350,12 +333,12 @@ function renderMixedCards(herbsList, pagesList, titleTag, queryStr = "") {
 
                     ${(srotasBadges || dhatusBadges || herbsBadges) ? `<div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px;">${srotasBadges} ${dhatusBadges} ${herbsBadges}</div>` : ''}
 
-                    <div style="font-size: 0.92rem; color: var(--text-primary); background: rgba(0,0,0,0.4); padding: 12px 14px; border-radius: 10px; margin-bottom: 1rem; line-height: 1.7; max-height: 180px; overflow-y: auto;">
+                    <div class="snippet-box">
                         ${htmlSnippet}
                     </div>
                 </div>
                 <div class="card-actions">
-                    <button class="btn-icon" onclick="openPageDetail('${p.id}')">🔍 詳情對照 (三頁籤)</button>
+                    <button class="btn-icon" onclick="openPageDetail('${p.id}')">🔍 詳情對照</button>
                     <button class="btn-icon" onclick="toggleFavorite('${p.id}', '${escapeJsString(displayTitle)}')">${isFav ? "❤️ 已收錄" : "🤍 收錄手帳"}</button>
                 </div>
             `;
@@ -364,7 +347,7 @@ function renderMixedCards(herbsList, pagesList, titleTag, queryStr = "") {
 
         const countBadge = document.getElementById("herbCountBadge");
         if (countBadge) {
-            countBadge.textContent = `${titleTag || '全量呈現'} (${herbsList.length} 個草藥條目 + ${pagesList.length} 頁內容與原檔關聯對照)`;
+            countBadge.textContent = `${titleTag || '全量呈現'} (${herbsList.length} 個草藥條目 + ${pagesList.length} 頁對照卡片)`;
         }
 
         grid.style.opacity = "1";
@@ -474,7 +457,7 @@ function filterByChannel(channelKey, displayName) {
     injectDynamicSEO(`《朱婕老師阿育吠陀學習路徑：${displayName}》- 知識庫 3.0`, `從朱婕老師手稿《${displayName}》出發擴展延伸之對應單方草藥與講義處方`, window.location.href);
 }
 
-// 三頁籤 🔍 詳情對照 重構 Modal 開啟函數 (修復識別碼與表格 BUG)
+// 三頁籤 🔍 詳情對照 重構 Modal 開啟函數
 function openPageDetail(pageId) {
     const pageList = globalData.pages || [];
     const p = pageList.find(item => item.id === pageId) || pageList[0];
@@ -488,12 +471,7 @@ function openPageDetail(pageId) {
     if (readerTitle) readerTitle.textContent = `📜 ${displayTitle} 詳情對照`;
 
     const pageImg = p.raw_file_path || "./assets/images/scans/scan_single1.jpg";
-    
-    // 修復重複識別碼 BUG
-    let bookCode = p.id || "P001";
-    if (p.doc && !bookCode.startsWith(p.doc)) {
-        bookCode = `${p.doc}-${bookCode}`;
-    }
+    const bookCode = p.id || "P0001";
     const sourcePath = p.source_file || `docs/${p.doc || 'SINGLE1'}.md`;
 
     if (readerImage) readerImage.src = pageImg;
@@ -543,7 +521,6 @@ function openPageDetail(pageId) {
         `;
     }
 
-    // 預設選取第一個 Tab (Notes)
     switchDetailTab('notes');
 
     if (modal) modal.style.display = "flex";

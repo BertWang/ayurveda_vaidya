@@ -1,55 +1,40 @@
-/* ==========================================================================
-   朱婕老師阿育吠陀開源知識庫 3.0 (Ayurveda Open Knowledge Hub 3.0)
-   2026 全球頂級 Web3/AI 典藏美學設計系統 (2026 Next-Gen Web Aesthetics)
-   ========================================================================== */
-
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@600;700;900&display=swap');
+/* styles.css - 朱婕老師阿育吠陀開源知識庫 3.0 頂級美學視覺與卡片排版樣式表 (2026 最新版) */
 
 :root {
-  /* 🎨 2026 未來黑曜翡翠與極致琥珀流金 (2026 High-End Dark Palette) */
-  --bg-primary: #090D0A;
-  --bg-surface: #121A15;
-  --bg-surface-hover: #18241D;
-  --bg-glass: rgba(14, 22, 17, 0.88);
-  
-  --emerald-glow: #10B981;
-  --emerald-accent: #34D399;
+  --bg-main: #0B0F19;
+  --bg-surface: #111827;
+  --bg-card: rgba(17, 24, 39, 0.75);
   --gold-accent: #F59E0B;
   --gold-light: #FBBF24;
-  --purple-glow: #A78BFA;
-  
-  --vata-color: #C4B5FD;
-  --pitta-color: #FB923C;
-  --kapha-color: #34D399;
-  
-  /* 📖 2026 視網膜極致閱讀對比度 (Retina Ultra-Contrast Typography) */
-  --text-primary: #FFFFFF;          /* 100% 亮白標題與主字 */
-  --text-secondary: #E2E8F0;        /* 92% 高清晰次要文字 */
-  --text-muted: #94A3B8;            /* 輔助標籤文字 */
-  
+  --emerald-primary: #10B981;
+  --emerald-accent: #34D399;
+  --purple-accent: #A78BFA;
+  --text-primary: #F3F4F6;
+  --text-secondary: #9CA3AF;
+  --text-muted: #6B7280;
   --border-subtle: rgba(255, 255, 255, 0.12);
-  --border-glow-gold: rgba(245, 158, 11, 0.45);
-  --border-glow-emerald: rgba(16, 185, 129, 0.45);
-  
-  --radius-xl: 24px;
-  --radius-lg: 16px;
-  --radius-md: 12px;
+  --vata-color: #3B82F6;
+  --pitta-color: #EF4444;
+  --kapha-color: #10B981;
   --radius-sm: 8px;
-  
-  --shadow-card: 0 12px 36px -8px rgba(0, 0, 0, 0.6);
-  --shadow-glow: 0 0 30px rgba(16, 185, 129, 0.2);
-  --transition-smooth: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 [data-theme="light"] {
-  --bg-primary: #F8FAFC;
+  --bg-main: #F8FAFC;
   --bg-surface: #FFFFFF;
-  --bg-surface-hover: #F1F5F9;
-  --bg-glass: rgba(255, 255, 255, 0.9);
+  --bg-card: rgba(255, 255, 255, 0.9);
+  --gold-accent: #D97706;
+  --gold-light: #B45309;
+  --emerald-primary: #059669;
+  --emerald-accent: #047857;
   --text-primary: #0F172A;
-  --text-secondary: #1E293B;
-  --text-muted: #475569;
-  --border-subtle: rgba(16, 185, 129, 0.2);
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  --border-subtle: rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -59,270 +44,226 @@
 }
 
 body {
-  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  background-color: var(--bg-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--bg-main);
   color: var(--text-primary);
-  line-height: 1.8;
-  font-size: 16px;
+  line-height: 1.6;
   min-height: 100vh;
   overflow-x: hidden;
-  position: relative;
 }
 
-/* 🌿 2026 動態流光背景 (Organic Glow Mesh) */
-body::before {
-  content: '';
-  position: fixed;
-  top: -25%;
-  left: -20%;
-  width: 140%;
-  height: 140%;
-  background: 
-    radial-gradient(circle at 15% 20%, rgba(16, 185, 129, 0.12) 0%, transparent 45%),
-    radial-gradient(circle at 85% 30%, rgba(245, 158, 11, 0.1) 0%, transparent 45%),
-    radial-gradient(circle at 50% 80%, rgba(167, 139, 250, 0.08) 0%, transparent 50%);
-  pointer-events: none;
-  z-index: -1;
-  animation: glowAnimation 16s ease-in-out infinite alternate;
-}
-
-@keyframes glowAnimation {
-  0% { transform: scale(1) rotate(0deg); }
-  100% { transform: scale(1.05) rotate(3deg); }
-}
-
-/* 導覽列 Glass Navbar - 2026 極簡單行與白金襯邊 */
+/* 玻璃擬態 導覽列 */
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
-  height: 72px;
-  background: var(--bg-glass);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--border-subtle);
+  z-index: 100;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 2rem;
-  z-index: 1000;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  align-items: center;
+  padding: 0.9rem 2.4rem;
+  background: rgba(11, 15, 25, 0.85);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .nav-brand {
-  font-size: 1.3rem;
-  font-weight: 800;
-  color: var(--text-primary);
+  font-family: 'Noto Serif TC', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gold-accent);
+  text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  font-family: 'Noto Serif TC', serif;
-  letter-spacing: 0.5px;
-  white-space: nowrap;
-}
-
-.nav-brand span {
-  background: linear-gradient(135deg, var(--gold-light), var(--gold-accent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  gap: 8px;
 }
 
 .nav-links {
   display: flex;
-  gap: 0.8rem;
-  list-style: none;
   align-items: center;
-  flex-wrap: nowrap;
+  gap: 1.2rem;
+  list-style: none;
 }
 
 .nav-links a {
   color: var(--text-secondary);
   text-decoration: none;
+  font-size: 0.92rem;
   font-weight: 600;
-  font-size: 0.95rem;
   transition: var(--transition-smooth);
-  padding: 8px 16px;
-  border-radius: var(--radius-sm);
-  white-space: nowrap;
 }
 
 .nav-links a:hover, .nav-links a.active {
-  color: var(--text-primary);
-  background: rgba(255, 255, 255, 0.1);
+  color: var(--gold-light);
 }
 
-/* 主容器 Layout */
+/* 主要容器 */
 .main-container {
   max-width: 1280px;
-  margin: 104px auto 50px auto;
-  padding: 0 1.8rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.8rem;
 }
 
-/* Hero 2026 旗艦卡片 */
+/* Hero 區塊卡片 */
 .hero-card {
-  background: linear-gradient(135deg, rgba(18, 26, 21, 0.9) 0%, rgba(12, 18, 14, 0.95) 100%);
-  backdrop-filter: blur(24px);
-  border: 1px solid var(--border-glow-gold);
-  border-radius: var(--radius-xl);
-  padding: 3.5rem 2.5rem;
   text-align: center;
+  padding: 3.2rem 2rem;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(16, 185, 129, 0.08));
+  border: 1.5px solid rgba(245, 158, 11, 0.3);
+  border-radius: var(--radius-xl);
   margin-bottom: 3rem;
-  box-shadow: var(--shadow-card), inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-card::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--emerald-glow), var(--gold-accent), var(--purple-glow));
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
 }
 
 .hero-title {
-  font-size: 2.75rem;
-  font-weight: 900;
-  margin-bottom: 1rem;
   font-family: 'Noto Serif TC', serif;
-  background: linear-gradient(135deg, #FFFFFF 0%, #FBBF24 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  letter-spacing: 1px;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--gold-accent);
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.5px;
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
-  color: var(--gold-light);
+  font-size: 1.15rem;
+  color: var(--emerald-accent);
   margin-bottom: 1.2rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
-/* 2026 搜尋框 Search Box */
+/* 搜尋輸入框 */
 .search-box {
   position: relative;
-  max-width: 780px;
-  margin: 2rem auto 0 auto;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .search-input {
   width: 100%;
-  padding: 1.2rem 1.8rem 1.2rem 3.6rem;
-  font-size: 1.08rem;
+  padding: 1.1rem 1.4rem 1.1rem 3.4rem;
+  font-size: 1.05rem;
+  background: var(--bg-surface);
+  border: 2px solid var(--gold-accent);
   border-radius: 50px;
-  border: 2px solid var(--border-glow-gold);
-  background: rgba(5, 9, 7, 0.7);
   color: var(--text-primary);
   outline: none;
+  box-shadow: 0 8px 24px rgba(245, 158, 11, 0.25);
   transition: var(--transition-smooth);
-  box-shadow: inset 0 2px 8px rgba(0,0,0,0.5);
 }
 
 .search-input:focus {
-  border-color: var(--gold-accent);
-  box-shadow: 0 0 30px rgba(245, 158, 11, 0.45);
-  background: rgba(5, 9, 7, 0.9);
+  box-shadow: 0 12px 36px rgba(245, 158, 11, 0.45);
+  border-color: var(--gold-light);
 }
 
 .search-icon {
   position: absolute;
-  left: 1.4rem;
+  left: 1.3rem;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 1.25rem;
-  color: var(--gold-light);
+  font-size: 1.3rem;
+  color: var(--gold-accent);
 }
 
-/* Gunas 按鈕選單 */
-.gunas-filter-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.guna-chip {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid var(--border-subtle);
-  color: var(--text-primary);
-  padding: 9px 18px;
-  border-radius: 50px;
-  font-size: 0.92rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: var(--transition-smooth);
-}
-
-.guna-chip:hover, .guna-chip.active {
-  background: var(--gold-accent);
-  color: #000;
-  border-color: var(--gold-light);
-  font-weight: 800;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(245, 158, 11, 0.35);
-}
-
-/* 網格系統 Grid */
+/* 草藥與講義卡片網格 */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.8rem;
 }
 
+/* 🔥 重構草藥與講義卡片 (解決溢出、換行與對齊 BUG) */
 .herb-card {
-  background: var(--bg-surface);
+  background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
-  padding: 1.8rem;
-  transition: var(--transition-smooth);
+  padding: 1.6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: var(--shadow-card);
+  transition: var(--transition-smooth);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
 }
 
 .herb-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-4px);
   border-color: var(--gold-accent);
-  background: var(--bg-surface-hover);
-  box-shadow: 0 16px 40px rgba(245, 158, 11, 0.25);
+  box-shadow: 0 14px 32px rgba(245, 158, 11, 0.25);
 }
 
 .herb-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 1.2rem;
+  gap: 12px;
+  margin-bottom: 10px;
 }
 
 .herb-name {
-  font-size: 1.35rem;
-  font-weight: 800;
-  color: var(--gold-light);
   font-family: 'Noto Serif TC', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  line-height: 1.35;
 }
 
 .herb-sanskrit {
-  font-size: 0.9rem;
-  color: var(--emerald-accent);
-  font-style: italic;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-family: monospace;
+  display: block;
+  margin-top: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 220px;
 }
 
+/* 🔥 解決 Badge 斷行排版 BUG */
 .badge-tag {
-  display: inline-block;
   padding: 4px 12px;
-  border-radius: 50px;
-  font-size: 0.8rem;
-  font-weight: 800;
-  background: rgba(16, 185, 129, 0.2);
-  color: var(--emerald-accent);
-  border: 1px solid rgba(16, 185, 129, 0.4);
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+  flex-shrink: 0;
+  background: rgba(245, 158, 11, 0.2);
+  color: var(--gold-light);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* 卡片按鈕 */
+/* 🔥 重構 Snippet 內文方框 (美學客製滾動條) */
+.snippet-box {
+  background: rgba(15, 23, 42, 0.65);
+  border: 1.5px solid rgba(245, 158, 11, 0.25);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  line-height: 1.75;
+  font-size: 0.93rem;
+  color: #E2E8F0;
+  margin: 12px 0;
+  max-height: 180px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(245, 158, 11, 0.4) transparent;
+}
+
+.snippet-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.snippet-box::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.4);
+  border-radius: 4px;
+}
+
+/* 🔥 重構卡片底層按鈕群 (解決文字換行與按鈕擠壓 BUG) */
 .card-actions {
   display: flex;
   gap: 10px;
@@ -331,93 +272,97 @@ body::before {
 
 .btn-icon {
   flex: 1;
-  padding: 10px;
+  padding: 10px 14px;
   font-size: 0.88rem;
   font-weight: 700;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-sm);
   border: 1px solid var(--border-subtle);
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.05);
   color: var(--text-primary);
   cursor: pointer;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
   transition: var(--transition-smooth);
-  text-align: center;
 }
 
 .btn-icon:hover {
   background: var(--gold-accent);
   color: #000;
   border-color: var(--gold-accent);
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+  transform: translateY(-2px);
 }
 
-.btn-sponsor {
-  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
-  color: #000;
-  font-weight: 800;
-  padding: 9px 22px;
-  border-radius: 50px;
-  text-decoration: none;
-  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
-  transition: var(--transition-smooth);
-  white-space: nowrap;
-}
-
-.btn-sponsor:hover {
-  transform: scale(1.05);
-}
-
-/* Modal 彈窗系統 */
+/* Modal 彈窗樣式 */
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(16px);
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(12px);
+  z-index: 1000;
   display: none;
-  align-items: center;
   justify-content: center;
-  z-index: 2000;
-  padding: 1.2rem;
+  align-items: center;
 }
 
 .modal-card {
-  background: #0B120E;
+  background: var(--bg-surface);
   border: 1.5px solid var(--gold-accent);
   border-radius: var(--radius-xl);
-  padding: 2.5rem;
-  width: 100%;
-  max-height: 92vh;
+  padding: 2.2rem;
+  max-height: 90vh;
   overflow-y: auto;
   position: relative;
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.8);
-  color: var(--text-primary);
-  text-align: center;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
 }
 
 .close-btn {
   position: absolute;
   top: 1.2rem;
   right: 1.4rem;
+  font-size: 1.8rem;
   background: none;
   border: none;
-  font-size: 2rem;
   color: var(--text-muted);
   cursor: pointer;
+  transition: var(--transition-smooth);
 }
 
 .close-btn:hover {
-  color: var(--gold-accent);
+  color: #EF4444;
 }
 
-/* Scroll Reveal */
-.scroll-reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.5s ease;
+/* 20 Gunas 動態 Chips */
+.guna-chip {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  border: 1px solid var(--border-subtle);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition-smooth);
 }
 
-.scroll-reveal.revealed {
-  opacity: 1;
-  transform: translateY(0);
+.guna-chip:hover, .guna-chip.active {
+  background: var(--gold-accent);
+  color: #000;
+  border-color: var(--gold-accent);
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
+
+.btn-sponsor {
+  background: linear-gradient(135deg, var(--gold-accent), #D97706);
+  color: #000 !important;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 50px;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);
 }
