@@ -100,9 +100,14 @@
 
     <!-- 🌿 草藥與講義搜尋結果網格 Section (緊貼搜尋框下方) -->
     <section id="herbs" class="scroll-reveal" style="margin-bottom: 3.5rem;">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
-        <h2 style="font-family: 'Noto Serif TC', serif;">🌿 阿育吠陀草藥與講義精選圖鑑 (Herbal Lexicon)</h2>
-        <span style="color: var(--text-muted); font-size: 0.92rem;" id="herbCountBadge">已成功載入全冊 630 頁手槁 (613 個對照頁面條目)</span>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem; flex-wrap: wrap; gap: 10px;">
+        <h2 style="font-family: 'Noto Serif TC', serif; margin: 0;">🌿 阿育吠陀全冊 630 頁手稿圖鑑大典</h2>
+        <span style="color: var(--gold-light); font-size: 0.95rem; font-weight: 600;" id="herbCountBadge">全冊 630 頁實體手稿 (繁體正體 ↔ 照片 1 對 1 忠實對照)</span>
+      </div>
+
+      <!-- 10 大主題冊快速切換按鈕列 -->
+      <div class="vol-filter-container" id="volumeFilterBar" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 1.2rem;">
+        <!-- 由 JavaScript 動態生成 10 大分冊按鈕 -->
       </div>
 
       <!-- 20 Gunas 屬性與 Dosha 動態過濾標籤 -->
@@ -400,32 +405,48 @@
     </div>
   </div>
 
-  <!-- 重構三頁籤【🔍 詳情對照 Modal】 (Split-View Reader Modal) -->
+  <!-- 重構三頁籤【🔍 劇院級大尺寸手稿對照 Modal】 (Grand Split-View Reader Modal) -->
   <div class="modal-overlay" id="readerModal">
-    <div class="modal-card" style="max-width: 980px; width: 95vw;">
-      <button class="close-btn" id="closeReaderBtn">&times;</button>
-      <h2 style="color: var(--gold-accent); margin-bottom: 0.8rem; font-family: 'Noto Serif TC', serif;" id="readerTitle">📜 詳情對照 (三頁籤結構化視圖)</h2>
+    <div class="modal-card reader-cinema-modal">
+      <button class="close-btn" id="closeReaderBtn" title="關閉視窗">&times;</button>
       
-      <!-- 三頁籤頂部導覽列 Bar -->
-      <div style="display: flex; gap: 10px; margin-bottom: 1.2rem; border-bottom: 1.5px solid var(--border-subtle); padding-bottom: 8px; flex-wrap: wrap;">
-        <button class="detail-tab-btn active" id="btnTabNotes" onclick="switchDetailTab('notes')">📜 1. 手稿轉錄對照</button>
-        <button class="detail-tab-btn" id="btnTabPharm" onclick="switchDetailTab('pharm')">🌿 2. 性味歸經藥典</button>
-        <button class="detail-tab-btn" id="btnTabLinks" onclick="switchDetailTab('links')">🔗 3. 跨冊相鄰知識鏈</button>
+      <!-- 頂部標題與頁籤列 Header Bar -->
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.8rem; flex-wrap: wrap; gap: 10px;">
+        <h2 style="color: var(--gold-accent); font-size: 1.35rem; font-family: 'Noto Serif TC', serif; margin: 0;" id="readerTitle">📜 詳情對照 (劇院級大尺寸手稿視圖)</h2>
+        
+        <!-- 三頁籤導覽按鈕 -->
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+          <button class="detail-tab-btn active" id="btnTabNotes" onclick="switchDetailTab('notes')">📜 1. 手稿轉錄對照</button>
+          <button class="detail-tab-btn" id="btnTabPharm" onclick="switchDetailTab('pharm')">🌿 2. 性味歸經藥典</button>
+          <button class="detail-tab-btn" id="btnTabLinks" onclick="switchDetailTab('links')">🔗 3. 跨冊知識關聯</button>
+        </div>
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.6rem; text-align: left;">
+      <!-- 雙欄劇院級對照主體 Container -->
+      <div class="reader-split-body">
         
-        <!-- 左欄：手稿原圖檔案視窗 -->
-        <div style="background: rgba(0,0,0,0.4); padding: 1.2rem; border-radius: var(--radius-lg); border: 1px solid var(--border-subtle);">
-          <h3 style="color: var(--text-primary); margin-bottom: 0.8rem; font-size: 1.1rem; font-family: 'Noto Serif TC', serif;">📜 朱婕老師手抄筆記原圖</h3>
-          <div style="text-align: center; background: #000; padding: 12px; border-radius: 10px; min-height: 280px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-            <img src="./assets/images/scans/scan_single1.jpg" alt="朱婕老師手稿講義原圖" id="readerImage" style="max-width: 100%; max-height: 320px; object-fit: contain; border-radius: 6px;">
-            <span style="font-size: 0.85rem; color: var(--gold-light); margin-top: 10px; font-weight: bold;" id="readerImageTag">📜 原稿識別碼: SINGLE1-P0001 | 📁 原檔: docs/SINGLE1.md</span>
+        <!-- 左欄：大尺寸手稿原圖檔案視窗 (佔 55% 寬度) -->
+        <div class="reader-image-column">
+          <div class="image-toolbar">
+            <span style="font-size: 0.88rem; color: var(--gold-light); font-weight: 600;" id="readerImageTag">📜 原稿識別碼: SINGLE1-P0001</span>
+            <div style="display: flex; gap: 6px;">
+              <button class="img-tool-btn" onclick="zoomReaderImage(1.25)" title="放大圖片">🔍 放大</button>
+              <button class="img-tool-btn" onclick="zoomReaderImage(0.8)" title="縮小圖片">🔍 縮小</button>
+              <button class="img-tool-btn" onclick="resetReaderImageZoom()" title="重設尺寸">🔄 重設</button>
+              <a class="img-tool-btn" id="readerImageFullLink" href="#" target="_blank" title="在新分頁開啟原始高清原圖">🗖 原圖大檔</a>
+            </div>
+          </div>
+
+          <div class="reader-image-viewport" id="readerImageViewport">
+            <img src="./assets/images/scans/scan_single1.jpg" alt="朱婕老師手稿講義原圖" id="readerImage" class="reader-main-img" onclick="toggleReaderImageZoom()">
+          </div>
+          <div style="text-align: center; margin-top: 6px; font-size: 0.8rem; color: var(--text-muted);">
+            💡 提示：點擊圖片可即時放大檢視，或點擊「🗖 原圖大檔」在全螢幕新分頁檢視 1616×2140 超高解析度照片
           </div>
         </div>
 
-        <!-- 右欄：三頁籤動態切換視窗 -->
-        <div style="background: rgba(0,0,0,0.4); padding: 1.2rem; border-radius: var(--radius-lg); border: 1px solid var(--border-subtle); max-height: 420px; overflow-y: auto;">
+        <!-- 右欄：手稿轉錄與三頁籤內容視窗 (佔 45% 寬度) -->
+        <div class="reader-content-column">
           
           <!-- Tab 1: 朱婕老師手稿對照 -->
           <div id="tabContentNotes" style="display: block;">

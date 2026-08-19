@@ -1,40 +1,86 @@
-/* styles.css - 朱婕老師阿育吠陀開源知識庫 3.0 頂級美學視覺與卡片排版樣式表 (2026 最新版) */
+/* styles.css - 朱婕老師阿育吠陀開源知識庫 3.0 (Notion 頂級典雅極簡素材美學調色盤 2026) */
 
 :root {
-  --bg-main: #0B0F19;
-  --bg-surface: #111827;
-  --bg-card: rgba(17, 24, 39, 0.75);
-  --gold-accent: #F59E0B;
-  --gold-light: #FBBF24;
-  --emerald-primary: #10B981;
-  --emerald-accent: #34D399;
-  --purple-accent: #A78BFA;
-  --text-primary: #F3F4F6;
-  --text-secondary: #9CA3AF;
-  --text-muted: #6B7280;
-  --border-subtle: rgba(255, 255, 255, 0.12);
-  --vata-color: #3B82F6;
-  --pitta-color: #EF4444;
-  --kapha-color: #10B981;
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 18px;
-  --radius-xl: 24px;
-  --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Notion Dark Mode (經典典雅暗夜灰黑) */
+  --bg-main: #191919;
+  --bg-surface: #202020;
+  --bg-card: #252525;
+  --bg-card-hover: #2C2C2C;
+  --bg-snippet: #1E1E1E;
+  --bg-highlight: rgba(255, 255, 255, 0.05);
+
+  /* Notion 標誌性文字色彩 */
+  --text-primary: rgba(255, 255, 255, 0.92);
+  --text-secondary: rgba(255, 255, 255, 0.65);
+  --text-muted: rgba(255, 255, 255, 0.42);
+
+  /* Notion 質感邊框 */
+  --border-subtle: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.16);
+
+  /* Notion 專屬調色盤 (Notion Color System) */
+  --notion-yellow: #E9B949;
+  --notion-yellow-bg: rgba(233, 185, 73, 0.14);
+  --notion-green: #4EBE82;
+  --notion-green-bg: rgba(78, 190, 130, 0.14);
+  --notion-blue: #529CCA;
+  --notion-blue-bg: rgba(82, 156, 202, 0.14);
+  --notion-purple: #9A6DD7;
+  --notion-purple-bg: rgba(154, 109, 215, 0.14);
+  --notion-orange: #E2843B;
+  --notion-orange-bg: rgba(226, 132, 59, 0.14);
+  --notion-red: #E25555;
+  --notion-red-bg: rgba(226, 85, 85, 0.14);
+  --notion-gray-bg: rgba(255, 255, 255, 0.07);
+
+  /* 傳統體質色彩 */
+  --vata-color: #529CCA;
+  --pitta-color: #E2843B;
+  --kapha-color: #4EBE82;
+
+  /* Notion 風格圓角與陰影 */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --shadow-subtle: 0 1px 3px rgba(0,0,0,0.2), 0 4px 12px rgba(0,0,0,0.3);
+  --shadow-hover: 0 4px 16px rgba(0,0,0,0.4), 0 8px 24px rgba(0,0,0,0.45);
+  --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Notion Light Mode (極簡象牙白與深灰墨色) */
 [data-theme="light"] {
-  --bg-main: #F8FAFC;
-  --bg-surface: #FFFFFF;
-  --bg-card: rgba(255, 255, 255, 0.9);
-  --gold-accent: #D97706;
-  --gold-light: #B45309;
-  --emerald-primary: #059669;
-  --emerald-accent: #047857;
-  --text-primary: #0F172A;
-  --text-secondary: #475569;
-  --text-muted: #64748B;
-  --border-subtle: rgba(0, 0, 0, 0.1);
+  --bg-main: #FFFFFF;
+  --bg-surface: #F7F6F3;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F1F1EF;
+  --bg-snippet: #F7F6F3;
+  --bg-highlight: rgba(55, 53, 47, 0.04);
+
+  --text-primary: #37352F;
+  --text-secondary: #787774;
+  --text-muted: #9B9A97;
+
+  --border-subtle: rgba(55, 53, 47, 0.09);
+  --border-strong: rgba(55, 53, 47, 0.16);
+
+  --notion-yellow: #CB9317;
+  --notion-yellow-bg: #FBF3DB;
+  --notion-green: #2B8A57;
+  --notion-green-bg: #EDF3EC;
+  --notion-blue: #2383E2;
+  --notion-blue-bg: #E7F3F8;
+  --notion-purple: #814FB9;
+  --notion-purple-bg: #F4F0F7;
+  --notion-orange: #D9730D;
+  --notion-orange-bg: #FAEBDD;
+  --notion-red: #D44040;
+  --notion-red-bg: #FBE4E4;
+  --notion-gray-bg: #F1F1EF;
+
+  --shadow-subtle: 0 1px 3px rgba(15, 15, 15, 0.06), 0 3px 8px rgba(15, 15, 15, 0.04);
+  --shadow-hover: 0 4px 14px rgba(15, 15, 15, 0.1), 0 8px 24px rgba(15, 15, 15, 0.06);
 }
 
 * {
@@ -44,15 +90,16 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "Helvetica Neue", Arial, sans-serif;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Noto Sans TC", "Helvetica Neue", Arial, sans-serif;
   background-color: var(--bg-main);
   color: var(--text-primary);
-  line-height: 1.6;
+  line-height: 1.65;
   min-height: 100vh;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* 玻璃擬態 導覽列 */
+/* Notion 風格極簡導覽列 */
 .navbar {
   position: sticky;
   top: 0;
@@ -60,138 +107,198 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.9rem 2.4rem;
-  background: rgba(11, 15, 25, 0.85);
-  backdrop-filter: blur(16px);
+  padding: 0.75rem 2.2rem;
+  background: var(--bg-main);
   border-bottom: 1px solid var(--border-subtle);
+  backdrop-filter: blur(12px);
 }
 
 .nav-brand {
-  font-family: 'Noto Serif TC', serif;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  color: var(--gold-accent);
+  color: var(--text-primary);
   text-decoration: none;
   display: flex;
   align-items: center;
   gap: 8px;
+  letter-spacing: -0.01em;
+}
+
+.nav-brand span {
+  color: var(--notion-yellow);
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  gap: 0.8rem;
   list-style: none;
 }
 
 .nav-links a {
   color: var(--text-secondary);
   text-decoration: none;
-  font-size: 0.92rem;
-  font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: var(--radius-sm);
   transition: var(--transition-smooth);
 }
 
 .nav-links a:hover, .nav-links a.active {
-  color: var(--gold-light);
+  color: var(--text-primary);
+  background: var(--bg-highlight);
 }
 
 /* 主要容器 */
 .main-container {
-  max-width: 1280px;
+  max-width: 1420px;
   margin: 0 auto;
-  padding: 2.5rem 1.8rem;
+  padding: 2rem 2.2rem;
 }
 
-/* Hero 區塊卡片 */
+/* Notion 風格 Hero 卡片 */
 .hero-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.8rem 2.2rem;
+  margin-bottom: 2rem;
   text-align: center;
-  padding: 3.2rem 2rem;
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.12), rgba(16, 185, 129, 0.08));
-  border: 1.5px solid rgba(245, 158, 11, 0.3);
-  border-radius: var(--radius-xl);
-  margin-bottom: 3rem;
-  backdrop-filter: blur(12px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+  box-shadow: var(--shadow-subtle);
 }
 
 .hero-title {
-  font-family: 'Noto Serif TC', serif;
-  font-size: 2.4rem;
-  font-weight: 800;
-  color: var(--gold-accent);
-  margin-bottom: 0.6rem;
-  letter-spacing: 0.5px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
 }
 
 .hero-subtitle {
-  font-size: 1.15rem;
-  color: var(--emerald-accent);
+  font-size: 1.05rem;
+  color: var(--notion-yellow);
+  font-weight: 500;
   margin-bottom: 1.2rem;
-  font-weight: 600;
 }
 
-/* 搜尋輸入框 */
+/* Notion 風格搜尋框 */
 .search-box {
   position: relative;
-  max-width: 720px;
+  max-width: 780px;
   margin: 0 auto;
 }
 
 .search-input {
   width: 100%;
-  padding: 1.1rem 1.4rem 1.1rem 3.4rem;
-  font-size: 1.05rem;
-  background: var(--bg-surface);
-  border: 2px solid var(--gold-accent);
-  border-radius: 50px;
+  padding: 14px 20px 14px 46px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-strong);
+  background: var(--bg-card);
   color: var(--text-primary);
+  font-size: 1rem;
   outline: none;
-  box-shadow: 0 8px 24px rgba(245, 158, 11, 0.25);
+  box-shadow: var(--shadow-subtle);
   transition: var(--transition-smooth);
 }
 
 .search-input:focus {
-  box-shadow: 0 12px 36px rgba(245, 158, 11, 0.45);
-  border-color: var(--gold-light);
+  border-color: var(--notion-yellow);
+  box-shadow: 0 0 0 3px var(--notion-yellow-bg);
 }
 
 .search-icon {
   position: absolute;
-  left: 1.3rem;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 1.3rem;
-  color: var(--gold-accent);
+  font-size: 1.15rem;
+  color: var(--text-muted);
 }
 
-/* 草藥與講義卡片網格 */
+/* 10 大主題冊頂部切換按鈕列 (Notion Database Tabs 風格) */
+.vol-filter-btn {
+  padding: 6px 13px;
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  font-weight: 500;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.vol-filter-btn:hover {
+  background: var(--bg-highlight);
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+}
+
+.vol-filter-btn.active {
+  background: var(--notion-yellow-bg);
+  color: var(--notion-yellow);
+  border-color: var(--notion-yellow);
+  font-weight: 600;
+}
+
+/* Notion 風格 20 Gunas 標籤 Chips */
+.guna-chip {
+  padding: 5px 12px;
+  border-radius: var(--radius-xs);
+  font-size: 0.84rem;
+  font-weight: 500;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-highlight);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.guna-chip:hover {
+  background: var(--border-subtle);
+  color: var(--text-primary);
+}
+
+.guna-chip.active {
+  background: var(--notion-gray-bg);
+  color: var(--text-primary);
+  border-color: var(--border-strong);
+  font-weight: 600;
+}
+
+/* 草藥與講義卡片網格 (雙欄寬版) */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 1.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(580px, 1fr));
+  gap: 1.6rem;
 }
 
-/* 🔥 重構草藥與講義卡片 (解決溢出、換行與對齊 BUG) */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Notion 風格卡片 */
 .herb-card {
-  background: var(--bg-card);
+  background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
-  padding: 1.6rem;
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   transition: var(--transition-smooth);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-  backdrop-filter: blur(12px);
-  position: relative;
-  overflow: hidden;
+  box-shadow: var(--shadow-subtle);
 }
 
 .herb-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--gold-accent);
-  box-shadow: 0 14px 32px rgba(245, 158, 11, 0.25);
+  background: var(--bg-card);
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
 }
 
 .herb-header {
@@ -203,108 +310,89 @@ body {
 }
 
 .herb-name {
-  font-family: 'Noto Serif TC', serif;
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--gold-light);
-  line-height: 1.35;
+  color: var(--text-primary);
+  line-height: 1.4;
+  letter-spacing: -0.01em;
 }
 
 .herb-sanskrit {
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
-  font-family: monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   display: block;
   margin-top: 4px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 220px;
 }
 
-/* 🔥 解決 Badge 斷行排版 BUG */
+/* Notion 風格彩色標籤 (Notion Database Tag Badges) */
 .badge-tag {
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 0.78rem;
-  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--radius-xs);
+  font-size: 0.8rem;
+  font-weight: 500;
   white-space: nowrap;
   flex-shrink: 0;
-  background: rgba(245, 158, 11, 0.2);
-  color: var(--gold-light);
-  border: 1px solid rgba(245, 158, 11, 0.4);
+  background: var(--notion-yellow-bg);
+  color: var(--notion-yellow);
+  border: 1px solid transparent;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
-/* 🔥 重構 Snippet 內文方框 (美學客製滾動條) */
+/* Notion 風格 Snippet 內文方框 (Notion Callout Block) */
 .snippet-box {
-  background: rgba(15, 23, 42, 0.65);
-  border: 1.5px solid rgba(245, 158, 11, 0.25);
-  border-radius: var(--radius-md);
-  padding: 14px;
-  line-height: 1.75;
-  font-size: 0.93rem;
-  color: #E2E8F0;
-  margin: 12px 0;
-  max-height: 180px;
+  background: var(--bg-snippet);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  line-height: 1.8;
+  font-size: 0.98rem;
+  color: var(--text-primary);
+  margin: 10px 0;
+  max-height: 240px;
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: rgba(245, 158, 11, 0.4) transparent;
+  scrollbar-color: var(--border-strong) transparent;
 }
 
-.snippet-box::-webkit-scrollbar {
-  width: 6px;
-}
-
-.snippet-box::-webkit-scrollbar-thumb {
-  background: rgba(245, 158, 11, 0.4);
-  border-radius: 4px;
-}
-
-/* 🔥 重構卡片底層按鈕群 (解決文字換行與按鈕擠壓 BUG) */
-.card-actions {
-  display: flex;
-  gap: 10px;
-  margin-top: 1.2rem;
-}
-
+/* Notion 風格按鈕 */
 .btn-icon {
-  flex: 1;
-  padding: 10px 14px;
-  font-size: 0.88rem;
-  font-weight: 700;
+  padding: 7px 14px;
   border-radius: var(--radius-sm);
-  border: 1px solid var(--border-subtle);
-  background: rgba(255, 255, 255, 0.05);
+  font-size: 0.88rem;
+  font-weight: 500;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-highlight);
   color: var(--text-primary);
   cursor: pointer;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
   transition: var(--transition-smooth);
 }
 
 .btn-icon:hover {
-  background: var(--gold-accent);
-  color: #000;
-  border-color: var(--gold-accent);
-  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
-  transform: translateY(-2px);
+  background: var(--border-subtle);
+  border-color: var(--text-muted);
 }
 
-/* Modal 彈窗樣式 */
+.btn-sponsor {
+  background: var(--notion-yellow-bg);
+  color: var(--notion-yellow) !important;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--notion-yellow);
+}
+
+/* Modal 彈窗樣式 (Notion 巨幕劇院級手稿對照視窗) */
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(8px);
   z-index: 1000;
   display: none;
   justify-content: center;
@@ -313,56 +401,147 @@ body {
 
 .modal-card {
   background: var(--bg-surface);
-  border: 1.5px solid var(--gold-accent);
-  border-radius: var(--radius-xl);
-  padding: 2.2rem;
-  max-height: 90vh;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  padding: 1.8rem 2rem;
+  max-height: 92vh;
   overflow-y: auto;
   position: relative;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+}
+
+.reader-cinema-modal {
+  max-width: 1440px;
+  width: 96vw;
+  height: 92vh;
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1.4rem 1.8rem;
+}
+
+.reader-split-body {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 1.6rem;
+  height: calc(100% - 65px);
+}
+
+@media (max-width: 960px) {
+  .reader-split-body {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
+
+.reader-image-column {
+  background: var(--bg-main);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid var(--border-subtle);
+}
+
+.image-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-subtle);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.img-tool-btn {
+  background: var(--bg-highlight);
+  border: 1px solid var(--border-strong);
+  color: var(--text-primary);
+  padding: 4px 10px;
+  border-radius: var(--radius-xs);
+  font-size: 0.82rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition-smooth);
+}
+
+.img-tool-btn:hover {
+  background: var(--border-subtle);
+}
+
+.reader-image-viewport {
+  flex: 1;
+  background: #000;
+  border-radius: var(--radius-sm);
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 360px;
+}
+
+.reader-main-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: var(--radius-xs);
+  cursor: zoom-in;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reader-content-column {
+  background: var(--bg-snippet);
+  border-radius: var(--radius-md);
+  padding: 1.4rem 1.6rem;
+  height: 100%;
+  overflow-y: auto;
+  font-size: 1.02rem;
+  line-height: 1.85;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+}
+
+.detail-tab-btn {
+  padding: 5px 12px;
+  border-radius: var(--radius-xs);
+  font-size: 0.86rem;
+  font-weight: 500;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.detail-tab-btn:hover {
+  background: var(--bg-highlight);
+  color: var(--text-primary);
+}
+
+.detail-tab-btn.active {
+  background: var(--notion-yellow-bg);
+  color: var(--notion-yellow);
+  border-color: var(--notion-yellow);
+  font-weight: 600;
 }
 
 .close-btn {
   position: absolute;
-  top: 1.2rem;
-  right: 1.4rem;
+  top: 1rem;
+  right: 1.2rem;
   font-size: 1.8rem;
   background: none;
   border: none;
   color: var(--text-muted);
   cursor: pointer;
   transition: var(--transition-smooth);
+  z-index: 10;
 }
 
 .close-btn:hover {
-  color: #EF4444;
-}
-
-/* 20 Gunas 動態 Chips */
-.guna-chip {
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 0.88rem;
-  font-weight: 600;
-  border: 1px solid var(--border-subtle);
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--text-secondary);
-  cursor: pointer;
-  transition: var(--transition-smooth);
-}
-
-.guna-chip:hover, .guna-chip.active {
-  background: var(--gold-accent);
-  color: #000;
-  border-color: var(--gold-accent);
-  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
-}
-
-.btn-sponsor {
-  background: linear-gradient(135deg, var(--gold-accent), #D97706);
-  color: #000 !important;
-  font-weight: 700;
-  padding: 8px 18px;
-  border-radius: 50px;
-  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);
+  color: var(--notion-red);
 }
