@@ -279,20 +279,20 @@ function renderCardsUI(herbsList, pagesList, queryStr) {
 
         card.innerHTML = `
             <div style="display: flex; gap: 18px; align-items: flex-start; flex-wrap: wrap;">
-                <!-- 左側縮圖 (點擊直達大尺寸劇院預覽) -->
-                <div style="width: 110px; height: 145px; background: #000; border-radius: 8px; overflow: hidden; flex-shrink: 0; cursor: pointer; border: 1.5px solid var(--border-subtle); display: flex; align-items: center; justify-content: center; position: relative;" onclick="openPageDetail('${p.id}')" title="點擊開啟劇院級超大對照視窗">
+                <!-- 左側縮圖 (點擊直達大尺寸預覽) -->
+                <div style="width: 110px; height: 145px; background: #000; border-radius: 8px; overflow: hidden; flex-shrink: 0; cursor: pointer; border: 1.5px solid var(--border-subtle); display: flex; align-items: center; justify-content: center; position: relative;" onclick="openPageDetail('${p.id}')" title="點擊開啟手稿對照視窗">
                     <img src="${imgPath}" alt="${displayTitle}" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9; transition: transform 0.3s ease;">
-                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.75); color: var(--gold-light); font-size: 0.72rem; text-align: center; padding: 2px;">🔍 放大原圖</div>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.75); color: var(--notion-yellow); font-size: 0.72rem; text-align: center; padding: 2px;">🔍 放大原圖</div>
                 </div>
 
                 <!-- 右側標題與內容 -->
                 <div style="flex: 1; min-width: 260px;">
                     <div class="herb-header" style="margin-bottom: 6px;">
                         <div>
-                            <h3 class="herb-name" style="color: var(--gold-light); font-size: 1.25rem; margin: 0;">📜 ${highlightQuery(displayTitle, queryStr)}</h3>
+                            <h3 class="herb-name" style="font-size: 1.25rem; margin: 0;">📜 ${highlightQuery(displayTitle, queryStr)}</h3>
                             <span class="herb-sanskrit" style="color: var(--text-muted); font-size: 0.85rem;">講義編碼: <strong>${bookCode}</strong> | 冊別: ${p.doc || 'SINGLE1'}</span>
                         </div>
-                        <span class="badge-tag" style="background: rgba(245, 158, 11, 0.25); color: var(--gold-light);">${p.doc || '手稿'}</span>
+                        <span class="badge-tag" style="background: var(--notion-yellow-bg); color: var(--notion-yellow);">${p.doc || '手稿'}</span>
                     </div>
 
                     ${(srotasBadges || dhatusBadges) ? `<div style="display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0;">${srotasBadges} ${dhatusBadges}</div>` : ''}
@@ -304,7 +304,7 @@ function renderCardsUI(herbsList, pagesList, queryStr) {
             </div>
 
             <div class="card-actions" style="margin-top: 12px; display: flex; justify-content: flex-end; gap: 10px;">
-                <button class="btn-icon" onclick="openPageDetail('${p.id}')" style="background: var(--gold-accent); color: #000; font-weight: 700;">🔍 劇院級大圖對照</button>
+                <button class="btn-icon" onclick="openPageDetail('${p.id}')">🔍 詳情對照</button>
                 <button class="btn-icon" onclick="toggleFavorite('${p.id}', '${escapeJsString(displayTitle)}')">${isFav ? "❤️ 已收錄" : "🤍 收錄手帳"}</button>
             </div>
         `;
@@ -317,9 +317,9 @@ function parseMarkdownToHtml(mdText) {
     if (!mdText) return '';
     let html = mdText;
 
-    html = html.replace(/\*\*(.*?)\*\*/g, '<strong style="color:var(--gold-accent);">$1</strong>');
-    html = html.replace(/`(.*?)`/g, '<code style="background:rgba(245,158,11,0.15); color:#F59E0B; padding:2px 6px; border-radius:4px; font-family:monospace;">$1</code>');
-    html = html.replace(/^(?:#+|📌)\s*(.*$)/gim, '<h4 style="color:var(--gold-light); margin: 8px 0 4px 0; font-family:\'Noto Serif TC\', serif; font-size:1.05rem;">📌 $1</h4>');
+    html = html.replace(/\*\*(.*?)\*\*/g, '<strong style="color:var(--notion-yellow);">$1</strong>');
+    html = html.replace(/`(.*?)`/g, '<code style="background:rgba(255,255,255,0.08); color:var(--notion-yellow); padding:2px 6px; border-radius:4px; font-family:monospace;">$1</code>');
+    html = html.replace(/^(?:#+|📌)\s*(.*$)/gim, '<h4 style="margin: 8px 0 4px 0; font-size:1.05rem;">📌 $1</h4>');
 
     html = html.replace(/\n/g, '<br>');
     return html;
@@ -334,7 +334,7 @@ function highlightQuery(text, query) {
         if (!token || token.length < 1) return;
         const escaped = token.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         const regex = new RegExp(`(${escaped})`, 'gi');
-        result = result.replace(regex, '<mark style="background: #F59E0B; color: #000; font-weight: bold; padding: 1px 4px; border-radius: 4px;">$1</mark>');
+        result = result.replace(regex, '<mark style="background: var(--notion-yellow); color: #000; font-weight: bold; padding: 1px 4px; border-radius: 4px;">$1</mark>');
     });
     return result;
 }
@@ -349,7 +349,7 @@ window.filterByChannel = function(channelName) {
     applyFilterAndRender();
 };
 
-// 全域掛載原圖縮放控制器 (解決 ReferenceError 作用域問題)
+// 全域掛載原圖縮放控制器
 window.currentReaderZoom = 1.0;
 
 window.zoomReaderImage = function(factor) {
@@ -373,7 +373,7 @@ window.toggleReaderImageZoom = function() {
     img.style.transform = `scale(${window.currentReaderZoom})`;
 };
 
-// 開啟劇院級手稿對照視窗
+// 開啟手稿對照視窗
 window.openPageDetail = function(pageId) {
     const pageList = AppState.globalData.pages || [];
     const p = pageList.find(item => item.id === pageId) || pageList[0];
@@ -386,7 +386,7 @@ window.openPageDetail = function(pageId) {
     const modal = document.getElementById("readerModal");
 
     const displayTitle = p.title || "阿育吠陀手稿講義";
-    if (readerTitle) readerTitle.textContent = `📜 ${displayTitle} (劇院級大尺寸對照)`;
+    if (readerTitle) readerTitle.textContent = `📜 ${displayTitle}`;
 
     const pageImg = p.raw_file_path || "./assets/images/scans/scan_single1.jpg";
     const bookCode = p.id || "P0001";
